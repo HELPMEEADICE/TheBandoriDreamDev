@@ -1702,20 +1702,34 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = USN_test_34
+	id = USN_Rebuid_Armored_Cavalry_Battalion
 	icon = GFX_guoce_zhanwei
 	prerequisite = { focus = USN_junshi_yantao_2 }
 	cost = 3
 	x = -4
 	y = 4
 	completion_reward = {
-
+		set_temp_variable = {
+				var = USN_influence_A_var_temp
+				value = 0.05
+			}
+		USN_add_influence_A = yes
+		add_war_support = 0.1
+			effect_tooltip = {
+			swap_ideas = {
+            remove_idea = USN_lianbang_wuzhuang_0
+			add_idea = USN_lianbang_wuzhuang_8
+			}
+		}
+		add_to_variable = { USN_lianbang_wuzhuang_army_armor_attack_factor = 0.1 }
+		add_to_variable = { USN_lianbang_wuzhuang_breakthrough_factor = 0.05 }
+		add_to_variable = { USN_lianbang_wuzhuang_army_armor_defence_factor = 0.05 }
 	}
 }
 shared_focus = {
 	id = USN_test_35
 	icon = GFX_guoce_zhanwei
-	prerequisite = { focus = USN_test_34 }
+	prerequisite = { focus = USN_Rebuid_Armored_Cavalry_Battalion }
 	cost = 3
 	x = -4
 	y = 5

@@ -102,4 +102,33 @@ USN_lianbang_wuzhuang = {
     recon_factor = USN_lianbang_wuzhuang_recon_factor
     org_loss_when_moving = USN_lianbang_wuzhuang_org_loss_when_moving
 }
+USN_Economic_reconstruction = {
+    icon = GFX_idea_guomin_jingji_jingshen
+    enable = { always = yes }
+    personal_value_factor = USN_Economic_reconstruction_personal_value_factor
+    business_value_factor = USN_Economic_reconstruction_business_value_factor
+    income_growth_factor = USN_Economic_reconstruction_income_growth_factor
+    production_speed_buildings_factor = USN_Economic_reconstruction_production_speed_buildings_factor
+    expense_growth_factor = USN_Economic_reconstruction_expense_growth_factor
+    consumer_goods_factor = USN_Economic_reconstruction_consumer_goods_factor
+    production_factory_max_efficiency_factor = USN_Economic_reconstruction_production_factory_max_efficiency_factor
+    production_factory_efficiency_gain_factor = USN_Economic_reconstruction_production_factory_efficiency_gain_factor
+    production_factory_start_efficiency_factor = USN_Economic_reconstruction_production_factory_start_efficiency_factor
+    industrial_capacity_factory = USN_Economic_reconstruction_industrial_capacity_factory
+    industrial_capacity_dockyard = USN_Economic_reconstruction_industrial_capacity_dockyard
+    research_speed_factor = USN_Economic_reconstruction_research_speed_factor
+    production_lack_of_resource_penalty_factor = USN_Economic_reconstruction_production_lack_of_resource_penalty_factor
+    industrial_development_monthly = USN_Economic_reconstruction_industrial_development_monthly
+    poverty_development_monthly = USN_Economic_reconstruction_poverty_development_monthly
+    farming_development_monthly = USN_Economic_reconstruction_farming_development_monthly
+    monthly_population = USN_Economic_reconstruction_monthly_population
+    academic_development_monthly = USN_Economic_reconstruction_academic_development_monthly
+    society_development_monthly = USN_Economic_reconstruction_society_development_monthly
+    political_power_cost = USN_Economic_reconstruction_political_power_cost
+    base_fuel_gain_factor = USN_Economic_reconstruction_base_fuel_gain_factor
+    local_resources_factor = USN_Economic_reconstruction_local_resources_factor
+    global_building_slots_factor = USN_Economic_reconstruction_global_building_slots_factor
+    war_stability_factor = USN_Economic_reconstruction_war_stability_factor
+    misc_income = USN_Economic_reconstruction_misc_income
+}
 

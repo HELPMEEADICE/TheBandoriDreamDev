@@ -396,5 +396,71 @@ ideas = {
 				air_superiority_bonus_in_combat = 0.2
 			}
 		}
+		USN_lianbang_wuzhuang_8 = {
+			name = USN_lianbang_wuzhuang_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+		}
+	#########
+	USN_Economic_reconstruction_0 = {#国内经济
+			name = USN_Economic_reconstruction_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	USN_Economic_reconstruction_1 = {
+			name = USN_Economic_reconstruction_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = 0.2
+				personal_value_factor = 0.15
+				misc_income = 0.05
+				society_development_monthly = 0.1
+				farming_development_monthly = 0.1
+			}
+		}
+	USN_Economic_reconstruction_2 = {
+			name = USN_Economic_reconstruction_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.15
+				tax_business_rate = 0.1
+				misc_income = 0.05
+				industrial_development_monthly = 0.1
+				poverty_development_monthly = 0.1
+			}
+		}
 	}
 }

@@ -71,4 +71,18 @@ bang_usn_fire = {
 			}
 		}
 	}
+bang_usn_fire = {
+		context_type = player_context
+		window_name = "bang_R_victory_event"
+
+		visible = {
+			#has_country_flag = USN_fire_rise
+    	}
+	
+		effects = {
+			Super_Event_Close_click = {
+				#clr_country_flag = USN_fire_rise
+			}
+		}
+	}
 }

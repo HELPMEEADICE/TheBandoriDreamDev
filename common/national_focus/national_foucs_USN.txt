@@ -161,33 +161,61 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = USN_test_8
+		#本土优先
+	    id = USN_mainland_first
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 6
 		y = 4
-
 		prerequisite = {focus = USN_zhanwen_jiaogen}
-		mutually_exclusive = {focus = USN_test_9}
+		mutually_exclusive = {focus = USN_aid_first}
 		completion_reward = {
-			add_political_power = 50
 			add_stability = 0.10
-			add_war_support = 0.10
+			effect_tooltip = {
+				add_ideas = USN_Economic_reconstruction_1
+				}
+			hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = USN_Economic_reconstruction
+			}
+			}
+			add_to_variable = { USN_Economic_reconstruction_income_growth_factor = 0.2 }
+			add_to_variable = { USN_Economic_reconstruction_personal_value_factor = 0.15 }
+			add_to_variable = { USN_Economic_reconstruction_misc_income = 0.05 }
+			add_to_variable = { USN_Economic_reconstruction_society_development_monthly = 0.1 }
+			add_to_variable = { USN_Economic_reconstruction_farming_development_monthly = 0.1 }
 		}
 	}
 	focus = {
-	    id = USN_test_9
+		#援助优先
+	    id = USN_aid_first
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 4
 
 		prerequisite = {focus = USN_zhanwen_jiaogen}
-		mutually_exclusive = {focus = USN_test_8}
+		mutually_exclusive = {focus = USN_mainland_first}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.10
+			set_temp_variable = {
+				var = income_var_temp
+				value = 500
+			}
+			add_income_with_inflation = yes
 			add_war_support = 0.10
+				effect_tooltip = {
+				add_ideas = USN_Economic_reconstruction_2
+				}
+			hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = USN_Economic_reconstruction
+			}
+			}
+				add_to_variable = { USN_Economic_reconstruction_business_value_factor = 0.2 }
+				add_to_variable = { USN_Economic_reconstruction_tax_business_rate = 0.15 }
+				add_to_variable = { USN_Economic_reconstruction_misc_income = 0.05 }
+				add_to_variable = { USN_Economic_reconstruction_industrial_development_monthly = 0.1 }
+				add_to_variable = { USN_Economic_reconstruction_poverty_development_monthly = 0.1 }
 		}
 	}
 	focus = {
@@ -197,7 +225,7 @@ focus_tree = {
 		x = 4
 		y = 5
 
-		prerequisite = {focus = USN_test_8}
+		prerequisite = {focus = USN_mainland_first}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -211,7 +239,7 @@ focus_tree = {
 		x = 10
 		y = 5
 
-		prerequisite = {focus = USN_test_9 focus = USN_test_8}
+		prerequisite = {focus = USN_aid_first focus = USN_mainland_first}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
@@ -225,7 +253,7 @@ focus_tree = {
 		x = 8
 		y = 5
 
-		prerequisite = {focus = USN_test_8 focus = USN_test_8}
+		prerequisite = {focus = USN_mainland_first focus = USN_mainland_first}
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.10
