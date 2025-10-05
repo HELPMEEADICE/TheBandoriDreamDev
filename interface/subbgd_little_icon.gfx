@@ -23,4 +23,10 @@ spriteTypes = {
 		name = "BGD_MoJ_icon"
 		texturefile = "gfx\interface\MoJ.png"
 	}
+
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_bgd"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_bgd.png"
+		noOfFrames = 2
+	}
 }

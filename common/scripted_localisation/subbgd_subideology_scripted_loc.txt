@@ -866,3 +866,31 @@ defined_text = {
 		localization_key = BGD_Airforce_Junta
 	}
 }
+
+defined_text = {
+	name = BGD_tokyo_gov
+	text = {
+		trigger = {
+			USN = {
+				OR = {
+					has_cosmetic_tag = uskira
+					has_cosmetic_tag = usakira
+					has_cosmetic_tag = usrepublic
+					has_cosmetic_tag = USA
+				}
+			}
+		}
+		localization_key = BGD_tokyo_gov_2
+	}
+	text = {
+		trigger = {
+			BGD = {
+				has_cosmetic_tag = BGD_united_asia
+			}
+		}
+		localization_key = BGD_tokyo_gov_3
+	}
+	text = {
+		localization_key = BGD_tokyo_gov_1
+	}
+}

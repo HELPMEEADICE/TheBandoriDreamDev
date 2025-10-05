@@ -94,6 +94,16 @@ spriteTypes = {
 		texturefile = "gfx\texticons\BGD\texticon_portraits\lisa_texticon.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_BGD_Rui_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\rui_texticon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BGD_Hina_texticon"
+		texturefile = "gfx\texticons\BGD\texticon_portraits\hina_texticon.png"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_BGD_army_flag"

@@ -149,4 +149,8 @@ spriteTypes = {
 		name = "GFX_idea_BGX_Guarantee_freedom"
 		textureFile = "gfx\interface\laws\social_laws\BGX_Guarantee_freedom.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Tokyo_Gov"
+		textureFile = "gfx\interface\ideas\BGD\Tokyo_Gov.png"
+	}
 }

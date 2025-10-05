@@ -11,14 +11,29 @@ bookmarks = {
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = conservative
 			ideas = {
-				JAP_japanese_pacifism_idea
-				JAP_aging_population_idea
-				JAP_keiretsu_control_idea
+				BGD_guomin_fangweijun_0
+				BGD_kira_doki_0
+				BGD_guomin_jingji_0
 			}
 			focuses = {
-				JAP_japan_on_the_world_stage
-				JAP_deal_with_the_pandemic
-				JAP_revise_article_9
+				JDF_chengnuo_heping
+				JDF_chongshen_lichang
+				BGD_mengxiang_buqv
+			}
+		}
+
+		"BGD" = {
+			history = "BGD_GATHERING_STORM_DESC"
+			ideology = social_democrat
+			ideas = {
+				BGD_arisa
+				BGD_saaya
+				BGD_yukina
+			}
+			focuses = {
+				BGD_mengxiang_buqv
+				BGD_benxiang_mingri
+				created_united_asia
 			}
 		}
 		

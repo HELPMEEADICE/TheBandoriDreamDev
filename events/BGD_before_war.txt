@@ -1,0 +1,49 @@
+add_namespace = bangjap
+
+country_event = {
+	id = bangjap.1 #有咲投票
+	title = bangjap.1.t
+	desc = bangjap.1.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2021.10.01
+		tag = JAP
+	}
+	option = {
+		name = bangjap.1.a
+	}
+}
+
+country_event = {
+	id = bangjap.2 #Anon生病
+	title = bangjap.2.t
+	desc = bangjap.2.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2021.01.01
+		tag = JAP
+	}
+	option = {
+		name = bangjap.2.a
+	}
+}
+
+country_event = {
+	id = bangjap.3 #Sayo生病
+	title = bangjap.3.t
+	desc = bangjap.3.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2020.03.01
+		tag = JAP
+	}
+	option = {
+		name = bangjap.3.a
+	}
+}

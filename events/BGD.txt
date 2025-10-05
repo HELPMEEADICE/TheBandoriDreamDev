@@ -711,6 +711,15 @@ country_event = {
 			id = bgd.56
 			days = 3
 		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = JAP
+				}
+				remove_core_of = JAP
+				remove_core_of = DFJ
+			}
+		}
 	}
 }
 
@@ -809,6 +818,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.50.a
+		1332 = {
+			add_dynamic_modifier = {
+				modifier = BGD_tokyo_goverment
+			}
+		}
 		add_political_power = -30
 		country_event = {
 			id = bgd.51
