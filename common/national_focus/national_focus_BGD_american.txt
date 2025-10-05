@@ -387,6 +387,7 @@ shared_focus = {
 			controls_state = 983
 			controls_state = 1234
 			controls_state = 986
+			is_ai = yes
 		}
 	}
 	completion_reward = {

@@ -18,7 +18,7 @@ USN_power_balance = {
 	}
 	side = {
 		id = USN_lianbang_side
-		icon = GFX_bop_JAP_cc_socialist
+		icon = GFX_bop_USB_bop_high_pop_DEM
 		range = {
 			id = USN_lian_1_side
 			min = -0.45

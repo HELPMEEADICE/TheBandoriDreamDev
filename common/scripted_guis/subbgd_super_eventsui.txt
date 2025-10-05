@@ -58,17 +58,31 @@ bang_landing_moon = {
 	}
 }
 bang_usn_fire = {
-	context_type = player_context
-	window_name = "bang_usn_fire_event"
+		context_type = player_context
+		window_name = "bang_usn_fire_event"
 
-	visible = {
-		has_country_flag = USN_fire
-    }
+		visible = {
+			has_country_flag = USN_fire_rise
+    	}
 	
-	effects = {
-		Super_Event_Close_click = {
-			clr_country_flag = USN_fire
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = USN_fire_rise
+			}
 		}
 	}
-}
+bang_usn_fire = {
+		context_type = player_context
+		window_name = "bang_R_victory_event"
+
+		visible = {
+			#has_country_flag = USN_fire_rise
+    	}
+	
+		effects = {
+			Super_Event_Close_click = {
+				#clr_country_flag = USN_fire_rise
+			}
+		}
+	}
 }

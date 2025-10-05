@@ -15,6 +15,7 @@ country_event = {
 		}
 		USN = {    				# USN全部舰队、将领转移给bgd
 			set_country_flag = APFNO_member
+			set_country_flag = developed_country
 			transfer_navy = {
 			  target = BGD
 		    }
@@ -963,6 +964,12 @@ country_event = {
 			set_capital = { state = 931 }
 		}
 	}
+	option = {
+		name = usnavy.24.c
+		USN = {
+			set_capital = { state = 931 }
+		}
+	}
 }
 
 country_event = {
@@ -1183,9 +1190,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.226.a
-		USN = {
-			add_ideas = USN_buxinren_1
+		remove_power_balance = {
+			id = USN_power_balance
 		}
+		set_country_flag = USN_minzhen_wajie
+		set_country_flag = USN_ars_0
 	}
 }
 
@@ -1199,7 +1208,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.36.a
+		remove_power_balance = {
+			id = USN_power_balance
+		}
 		set_country_flag = USN_minzhen_wajie
+		set_country_flag = USN_ksm_0
 	}
 }
 
@@ -1249,6 +1262,50 @@ country_event = {
 					set_country_flag = attack_Ready
 				}
             }
+		}
+	}
+country_event = {
+	#出山
+	id = usnavy.39
+	title = usnavy.39.t
+	desc = usnavy.39.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.39.a
+		add_stability = 0.05
+		}
+	}
+country_event = {
+	#攻入丹佛
+	id = usnavy.40
+	title = usnavy.40.t
+	desc = usnavy.40.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.40.a
+		add_war_support = -0.1
+		add_political_power = 50
+			set_temp_variable = {
+				var = USN_influence_B_var_temp
+				value = 0.05
+			}
+			USN_add_influence_B = yes
+			
+			set_temp_variable = {
+				var = USN_influence_C_var_temp
+				value = 0.05
+			}
+			USN_add_influence_C = yes
+
+			set_temp_variable = {
+				var = USN_influence_A_var_temp
+				value = -0.15
+			}
+			USN_add_influence_A = yes
 		}
 	}
 

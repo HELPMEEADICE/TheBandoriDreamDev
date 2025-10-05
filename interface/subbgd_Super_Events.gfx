@@ -19,6 +19,11 @@ spriteTypes = {
 		texturefile = "gfx\super_events\bang_usn_fire.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_bang_R_victory"
+		texturefile = "gfx\super_events\bang_R_victory.png"
+		legacy_lazy_load = no
+	}
 	
 	#BGD ENDGUI
 	spriteType = {

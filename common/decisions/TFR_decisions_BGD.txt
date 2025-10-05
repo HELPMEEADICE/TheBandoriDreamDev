@@ -3088,7 +3088,8 @@ BGD_guojia_waijiao = {
 			}
 		}
 		visible = {
-			always = yes
+			has_global_flag = USA_american_civil_war_over_global
+			NOT = {USN = {owns_state = 931}}
 		}
 		available = {
 			has_global_flag = USA_american_civil_war_over_global
