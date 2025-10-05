@@ -8,6 +8,12 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = USN_victory_american
+			}
+			localization_key = "美利坚再统一"
+		}
+		text = { 
+			trigger = {
 				has_country_flag = USN_fire_rise
 			}
 			localization_key = "USN_FIRE"
@@ -506,6 +512,12 @@
 		}
 		text = { 
 			trigger = {
+				has_country_flag = USN_victory_american
+			}
+			localization_key = "不以加害任何人，而以宽爱所有人之心...去弥合国家的创伤。\n\n——亚伯拉罕·林肯"
+		}
+		text = { 
+			trigger = {
 				has_country_flag = bang_landing_moon
 				NOT = { has_country_flag = close_moon_super_window }
 			}
@@ -995,6 +1007,12 @@
 				has_country_flag = USN_fire_rise
 			}
 			localization_key = "USN_FIRE_button"
+		}
+		text = { 
+			trigger = {
+				has_country_flag = USN_victory_american
+			}
+			localization_key = "共和国，屹立不倒"
 		}
 		text = { 
 			trigger = {

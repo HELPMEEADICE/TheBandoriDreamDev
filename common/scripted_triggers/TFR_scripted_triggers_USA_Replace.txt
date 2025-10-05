@@ -33,3 +33,35 @@ USA_has_rivals_secured = { #FUCKING AMERICAN
 		}
 	}
 }
+
+
+USN_has_rivals_secured = {
+	custom_trigger_tooltip = {
+		tooltip = USA_has_rivals_secured_tooltip
+		all_country = {
+			OR = {
+				NOT = {
+					tag = USC
+					tag = USB
+					tag = GMA
+					tag = GMC
+					tag = FAA
+					tag = AOF
+					tag = PTF
+					tag = NSM
+					tag = ATW
+					tag = APA
+					tag = HUM
+					tag = SAT
+					tag = BOA
+					tag = PDX
+					tag = CAC
+					tag = BBC
+					tag = GOP
+				}
+				is_in_faction_with = USN
+				tag = USN
+			}
+		}
+	}
+}

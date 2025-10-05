@@ -10,23 +10,25 @@ USA_second_american_civil_war_category = {#第二次美国内战决议
         visible = {
         }
         available = {
-            has_completed_focus = USC_take_back_our_country
-            USA_has_states_secured = yes
-            USA_has_militias_secured = yes
-            USA_has_gangs_secured = yes
-            USA_has_separatists_secured = yes
-            USA_has_rivals_secured = yes
+            #USA_has_states_secured = yes
+            #USA_has_militias_secured = yes
+            #USA_has_gangs_secured = yes
+            #USA_has_separatists_secured = yes
+            USN_has_rivals_secured = yes
         }
         ai_will_do = {
             base = 100
         }
         complete_effect = {
-            country_event = {
-                id = usnavy.24
-            }
-            hidden_effect = {
-                
-            }
+            #country_event = {
+            #    id = usnavy.24
+            #}
+            #hidden_effect = {
+            #    
+            #}
+			news_event = {
+				id = usnavy.2001
+			}
         }
         remove_effect = {
         }
