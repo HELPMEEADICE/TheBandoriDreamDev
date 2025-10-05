@@ -1,5 +1,5 @@
-USA_second_american_civil_war_category = {
-    USC_reunify_america_decision = {
+USA_second_american_civil_war_category = {#第二次美国内战决议
+    USC_reunify_america_decision = {#美国统一
         icon = USA_american_reunification
         cancel_if_not_visible = yes
         cost = 0
@@ -22,21 +22,10 @@ USA_second_american_civil_war_category = {
         }
         complete_effect = {
             country_event = {
-                id = usc.1
+                id = usnavy.24
             }
             hidden_effect = {
-                if = {
-                    limit = {
-                        has_country_leader = {
-                            character = USC_donald_trump_char
-                            ruling_only = yes
-                        }
-                    }
-                    country_event = {
-                        id = usc.1000
-                        days = 8
-                    }
-                }
+                
             }
         }
         remove_effect = {
@@ -52,7 +41,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         available = {
             NOT = {
@@ -164,7 +153,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         available = {
             NOT = {
@@ -254,7 +243,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         available = {
             NOT = {
@@ -362,7 +351,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         available = {
             NOT = {
@@ -479,7 +468,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         available = {
             NOT = {
@@ -555,7 +544,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         custom_cost_trigger = {
             has_equipment = {
@@ -613,7 +602,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         available = {
             NOT = {
@@ -644,7 +633,7 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-
+			always = no
         }
         target_root_trigger = {
             has_completed_focus = USC_work_with_the_state_governments
@@ -733,7 +722,8 @@ USA_second_american_civil_war_category = {
             original_tag = USN
         }
         visible = {
-        }
+			always = no
+		}
         target_root_trigger = {
             has_completed_focus = USC_drain_the_swamp
         }
