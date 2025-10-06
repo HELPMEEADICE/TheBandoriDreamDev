@@ -337,3 +337,50 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	#美利坚再一统
+	id = usnavy.2001
+	title = usnavy.2001.t
+	desc = usnavy.2001.d
+	picture = GFX_USN_victory_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.2001.a
+		hidden_effect = {
+			USN = {
+				remove_ideas = USA_battle_for_america_idea
+				set_global_flag = USA_american_civil_war_over_global
+				set_capital = {
+					state = 931
+					remember_old_capital = no
+				}
+				set_country_flag = USB_reunified_flag
+			}
+			every_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = USA_battle_for_america_idea
+					}
+				}
+				PREV = {
+					remove_dynamic_modifier = {
+						modifier = USA_battle_for_america_idea
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = USN_victory_american
+				scoped_sound_effect = TFR_se_neosocialist_apla
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+		USN = {
+			set_cosmetic_tag = usakira
+		}
+	}
+}
