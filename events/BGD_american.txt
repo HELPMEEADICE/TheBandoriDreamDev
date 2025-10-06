@@ -1329,7 +1329,7 @@ news_event = {
 					state = 931
 					remember_old_capital = no
 				}
-				set_country_flag = USB_reunified_flag
+				set_country_flag = USN_reunified_flag
 			}
 			every_state = {
 				limit = {

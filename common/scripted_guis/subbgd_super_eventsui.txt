@@ -62,12 +62,12 @@ bang_landing_moon = {
 	window_name = "bang_usn_victory_event"
 
 	visible = {
-		has_country_flag = bang_usn_victory_event
+		has_country_flag = USN_victory_american
     }
 	
 	effects = {
 		Super_Event_Close_click = {
-			clr_country_flag = bang_usn_victory_event
+			clr_country_flag = USN_victory_american
 		}
 	}
 }

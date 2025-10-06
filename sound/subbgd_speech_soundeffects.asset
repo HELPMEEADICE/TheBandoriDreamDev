@@ -1,0 +1,7 @@
+	soundeffect = {
+		name = "TFR_se_USN_Anchors_Aweigh"
+		sounds = {
+			sound = TFR_se_USN_Anchors_Aweigh
+		}
+		volume = 3.0
+	}
