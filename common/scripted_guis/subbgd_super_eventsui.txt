@@ -1,100 +1,85 @@
 scripted_gui = {
-bang_gaw_win = {
-			context_type = player_context
-			window_name = "bang_gaw_win_event"
-
-			visible = {
-				has_country_flag = BGD_gaw_victory_win
-            }
-			
-			effects = {
-				Super_Event_Close_click = {
-					clr_country_flag = BGD_gaw_victory_win
-				}
-			}
+	bang_gaw_win = {
+		context_type = player_context
+		window_name = "bang_gaw_win_event"
+		visible = {
+			has_country_flag = BGD_gaw_victory_win
 		}
-bang_tongyi = {
-			context_type = player_context
-			window_name = "bang_tongyi_event"
-
-			visible = {
-				has_country_flag = BGD_tongyi_guojia
-            }
-			
-			effects = {
-				Super_Event_Close_click = {
-					clr_country_flag = BGD_tongyi_guojia
-				}
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = BGD_gaw_victory_win
 			}
-		}
-bang_neizhan = {
-			context_type = player_context
-			window_name = "bang_neizhan_event"
-
-			visible = {
-				has_country_flag = BGD_neizhan
-            }
-			
-			effects = {
-				Super_Event_Close_click = {
-					clr_country_flag = BGD_neizhan
-				}
-			}
-		}
-
-bang_landing_moon = {
-	context_type = player_context
-	window_name = "bang_landing_moon_event"
-
-	visible = {
-		has_country_flag = bang_landing_moon
-		NOT = { has_country_flag = close_moon_super_window }
-    }
-	
-	effects = {
-		Super_Event_Close_click = {
-			set_country_flag = close_moon_super_window
 		}
 	}
-}
-bang_victory_american = {
-	context_type = player_context
-	window_name = "bang_usn_victory_event"
-
-	visible = {
-		has_country_flag = USN_victory_american
-		has_country_flag = USN_victory_american
-    }
-	
-	effects = {
-		Super_Event_Close_click = {
-			clr_country_flag = USN_victory_american
+	bang_tongyi = {
+		context_type = player_context
+		window_name = "bang_tongyi_event"
+		visible = {
+			has_country_flag = BGD_tongyi_guojia
 		}
-			clr_country_flag = USN_victory_american
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = BGD_tongyi_guojia
+			}
+		}
 	}
-}
-bang_usn_fire = {
+	bang_neizhan = {
+		context_type = player_context
+		window_name = "bang_neizhan_event"
+		visible = {
+			has_country_flag = BGD_neizhan
+		}
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = BGD_neizhan
+			}
+		}
+	}
+	bang_landing_moon = {
+		context_type = player_context
+		window_name = "bang_landing_moon_event"
+		visible = {
+			has_country_flag = bang_landing_moon
+			NOT = {
+				has_country_flag = close_moon_super_window
+			}
+		}
+		effects = {
+			Super_Event_Close_click = {
+				set_country_flag = close_moon_super_window
+			}
+		}
+	}
+	bang_victory_american = {
+		context_type = player_context
+		window_name = "bang_usn_victory_event"
+		visible = {
+			has_country_flag = USN_victory_american
+		}
+		effects = {
+			Super_Event_Close_click = {
+				clr_country_flag = USN_victory_american
+			}
+		}
+	}
+	bang_usn_fire = {
 		context_type = player_context
 		window_name = "bang_usn_fire_event"
-
 		visible = {
 			has_country_flag = USN_fire_rise
-    	}
-	
+		}
 		effects = {
 			Super_Event_Close_click = {
 				clr_country_flag = USN_fire_rise
 			}
 		}
 	}
-bang_usn_gunmu = {
+	bang_usn_gunmu = {
 		context_type = player_context
 		window_name = "bang_R_victory_event"
-
 		visible = {
 			has_country_flag = gunmu
-    	}
-	
+		}
 		effects = {
 			Super_Event_Close_click = {
 				clr_country_flag = gunmu
@@ -102,4 +87,3 @@ bang_usn_gunmu = {
 		}
 	}
 }
-
