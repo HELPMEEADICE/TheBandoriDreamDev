@@ -2,7 +2,7 @@
 		name = get_super_event_title
 		text = { 
 			trigger = {
-				#has_country_flag = USN_fire_rise
+				has_country_flag = gunmu
 			}
 			localization_key = "Roselia当选"
 		}
@@ -500,7 +500,7 @@
 		name = get_superevent_quote
 		text = { 
 			trigger = {
-				#has_country_flag = USN_fire_rise
+				has_country_flag = gunmu
 			}
 			localization_key = "既然无法崇尚雪白\n那堕入极黑又如何\n\n——BLACK SHOUT"
 		}
@@ -514,7 +514,7 @@
 			trigger = {
 				has_country_flag = USN_victory_american
 			}
-			localization_key = "不以加害任何人，而以宽爱所有人之心...去弥合国家的创伤。\n\n——亚伯拉罕·林肯"
+			localization_key = "USN_victory_american_desc"
 		}
 		text = { 
 			trigger = {
@@ -998,7 +998,7 @@
 		name = get_superevent_buton 
 		text = { 
 			trigger = {
-				#has_country_flag = USN_fire_rise
+				has_country_flag = gunmu
 			}
 			localization_key = "心之所向天命所昭..."
 		}
@@ -1012,7 +1012,7 @@
 			trigger = {
 				has_country_flag = USN_victory_american
 			}
-			localization_key = "共和国，屹立不倒"
+			localization_key = "美利坚新生"
 		}
 		text = { 
 			trigger = {

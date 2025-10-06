@@ -57,11 +57,12 @@ bang_landing_moon = {
 		}
 	}
 }
-bang_landing_moon = {
+bang_victory_american = {
 	context_type = player_context
 	window_name = "bang_usn_victory_event"
 
 	visible = {
+		has_country_flag = USN_victory_american
 		has_country_flag = USN_victory_american
     }
 	
@@ -69,6 +70,7 @@ bang_landing_moon = {
 		Super_Event_Close_click = {
 			clr_country_flag = USN_victory_american
 		}
+			clr_country_flag = USN_victory_american
 	}
 }
 bang_usn_fire = {
@@ -85,18 +87,19 @@ bang_usn_fire = {
 			}
 		}
 	}
-bang_usn_fire = {
+bang_usn_gunmu = {
 		context_type = player_context
 		window_name = "bang_R_victory_event"
 
 		visible = {
-			#has_country_flag = USN_fire_rise
+			has_country_flag = gunmu
     	}
 	
 		effects = {
 			Super_Event_Close_click = {
-				#clr_country_flag = USN_fire_rise
+				clr_country_flag = gunmu
 			}
 		}
 	}
 }
+

@@ -1348,7 +1348,7 @@ news_event = {
 					is_ai = no
 				}
 				set_country_flag = USN_victory_american
-				scoped_sound_effect = TFR_se_USN_Anchors_Aweigh
+				scoped_sound_effect = TFR_se_neosocialist_apla
 				scoped_play_song = "one_minute_of_silence"
 			}
 		}
