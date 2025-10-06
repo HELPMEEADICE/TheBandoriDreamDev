@@ -1012,7 +1012,7 @@
 			trigger = {
 				has_country_flag = USN_victory_american
 			}
-			localization_key = "共和国新生"
+			localization_key = "美利坚新生"
 		}
 		text = { 
 			trigger = {
