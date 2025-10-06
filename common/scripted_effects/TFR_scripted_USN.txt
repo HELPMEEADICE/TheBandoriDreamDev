@@ -1,120 +1,110 @@
 USN_add_influence_A = {
-		custom_effect_tooltip = USN_influence_A_tooltip
-		
-		add_to_variable = {
-			var = USN_influence_A_var
-			value = USN_influence_A_var_temp
-		}
-		
-		clamp_variable = {
-			var = USN_influence_A_var
-			min = 0
-			max = 1
-		}
+	custom_effect_tooltip = USN_influence_A_tooltip
+	add_to_variable = {
+		var = USN_influence_A_var
+		value = USN_influence_A_var_temp
+	}
+	clamp_variable = {
+		var = USN_influence_A_var
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = USN_influence_A_dynamic_var
+		value = USN_influence_A_var
+	}
+	multiply_variable = {
+		var = USN_influence_A_dynamic_var
+		value = 0.3
+	}
+}
 
-		set_variable = {
-			var = USN_influence_A_dynamic_var
-			value = USN_influence_A_var
+USN_add_influence_B = {
+	custom_effect_tooltip = USN_influence_B_tooltip
+	add_to_variable = {
+		var = USN_influence_B_var
+		value = USN_influence_B_var_temp
+	}
+	clamp_variable = {
+		var = USN_influence_B_var
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = USN_influence_B_dynamic_var
+		value = USN_influence_B_var
+	}
+	multiply_variable = {
+		var = USN_influence_B_dynamic_var
+		value = 0.3
+	}
+}
+
+USN_add_influence_C = {
+	custom_effect_tooltip = USN_influence_C_tooltip
+	add_to_variable = {
+		var = USN_influence_C_var
+		value = USN_influence_C_var_temp
+	}
+	clamp_variable = {
+		var = USN_influence_C_var
+		min = 0
+		max = 1
+	}
+	set_variable = {
+		var = USN_influence_C_dynamic_var
+		value = USN_influence_C_var
+	}
+	multiply_variable = {
+		var = USN_influence_C_dynamic_var
+		value = 0.3
+	}
+}
+
+USN_fire_intensity = {
+	if = {
+		limit = {
+			has_idea = USN_big_fire_idea4
 		}
-		
-		multiply_variable = {
-			var = USN_influence_A_dynamic_var
-			value = 0.3
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea4
+			add_idea = USN_big_fire_idea3
 		}
 	}
-	USN_add_influence_B = {
-		custom_effect_tooltip = USN_influence_B_tooltip
-		
-		add_to_variable = {
-			var = USN_influence_B_var
-			value = USN_influence_B_var_temp
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea3
 		}
-		
-		clamp_variable = {
-			var = USN_influence_B_var
-			min = 0
-			max = 1
-		}
-
-		set_variable = {
-			var = USN_influence_B_dynamic_var
-			value = USN_influence_B_var
-		}
-		
-		multiply_variable = {
-			var = USN_influence_B_dynamic_var
-			value = 0.3
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea3
+			add_idea = USN_big_fire_idea2
 		}
 	}
-		USN_add_influence_C = {
-		custom_effect_tooltip = USN_influence_C_tooltip
-		
-		add_to_variable = {
-			var = USN_influence_C_var
-			value = USN_influence_C_var_temp
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea2
 		}
-		
-		clamp_variable = {
-			var = USN_influence_C_var
-			min = 0
-			max = 1
-		}
-
-		set_variable = {
-			var = USN_influence_C_dynamic_var
-			value = USN_influence_C_var
-		}
-		
-		multiply_variable = {
-			var = USN_influence_C_dynamic_var
-			value = 0.3
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea2
+			add_idea = USN_big_fire_idea1
 		}
 	}
-
-	USN_fire_intensity = {
-		if = {
-			limit = {
-				has_idea = USN_big_fire_idea4
-			}
-			swap_ideas = {
-				remove_idea = USN_big_fire_idea4
-				add_idea = USN_big_fire_idea3
-			}
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea1
 		}
-		else_if = {
-			limit = { 
-				has_idea = USN_big_fire_idea3
-			}
-			swap_ideas = {
-				remove_idea = USN_big_fire_idea3
-				add_idea = USN_big_fire_idea2
-			}
-		}
-		else_if = {
-			limit = {
-				has_idea = USN_big_fire_idea2
-			}
-			swap_ideas = {
-				remove_idea = USN_big_fire_idea2
-				add_idea = USN_big_fire_idea1
-			}
-		}
-		else_if = {
-			limit = { 
-				has_idea = USN_big_fire_idea1 
-			}
-			swap_ideas = {
-				remove_idea = USN_big_fire_idea1
-				add_idea = USN_big_fire_idea
-			}
-		}
-		else_if = {
-			limit = { 
-				has_idea = USN_big_fire_idea
-			}
-			add_stability = -0.05
-		}
-		else = {
-			add_ideas = USN_big_fire_idea4
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea1
+			add_idea = USN_big_fire_idea
 		}
 	}
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea
+		}
+		add_stability = -0.05
+	}
+	else = {
+		add_ideas = USN_big_fire_idea4
+	}
+}
