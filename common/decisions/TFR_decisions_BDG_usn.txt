@@ -1,798 +1,45 @@
-USA_second_american_civil_war_category = {#第二次美国内战决议
-    USC_reunify_america_decision = {#美国统一
-        icon = USA_american_reunification
-        cancel_if_not_visible = yes
-        cost = 0
-        priority = 1
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-        }
-        available = {
-            #USA_has_states_secured = yes
-            #USA_has_militias_secured = yes
-            #USA_has_gangs_secured = yes
-            #USA_has_separatists_secured = yes
-            USN_has_rivals_secured = yes
-        }
-        ai_will_do = {
-            base = 100
-        }
-        complete_effect = {
-            #country_event = {
-            #    id = usnavy.24
-            #}
-            #hidden_effect = {
-            #    
-            #}
+USA_second_american_civil_war_category = {
+	#第二次美国内战决议
+	USC_reunify_america_decision = {
+		#美国统一
+		icon = USA_american_reunification
+		cancel_if_not_visible = yes
+		cost = 0
+		priority = 1
+		allowed = {
+			original_tag = USN
+		}
+		visible = {
+		}
+		available = {
+			#USA_has_states_secured = yes
+			#USA_has_militias_secured = yes
+			#USA_has_gangs_secured = yes
+			#USA_has_separatists_secured = yes
+			USN_has_rivals_secured = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			#country_event = {
+			#    id = usnavy.24
+			#}
+			#hidden_effect = {
+			#    
+			#}
 			news_event = {
 				id = usnavy.2001
 			}
-        }
-        remove_effect = {
-        }
-    }
-    USC_call_up_western_reserves_decision = {
-        icon = generic_recore
-        cost = 15
-        days_remove = 14
-        priority = 1
-        fire_only_once = yes
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        available = {
-            NOT = {
-                has_country_flag = USA_recruiting_militia_flag
-            }
-            has_war_with = APA
-            set_temp_variable = {
-                var = USC_rage_trigger_temp
-                value = 0.5
-            }
-            USC_has_rage_greater_than_or_equals = yes
-            any_controlled_state = {
-                OR = {
-                    USA_is_colorado_state = yes
-                    USA_is_montana_state = yes
-                    USA_is_wyoming_state = yes
-                }
-            }
-        }
-        ai_will_do = {
-            base = 1000
-        }
-        modifier = {
-        }
-        complete_effect = {
-            set_temp_variable = {
-                var = USC_rage_var_temp
-                value = -0.05
-            }
-            USC_add_rage = yes
-            hidden_effect = {
-                set_country_flag = {
-                    flag = USA_recruiting_militia_flag
-                    days = 14
-                    value = 1
-                }
-            }
-        }
-        remove_effect = {
-            random_controlled_state = {
-                limit = {
-                    USA_is_colorado_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_montana_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_wyoming_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-        }
-    }
-    USC_activate_the_first_line_of_defense_decision = {
-        icon = generic_recore
-        cost = 15
-        days_remove = 14
-        priority = 1
-        fire_only_once = yes
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        available = {
-            NOT = {
-                has_country_flag = USA_recruiting_militia_flag
-            }
-            set_temp_variable = {
-                var = USC_rage_trigger_temp
-                value = 0.5
-            }
-            USC_has_rage_greater_than_or_equals = yes
-            any_controlled_state = {
-                OR = {
-                    USA_is_wisconsin_state = yes
-                    USA_is_illinois_state = yes
-                }
-            }
-        }
-        ai_will_do = {
-            base = 1000
-        }
-        modifier = {
-        }
-        complete_effect = {
-            set_temp_variable = {
-                var = USC_rage_var_temp
-                value = -0.1
-            }
-            USC_add_rage = yes
-            hidden_effect = {
-                set_country_flag = {
-                    flag = USA_recruiting_militia_flag
-                    days = 14
-                    value = 1
-                }
-            }
-        }
-        remove_effect = {
-            random_controlled_state = {
-                limit = {
-                    USA_is_illinois_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_wisconsin_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-        }
-    }
-    USC_activate_the_second_line_of_defense_decision = {
-        icon = generic_recore
-        cost = 15
-        days_remove = 14
-        priority = 1
-        fire_only_once = yes
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        available = {
-            NOT = {
-                has_country_flag = USA_recruiting_militia_flag
-                surrender_progress < 0.1
-            }
-            set_temp_variable = {
-                var = USC_rage_trigger_temp
-                value = 0.5
-            }
-            USC_has_rage_greater_than_or_equals = yes
-            any_controlled_state = {
-                OR = {
-                    USA_is_minnesota_state = yes
-                    USA_is_iowa_state = yes
-                    USA_is_missouri_state = yes
-                }
-            }
-        }
-        ai_will_do = {
-            base = 1000
-        }
-        modifier = {
-        }
-        complete_effect = {
-            set_temp_variable = {
-                var = USC_rage_var_temp
-                value = -0.05
-            }
-            USC_add_rage = yes
-            hidden_effect = {
-                set_country_flag = {
-                    flag = USA_recruiting_militia_flag
-                    days = 14
-                    value = 1
-                }
-            }
-        }
-        remove_effect = {
-            random_controlled_state = {
-                limit = {
-                    USA_is_minnesota_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_iowa_state = yes
-                }
-                custom_effect_tooltip = APA_permit_international_brigades_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_missouri_state = yes
-                }
-                custom_effect_tooltip = USC_3_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-        }
-    }
-    USC_activate_the_third_line_of_defense_decision = {
-        icon = generic_recore
-        cost = 15
-        days_remove = 14
-        priority = 1
-        fire_only_once = yes
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        available = {
-            NOT = {
-                has_country_flag = USA_recruiting_militia_flag
-                surrender_progress < 0.25
-            }
-            set_temp_variable = {
-                var = USC_rage_trigger_temp
-                value = 0.5
-            }
-            USC_has_rage_greater_than_or_equals = yes
-            any_controlled_state = {
-                OR = {
-                    USA_is_dakota_state = yes
-                    USA_is_kansas_state = yes
-                    USA_is_nebraska_state = yes
-                    USA_is_oklahoma_state = yes
-                }
-            }
-        }
-        ai_will_do = {
-            base = 1000
-        }
-        modifier = {
-        }
-        complete_effect = {
-            set_temp_variable = {
-                var = USC_rage_var_temp
-                value = -0.05
-            }
-            USC_add_rage = yes
-            hidden_effect = {
-                set_country_flag = {
-                    flag = USA_recruiting_militia_flag
-                    days = 14
-                    value = 1
-                }
-            }
-        }
-        remove_effect = {
-            random_controlled_state = {
-                limit = {
-                    USA_is_dakota_state = yes
-                }
-                custom_effect_tooltip = APA_permit_international_brigades_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_nebraska_state = yes
-                }
-                custom_effect_tooltip = APA_permit_international_brigades_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_kansas_state = yes
-                }
-                custom_effect_tooltip = APA_permit_international_brigades_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-            random_controlled_state = {
-                limit = {
-                    USA_is_oklahoma_state = yes
-                }
-                custom_effect_tooltip = APA_permit_international_brigades_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-        }
-    }
-    USC_raise_the_minutemen_decision = {
-        icon = USC_raise_the_minutemen
-        cost = 15
-        days_remove = 14
-        priority = 1
-        fire_only_once = yes
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        available = {
-            NOT = {
-                has_country_flag = USA_recruiting_militia_flag
-                surrender_progress < 0.4
-            }
-            set_temp_variable = {
-                var = USC_rage_trigger_temp
-                value = 0.5
-            }
-            USC_has_rage_greater_than_or_equals = yes
-        }
-        ai_will_do = {
-            base = 1000
-        }
-        modifier = {
-        }
-        complete_effect = {
-            set_temp_variable = {
-                var = USC_rage_var_temp
-                value = -0.05
-            }
-            USC_add_rage = yes
-            hidden_effect = {
-                set_country_flag = {
-                    flag = USA_recruiting_militia_flag
-                    days = 14
-                    value = 1
-                }
-            }
-        }
-        remove_effect = {
-            random_controlled_state = {
-                limit = {
-                    is_capital = yes
-                }
-                custom_effect_tooltip = USC_6_volunteer_militias_tooltip
-                hidden_effect = {
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                    create_unit = {
-                        division = "division_template = \"Volunteer Militia\" start_experience_factor = 0.2"
-                        owner = ROOT
-                    }
-                }
-            }
-        }
-    }
-    USC_aid_country_side_resistance_decision = {
-        icon = generic_recore
-        days_remove = 14
-        priority = 1
-        fire_only_once = yes
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        custom_cost_trigger = {
-            has_equipment = {
-                infantry_equipment > 999
-            }
-        }
-        custom_cost_text = decision_cost_ie_1000
-        available = {
-            has_equipment = {
-                infantry_equipment > 999
-            }
-        }
-        ai_will_do = {
-            base = 1000
-        }
-        modifier = {
-        }
-        complete_effect = {
-            hidden_effect = {
-                add_equipment_to_stockpile = {
-                    type = infantry_equipment
-                    amount = -1000
-                }
-            }
-        }
-        remove_effect = {
-            896 = {
-                add_resistance = 10
-            }
-        }
-    }
-    USC_intervene_in_the_rockies_decision = {
-        icon = generic_prepare_civil_war
-        fire_only_once = yes
-        days_remove = 14
-        war_with_on_remove = DUG
-        war_with_on_remove = LDS
-        war_with_on_remove = MOS
-        war_with_on_remove = VAG
-        war_with_on_remove = FOL
-        ai_will_do = {
-            base = 1000
-            modifier = {
-                factor = 0
-                OR = {
-                    is_faction_leader = no
-                    any_other_country = {
-                        is_in_faction_with = ROOT
-                        is_ai = no
-                    }
-                }
-            }
-        }
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        available = {
-            NOT = {
-                has_country_flag = war_justification_flag
-            }
-        }
-        complete_effect = {
-            set_country_flag = {
-                flag = war_justification_flag
-                days = 14
-                value = 1
-            }
-        }
-        remove_effect = {
-            BNF = {
-                add_PREV_to_coalition = yes
-            }
-        }
-    }
-    USC_invite_faction_to_coalition_decision = {
-        icon = generic_shaking_hands
-        name = APA_invite_faction_to_coalition
-        target_array = USA.faction_tag_array
-        ai_will_do = {
-            base = 1000
-        }
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
-        }
-        target_root_trigger = {
-            has_completed_focus = USC_work_with_the_state_governments
-        }
-        target_trigger = {
-            FROM = {
-                is_in_faction = no
-                is_subject = no
-                NOT = {
-                    has_government = totalitarian_socialist
-                    has_government = authoritarian_democrat
-                    has_government = libertarian_socialist
-                    has_government = fascist
-                    has_government = national_socialist
-                    has_war_with = ROOT
-                    tag = BNF
-                    tag = DUG
-                    tag = LDS
-                    tag = FOL
-                    tag = VAG
-                    tag = MOS
-                    tag = RRR
-                    tag = LWK
-                }
-                OR = {
-                    USA_is_militia_tag = yes
-                    USA_is_state_tag = yes
-                }
-                OR = {
-                    has_government = conservative
-                    has_government = authoritarian_democrat
-                    has_government = market_liberal
-                    tag = LOU
-                    if = {
-                        limit = {
-                            NOT = {
-                                country_exists = USB
-                            }
-                        }
-                        has_government = social_liberal
-                    }
-                }
-            }
-        }
-        available = {
-            any_controlled_state = {
-                any_neighbor_state = {
-                    is_controlled_by = FROM
-                }
-            }
-        }
-        complete_effect = {
-            add_FROM_to_coalition = yes
-        }
-    }
-    USC_attack_FROM_decision = {
-        icon = generic_prepare_civil_war
-        war_with_target_on_remove = yes
-        fire_only_once = no
-        days_remove = 14
-        target_array = USA.faction_tag_array
-        custom_cost_text = 5cp_cost
-        custom_cost_trigger = {
-            NOT = {
-                command_power < 5
-            }
-        }
-        ai_will_do = {
-            base = 1000
-            modifier = {
-                factor = 0
-                OR = {
-                    is_faction_leader = no
-                    any_other_country = {
-                        is_in_faction_with = ROOT
-                        is_ai = no
-                    }
-                    strength_ratio = {
-                        tag = FROM
-                        ratio < 0.3
-                    }
-                }
-            }
-        }
-        allowed = {
-            original_tag = USN
-        }
-        visible = {
-			always = no
 		}
-        target_root_trigger = {
-            has_completed_focus = USC_drain_the_swamp
-        }
-        target_trigger = {
-            FROM = {
-                NOT = {
-                    is_in_faction_with = ROOT
-                    has_war_with = ROOT
-                    tag = BNF
-                }
-                if = {
-                    limit = {
-                        BNF = {
-                            exists = yes
-                        }
-                    }
-                    NOT = {
-                        tag = DUG
-                        tag = LDS
-                        tag = FOL
-                        tag = VAG
-                        tag = MOS
-                    }
-                }
-                OR = {
-                    any_controlled_state = {
-                        any_neighbor_state = {
-                            is_controlled_by = ROOT
-                        }
-                    }
-                    any_other_country = {
-                        OR = {
-                            is_in_faction_with = ROOT
-                            is_puppet_of = ROOT
-                        }
-                        any_controlled_state = {
-                            any_neighbor_state = {
-                                is_controlled_by = PREV.PREV.PREV
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        available = {
-            NOT = {
-                has_country_flag = war_justification_flag
-            }
-        }
-        complete_effect = {
-            set_country_flag = {
-                flag = war_justification_flag
-                days = 14
-                value = 1
-            }
-            hidden_effect = {
-                add_command_power = -5
-            }
-        }
-        remove_effect = {
-            war_with_FROM = yes
-        }
-    }
+		remove_effect = {
+		}
+	}
 }
+
 ########
 decisions_BGD_usn = {
-    BGD_change_usn = {
+	BGD_change_usn = {
 		icon = GFX_Banned_Moderates
 		name = BGD_decisions_BGD_usn
 		fire_only_once = no
@@ -813,7 +60,7 @@ decisions_BGD_usn = {
 		}
 		complete_effect = {
 		}
-		}
+	}
 	BGD_reback_state_to_usn = {
 		icon = GFX_Banned_Moderates
 		name = BGD_reback_state_to_usn
@@ -923,12 +170,15 @@ decisions_BGD_usn = {
 			}
 			USN = {
 				every_owned_state = {
-					limit = { controller = { tag = USN } }
+					limit = {
+						controller = {
+							tag = USN
+						}
+					}
 					add_core_of = USN
 				}
 			}
 		}
-		
 		complete_effect = {
 			every_state = {
 				limit = {
@@ -953,18 +203,20 @@ decisions_BGD_usn = {
 			}
 			USN = {
 				every_owned_state = {
-					limit = { controller = { tag = USN } }
+					limit = {
+						controller = {
+							tag = USN
+						}
+					}
 					add_core_of = USN
 				}
 			}
 		}
-
 		days_mission_timeout = 10
 		#complete_effect = {
 		#	country_event = usnavy.5
 		#}
 	}
-
 	BGD_WAR_APA = {
 		icon = GFX_Banned_Moderates
 		name = BGD_WAR_APA
@@ -990,25 +242,20 @@ decisions_BGD_usn = {
 				}
 			}
 		}
-		
-
 		is_good = no
 		fire_only_once = no
-		
-
 		timeout_effect = {
 			activate_mission = BGD_WAR_APA
 		}
-		
 		complete_effect = {
 			BGD = {
-				country_event = { id = usnavy.1 }
+				country_event = {
+					id = usnavy.1
+				}
 			}
 		}
-
 		days_mission_timeout = 100
 	}
-	
 	BGD_WAR_ATW = {
 		icon = GFX_Banned_Moderates
 		name = BGD_WAR_ATW
@@ -1034,25 +281,20 @@ decisions_BGD_usn = {
 				}
 			}
 		}
-		
-
 		is_good = no
 		fire_only_once = no
-		
-
 		timeout_effect = {
 			activate_mission = BGD_WAR_ATW
 		}
-
 		complete_effect = {
 			BGD = {
-				country_event = { id = usnavy.6 }
+				country_event = {
+					id = usnavy.6
+				}
 			}
 		}
-
 		days_mission_timeout = 100
 	}
-
 	BGD_WAR_USC = {
 		icon = GFX_Banned_Moderates
 		name = BGD_WAR_USC
@@ -1078,25 +320,20 @@ decisions_BGD_usn = {
 				}
 			}
 		}
-		
-
 		is_good = no
 		fire_only_once = no
-		
-
 		timeout_effect = {
 			activate_mission = BGD_WAR_USC
 		}
-
 		complete_effect = {
 			BGD = {
-				country_event = { id = usnavy.8 }
+				country_event = {
+					id = usnavy.8
+				}
 			}
 		}
-
 		days_mission_timeout = 100
 	}
-
 	BGD_WAR_USB = {
 		icon = GFX_Banned_Moderates
 		name = BGD_WAR_USB
@@ -1122,25 +359,20 @@ decisions_BGD_usn = {
 				}
 			}
 		}
-		
-
 		is_good = no
 		fire_only_once = no
-		
-
 		timeout_effect = {
 			activate_mission = BGD_WAR_USB
 		}
-
 		complete_effect = {
 			BGD = {
-				country_event = { id = usnavy.9 }
+				country_event = {
+					id = usnavy.9
+				}
 			}
 		}
-
 		days_mission_timeout = 100
 	}
-
 	BGD_WAR_PTF = {
 		icon = GFX_Banned_Moderates
 		name = BGD_WAR_PTF
@@ -1166,33 +398,32 @@ decisions_BGD_usn = {
 				}
 			}
 		}
-		
-
 		is_good = no
 		fire_only_once = no
-		
-
-		timeout_effect = {	
+		timeout_effect = {
 			activate_mission = BGD_WAR_PTF
 		}
-
 		complete_effect = {
 			BGD = {
-				country_event = { id = usnavy.10 }
+				country_event = {
+					id = usnavy.10
+				}
 			}
 		}
-
 		days_mission_timeout = 100
 	}
 }
+
 USN_Makarapa = {
-    USN_WAST_A = {
+	USN_WAST_A = {
 		priority = 1
 		icon = GFX_KKP_logo
 		cost = 50
 		days_remove = 30
 		fire_only_once = no
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_1
 			NOT = {
@@ -1201,7 +432,7 @@ USN_Makarapa = {
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_1
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1220,13 +451,11 @@ USN_Makarapa = {
 				value = 0.05
 			}
 			USN_add_influence_A = yes
-			
 			set_temp_variable = {
 				var = USN_influence_B_var_temp
 				value = -0.05
 			}
 			USN_add_influence_B = yes
-			
 			set_temp_variable = {
 				var = USN_influence_C_var_temp
 				value = -0.05
@@ -1251,8 +480,10 @@ USN_Makarapa = {
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_1
-        }
-		ai_will_do = {factor = 1}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = {
@@ -1268,13 +499,11 @@ USN_Makarapa = {
 				value = 0.05
 			}
 			USN_add_influence_B = yes
-			
 			set_temp_variable = {
 				var = USN_influence_C_var_temp
 				value = -0.05
 			}
 			USN_add_influence_C = yes
-
 			set_temp_variable = {
 				var = USN_influence_A_var_temp
 				value = -0.05
@@ -1298,9 +527,11 @@ USN_Makarapa = {
 			}
 		}
 		visible = {
-			has_completed_focus = USN_junshi_yantao_1			
-        }
-		ai_will_do = {factor = 1}
+			has_completed_focus = USN_junshi_yantao_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = {
@@ -1316,13 +547,11 @@ USN_Makarapa = {
 				value = 0.05
 			}
 			USN_add_influence_C = yes
-
 			set_temp_variable = {
 				var = USN_influence_A_var_temp
 				value = -0.05
 			}
 			USN_add_influence_A = yes
-
 			set_temp_variable = {
 				var = USN_influence_B_var_temp
 				value = -0.05
@@ -1336,13 +565,15 @@ USN_Makarapa = {
 		cost = 100
 		days_remove = 45
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_2
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1361,16 +592,21 @@ USN_Makarapa = {
 				value = 0.1
 			}
 			USN_add_influence_A = yes
-
-		effect_tooltip = {
-			swap_ideas = {
-            remove_idea = USN_lianbang_wuzhuang_0
-			add_idea = USN_lianbang_wuzhuang_2
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_lianbang_wuzhuang_0
+					add_idea = USN_lianbang_wuzhuang_2
+				}
 			}
-		}
-		add_to_variable = { USN_lianbang_wuzhuang_navy_org_factor = 0.20 }
-		add_to_variable = { USN_lianbang_wuzhuang_naval_speed_factor = 0.20 }
-		add_to_variable = { USN_lianbang_wuzhuang_navy_max_range_factor = 0.20 }
+			add_to_variable = {
+				USN_lianbang_wuzhuang_navy_org_factor = 0.2
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_naval_speed_factor = 0.2
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_navy_max_range_factor = 0.2
+			}
 		}
 	}
 	USN_A_kuojian = {
@@ -1379,13 +615,15 @@ USN_Makarapa = {
 		cost = 100
 		days_remove = 45
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_2
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1404,16 +642,21 @@ USN_Makarapa = {
 				value = 0.1
 			}
 			USN_add_influence_A = yes
-			
-		effect_tooltip = {
-			swap_ideas = {
-            remove_idea = USN_lianbang_wuzhuang_0
-			add_idea = USN_lianbang_wuzhuang_3
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_lianbang_wuzhuang_0
+					add_idea = USN_lianbang_wuzhuang_3
+				}
 			}
-		}
-		add_to_variable = { USN_lianbang_wuzhuang_sortie_efficiency = 0.20 }
-		add_to_variable = { USN_lianbang_wuzhuang_supply_consumption_factor = -0.20 }
-		add_to_variable = { USN_lianbang_wuzhuang_supply_node_range = 0.20 }
+			add_to_variable = {
+				USN_lianbang_wuzhuang_sortie_efficiency = 0.2
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_supply_consumption_factor = -0.2
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_supply_node_range = 0.2
+			}
 		}
 	}
 	USN_B_anfang = {
@@ -1422,13 +665,15 @@ USN_Makarapa = {
 		cost = 75
 		days_remove = 60
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_2
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1447,16 +692,21 @@ USN_Makarapa = {
 				value = 0.1
 			}
 			USN_add_influence_B = yes
-			
-		effect_tooltip = {
-			swap_ideas = {
-            remove_idea = USN_lianbang_wuzhuang_0
-			add_idea = USN_lianbang_wuzhuang_4
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_lianbang_wuzhuang_0
+					add_idea = USN_lianbang_wuzhuang_4
+				}
 			}
-		}
-		add_to_variable = { USN_lianbang_wuzhuang_oordination_bonus = 0.15 }
-		add_to_variable = { USN_lianbang_wuzhuang_initiative_factor = 0.10 }
-		add_to_variable = { USN_lianbang_wuzhuang_land_reinforce_rate = 0.09 }
+			add_to_variable = {
+				USN_lianbang_wuzhuang_oordination_bonus = 0.15
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_initiative_factor = 0.1
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_land_reinforce_rate = 0.09
+			}
 		}
 	}
 	USN_B_jiagu = {
@@ -1465,13 +715,15 @@ USN_Makarapa = {
 		cost = 75
 		days_remove = 60
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_2
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1490,16 +742,21 @@ USN_Makarapa = {
 				value = 0.1
 			}
 			USN_add_influence_B = yes
-			
-		effect_tooltip = {
-			swap_ideas = {
-            remove_idea = USN_lianbang_wuzhuang_0
-			add_idea = USN_lianbang_wuzhuang_5
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_lianbang_wuzhuang_0
+					add_idea = USN_lianbang_wuzhuang_5
+				}
 			}
-		}
-		add_to_variable = { USN_lianbang_wuzhuang_air_attack_factor = 0.15 }
-		add_to_variable = { USN_lianbang_wuzhuang_air_mission_efficiency = 0.15 }
-		add_to_variable = { USN_lianbang_wuzhuang_air_escort_efficiency = 0.15 }
+			add_to_variable = {
+				USN_lianbang_wuzhuang_air_attack_factor = 0.15
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_air_mission_efficiency = 0.15
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_air_escort_efficiency = 0.15
+			}
 		}
 	}
 	USN_C_xinren = {
@@ -1508,13 +765,15 @@ USN_Makarapa = {
 		cost = 50
 		days_remove = 75
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_2
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1533,16 +792,21 @@ USN_Makarapa = {
 				value = 0.1
 			}
 			USN_add_influence_C = yes
-			
-		effect_tooltip = {
-			swap_ideas = {
-            remove_idea = USN_lianbang_wuzhuang_0
-			add_idea = USN_lianbang_wuzhuang_6
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_lianbang_wuzhuang_0
+					add_idea = USN_lianbang_wuzhuang_6
+				}
 			}
-		}
-		add_to_variable = { USN_lianbang_wuzhuang_industrial_capacity_dockyard = 0.15 }
-		add_to_variable = { USN_lianbang_wuzhuang_industrial_capacity_factory = 0.15 }
-		add_to_variable = { USN_lianbang_wuzhuang_recon_factor = 0.2 }
+			add_to_variable = {
+				USN_lianbang_wuzhuang_industrial_capacity_dockyard = 0.15
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_industrial_capacity_factory = 0.15
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_recon_factor = 0.2
+			}
 		}
 	}
 	USN_C_jianshe = {
@@ -1551,13 +815,15 @@ USN_Makarapa = {
 		cost = 50
 		days_remove = 75
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_junshi_yantao_2
 		}
 		visible = {
 			has_completed_focus = USN_junshi_yantao_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1576,16 +842,21 @@ USN_Makarapa = {
 				value = 0.1
 			}
 			USN_add_influence_C = yes
-			
-		effect_tooltip = {
-			swap_ideas = {
-            remove_idea = USN_lianbang_wuzhuang_0
-			add_idea = USN_lianbang_wuzhuang_7
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_lianbang_wuzhuang_0
+					add_idea = USN_lianbang_wuzhuang_7
+				}
 			}
-		}
-		add_to_variable = { USN_lianbang_wuzhuang_air_agility_factor = 0.15 }
-		add_to_variable = { USN_lianbang_wuzhuang_military_development_monthly = 0.02 }
-		add_to_variable = { USN_lianbang_wuzhuang_air_superiority_bonus_in_combat = 0.20 }
+			add_to_variable = {
+				USN_lianbang_wuzhuang_air_agility_factor = 0.15
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_military_development_monthly = 0.02
+			}
+			add_to_variable = {
+				USN_lianbang_wuzhuang_air_superiority_bonus_in_combat = 0.2
+			}
 		}
 	}
 }
@@ -1682,7 +953,7 @@ USN_quanli_pingheng = {
 		}
 		modifier = {
 			political_power_gain = 0.15
-			stability_factor = -0.10
+			stability_factor = -0.1
 			consumer_goods_factor = 0.05
 		}
 		complete_effect = {
@@ -1834,10 +1105,10 @@ USN_quanli_pingheng = {
 			}
 		}
 		modifier = {
-			political_power_gain = -0.10
+			political_power_gain = -0.1
 			society_development_monthly = 0.05
 			poverty_development_monthly = 0.05
-			stability_factor = -0.10
+			stability_factor = -0.1
 		}
 		complete_effect = {
 		}
@@ -1867,8 +1138,8 @@ USN_quanli_pingheng = {
 		}
 		modifier = {
 			political_power_gain = 0.15
-			stability_factor = 0.20
-			consumer_goods_factor = -0.10
+			stability_factor = 0.2
+			consumer_goods_factor = -0.1
 			political_power_cost = -0.15
 		}
 		complete_effect = {
@@ -1907,8 +1178,8 @@ USN_quanli_pingheng = {
 			factor = 0
 		}
 		modifier = {
-			consumer_goods_factor = -0.10
-			political_power_cost = -0.10
+			consumer_goods_factor = -0.1
+			political_power_cost = -0.1
 		}
 		complete_effect = {
 			set_temp_variable = {
@@ -1921,19 +1192,19 @@ USN_quanli_pingheng = {
 				id = USN_power_balance
 				value = 0.05
 			}
-				set_temp_variable = {
+			set_temp_variable = {
 				var = USN_influence_C_var_temp
 				value = -0.05
 			}
 			USN_add_influence_C = yes
 			set_temp_variable = {
 				var = USN_influence_B_var_temp
-				value = -0.10
+				value = -0.1
 			}
 			USN_add_influence_B = yes
 			set_temp_variable = {
 				var = USN_influence_A_var_temp
-				value = 0.10
+				value = 0.1
 			}
 			USN_add_influence_A = yes
 		}
@@ -1964,8 +1235,8 @@ USN_quanli_pingheng = {
 			factor = 0
 		}
 		modifier = {
-			consumer_goods_factor = -0.10
-			political_power_cost = -0.10
+			consumer_goods_factor = -0.1
+			political_power_cost = -0.1
 		}
 		complete_effect = {
 			set_temp_variable = {
@@ -1985,12 +1256,12 @@ USN_quanli_pingheng = {
 			USN_add_influence_C = yes
 			set_temp_variable = {
 				var = USN_influence_B_var_temp
-				value = -0.10
+				value = -0.1
 			}
 			USN_add_influence_B = yes
 			set_temp_variable = {
 				var = USN_influence_A_var_temp
-				value = 0.10
+				value = 0.1
 			}
 			USN_add_influence_A = yes
 		}
@@ -2021,8 +1292,8 @@ USN_quanli_pingheng = {
 			factor = 0
 		}
 		modifier = {
-			consumer_goods_factor = -0.10
-			political_power_cost = -0.10
+			consumer_goods_factor = -0.1
+			political_power_cost = -0.1
 		}
 		complete_effect = {
 			set_temp_variable = {
@@ -2042,12 +1313,12 @@ USN_quanli_pingheng = {
 			USN_add_influence_C = yes
 			set_temp_variable = {
 				var = USN_influence_B_var_temp
-				value = -0.10
+				value = -0.1
 			}
 			USN_add_influence_B = yes
 			set_temp_variable = {
 				var = USN_influence_A_var_temp
-				value = -0.10
+				value = -0.1
 			}
 			USN_add_influence_A = yes
 		}
@@ -2063,11 +1334,12 @@ USN_quanli_pingheng = {
 			}
 		}
 		activation = {
-
 		}
 		available = {
 			OR = {
-				 USN = { is_ai = yes }
+				USN = {
+					is_ai = yes
+				}
 				has_country_flag = USN_minzhen_wajie
 			}
 		}
@@ -2094,7 +1366,6 @@ USN_quanli_pingheng = {
 			tag = USN
 		}
 		activation = {
-
 		}
 		available = {
 			always = no
@@ -2113,6 +1384,7 @@ USN_quanli_pingheng = {
 		}
 	}
 }
+
 #
 USN_fire_start = {
 	USN_fire_mission = {
@@ -2128,9 +1400,9 @@ USN_fire_start = {
 		}
 		visible = {
 			NOT = {
-			has_country_flag = USN_fire_end
+				has_country_flag = USN_fire_end
 			}
-        }
+		}
 		#is_good = no
 		#selectable_mission = no
 		days_mission_timeout = 60
@@ -2145,22 +1417,27 @@ USN_fire_start = {
 		cost = 0
 		days_remove = 3
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_completed_focus = USN_zhanwen_jiaogen
 		}
 		visible = {
 			has_completed_focus = USN_zhanwen_jiaogen
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
-			country_event = {id = usnavy.39 days = 3}
+			country_event = {
+				id = usnavy.39
+				days = 3
+			}
 		}
 		remove_effect = {
-				set_country_flag = USN_state_emergency
-			}
+			set_country_flag = USN_state_emergency
+		}
 	}
 	USN_rebuild_1 = {
 		priority = 1
@@ -2168,24 +1445,27 @@ USN_fire_start = {
 		cost = 50
 		days_remove = 10
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_country_flag = USN_state_emergency
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
 		}
 		remove_effect = {
-				add_days_mission_timeout = {
+			add_days_mission_timeout = {
 				mission = USN_fire_mission
-				days = 15}
-				set_country_flag = USN_rebuild_1
+				days = 15
 			}
+			set_country_flag = USN_rebuild_1
+		}
 	}
 	USN_rebuild_2 = {
 		priority = 1
@@ -2193,24 +1473,27 @@ USN_fire_start = {
 		cost = 50
 		days_remove = 10
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_country_flag = USN_state_emergency
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
 		}
 		remove_effect = {
-				add_days_mission_timeout = {
+			add_days_mission_timeout = {
 				mission = USN_fire_mission
-				days = 15}
-				set_country_flag = USN_rebuild_2
+				days = 15
 			}
+			set_country_flag = USN_rebuild_2
+		}
 	}
 	USN_Apply_1 = {
 		priority = 1
@@ -2218,23 +1501,26 @@ USN_fire_start = {
 		cost = 50
 		days_remove = 30
 		fire_only_once = no
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_country_flag = USN_state_emergency
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
 		}
 		remove_effect = {
-				add_days_mission_timeout = {
+			add_days_mission_timeout = {
 				mission = USN_fire_mission
-				days = 30}
+				days = 30
 			}
+		}
 	}
 	USN_Apply_2 = {
 		priority = 1
@@ -2242,23 +1528,26 @@ USN_fire_start = {
 		cost = 50
 		days_remove = 20
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_country_flag = USN_state_emergency
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
 		}
 		remove_effect = {
-				add_days_mission_timeout = {
+			add_days_mission_timeout = {
 				mission = USN_fire_mission
-				days = 15}
+				days = 15
 			}
+		}
 	}
 	USN_populace_1 = {
 		priority = 1
@@ -2266,23 +1555,26 @@ USN_fire_start = {
 		cost = 30
 		days_remove = 5
 		fire_only_once = yes
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_country_flag = USN_state_emergency
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
 		}
 		remove_effect = {
-				add_days_mission_timeout = {
+			add_days_mission_timeout = {
 				mission = USN_fire_mission
-				days = 5}
+				days = 5
 			}
+		}
 	}
 	USN_extinguishing_fire = {
 		priority = 1
@@ -2290,7 +1582,9 @@ USN_fire_start = {
 		cost = 30
 		days_remove = 10
 		fire_only_once = no
-		allowed = {tag = USN}
+		allowed = {
+			tag = USN
+		}
 		available = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
@@ -2298,17 +1592,17 @@ USN_fire_start = {
 		visible = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
-        }
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		complete_effect = {
 		}
 		remove_effect = {
-				add_days_mission_timeout = {
+			add_days_mission_timeout = {
 				mission = USN_fire_mission
-				days = 15}
+				days = 15
 			}
 		}
 	}
-
+}

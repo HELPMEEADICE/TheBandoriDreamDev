@@ -12,6 +12,7 @@ news_event = {
 		name = news.1212.a
 	}
 }
+
 news_event = {
 	id = news.1213
 	title = news.1213.t
@@ -24,6 +25,7 @@ news_event = {
 		name = news.1213.a
 	}
 }
+
 news_event = {
 	#日本内战
 	id = news.1214
@@ -37,11 +39,12 @@ news_event = {
 		name = news.1214.a
 		set_country_flag = BGD_neizhan
 		hidden_effect = {
-		scoped_play_song = "one_minute_of_silence"
-		scoped_sound_effect = TFR_se_japan_civil_war
+			scoped_play_song = "one_minute_of_silence"
+			scoped_sound_effect = TFR_se_japan_civil_war
 		}
 	}
 }
+
 news_event = {
 	#闪耀党统一日本
 	id = news.1215
@@ -55,10 +58,11 @@ news_event = {
 		name = news.1215.a
 		set_country_flag = BGD_tongyi_guojia
 		hidden_effect = {
-		scoped_play_song = "Poppin'Party - STAR BEAT!～ホシノコドウ～"
+			scoped_play_song = "Poppin'Party - STAR BEAT!～ホシノコドウ～"
 		}
 	}
 }
+
 news_event = {
 	#东亚国崛起
 	id = news.1984
@@ -86,6 +90,7 @@ news_event = {
 		}
 	}
 }
+
 news_event = {
 	#日本核武化
 	id = news.1216
@@ -99,6 +104,7 @@ news_event = {
 		name = news.1216.a
 	}
 }
+
 news_event = {
 	#gaw获胜
 	id = news.1217
@@ -118,10 +124,13 @@ news_event = {
 			#scoped_play_song = "CiRCLE THANKS MUSiC"
 			scoped_play_song = "户山香澄-GAW胜利演讲"
 			load_focus_tree = BGD_united_asia
-			country_event = {id = unasia.28}
+			country_event = {
+				id = unasia.28
+			}
 		}
 	}
 }
+
 news_event = {
 	#gaw爆发
 	id = news.1218
@@ -136,30 +145,31 @@ news_event = {
 		set_country_flag = BGD_gaw_begin
 		set_country_flag = BGD_gaw_begin_1
 		hidden_effect = {
-		every_country = {
-			limit = {
-				is_ally_with = BGD
-				NOT = {
-					tag = BGD
+			every_country = {
+				limit = {
+					is_ally_with = BGD
+					NOT = {
+						tag = BGD
+					}
+				}
+				add_timed_idea = {
+					idea = BGD_jianshou_zhanxian
+					days = 500
 				}
 			}
-			add_timed_idea = {
-				idea = BGD_jianshou_zhanxian
-				days = 500
+			PRC = {
+				add_ideas = EAS_dayazhou_zhanzheng
 			}
-		}
-		PRC = {
-			add_ideas = EAS_dayazhou_zhanzheng
-		}
-		BGD = {
-			country_event = {
-				id = bgd.65 
-				days = 3
+			BGD = {
+				country_event = {
+					id = bgd.65
+					days = 3
+				}
 			}
-		}
 		}
 	}
 }
+
 news_event = {
 	#东亚国成立上集联盟
 	id = news.1219
@@ -173,6 +183,7 @@ news_event = {
 		name = news.1219.a
 	}
 }
+
 news_event = {
 	#亚太自由国家组织成立
 	id = news.1220
@@ -186,6 +197,7 @@ news_event = {
 		name = news.1220.a
 	}
 }
+
 news_event = {
 	#东亚国入侵越老柬三国
 	id = news.1221
@@ -199,6 +211,7 @@ news_event = {
 		name = news.1221.a
 	}
 }
+
 news_event = {
 	#东亚国入侵蒙古国
 	id = news.1222
@@ -212,6 +225,7 @@ news_event = {
 		name = news.1222.a
 	}
 }
+
 news_event = {
 	#东亚国入侵缅甸
 	id = news.1223
@@ -225,6 +239,7 @@ news_event = {
 		name = news.1223.a
 	}
 }
+
 news_event = {
 	#揭露超自然力量
 	id = news.1224
@@ -238,19 +253,18 @@ news_event = {
 		name = news.1224.a
 		every_country = {
 			limit = {
-			OR = {
-				tag = PRC
-				tag = BGD
-			}
+				OR = {
+					tag = PRC
+					tag = BGD
+				}
 			}
 			add_timed_idea = {
-				idea = BGD_czrll_baolu 
+				idea = BGD_czrll_baolu
 				days = 200
 			}
 		}
 	}
 }
-
 
 news_event = {
 	#东京官邸夜未眠？
@@ -317,19 +331,19 @@ news_event = {
 	major = yes
 	option = {
 		if = {
-				limit = {
-					is_ai = no
-				}
+			limit = {
+				is_ai = no
+			}
 			name = bdrnews.1227.a
 			hidden_effect = {
-			if = {
-				limit = {
-					is_ai = no
+				if = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = USN_fire_rise
+					scoped_play_song = "老鹰之歌"
 				}
-			set_country_flag = USN_fire_rise
-			scoped_play_song = "老鹰之歌"
 			}
-		}
 			USN = {
 				add_ideas = USN_big_fire_idea4
 				activate_mission = USN_fire_mission

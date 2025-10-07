@@ -1,5 +1,4 @@
 add_namespace = usnavy
-
 country_event = {
 	id = usnavy.0
 	title = usnavy.0.t
@@ -11,15 +10,16 @@ country_event = {
 		name = usnavy.0.o
 		BGD = {
 			add_to_faction = USN
-			puppet = USN               # USN成为BGD的傀儡
+			puppet = USN			# USN成为BGD的傀儡
 		}
-		USN = {    				# USN全部舰队、将领转移给bgd
+		USN = {
+			# USN全部舰队、将领转移给bgd
 			set_country_flag = APFNO_member
 			set_country_flag = developed_country
 			transfer_navy = {
-			  target = BGD
-		    }
-			every_unit_leader = {			
+				target = BGD
+			}
+			every_unit_leader = {
 				set_nationality = BGD
 			}
 			set_politics = {
@@ -53,10 +53,11 @@ country_event = {
 			remove_ideas = USN_naval_dictatorship_idea
 			add_ideas = USN_buxinren_1
 			#remove_ideas = USA_battle_for_america_idea
-			load_focus_tree = TFR_tree_USN #加载USN国策树
+			load_focus_tree = TFR_tree_USN			#加载USN国策树
 		}
 	}
 }
+
 country_event = {
 	#APLA投降
 	id = usnavy.1
@@ -66,8 +67,8 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	#mean_time_to_happen = {
-    #    days = 0
-    #}
+	#    days = 0
+	#}
 	#trigger = {
 	#	OR = {
 	#		any_enemy_country = {
@@ -80,45 +81,56 @@ country_event = {
 	#	tag = BGD
 	#}
 	immediate = {
-			hidden_effect = {
-				APA = {
-					white_peace = BGD
-					white_peace = USN
+		hidden_effect = {
+			APA = {
+				white_peace = BGD
+				white_peace = USN
+			}
+			USN = {
+				annex_country = {
+					target = APA
 				}
-				USN = {
-					annex_country = { target = APA }
-					annex_country = { target = NNN }
-				}
-				#if = {
-				#	limit = {
-				#		NNN = { is_in_faction_with = APA }
-				#	}
-				#	USN = {
-				#		annex_country = {
-				#			target = NNN
-				#		}
-				#	}
-				#}
-				#BGD = { country_event = { id = usnavy.3 } }
-				news_event =  {
-					id = bdrnews.1227
-					hours = 6
+				annex_country = {
+					target = NNN
 				}
 			}
+			#if = {
+			#	limit = {
+			#		NNN = { is_in_faction_with = APA }
+			#	}
+			#	USN = {
+			#		annex_country = {
+			#			target = NNN
+			#		}
+			#	}
+			#}
+			#BGD = { country_event = { id = usnavy.3 } }
+			news_event = {
+				id = bdrnews.1227
+				hours = 6
+			}
 		}
+	}
 	option = {
 		name = usnavy.1.a
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
 			USN = {
-				set_capital = { state = 930 }
+				set_capital = {
+					state = 930
+				}
 			}
 		}
 	}
 }
+
 country_event = {
 	#宣战APLA
 	id = usnavy.2
@@ -128,15 +140,15 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-				hidden_effect = {
-					USN = {
-						declare_war_on = {
-						target = APA
-						type = annex_everything
-					}
+		hidden_effect = {
+			USN = {
+				declare_war_on = {
+					target = APA
+					type = annex_everything
 				}
 			}
 		}
+	}
 	option = {
 		name = usnavy.2.a
 		BGD = {
@@ -144,10 +156,14 @@ country_event = {
 				targeted_alliance = USN
 				enemy = APA
 			}
-		}	
-		country_event = { id = usnavy.12 days = 1 }
+		}
+		country_event = {
+			id = usnavy.12
+			days = 1
+		}
 	}
 }
+
 country_event = {
 	#投降
 	id = usnavy.3
@@ -157,15 +173,18 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		}
+	}
 	option = {
 		name = usnavy.3.a
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
-			
 		}
 	}
 }
@@ -179,17 +198,17 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-		}
+	}
 	option = {
 		name = usnavy.4.a
 		BGD = {
-			declare_war_on ={
+			declare_war_on = {
 				type = annex_everything
-                        target = USB
+				target = USB
 			}
-			declare_war_on ={
+			declare_war_on = {
 				type = annex_everything
-                        target = USC
+				target = USC
 			}
 		}
 	}
@@ -216,12 +235,17 @@ country_event = {
 		}
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
 		}
 	}
 }
+
 country_event = {
 	#ATW投降
 	id = usnavy.6
@@ -231,42 +255,49 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-			hidden_effect = {
-				ATW = {
-					white_peace = BGD
-					white_peace = USN
-				}
-				USN = {
-					annex_country = { target = ATW }
-				}
-				#BGD = {
-				#	country_event = { id = usnavy.3 }
-				#}
+		hidden_effect = {
+			ATW = {
+				white_peace = BGD
+				white_peace = USN
 			}
+			USN = {
+				annex_country = {
+					target = ATW
+				}
+			}
+			#BGD = {
+			#	country_event = { id = usnavy.3 }
+			#}
 		}
+	}
 	option = {
 		name = usnavy.6.a
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
 		}
 		BGD = {
 			every_country = {
-                limit = {
-                    has_idea = USA_battle_for_america_idea
-                    exists = yes
-                    NOT = { tag = USN }
-                }
-
-                BGD = {
-                    declare_war_on = {
-                        type = annex_everything
-                        target = PREV
-                    }
-                }
-            }
+				limit = {
+					has_idea = USA_battle_for_america_idea
+					exists = yes
+					NOT = {
+						tag = USN
+					}
+				}
+				BGD = {
+					declare_war_on = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
 		}
 	}
 }
@@ -279,7 +310,6 @@ country_event = {
 	picture = GFX_japan_peacekeeper
 	fire_only_once = yes
 	is_triggered_only = yes
-
 	option = {
 		name = usnavy.7.a
 		BGD = {
@@ -317,7 +347,6 @@ country_event = {
 					shaonv_yvgangtie
 				}
 			}
-
 			#create_field_marshal = {
 			#	name = Nanami
 			#	portrait_path = GFX_portrait_Nanami
@@ -353,70 +382,129 @@ country_event = {
 			hidden_effect = {
 				if = {
 					limit = {
-						NOT = { has_template = "海军陆战队机械化师" }
+						NOT = {
+							has_template = "海军陆战队机械化师"
+						}
 					}
 					division_template = {
 						name = "海军陆战队机械化师"
 						division_names_group = TP_TYPE_01
 						regiments = {
-							mechanized = { x = 0 y = 0 }
-							mechanized = { x = 0 y = 1 }
-							mechanized = { x = 0 y = 2 }
-							mechanized = { x = 0 y = 3 }
-							mechanized = { x = 0 y = 4 }
-			
-							mechanized = { x = 1 y = 0 }
-							mechanized = { x = 1 y = 1 }
-							mechanized = { x = 1 y = 2 }
-							mechanized = { x = 1 y = 3 }
-							mechanized = { x = 1 y = 4 }
-					
-							mechanized = { x = 2 y = 0 }
-							mechanized = { x = 2 y = 1 }
-							mechanized = { x = 2 y = 2 }
-							mechanized = { x = 2 y = 3 }
-							mechanized = { x = 2 y = 4 }
-								
-							mechanized = { x = 3 y = 0 }
-							mechanized = { x = 3 y = 1 }
-							mechanized = { x = 3 y = 2 }
-							mechanized = { x = 3 y = 3 }
-							mechanized = { x = 3 y = 4 }
+							mechanized = {
+								x = 0
+								y = 0
+							}
+							mechanized = {
+								x = 0
+								y = 1
+							}
+							mechanized = {
+								x = 0
+								y = 2
+							}
+							mechanized = {
+								x = 0
+								y = 3
+							}
+							mechanized = {
+								x = 0
+								y = 4
+							}
+							mechanized = {
+								x = 1
+								y = 0
+							}
+							mechanized = {
+								x = 1
+								y = 1
+							}
+							mechanized = {
+								x = 1
+								y = 2
+							}
+							mechanized = {
+								x = 1
+								y = 3
+							}
+							mechanized = {
+								x = 1
+								y = 4
+							}
+							mechanized = {
+								x = 2
+								y = 0
+							}
+							mechanized = {
+								x = 2
+								y = 1
+							}
+							mechanized = {
+								x = 2
+								y = 2
+							}
+							mechanized = {
+								x = 2
+								y = 3
+							}
+							mechanized = {
+								x = 2
+								y = 4
+							}
+							mechanized = {
+								x = 3
+								y = 0
+							}
+							mechanized = {
+								x = 3
+								y = 1
+							}
+							mechanized = {
+								x = 3
+								y = 2
+							}
+							mechanized = {
+								x = 3
+								y = 3
+							}
+							mechanized = {
+								x = 3
+								y = 4
+							}
 						}
 					}
-				}	
+				}
 			}
 			629 = {
-				create_unit = { 
-					division = "name = \"美国海军陆战队第7机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第7机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第8机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第8机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第9机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第9机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第10机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第10机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第11机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第11机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第12机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第12机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第13机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第13机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队第14机械化师\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队第14机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
 			}
@@ -433,48 +521,55 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-			hidden_effect = {
-				USC = {
-					white_peace = BGD
-					white_peace = USN
-					every_unit_leader = {			
-						set_nationality = USN
-					}
+		hidden_effect = {
+			USC = {
+				white_peace = BGD
+				white_peace = USN
+				every_unit_leader = {
+					set_nationality = USN
 				}
-				USN = {
-					annex_country = { target = USC }
+			}
+			USN = {
+				annex_country = {
+					target = USC
 				}
 			}
 		}
+	}
 	option = {
 		name = usnavy.8.a
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
 			PTF = {
-				declare_war_on ={
-				type = annex_everything
-                        target = USN
+				declare_war_on = {
+					type = annex_everything
+					target = USN
+				}
 			}
-		}
 		}
 		BGD = {
 			every_country = {
-                limit = {
-                    has_idea = USA_battle_for_america_idea
-                    exists = yes
-                    NOT = { tag = USN }
-                }
-
-                BGD = {
-                    create_wargoal = {
-                        type = annex_everything
-                        target = PREV
-                    }
-                }
-            }
+				limit = {
+					has_idea = USA_battle_for_america_idea
+					exists = yes
+					NOT = {
+						tag = USN
+					}
+				}
+				BGD = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
 		}
 	}
 }
@@ -488,51 +583,60 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-			hidden_effect = {
-				USB = {
-					white_peace = BGD
-					white_peace = USN
-					every_unit_leader = {			
-						set_nationality = USN
-					}
+		hidden_effect = {
+			USB = {
+				white_peace = BGD
+				white_peace = USN
+				every_unit_leader = {
+					set_nationality = USN
 				}
-				USN = {
-					annex_country = { target = USB }
-					annex_country = { target = NSM }
-				}
-				remove_decision = BGD_WAR_USB
 			}
+			USN = {
+				annex_country = {
+					target = USB
+				}
+				annex_country = {
+					target = NSM
+				}
+			}
+			remove_decision = BGD_WAR_USB
 		}
+	}
 	option = {
 		name = usnavy.9.a
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
 		}
 		PTF = {
-				declare_war_on ={
+			declare_war_on = {
 				type = annex_everything
-                        target = USN
+				target = USN
 			}
 		}
+	}
+	BGD = {
+		every_country = {
+			limit = {
+				has_idea = USA_battle_for_america_idea
+				exists = yes
+				NOT = {
+					tag = USN
+				}
+			}
+			BGD = {
+				create_wargoal = {
+					type = annex_everything
+					target = PREV
+				}
+			}
 		}
-		BGD = {
-			every_country = {
-                limit = {
-                    has_idea = USA_battle_for_america_idea
-                    exists = yes
-                    NOT = { tag = USN }
-                }
-
-                BGD = {
-                    create_wargoal = {
-                        type = annex_everything
-                        target = PREV
-                    }
-                }
-            }
 	}
 }
 
@@ -545,39 +649,46 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	immediate = {
-			hidden_effect = {
-				PTF = {
-					white_peace = BGD
-					white_peace = USN
-				}
-				USN = {
-					annex_country = { target = PTF }
+		hidden_effect = {
+			PTF = {
+				white_peace = BGD
+				white_peace = USN
+			}
+			USN = {
+				annex_country = {
+					target = PTF
 				}
 			}
 		}
+	}
 	option = {
 		name = usnavy.10.a
 		USN = {
 			every_owned_state = {
-				limit = { controller = { tag = USN } }
+				limit = {
+					controller = {
+						tag = USN
+					}
+				}
 				add_core_of = USN
 			}
 		}
 		BGD = {
 			every_country = {
-                limit = {
-                    has_idea = USA_battle_for_america_idea
-                    exists = yes
-                    NOT = { tag = USN }
-                }
-
-                BGD = {
-                    declare_war_on = {
-                        type = annex_everything
-                        target = PREV
-                    }
-                }
-            }
+				limit = {
+					has_idea = USA_battle_for_america_idea
+					exists = yes
+					NOT = {
+						tag = USN
+					}
+				}
+				BGD = {
+					declare_war_on = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
 		}
 	}
 }
@@ -588,7 +699,6 @@ country_event = {
 	title = usnavy.11.t
 	desc = usnavy.11.d
 	picture = GFX_popipa_doublerainbow
-
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -608,10 +718,10 @@ country_event = {
 	picture = GFX_japan_peacekeeper
 	immediate = {
 		hidden_effect = {
-			USN = { 
+			USN = {
 				transfer_state = 932
 			}
-			USN = { 
+			USN = {
 				transfer_state = 930
 			}
 		}
@@ -622,10 +732,10 @@ country_event = {
 		name = usnavy.12.a
 		USN = {
 			hidden_effect = {
-				USN = { 
+				USN = {
 					transfer_state = 932
 				}
-				USN = { 
+				USN = {
 					transfer_state = 930
 				}
 			}
@@ -633,71 +743,128 @@ country_event = {
 				idea = BGD_USN_Beachhead_offensive
 				days = 90
 			}
-
 			if = {
 				limit = {
-					NOT = { has_template = "海军陆战队机械化师" }
+					NOT = {
+						has_template = "海军陆战队机械化师"
+					}
 				}
 				division_template = {
 					name = "海军陆战队机械化师"
 					division_names_group = TP_TYPE_01
 					regiments = {
-						mechanized = { x = 0 y = 0 }
-						mechanized = { x = 0 y = 1 }
-						mechanized = { x = 0 y = 2 }
-						mechanized = { x = 0 y = 3 }
-						mechanized = { x = 0 y = 4 }
-		
-						mechanized = { x = 1 y = 0 }
-						mechanized = { x = 1 y = 1 }
-						mechanized = { x = 1 y = 2 }
-						mechanized = { x = 1 y = 3 }
-						mechanized = { x = 1 y = 4 }
-				
-						mechanized = { x = 2 y = 0 }
-						mechanized = { x = 2 y = 1 }
-						mechanized = { x = 2 y = 2 }
-						mechanized = { x = 2 y = 3 }
-						mechanized = { x = 2 y = 4 }
-							
-						mechanized = { x = 3 y = 0 }
-						mechanized = { x = 3 y = 1 }
-						mechanized = { x = 3 y = 2 }
-						mechanized = { x = 3 y = 3 }
-						mechanized = { x = 3 y = 4 }
+						mechanized = {
+							x = 0
+							y = 0
+						}
+						mechanized = {
+							x = 0
+							y = 1
+						}
+						mechanized = {
+							x = 0
+							y = 2
+						}
+						mechanized = {
+							x = 0
+							y = 3
+						}
+						mechanized = {
+							x = 0
+							y = 4
+						}
+						mechanized = {
+							x = 1
+							y = 0
+						}
+						mechanized = {
+							x = 1
+							y = 1
+						}
+						mechanized = {
+							x = 1
+							y = 2
+						}
+						mechanized = {
+							x = 1
+							y = 3
+						}
+						mechanized = {
+							x = 1
+							y = 4
+						}
+						mechanized = {
+							x = 2
+							y = 0
+						}
+						mechanized = {
+							x = 2
+							y = 1
+						}
+						mechanized = {
+							x = 2
+							y = 2
+						}
+						mechanized = {
+							x = 2
+							y = 3
+						}
+						mechanized = {
+							x = 2
+							y = 4
+						}
+						mechanized = {
+							x = 3
+							y = 0
+						}
+						mechanized = {
+							x = 3
+							y = 1
+						}
+						mechanized = {
+							x = 3
+							y = 2
+						}
+						mechanized = {
+							x = 3
+							y = 3
+						}
+						mechanized = {
+							x = 3
+							y = 4
+						}
 					}
 				}
 			}
-
 			932 = {
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆1师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆1师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆2师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆2师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆3师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆3师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
 			}
 			930 = {
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆4师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆4师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆5师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆5师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆6师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆6师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
-				create_unit = { 
-					division = "name = \"美国海军陆战队特种登陆7师团\" division_template = \"海军陆战队机械化师\" start_experience_factor = 0.7"  
+				create_unit = {
+					division = "name = "美国海军陆战队特种登陆7师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
 					owner = USN
 				}
 			}
@@ -715,7 +882,6 @@ country_event = {
 	title = usnavy.13.t
 	desc = usnavy.13.d
 	picture = GFX_popipa_doublerainbow
-
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
@@ -835,7 +1001,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.17.a
-		country_event = { id = usnavy.18 days = 5 }
+		country_event = {
+			id = usnavy.18
+			days = 5
+		}
 	}
 }
 
@@ -849,7 +1018,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.18.a
-		country_event = { id = usnavy.19 days = 3 }
+		country_event = {
+			id = usnavy.19
+			days = 3
+		}
 	}
 }
 
@@ -863,7 +1035,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.19.a
-		country_event = { id = usnavy.20 days = 3 }
+		country_event = {
+			id = usnavy.20
+			days = 3
+		}
 	}
 }
 
@@ -951,7 +1126,9 @@ country_event = {
 		name = usnavy.24.a
 		set_country_flag = Rebuilding_the_Federation
 		USN = {
-			set_capital = { state = 931 }
+			set_capital = {
+				state = 931
+			}
 			hidden_effect = {
 				set_cosmetic_tag = usakira
 			}
@@ -961,13 +1138,17 @@ country_event = {
 		name = usnavy.24.b
 		set_country_flag = The_New_Pacific_Charter
 		USN = {
-			set_capital = { state = 931 }
+			set_capital = {
+				state = 931
+			}
 		}
 	}
 	option = {
 		name = usnavy.24.c
 		USN = {
-			set_capital = { state = 931 }
+			set_capital = {
+				state = 931
+			}
 		}
 	}
 }
@@ -983,7 +1164,6 @@ country_event = {
 	option = {
 		name = usnavy.25.a
 	}
-
 }
 
 country_event = {
@@ -997,7 +1177,6 @@ country_event = {
 	option = {
 		name = usnavy.26.a
 	}
-	
 }
 
 country_event = {
@@ -1011,7 +1190,6 @@ country_event = {
 	option = {
 		name = usnavy.27.a
 	}
-	
 }
 
 country_event = {
@@ -1025,7 +1203,6 @@ country_event = {
 	option = {
 		name = usnavy.28.a
 	}
-	
 }
 
 country_event = {
@@ -1039,7 +1216,6 @@ country_event = {
 	option = {
 		name = usnavy.29.a
 	}
-	
 }
 
 country_event = {
@@ -1053,7 +1229,6 @@ country_event = {
 	option = {
 		name = usnavy.30.a
 	}
-	
 }
 
 country_event = {
@@ -1067,7 +1242,6 @@ country_event = {
 	option = {
 		name = usnavy.31.a
 	}
-	
 }
 
 country_event = {
@@ -1125,13 +1299,13 @@ country_event = {
 	option = {
 		name = usnavy.34.a
 		BGD = {
-			BGD_Rui_char = {			
+			BGD_Rui_char = {
 				set_nationality = USN
 			}
-			BGD_nanami_char = {			
+			BGD_nanami_char = {
 				set_nationality = USN
 			}
-			BGD_Tsukushi_char = {			
+			BGD_Tsukushi_char = {
 				set_nationality = USN
 			}
 		}
@@ -1234,6 +1408,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	#玩不起
 	id = usnavy.38
@@ -1245,25 +1420,28 @@ country_event = {
 	option = {
 		name = usnavy.38.a
 		every_country = {
-                limit = {
-                    owns_state = 931
-                    exists = yes
-                    NOT = { tag = USN }
-                }
-				BGD = {
-                    declare_war_on = {
-                        type = annex_everything
-                        target = PREV
-                    }
-					add_to_faction = USN
-					puppet = USN
-                }
-				USN = {
-					set_country_flag = attack_Ready
+			limit = {
+				owns_state = 931
+				exists = yes
+				NOT = {
+					tag = USN
 				}
-            }
+			}
+			BGD = {
+				declare_war_on = {
+					type = annex_everything
+					target = PREV
+				}
+				add_to_faction = USN
+				puppet = USN
+			}
+			USN = {
+				set_country_flag = attack_Ready
+			}
 		}
 	}
+}
+
 country_event = {
 	#出山
 	id = usnavy.39
@@ -1275,8 +1453,9 @@ country_event = {
 	option = {
 		name = usnavy.39.a
 		add_stability = 0.05
-		}
 	}
+}
+
 country_event = {
 	#攻入丹佛
 	id = usnavy.40
@@ -1289,27 +1468,23 @@ country_event = {
 		name = usnavy.40.a
 		add_war_support = -0.1
 		add_political_power = 50
-			set_temp_variable = {
-				var = USN_influence_B_var_temp
-				value = 0.05
-			}
-			USN_add_influence_B = yes
-			
-			set_temp_variable = {
-				var = USN_influence_C_var_temp
-				value = 0.05
-			}
-			USN_add_influence_C = yes
-
-			set_temp_variable = {
-				var = USN_influence_A_var_temp
-				value = -0.15
-			}
-			USN_add_influence_A = yes
+		set_temp_variable = {
+			var = USN_influence_B_var_temp
+			value = 0.05
 		}
+		USN_add_influence_B = yes
+		set_temp_variable = {
+			var = USN_influence_C_var_temp
+			value = 0.05
+		}
+		USN_add_influence_C = yes
+		set_temp_variable = {
+			var = USN_influence_A_var_temp
+			value = -0.15
+		}
+		USN_add_influence_A = yes
 	}
-
-
+}
 
 news_event = {
 	#美利坚再一统

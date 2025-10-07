@@ -9,31 +9,29 @@ USA_second_american_civil_war_category = {
 	}
 	priority = 100
 }
+
 decisions_BGD_usn = {
 	priority = 99999
 	icon = GFX_gui_ppp_party_small
-	
-	
 	visible = {
 		has_completed_focus = BGD_hawaii_negotiations
 		NOT = {
 			has_global_flag = USA_american_civil_war_over_global
 		}
-	}	
+	}
 }
+
 USN_Makarapa = {
-    icon = GFX_gui_ppp_party_small
-
-    allowed = {
-       tag = USN
-    }
-
-    visible = {
-        has_completed_focus = USN_junshi_yantao
-    }
-
-    priority = 99
+	icon = GFX_gui_ppp_party_small
+	allowed = {
+		tag = USN
+	}
+	visible = {
+		has_completed_focus = USN_junshi_yantao
+	}
+	priority = 99
 }
+
 USN_quanli_pingheng = {
 	icon = GFX_jueyi_zhanweifu
 	allowed = {
@@ -43,18 +41,16 @@ USN_quanli_pingheng = {
 	}
 	priority = 98
 }
+
 USN_fire_start = {
-    icon = GFX_gui_ppp_party_small
-
-    allowed = {
-       tag = USN
-    }
-
-    visible = {
+	icon = GFX_gui_ppp_party_small
+	allowed = {
+		tag = USN
+	}
+	visible = {
 		NOT = {
-            has_global_flag = USN_fire_end
-        }
-    }
-
-    priority = 97
+			has_global_flag = USN_fire_end
+		}
+	}
+	priority = 97
 }
