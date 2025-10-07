@@ -5,7 +5,10 @@ scripted_gui = {
 		parent_window_name = "countrypoliticsview"
 		triggers = {
 			bgd_ia_gui_start_visible = {
-				has_completed_focus = BGD_gaige_weiyuanhui
+				OR = {
+					has_completed_focus = BGD_gaige_weiyuanhui
+					has_cosmetic_tag = BGD_united_asia
+				}
 			}
 		}
 		effects = {

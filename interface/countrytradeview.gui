@@ -25,6 +25,7 @@ guiTypes = {
 		hide_animation_type = accelerated
 		animation_time = 300	
 		size = { width=550 height=100%% }
+		clipping = no
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -1109,6 +1110,13 @@ guiTypes = {
 				pdx_tooltip = "TFR_CAPITALISM_TT"
 				pdx_tooltip_delayed = "TFR_CAPITALISM_TT_LONG"
 			}		
+			#iconType = {
+			#	name = "TFR_inclusive_capitalism_type_icon"
+			#	position = { x = 0 y = 0 }
+			#	spriteType = "GFX_inclusive_capitalism_economy"
+			#	pdx_tooltip = "TFR_INCLUSIVE_CAPITALISM_TT"
+			#	pdx_tooltip_delayed = "TFR_INCLUSIVE_CAPITALISM_TT_LONG"
+			#}	
 			iconType = {
 				name = "TFR_american_capitalism_type_icon"
 				position = { x = 0 y = 0 }
@@ -1376,7 +1384,7 @@ guiTypes = {
 		buttonType = {
 			name = "action_button"
 			position = { x = 0 y = 0 }
-			size = { width = 500 height = 62 }
+			size = { width = 500 height = 62}
 			quadTextureSprite = "GFX_tiled_peace_upper_bar"
 			pdx_tooltip = "economic_action_tooltip"
 			#pdx_tooltip_delayed = "economicaction_tt_delay"

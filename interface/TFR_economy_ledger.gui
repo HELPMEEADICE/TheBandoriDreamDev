@@ -1,0 +1,681 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_economy_ledger_title_container"
+		position = { x = 547 y = 0 }
+		size = { width=137 height=74 }
+		moveable = no
+		clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		background = {
+			name = "TFR_economy_ledger_title_background"
+			position = {x=0 y=0}
+			quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			Orientation = "UPPER_LEFT"
+			#alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "TFR_economy_ledger_title"
+			position = { x = 4 y = 7 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = {x = 0 y = 0}
+			text = "economy_ledger_title"
+			maxWidth = 127
+			maxHeight = 20
+			format = center
+		}
+		
+		buttonType = {
+			name = "TFR_economy_ledger_button_one"
+			position = {x=3 y=37}
+			quadTextureSprite = "GFX_icon_button_45x32"
+			buttonText = "economy_ledger_button_one"
+			buttonFont = VCR02_12
+			pdx_tooltip = economy_ledger_button_one_tt
+			clicksound = click_chat
+		}
+		
+		buttonType = {
+			name = "TFR_economy_ledger_button_two"
+			position = {x=45 y=37}
+			quadTextureSprite = "GFX_icon_button_45x32"
+			buttonText = "economy_ledger_button_two"
+			buttonFont = VCR02_12
+			pdx_tooltip = economy_ledger_button_two_tt
+			clicksound = click_chat
+		}
+		
+		buttonType = {
+			name = "TFR_economy_ledger_button_three"
+			position = {x=87 y=37}
+			quadTextureSprite = "GFX_icon_button_45x32"
+			buttonText = "economy_ledger_button_three"
+			buttonFont = VCR02_12
+			pdx_tooltip = economy_ledger_button_three_tt
+			clicksound = click_chat
+		}
+		
+		buttonType = {
+			name = "TFR_economy_ledger_button_global"
+			position = {x=129 y=-2}
+			quadTextureSprite = "GFX_economy_ledger_button_global"
+			pdx_tooltip = economy_ledger_button_global_tt
+			pdx_tooltip_delayed = economy_ledger_button_global_tt_d
+			clicksound = decisions_ui_checkbox
+		}
+		
+		buttonType = {
+			name = "TFR_economy_ledger_button_union"
+			position = {x=129 y=23}
+			quadTextureSprite = "GFX_economy_ledger_button_union"
+			pdx_tooltip = economy_ledger_button_union_tt
+			pdx_tooltip_delayed = economy_ledger_button_union_tt_d
+			clicksound = decisions_ui_checkbox
+		}
+		
+		buttonType = {
+			name = "TFR_economy_ledger_button_faction"
+			position = {x=129 y=48}
+			quadTextureSprite = "GFX_economy_ledger_button_faction"
+			pdx_tooltip = economy_ledger_button_faction_tt
+			pdx_tooltip_delayed = economy_ledger_button_faction_tt_d
+			clicksound = decisions_ui_checkbox
+		}
+	}
+	
+	containerWindowType = {
+		name = "TFR_economy_ledger_scoreboard_container"
+		position = { x = 549 y = 70 }
+		size = { width=154 height=369 }
+		#moveable = no
+		#clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 75
+		smooth_scrolling = yes
+		margin = { top = 2 bottom = 5 }
+		
+		background = {
+			name = "TFR_economy_ledger_scoreboard_background"
+			position = {x=-2 y=0}
+			quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			Orientation = "UPPER_LEFT"
+			#alwaystransparent = yes
+		}
+	
+		gridboxtype = {
+			name = "TFR_economy_ledger_scoreboard_gridbox"
+			position = { x = 48 y = 3 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 96 height = 36 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+	}
+	containerWindowType = {
+		name = "TFR_economy_ledger_scoreboard_entries"
+		position = { x = 0 y = 0 }
+		size = { width=125 height=33 }
+		#moveable = no
+		#clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		background = {
+			name = "TFR_economy_ledger_scoreboard_gridbox"
+			quadTextureSprite = "GFX_tiled_generic_bg_1"
+			position = { x = 4 y = 0 }
+		}
+		
+		iconType = {
+			name = "TFR_economy_ledger_scoreboard_player1"
+			quadTextureSprite = "GFX_tiled_header_1"
+			position = { x = 57 y = -2 }
+			alwaystransparent = yes
+		}
+	
+		iconType = {
+			name = "TFR_economy_ledger_scoreboard_flag"
+			quadTextureSprite = "GFX_flag_medium"
+			position = { x = 4 y = -4 }
+			pdx_tooltip = economy_ledger_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_scoreboard_entry_tt_d
+		}
+		
+		iconType = {
+			name = "TFR_economy_ledger_scoreboard_ally"
+			quadTextureSprite = "GFX_relation_faction"
+			position = { x = 0 y = 12 }
+			pdx_tooltip = economy_ledger_scoreboard_ally_tt
+		}
+		
+		iconType = {
+			name = "TFR_economy_ledger_scoreboard_enemy"
+			quadTextureSprite = "GFX_relation_war_relation"
+			position = { x = 3 y = 14 }
+			pdx_tooltip = economy_ledger_scoreboard_enemy_tt
+			scale = 0.8
+		}
+		
+		iconType = {
+			name = "TFR_economy_ledger_scoreboard_player2"
+			quadTextureSprite = "GFX_players_icon"
+			position = { x = 47 y = 13 }
+			pdx_tooltip = economy_ledger_scoreboard_player_tt
+		}
+	
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_name"
+			position = { x = 67 y = 2 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_entry_name"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_gdp"
+			position = { x = 67 y = 16 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_value_gdp"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_rgdp"
+			position = { x = 67 y = 16 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_value_rgdp"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_debt"
+			position = { x = 67 y = 16 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_value_debt"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_scoreboard_entry_tt_d
+		}
+	}
+	
+	containerWindowType = {
+		name = "TFR_economy_ledger_scoreboard_union_container"
+		position = { x = 549 y = 70 }
+		size = { width=154 height=369 }
+		#moveable = no
+		#clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 75
+		smooth_scrolling = yes
+		margin = { top = 2 bottom = 5 }
+		
+		background = {
+			name = "TFR_economy_ledger_scoreboard_union_background"
+			position = {x=-2 y=0}
+			quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			Orientation = "UPPER_LEFT"
+			#alwaystransparent = yes
+		}
+	
+		gridboxtype = {
+			name = "TFR_economy_ledger_scoreboard_union_gridbox"
+			position = { x = 48 y = 3 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 96 height = 73 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+	}
+	containerWindowType = {
+		name = "TFR_economy_ledger_scoreboard_union_entries"
+		position = { x = 0 y = 0 }
+		size = { width=125 height=70 }
+		#moveable = no
+		#clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		background = {
+			name = "TFR_economy_ledger_scoreboard_union_gridbox"
+			quadTextureSprite = "GFX_tiled_generic_bg_1"
+			position = { x = 4 y = 0 }
+		}
+		
+		iconType = {
+			name = "TFR_eu_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_eu_member"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_ads_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_SOV_ADS"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_tmc_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_SOV_TMC_idea"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_brics_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_SOV_brics_member"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_pec_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_JAP_PEC"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_arab_league_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_arab_league_member"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_asean_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_ASEAN_member"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_eec_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_SOV_EEC_Member"
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_rank"
+			position = { x = 67 y = 2 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_entry_union_name"
+			format = center
+			maxHeight = 28
+			maxWidth = 60
+			fixedsize = yes
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_name"
+			position = { x = 67 y = 28 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_entry_union_name_short"
+			format = center
+			maxHeight = 28
+			maxWidth = 60
+			fixedsize = yes
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_gdp"
+			position = { x = 67 y = 54 }
+			font = "VCR02_12"
+			text = "economy_ledger_union_scoreboard_value_gdp"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_rgdp"
+			position = { x = 67 y = 54 }
+			font = "VCR02_12"
+			text = "economy_ledger_union_scoreboard_value_rgdp"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_debt"
+			position = { x = 67 y = 54 }
+			font = "VCR02_12"
+			text = "economy_ledger_union_scoreboard_value_debt"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		}
+		
+		#instantTextBoxType = {
+		#	name ="TFR_economy_ledger_scoreboard_entry_members"
+		#	position = { x = 67 y = 44 }
+		#	font = "VCR02_12"
+		#	text = "economy_ledger_scoreboard_entry_members"
+		#	format = center
+		#	maxHeight = 24
+		#	maxWidth = 60
+		#	pdx_tooltip = economy_ledger_union_scoreboard_entry_tt
+		#	pdx_tooltip_delayed = economy_ledger_union_scoreboard_entry_tt_d
+		#}
+	}
+	
+	containerWindowType = {
+		name = "TFR_economy_ledger_scoreboard_faction_container"
+		position = { x = 549 y = 70 }
+		size = { width=154 height=369 }
+		#moveable = no
+		#clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		verticalScrollbar = "right_vertical_slider"
+		scroll_wheel_factor = 75
+		smooth_scrolling = yes
+		margin = { top = 2 bottom = 5 }
+		
+		background = {
+			name = "TFR_economy_ledger_scoreboard_faction_background"
+			position = {x=-2 y=0}
+			quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			Orientation = "UPPER_LEFT"
+			#alwaystransparent = yes
+		}
+	
+		gridboxtype = {
+			name = "TFR_economy_ledger_scoreboard_faction_gridbox"
+			position = { x = 48 y = 3 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 96 height = 66 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+	}
+	containerWindowType = {
+		name = "TFR_economy_ledger_scoreboard_faction_entries"
+		position = { x = 0 y = 0 }
+		size = { width=125 height=63 }
+		#moveable = no
+		#clipping = no
+		
+		#fade_time = 2000
+		#fade_type = linear
+		
+		background = {
+			name = "TFR_economy_ledger_scoreboard_faction_gridbox"
+			quadTextureSprite = "GFX_tiled_generic_bg_1"
+			position = { x = 4 y = 0 }
+		}
+		
+		iconType = {
+			name = "TFR_econ_icon_glow"
+			position = { x = 0 y = -3 }
+			spriteType = "GFX_idea_alert_glow"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "TFR_global_association_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_Faction_Member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_NATO_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_NATO_Member"  
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_Pact_of_Steel_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_Pact_of_Steel_faction" 
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_no_faction_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_NO_faction" 
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_csto_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_CSTO_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_mto_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_MTO_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_hu_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_HU_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_esto_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_ESTO_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_eadi_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_EADI_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_psf_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_PSF_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_pdto_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_PDTO_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_united_front_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_united_front_faction"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}		
+		iconType = {
+			name = "TFR_national_front_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_national_front_member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_waaif_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_WAAIF_Member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_WDTO_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_WDTO_Member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}		
+		iconType = {
+			name = "TFR_ASD_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_ASD_Member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}		
+		iconType = {
+			name = "TFR_CES_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_CES_Member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_AOR_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_AOR_Member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_BTO_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_BTO_member"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_APFNO_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_APFNO"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		iconType = {
+			name = "TFR_UNE_econ_icon"
+			position = { x = 5 y = 1 }
+			spriteType = "GFX_idea_UNE"
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_rank"
+			position = { x = 67 y = 2 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_entry_faction_name"
+			format = center
+			maxHeight = 28
+			maxWidth = 60
+			fixedsize = yes
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_name"
+			position = { x = 67 y = 16 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_entry_faction_name_short"
+			format = center
+			maxHeight = 28
+			maxWidth = 60
+			fixedsize = yes
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_gdp"
+			position = { x = 67 y = 30 }
+			font = "VCR02_12"
+			text = "economy_ledger_faction_scoreboard_value_gdp"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_rgdp"
+			position = { x = 67 y = 30 }
+			font = "VCR02_12"
+			text = "economy_ledger_faction_scoreboard_value_rgdp"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_zone_value_debt"
+			position = { x = 67 y = 30 }
+			font = "VCR02_12"
+			text = "economy_ledger_faction_scoreboard_value_debt"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+		
+		instantTextBoxType = {
+			name ="TFR_economy_ledger_scoreboard_entry_members"
+			position = { x = 67 y = 44 }
+			font = "VCR02_12"
+			text = "economy_ledger_scoreboard_entry_members"
+			format = center
+			maxHeight = 24
+			maxWidth = 60
+			pdx_tooltip = economy_ledger_faction_scoreboard_entry_tt
+			pdx_tooltip_delayed = economy_ledger_faction_scoreboard_entry_tt_d
+		}
+	}
+}

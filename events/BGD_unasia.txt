@@ -2398,10 +2398,56 @@ country_event = {
 	picture = GFX_bangdream_victory
 	fire_only_once = yes
 	is_triggered_only = yes
+	immediate = {
+		
+	}
 	option = {
 		name = unasia.27.a
 		add_political_power = 50
 		add_stability = 0.02
+		if = {
+			limit = {
+				SOV = {
+					has_cosmetic_tag = SOV_nato
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						has_cosmetic_tag = SOV_military_administration
+						has_cosmetic_tag = SOV_military_administration_2
+						has_cosmetic_tag = SOV_military_administration_3
+						has_cosmetic_tag = SOV_military_administration_4
+						has_cosmetic_tag = SOV_military_administration_5
+						has_cosmetic_tag = SOV_military_administration_6
+						has_cosmetic_tag = SOV_military_administration_7
+						has_cosmetic_tag = SOV_military_administration_8
+						has_cosmetic_tag = SOV_military_administration_9
+						has_cosmetic_tag = SOV_military_administration_10
+						has_cosmetic_tag = SOV_military_administration_11
+						has_cosmetic_tag = SOV_military_administration_12
+					}
+				}
+				drop_cosmetic_tag = yes
+				remove_idea = SOV_EEC_Member
+				set_politics = {
+					  ruling_party = social_liberal
+					  elections_allowed = yes
+				}
+				add_popularity = {
+					  ideology = social_liberal
+					  popularity = 0.8
+				}
+			}
+			SOV = {
+				remove_ideas_with_trait = ZZZ_blank_idea_trait
+				add_ideas = {
+					SOV_eu_dominated_economy_idea
+					SOV_nato_peacekeepers_idea
+					SOV_destroyed_country_idea
+				}
+			}
+		}
 	}
 }
 
@@ -2872,6 +2918,27 @@ country_event = {
 				}
 				THIS = { add_core_of = NGA }
 			}
+			add_ideas = {
+				higher_safety
+				higher_welfare
+				lower_interest_rates
+				lower_taxes
+				higher_trade
+				mass_consumerism
+				lower_conscription
+				higher_education
+				medium_poverty
+				medium_military
+				higher_immigration
+				higher_society
+			}
+			clear_variable = debt_var
+			clear_variable = debt_million_var
+			clear_variable = debt_billion_var
+			clear_variable = debt_trillion_var
+			add_GDP = yes
+			remove_ideas = ZZZ_capitalist_economy
+			add_ideas = BGD_RBE_economy
 		}
 	}
 }

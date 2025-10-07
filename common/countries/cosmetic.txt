@@ -1985,6 +1985,10 @@ usakira = {
 	color = rgb { 71 130 175 }
 	color_ui = rgb { 71 130 175 }
 }
+USA = {
+	color = rgb { 71 130 175 }
+	color_ui = rgb { 71 130 175 }
+}
 ETI_republic_of_siam = {
 	color = rgb { 232 88 119 }
 	color_ui = rgb { 232 88 119 }

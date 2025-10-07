@@ -894,3 +894,16 @@ defined_text = {
 		localization_key = BGD_tokyo_gov_1
 	}
 }
+
+defined_text = {
+	name = BGD_kasumi_twitter_cat_desc_0
+	text = {
+		trigger = {
+			has_cosmetic_tag = BGD_united_asia
+		}
+		localization_key = BGD_kasumi_twitter_cat_desc_2
+	}
+	text = {
+		localization_key = BGD_kasumi_twitter_cat_desc_1
+	}
+}

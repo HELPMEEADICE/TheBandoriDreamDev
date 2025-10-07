@@ -1357,3 +1357,19 @@ news_event = {
 		}
 	}
 }
+
+news_event = {
+	#美利坚恢复秩序
+	id = usnavy.2002
+	title = usnavy.2002.t
+	desc = usnavy.2002.d
+	picture = GFX_USN_victory_news
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.2002.a
+		USN = {
+			set_cosmetic_tag = USA
+		}
+	}
+}

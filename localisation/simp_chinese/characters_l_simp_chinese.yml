@@ -34,7 +34,9 @@ BGD_national_socialist_party: "日本航空自卫队（和奏大将派）"
 BGD_national_socialist_party_long: "日本航空自卫队（和奏大将派）"
 
 BGD_kasumi_twitter_cat: "https://x.com/TOYAMA_KASUMI"
-BGD_kasumi_twitter_cat_desc: "\n\n\n\n\n£GFX_BGD_kasumi_twitter_cat_banner\n\n\n\n\n\n\n\nKIRAKIRA§Y☆§!DOKIDOKI\nアジア同盟！\n@BGD @AST @NZL @CAN @ETI @INS @MAL @PHI @RAJ @BAN @SIG @PNG\n\n£GFX_GER_twitter_briefcase §g日本自由共和国总统\n£GFX_GER_twitter_briefcase §g闪耀党秘书长\n£GFX_GER_twitter_location 位于星光之下 - [Root.Capital.GetName]§!    £GFX_GER_twitter_link_ti §2nicovideo.jp/£GFX_GER_dont_at_me_blue_ti 户山香澄§!\n£GFX_GER_twitter_date §g2019年7月加入§!\n\n§W947§!正在关注     §W[ROOT.GetManpower]§!关注者\n§g你关注的人中没有人关注§!\n\n§W  帖子             回复            订阅             亮点            媒体§!"
+BGD_kasumi_twitter_cat_desc: "\n\n\n\n\n£GFX_BGD_kasumi_twitter_cat_banner\n\n\n\n\n\n\n\nKIRAKIRA§Y☆§!DOKIDOKI\n[BGD_kasumi_twitter_cat_desc_0]\n§W947§!正在关注     §W[ROOT.GetManpower]§!关注者\n§g你关注的人中没有人关注§!\n\n§W  帖子             回复            订阅             亮点            媒体§!"
+BGD_kasumi_twitter_cat_desc_1: "アジア同盟！\n@BGD @AST @NZL @CAN @ETI @INS @MAL @PHI @RAJ @BAN @SIG @PNG\n\n£GFX_GER_twitter_briefcase §g日本自由共和国@BGD总统\n£GFX_GER_twitter_briefcase §g闪耀党秘书长\n£GFX_GER_twitter_location 位于星光之下 - [Root.Capital.GetName]§!    £GFX_GER_twitter_link_ti §2nicovideo.jp/£GFX_GER_dont_at_me_blue_ti 户山香澄§!\n£GFX_GER_twitter_date §g2019年7月加入§!\n\n"
+BGD_kasumi_twitter_cat_desc_2: "アジア同盟！\n@BGD\n\n£GFX_GER_twitter_briefcase §g亚洲联盟@BGD秘书长\n£GFX_GER_twitter_briefcase §g日本自由共和国总统\n£GFX_GER_twitter_location 位于星光之下 - [Root.Capital.GetName]§!    £GFX_GER_twitter_link_ti §2nicovideo.jp/£GFX_GER_dont_at_me_blue_ti 户山香澄§!\n£GFX_GER_twitter_date §g2019年7月加入§!\n\n"
 
 BGD_Army_Junta: "陆上自卫队军政府"
 BGD_Maritime_Junta: "海上自卫队军政府"
