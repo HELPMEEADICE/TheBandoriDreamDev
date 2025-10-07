@@ -379,135 +379,7 @@ country_event = {
 			#}
 		}
 		USN = {
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							has_template = "海军陆战队机械化师"
-						}
-					}
-					division_template = {
-						name = "海军陆战队机械化师"
-						division_names_group = TP_TYPE_01
-						regiments = {
-							mechanized = {
-								x = 0
-								y = 0
-							}
-							mechanized = {
-								x = 0
-								y = 1
-							}
-							mechanized = {
-								x = 0
-								y = 2
-							}
-							mechanized = {
-								x = 0
-								y = 3
-							}
-							mechanized = {
-								x = 0
-								y = 4
-							}
-							mechanized = {
-								x = 1
-								y = 0
-							}
-							mechanized = {
-								x = 1
-								y = 1
-							}
-							mechanized = {
-								x = 1
-								y = 2
-							}
-							mechanized = {
-								x = 1
-								y = 3
-							}
-							mechanized = {
-								x = 1
-								y = 4
-							}
-							mechanized = {
-								x = 2
-								y = 0
-							}
-							mechanized = {
-								x = 2
-								y = 1
-							}
-							mechanized = {
-								x = 2
-								y = 2
-							}
-							mechanized = {
-								x = 2
-								y = 3
-							}
-							mechanized = {
-								x = 2
-								y = 4
-							}
-							mechanized = {
-								x = 3
-								y = 0
-							}
-							mechanized = {
-								x = 3
-								y = 1
-							}
-							mechanized = {
-								x = 3
-								y = 2
-							}
-							mechanized = {
-								x = 3
-								y = 3
-							}
-							mechanized = {
-								x = 3
-								y = 4
-							}
-						}
-					}
-				}
-			}
-			629 = {
-				create_unit = {
-					division = "name = "美国海军陆战队第7机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第8机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第9机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第10机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第11机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第12机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第13机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队第14机械化师" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-			}
+			load_oob = USN_Beachhead
 		}
 	}
 }
@@ -743,131 +615,7 @@ country_event = {
 				idea = BGD_USN_Beachhead_offensive
 				days = 90
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_template = "海军陆战队机械化师"
-					}
-				}
-				division_template = {
-					name = "海军陆战队机械化师"
-					division_names_group = TP_TYPE_01
-					regiments = {
-						mechanized = {
-							x = 0
-							y = 0
-						}
-						mechanized = {
-							x = 0
-							y = 1
-						}
-						mechanized = {
-							x = 0
-							y = 2
-						}
-						mechanized = {
-							x = 0
-							y = 3
-						}
-						mechanized = {
-							x = 0
-							y = 4
-						}
-						mechanized = {
-							x = 1
-							y = 0
-						}
-						mechanized = {
-							x = 1
-							y = 1
-						}
-						mechanized = {
-							x = 1
-							y = 2
-						}
-						mechanized = {
-							x = 1
-							y = 3
-						}
-						mechanized = {
-							x = 1
-							y = 4
-						}
-						mechanized = {
-							x = 2
-							y = 0
-						}
-						mechanized = {
-							x = 2
-							y = 1
-						}
-						mechanized = {
-							x = 2
-							y = 2
-						}
-						mechanized = {
-							x = 2
-							y = 3
-						}
-						mechanized = {
-							x = 2
-							y = 4
-						}
-						mechanized = {
-							x = 3
-							y = 0
-						}
-						mechanized = {
-							x = 3
-							y = 1
-						}
-						mechanized = {
-							x = 3
-							y = 2
-						}
-						mechanized = {
-							x = 3
-							y = 3
-						}
-						mechanized = {
-							x = 3
-							y = 4
-						}
-					}
-				}
-			}
-			932 = {
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆1师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆2师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆3师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-			}
-			930 = {
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆4师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆5师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆6师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-				create_unit = {
-					division = "name = "美国海军陆战队特种登陆7师团" division_template = "海军陆战队机械化师" start_experience_factor = 0.7"
-					owner = USN
-				}
-			}
+			load_oob = USN_Beach_Landing
 		}
 		add_timed_idea = {
 			idea = BGD_USN_Beachhead_offensive
@@ -1466,23 +1214,26 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.40.a
-		add_war_support = -0.1
-		add_political_power = 50
-		set_temp_variable = {
-			var = USN_influence_B_var_temp
-			value = 0.05
+		USN = {
+			load_oob = USN_Militia
+			add_war_support = -0.1
+			add_political_power = 50
+			set_temp_variable = {
+				var = USN_influence_B_var_temp
+				value = 0.05
+			}
+			USN_add_influence_B = yes
+			set_temp_variable = {
+				var = USN_influence_C_var_temp
+				value = 0.05
+			}
+			USN_add_influence_C = yes
+			set_temp_variable = {
+				var = USN_influence_A_var_temp
+				value = -0.15
+			}
+			USN_add_influence_A = yes
 		}
-		USN_add_influence_B = yes
-		set_temp_variable = {
-			var = USN_influence_C_var_temp
-			value = 0.05
-		}
-		USN_add_influence_C = yes
-		set_temp_variable = {
-			var = USN_influence_A_var_temp
-			value = -0.15
-		}
-		USN_add_influence_A = yes
 	}
 }
 

@@ -24,6 +24,7 @@ focus_tree = {
 			add_ideas = BGD_Fuji_Miyako
 			add_ideas = BGD_Miyanaga_Nonoka
 			add_ideas = BGD_Kurata_Mashiro
+			load_oob = USN_2020
 		}
 	}
 	focus = {

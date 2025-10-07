@@ -1,0 +1,86 @@
+﻿
+	division_template = {
+		name = "海军陆战队机械化师"
+		
+		regiments = {
+			amphibious_mechanized = { x = 0 y = 0 }
+			amphibious_mechanized = { x = 0 y = 1 }
+			amphibious_mechanized = { x = 0 y = 2 }
+			amphibious_mechanized = { x = 0 y = 3 }
+			marine = { x = 1 y = 0 }
+			marine = { x = 1 y = 1 }
+			marine = { x = 1 y = 2 }
+			marine = { x = 1 y = 3 }
+			marine = { x = 1 y = 4 }
+			marine = { x = 2 y = 0 }
+			marine = { x = 2 y = 1 }
+			marine = { x = 2 y = 2 }
+			marine = { x = 2 y = 3 }
+			marine = { x = 2 y = 4 }
+		}
+		
+		support = {
+			anti_tank = {x = 0 y = 0}
+			engineer = {x = 0 y = 1}
+			artillery = {x = 0 y = 2}
+		}
+	}
+
+
+	units = {
+		division = {
+			name = "美国海军陆战队第1机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第2机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第3机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第4机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第5机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第6机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第7机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+
+		division = {
+			name = "美国海军陆战队第8机械化师"
+			location = 4180
+			division_template = "海军陆战队机械化师"
+			start_experience_factor = 1.0
+		}
+	}
