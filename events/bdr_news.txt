@@ -326,15 +326,15 @@ news_event = {
 	title = bdrnews.1227.t
 	desc = bdrnews.1227.d
 	picture = GFX_bang_girlsband_party
-	fire_only_once = yes
+	fire_only_once = no
 	is_triggered_only = yes
 	major = yes
 	option = {
+		name = bdrnews.1227.a
 		if = {
 			limit = {
 				is_ai = no
 			}
-			name = bdrnews.1227.a
 			hidden_effect = {
 				if = {
 					limit = {
@@ -348,53 +348,6 @@ news_event = {
 				add_ideas = USN_big_fire_idea4
 				activate_mission = USN_fire_mission
 			}
-		}
-	}
-}
-
-news_event = {
-	#美利坚再一统
-	id = usnavy.2001
-	title = usnavy.2001.t
-	desc = usnavy.2001.d
-	picture = GFX_USN_victory_news
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = usnavy.2001.a
-		hidden_effect = {
-			USN = {
-				remove_ideas = USA_battle_for_america_idea
-				set_global_flag = USA_american_civil_war_over_global
-				set_capital = {
-					state = 931
-					remember_old_capital = no
-				}
-				set_country_flag = USB_reunified_flag
-			}
-			every_state = {
-				limit = {
-					has_dynamic_modifier = {
-						modifier = USA_battle_for_america_idea
-					}
-				}
-				PREV = {
-					remove_dynamic_modifier = {
-						modifier = USA_battle_for_america_idea
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_ai = no
-				}
-				set_country_flag = USN_victory_american
-				scoped_sound_effect = TFR_se_neosocialist_apla
-				scoped_play_song = "one_minute_of_silence"
-			}
-		}
-		USN = {
-			set_cosmetic_tag = usakira
 		}
 	}
 }
