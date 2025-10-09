@@ -335,6 +335,7 @@ country_event = {
 			last_election = "2021.10.31"
 			election_frequency = 48
 		}
+		complete_national_focus = JDF_Victory_unity
 	}
 	set_country_flag = JAP_general_election_is_over
 	set_country_flag = JAP_cc_won_flag

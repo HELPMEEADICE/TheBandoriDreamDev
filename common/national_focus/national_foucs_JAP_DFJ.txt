@@ -1,173 +1,712 @@
 focus_tree = {
-    id = TFR_tree_JAP_DFJ
+	id = TFR_tree_JAP_DFJ
 	country = {
 		base = 0
 	}
 	default = no
-	 
 	focus = {
-	    id = JDF_renmin_zhisheng
+		#联合之胜
+		id = JDF_Victory_unity
 		icon = GFX_focus_JAP_lets_do_our_best
 		cost = 2
-		x = 3
+		x = 11
 		y = 0
 		completion_reward = {
 			add_political_power = 25
 			add_stability = 0.05
 			country_event = {
-			    id =  bgd.9   
+				id = bgd.9
 			}
 		}
 	}
 	focus = {
-	    id = JDF_chengnuo_heping
+		#清算罪孽
+		id = JDF_Atonement_for_sins
 		icon = GFX_focus_JAP_promises_of_peace
-		prerequisite = { focus = JDF_renmin_zhisheng }
-		cost = 2
-		x = 3
+		prerequisite = {
+			focus = JDF_Victory_unity
+		}
+		cost = 1
+		x = 10
 		y = 1
 		completion_reward = {
 			add_political_power = 30
 			add_stability = 0.05
-			add_war_support = -0.05			
-	}
+			add_war_support = -0.05
+		}
 	}
 	focus = {
-	id = JDF_duihua_huanhe
-	icon = GFX_focus_JAP_deal_with_devil
-	prerequisite = { focus = JDF_renmin_zhisheng }
-	cost = 2
-	x = 1
-	y = 1
-	completion_reward = {
-		add_political_power = -15
-		add_war_support = -0.05	
-		add_stability = 0.05
+		#中止“跳水”
+		id = JDF_Halt_the_nosedive
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Victory_unity
+		}
+		cost = 1
+		x = 12
+		y = 1
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#完成对策立法
+		id = JDF_Complete_countermeasures_legislation
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Atonement_for_sins
+		}
+		prerequisite = {
+			focus = JDF_Halt_the_nosedive
+		}
+		cost = 1
+		x = 11
+		y = 2
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#参与”洗牌“
+		id = JDF_Join_the_political_reshuffle
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Complete_countermeasures_legislation
+		}
+		cost = 1
+		x = 11
+		y = 3
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#重审外交政策
+		id = JDF_Review_foreign_policy
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Join_the_political_reshuffle
+		}
+		cost = 2
+		x = 9
+		y = 4
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#清查”遗迹“
+		id = JDF_clarify_remaining_issues
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Join_the_political_reshuffle
+		}
+		cost = 2
+		x = 13
+		y = 4
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#强化CPTPP
+		id = JDF_Strengthen_the_CPTPP
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Review_foreign_policy
+		}
+		cost = 2
+		x = 8
+		y = 5
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#对华缓和
+		id = JDF_Easing_tensions_with_China
+		icon = GFX_focus_JAP_deal_with_devil
+		prerequisite = {
+			focus = JDF_Review_foreign_policy
+		}
+		cost = 1
+		x = 10
+		y = 5
+		completion_reward = {
+			add_political_power = -15
+			add_war_support = -0.05
+			add_stability = 0.05
 			diplomatic_relation = {
-		    country = PRC
-		    relation = non_aggression_pact
-		    active = yes
-		}			
-	}
+				country = PRC
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
 	}
 	focus = {
-	id = JDF_qianghua_zuoyi
-	icon = GFX_focus_JAP_mobilize_zengakuren
-	prerequisite = { focus = JDF_renmin_zhisheng }
-	cost = 2
-	x = 5
-	y = 1
-	completion_reward = {
-		add_stability = -0.15
-		add_political_power = -25
-		add_war_support = -0.05	
-		add_popularity = {
-    		ideology = social_liberal
-    		popularity = 0.07
+		#替代美国角色
+		id = JDF_Take_over_the_USA
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Strengthen_the_CPTPP
 		}
-		add_popularity = {
-    		ideology = social_democrat
-    		popularity = 0.05
-		}
-		add_popularity = {
-    		ideology = libertarian_socialist 
-    		popularity = 0.05
-		}
-		add_popularity = {
-    	    ideology = communist 
-    		popularity = 0.03
+		cost = 2
+		x = 8
+		y = 6
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
 		}
 	}
-    }
 	focus = {
-	id = JDF_jiaoyv_gaige
-	icon = GFX_focus_JAP_reform_the_education_system
-	prerequisite = { focus = JDF_duihua_huanhe }
-	cost = 2
-	x = 1
-	y = 2
-	completion_reward = {
+		#谈拢自贸协定
+		id = JDF_Finalize_trade_agreement
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Easing_tensions_with_China
+		}
+		mutually_exclusive = {
+			focus = JDF_Deepen_Japan-EU_cooperation
+		}
+		cost = 2
+		x = 10
+		y = 6
+		completion_reward = {
+			add_political_power = -15
+			add_war_support = -0.05
+			add_stability = 0.05
+			diplomatic_relation = {
+				country = PRC
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	focus = {
+		#推动构造改革
+		id = JDF_Promote_structural_reform
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_clarify_remaining_issues
+		}
+		cost = 1
+		x = 12
+		y = 5
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#改革经济团体
+		id = JDF_Reform_economic_organizations
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_clarify_remaining_issues
+		}
+		cost = 2
+		x = 14
+		y = 5
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#深化日欧合作
+		id = JDF_Deepen_Japan-EU_cooperation
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Promote_structural_reform
+		}
+		mutually_exclusive = {
+			focus = JDF_Finalize_trade_agreement
+		}
+		cost = 2
+		x = 12
+		y = 6
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#思考国有化路径
+		id = JDF_Explore_paths_nationalization
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Reform_economic_organizations
+		}
+		cost = 2
+		x = 14
+		y = 6
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#推动议程
+		id = JDF_Advance_the_agenda
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Take_over_the_USA
+		}
+		prerequisite = {
+			focus = JDF_Deepen_Japan-EU_cooperation
+			focus = JDF_Finalize_trade_agreement
+		}
+		prerequisite = {
+			focus = JDF_Explore_paths_nationalization
+		}
+		cost = 1
+		x = 11
+		y = 7
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#推进绿色经济
+		id = JDF_Advance_green_economy
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_the_agenda
+		}
+		cost = 1
+		x = 11
+		y = 8
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#推动别姓改革
+		id = JDF_Advance_reform_separate_surnames
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_the_agenda
+		}
+		cost = 1
+		x = 7
+		y = 8
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#强化亚太合作
+		id = JDF_Enhance_APAC_cooperation
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_the_agenda
+		}
+		cost = 1
+		x = 15
+		y = 8
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#人本投资强化
+		id = JDF_Strengthen_human_investment
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_reform_separate_surnames
+		}
+		mutually_exclusive = {
+			focus = JDF_comprehensive_equality
+		}
+		cost = 2
+		x = 6
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#迈向全面平权
+		id = JDF_comprehensive_equality
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_reform_separate_surnames
+		}
+		mutually_exclusive = {
+			focus = JDF_Strengthen_human_investment
+		}
+		cost = 2
+		x = 8
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#削减消费税
+		id = JDF_Cut_consumption_tax
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_green_economy
+		}
+		mutually_exclusive = {
+			focus = JDF_Maintain_fiscal_discipline
+		}
+		cost = 2
+		x = 10
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#保持财政纪律
+		id = JDF_Maintain_fiscal_discipline
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Advance_green_economy
+		}
+		mutually_exclusive = {
+			focus = JDF_Cut_consumption_tax
+		}
+		cost = 2
+		x = 12
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#维系护宪立场
+		id = JDF_Uphold_constitutionalist
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Enhance_APAC_cooperation
+		}
+		mutually_exclusive = {
+			focus = JDF_Assess_the_situation
+		}
+		cost = 2
+		x = 14
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#审时度势
+		id = JDF_Assess_the_situation
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Enhance_APAC_cooperation
+		}
+		mutually_exclusive = {
+			focus = JDF_Uphold_constitutionalist
+		}
+		cost = 2
+		x = 16
+		y = 9
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#维新会脱离
+		id = JDF_Withdrawal_the_Party
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Strengthen_human_investment
+			focus = JDF_comprehensive_equality
+		}
+		prerequisite = {
+			focus = JDF_Cut_consumption_tax
+			focus = JDF_Maintain_fiscal_discipline
+		}
+		prerequisite = {
+			focus = JDF_Uphold_constitutionalist
+			focus = JDF_Assess_the_situation
+		}
+		available = {
+			always = no
+		}
+		cost = 2
+		x = 11
+		y = 10
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#霞关洗牌
+		id = JDF_Kasumigaseki_personnel
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Withdrawal_the_Party
+		}
+		cost = 2
+		x = 8
+		y = 11
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#强化工会势力
+		id = JDF_Strengthen_power_labor
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Withdrawal_the_Party
+		}
+		cost = 2
+		x = 10
+		y = 11
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#宣扬自民恶行
+		id = JDF_Expose_the_misdeeds
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Withdrawal_the_Party
+		}
+		cost = 2
+		x = 12
+		y = 11
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#策反公明党
+		id = JDF_Instigate_Komeito_Party
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Withdrawal_the_Party
+		}
+		cost = 2
+		x = 14
+		y = 11
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#不尽人意
+		id = JDF_Fall_short_of_expectations
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Kasumigaseki_personnel
+		}
+		prerequisite = {
+			focus = JDF_Strengthen_power_labor
+		}
+		prerequisite = {
+			focus = JDF_Expose_the_misdeeds
+		}
+		prerequisite = {
+			focus = JDF_Instigate_Komeito_Party
+		}
+		available = {
+			always = no
+		}
+		cost = 0
+		x = 11
+		y = 12
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#打击右翼团体
+		id = JDF_Combat_right_groups
+		icon = GFX_focus_JAP_fight_uyoku_dantai
+		prerequisite = {
+			focus = JDF_Fall_short_of_expectations
+		}
+		prerequisite = {
+			focus = JDF_shehui_gongping
+		}
+		prerequisite = {
+			focus = JDF_wuzhuang_zhongli
+		}
+		cost = 1
+		x = 8
+		y = 13
+		completion_reward = {
+			add_stability = -0.15
+			add_political_power = -25
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		#组织左翼游行
+		id = JDF_Stage_left_march
+		icon = GFX_focus_JAP_mobilize_zengakuren
+		prerequisite = {
+			focus = JDF_Fall_short_of_expectations
+		}
+		cost = 1
+		x = 10
+		y = 13
+		completion_reward = {
+			add_stability = -0.15
+			add_political_power = -25
+			add_war_support = -0.05
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		#东北建设方案
+		id = JDF_Development_Plan_Northeast
+		icon = GFX_guoce_zhanwei
+		prerequisite = {
+			focus = JDF_Fall_short_of_expectations
+		}
+		cost = 1
+		x = 12
+		y = 13
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		#推动教育改革
+		id = JDF_Promote_education_reform
+		icon = GFX_focus_JAP_reform_the_education_system
+		prerequisite = {
+			focus = JDF_Fall_short_of_expectations
+		}
+		cost = 1
+		x = 14
+		y = 13
+		completion_reward = {
 			add_political_power = -15
 			add_stability = 0.05
 			add_war_support = -0.1
 			add_popularity = {
-    			ideology = nationalist 
-    			popularity = -0.05
-			}				
-	}
-	}
-	focus = {
-	id = JDF_wuzhuang_zhongli
-	icon = GFX_focus_JAP_armed_neutrality
-	prerequisite = { focus = JDF_qianghua_zuoyi }
-	cost = 2
-	x = 5
-	y = 2
-	completion_reward = {
-		add_stability = 0.05
-		add_political_power = 15
-		add_war_support = 0.05					
-	}
-	}
-	focus = {
-	id = JDF_shehui_gongping
-	icon = GFX_focus_JAP_feed_the_people
-	prerequisite = { focus = JDF_chengnuo_heping }
-	cost = 2
-	x = 3
-	y = 2
-	completion_reward = {
-		add_stability = 0.1	
-		add_political_power = 25	
-	}
-	}
-	focus = {
-	id = JDF_kangji_youyi
-	icon = GFX_focus_JAP_fight_uyoku_dantai
-	prerequisite = { focus = JDF_jiaoyv_gaige }
-	prerequisite = { focus = JDF_shehui_gongping }
-	prerequisite = { focus = JDF_wuzhuang_zhongli }
-	cost = 2
-	x = 3
-	y = 3
-	completion_reward = {
-		add_stability = -0.15
-		add_political_power = -25
-		add_war_support = 0.05	
-		add_popularity = {
-    		ideology = nationalist 
-    		popularity = -0.1
-		}				
-	}
-	}
-	focus = {
-	id = JDF_chongshen_lichang
-	icon = GFX_focus_JAP_calm_the_bureaucracy
-	prerequisite = { focus = JDF_kangji_youyi }
-	cost = 2
-	x = 3
-	y = 4
-	available = {
-		PRC = {
-			has_war_with = CHI
+				ideology = nationalist
+				popularity = -0.05
+			}
 		}
 	}
-	completion_reward = {
-		add_stability = 0.1
-		add_political_power = -75
-		add_war_support = -0.25	
-		add_popularity = {
-    		ideology = nationalist 
-    		popularity = 0.35
+	focus = {
+		#重申中立立场
+		id = JDF_chongshen_lichang
+		icon = GFX_focus_JAP_calm_the_bureaucracy
+		prerequisite = {
+			focus = JDF_kangji_youyi
 		}
-		hidden_effect = {
+		cost = 1
+		x = 11
+		y = 14
+		prerequisite = {
+			focus = JDF_Promote_education_reform
+		}
+		prerequisite = {
+			focus = JDF_Development_Plan_Northeast
+		}
+		prerequisite = {
+			focus = JDF_Stage_left_march
+		}
+		prerequisite = {
+			focus = JDF_Combat_right_groups
+		}
+		available = {
+			PRC = {
+				or = {
+				has_war_with = CHI
+				has_completed_focus = EAS_dongya_jueqi
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -75
+			add_war_support = -0.25
+			add_popularity = {
+				ideology = nationalist
+				popularity = 0.35
+			}
+			hidden_effect = {
 				country_event = {
-			    id =  bgd.1212    
+					id = bgd.1212
+				}
+				country_event = {
+					id = bgd.86
+				}
 			}
-			country_event = {
-				id = bgd.86
-			}
-			}				
-	}
+		}
 	}
 }

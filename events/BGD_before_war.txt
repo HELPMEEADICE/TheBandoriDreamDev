@@ -47,3 +47,37 @@ country_event = {
 		name = bangjap.3.a
 	}
 }
+
+country_event = {
+	id = bangjap.2000 #不尽人意
+	title = bangjap.2000.t
+	desc = bangjap.2000.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2022.7.20
+		tag = JAP
+	}
+	option = {
+		name = bangjap.2000.a
+		complete_national_focus = JDF_Fall_short_of_expectations
+	}
+}
+
+country_event = {
+	id = bangjap.2001 #维新脱离
+	title = bangjap.2001.t
+	desc = bangjap.2001.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2022.5.15
+		tag = JAP
+	}
+	option = {
+		name = bangjap.2001.a
+		complete_national_focus = JDF_Withdrawal_the_Party
+	}
+}
