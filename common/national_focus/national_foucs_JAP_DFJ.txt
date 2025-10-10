@@ -38,7 +38,7 @@ focus_tree = {
 	focus = {
 		#中止“跳水”
 		id = JDF_Halt_the_nosedive
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_subsidise_small_medium_businesses
 		prerequisite = {
 			focus = JDF_Victory_unity
 		}
@@ -54,7 +54,7 @@ focus_tree = {
 	focus = {
 		#完成对策立法
 		id = JDF_Complete_countermeasures_legislation
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_revise_article_9
 		prerequisite = {
 			focus = JDF_Atonement_for_sins
 		}
@@ -73,7 +73,7 @@ focus_tree = {
 	focus = {
 		#参与”洗牌“
 		id = JDF_Join_the_political_reshuffle
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_pokemon_army
 		prerequisite = {
 			focus = JDF_Complete_countermeasures_legislation
 		}
@@ -89,7 +89,7 @@ focus_tree = {
 	focus = {
 		#重审外交政策
 		id = JDF_Review_foreign_policy
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_new_leader_of_the_free_world
 		prerequisite = {
 			focus = JDF_Join_the_political_reshuffle
 		}
@@ -105,7 +105,7 @@ focus_tree = {
 	focus = {
 		#清查”遗迹“
 		id = JDF_clarify_remaining_issues
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_defeat_suport_loyal_business
 		prerequisite = {
 			focus = JDF_Join_the_political_reshuffle
 		}
@@ -121,7 +121,7 @@ focus_tree = {
 	focus = {
 		#强化CPTPP
 		id = JDF_Strengthen_the_CPTPP
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_defeat_forced_cooperation
 		prerequisite = {
 			focus = JDF_Review_foreign_policy
 		}
@@ -145,6 +145,9 @@ focus_tree = {
 		x = 10
 		y = 5
 		completion_reward = {
+			country_event = {
+				id = bangjap.2002
+			}
 			add_political_power = -15
 			add_war_support = -0.05
 			add_stability = 0.05
@@ -158,7 +161,7 @@ focus_tree = {
 	focus = {
 		#替代美国角色
 		id = JDF_Take_over_the_USA
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_legacy_of_anpo_protests
 		prerequisite = {
 			focus = JDF_Strengthen_the_CPTPP
 		}
@@ -174,7 +177,7 @@ focus_tree = {
 	focus = {
 		#谈拢自贸协定
 		id = JDF_Finalize_trade_agreement
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_made_in_japan_2
 		prerequisite = {
 			focus = JDF_Easing_tensions_with_China
 		}
@@ -198,7 +201,7 @@ focus_tree = {
 	focus = {
 		#推动构造改革
 		id = JDF_Promote_structural_reform
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_administrative_reforms
 		prerequisite = {
 			focus = JDF_clarify_remaining_issues
 		}
@@ -214,7 +217,7 @@ focus_tree = {
 	focus = {
 		#改革经济团体
 		id = JDF_Reform_economic_organizations
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_promote_yen
 		prerequisite = {
 			focus = JDF_clarify_remaining_issues
 		}
@@ -230,7 +233,7 @@ focus_tree = {
 	focus = {
 		#深化日欧合作
 		id = JDF_Deepen_Japan-EU_cooperation
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_our_european_partners
 		prerequisite = {
 			focus = JDF_Promote_structural_reform
 		}
@@ -249,7 +252,7 @@ focus_tree = {
 	focus = {
 		#思考国有化路径
 		id = JDF_Explore_paths_nationalization
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_throw_the_corporations
 		prerequisite = {
 			focus = JDF_Reform_economic_organizations
 		}
@@ -265,7 +268,7 @@ focus_tree = {
 	focus = {
 		#推动议程
 		id = JDF_Advance_the_agenda
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_free_japan
 		prerequisite = {
 			focus = JDF_Take_over_the_USA
 		}
@@ -288,7 +291,7 @@ focus_tree = {
 	focus = {
 		#推进绿色经济
 		id = JDF_Advance_green_economy
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_energy_independence_2
 		prerequisite = {
 			focus = JDF_Advance_the_agenda
 		}
@@ -304,7 +307,7 @@ focus_tree = {
 	focus = {
 		#推动别姓改革
 		id = JDF_Advance_reform_separate_surnames
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_promote_gender_neutrality
 		prerequisite = {
 			focus = JDF_Advance_the_agenda
 		}
@@ -320,7 +323,7 @@ focus_tree = {
 	focus = {
 		#强化亚太合作
 		id = JDF_Enhance_APAC_cooperation
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_own_economic_sphere
 		prerequisite = {
 			focus = JDF_Advance_the_agenda
 		}
@@ -336,7 +339,7 @@ focus_tree = {
 	focus = {
 		#人本投资强化
 		id = JDF_Strengthen_human_investment
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_progressive_healthcare
 		prerequisite = {
 			focus = JDF_Advance_reform_separate_surnames
 		}
@@ -355,7 +358,7 @@ focus_tree = {
 	focus = {
 		#迈向全面平权
 		id = JDF_comprehensive_equality
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_marriage_reform
 		prerequisite = {
 			focus = JDF_Advance_reform_separate_surnames
 		}
@@ -374,7 +377,7 @@ focus_tree = {
 	focus = {
 		#削减消费税
 		id = JDF_Cut_consumption_tax
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_budget_responsibility
 		prerequisite = {
 			focus = JDF_Advance_green_economy
 		}
@@ -393,7 +396,7 @@ focus_tree = {
 	focus = {
 		#保持财政纪律
 		id = JDF_Maintain_fiscal_discipline
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_new_tax_system
 		prerequisite = {
 			focus = JDF_Advance_green_economy
 		}
@@ -412,7 +415,7 @@ focus_tree = {
 	focus = {
 		#维系护宪立场
 		id = JDF_Uphold_constitutionalist
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_program_loyalty
 		prerequisite = {
 			focus = JDF_Enhance_APAC_cooperation
 		}
@@ -431,7 +434,7 @@ focus_tree = {
 	focus = {
 		#审时度势
 		id = JDF_Assess_the_situation
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_japanese_revolutionary_armed_forces
 		prerequisite = {
 			focus = JDF_Enhance_APAC_cooperation
 		}
@@ -450,7 +453,7 @@ focus_tree = {
 	focus = {
 		#维新会脱离
 		id = JDF_Withdrawal_the_Party
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_each_to_his_own
 		prerequisite = {
 			focus = JDF_Strengthen_human_investment
 			focus = JDF_comprehensive_equality
@@ -478,7 +481,7 @@ focus_tree = {
 	focus = {
 		#霞关洗牌
 		id = JDF_Kasumigaseki_personnel
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_grassroots_democracy
 		prerequisite = {
 			focus = JDF_Withdrawal_the_Party
 		}
@@ -494,7 +497,7 @@ focus_tree = {
 	focus = {
 		#强化工会势力
 		id = JDF_Strengthen_power_labor
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_social_pact_2
 		prerequisite = {
 			focus = JDF_Withdrawal_the_Party
 		}
@@ -510,7 +513,7 @@ focus_tree = {
 	focus = {
 		#宣扬自民恶行
 		id = JDF_Expose_the_misdeeds
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_expose_ldp
 		prerequisite = {
 			focus = JDF_Withdrawal_the_Party
 		}
@@ -526,7 +529,7 @@ focus_tree = {
 	focus = {
 		#策反公明党
 		id = JDF_Instigate_Komeito_Party
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_integration_komeito
 		prerequisite = {
 			focus = JDF_Withdrawal_the_Party
 		}
@@ -542,7 +545,7 @@ focus_tree = {
 	focus = {
 		#不尽人意
 		id = JDF_Fall_short_of_expectations
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_digitalisation_of_bureaucracy
 		prerequisite = {
 			focus = JDF_Kasumigaseki_personnel
 		}
@@ -628,7 +631,7 @@ focus_tree = {
 	focus = {
 		#东北建设方案
 		id = JDF_Development_Plan_Northeast
-		icon = GFX_guoce_zhanwei
+		icon = GFX_focus_JAP_develop_northern_prefectures_2
 		prerequisite = {
 			focus = JDF_Fall_short_of_expectations
 		}
@@ -686,8 +689,8 @@ focus_tree = {
 		available = {
 			PRC = {
 				or = {
-				has_war_with = CHI
-				has_completed_focus = EAS_dongya_jueqi
+					has_war_with = CHI
+					has_completed_focus = EAS_dongya_jueqi
 				}
 			}
 		}

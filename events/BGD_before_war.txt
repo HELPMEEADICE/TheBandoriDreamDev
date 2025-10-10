@@ -1,7 +1,6 @@
 add_namespace = bangjap
-
 country_event = {
-	id = bangjap.1 #有咲投票
+	id = bangjap.1	#有咲投票
 	title = bangjap.1.t
 	desc = bangjap.1.d
 	picture = GFX_bangdream_victory
@@ -17,7 +16,7 @@ country_event = {
 }
 
 country_event = {
-	id = bangjap.2 #Anon生病
+	id = bangjap.2	#Anon生病
 	title = bangjap.2.t
 	desc = bangjap.2.d
 	picture = GFX_bangdream_victory
@@ -33,7 +32,7 @@ country_event = {
 }
 
 country_event = {
-	id = bangjap.3 #Sayo生病
+	id = bangjap.3	#Sayo生病
 	title = bangjap.3.t
 	desc = bangjap.3.d
 	picture = GFX_bangdream_victory
@@ -49,7 +48,7 @@ country_event = {
 }
 
 country_event = {
-	id = bangjap.2000 #不尽人意
+	id = bangjap.2000	#不尽人意
 	title = bangjap.2000.t
 	desc = bangjap.2000.d
 	picture = GFX_bangdream_victory
@@ -66,7 +65,7 @@ country_event = {
 }
 
 country_event = {
-	id = bangjap.2001 #维新脱离
+	id = bangjap.2001	#维新脱离
 	title = bangjap.2001.t
 	desc = bangjap.2001.d
 	picture = GFX_bangdream_victory
@@ -79,5 +78,68 @@ country_event = {
 	option = {
 		name = bangjap.2001.a
 		complete_national_focus = JDF_Withdrawal_the_Party
+	}
+}
+
+country_event = {
+	id = bangjap.2002	#枝野改善对华关系
+	title = bangjap.2002.t
+	desc = bangjap.2002.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bangjap.2002.a
+	}
+}
+
+country_event = {
+	id = bangjap.2003	#决断
+	title = bangjap.2003.t
+	desc = bangjap.2003.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2021.7.1
+		tag = JAP
+	}
+	option = {
+		name = bangjap.2003.a
+		custom_effect_tooltip = bangjap.2003.a.tt
+	}
+}
+
+country_event = {
+	id = bangjap.2004	#丰川丑闻？
+	title = bangjap.2004.t
+	desc = bangjap.2004.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		date = 2021.5.15
+		tag = JAP
+	}
+	option = {
+		name = bangjap.2004.a
+	}
+}
+
+country_event = {
+	id = bangjap.2005	#大厦将倾
+	title = bangjap.2005.t
+	desc = bangjap.2005.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		JAP = {
+			has_idea = generic_world_wide_financial_crisis_1
+		}
+		tag = JAP
+	}
+	option = {
+		name = bangjap.2005.a
 	}
 }
