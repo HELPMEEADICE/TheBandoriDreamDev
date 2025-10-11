@@ -2872,3 +2872,17 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	#枝野改善对华关系
+	id = bgd.2002
+	title = bgd.2002.t
+	desc = bgd.2002.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2002.a
+	}
+}
+

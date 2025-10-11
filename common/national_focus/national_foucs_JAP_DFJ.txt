@@ -12,8 +12,12 @@ focus_tree = {
 		x = 11
 		y = 0
 		completion_reward = {
-			add_political_power = 25
-			add_stability = 0.05
+			add_ideas = JAP_yukio_edano
+			add_ideas = JAP_yuichiro_tamaki
+			add_ideas = JAP_ichiro_matsui
+			add_ideas = JAP_mari_kushibuchi
+			add_ideas = JAP_akira_koike
+			add_ideas = JAP_hiroshi_ogushi_defence
 			country_event = {
 				id = bgd.9
 			}
@@ -146,7 +150,7 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			country_event = {
-				id = bangjap.2002
+				id = bgd.2002
 			}
 			add_political_power = -15
 			add_war_support = -0.05
@@ -473,9 +477,8 @@ focus_tree = {
 		x = 11
 		y = 10
 		completion_reward = {
-			add_political_power = 30
-			add_stability = 0.05
-			add_war_support = -0.05
+			remove_ideas = JAP_ichiro_matsui
+			add_ideas = JAP_mizuho_fukushima
 		}
 	}
 	focus = {
