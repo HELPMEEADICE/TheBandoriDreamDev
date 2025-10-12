@@ -133,27 +133,4 @@ on_actions = {
 			}
 		}
 	}
-	on_state_control_changed = {
-		effect = {
-			if = {
-				#USN capture Denver
-				limit = {
-					FROM.FROM = {
-						state = 1142
-					}
-					ROOT = {
-						OR = {
-							is_ally_with = BGD
-						}
-					}
-				}
-				ROOT = {
-					country_event = {
-						id = usnavy.40
-						hours = 6
-					}
-				}
-			}
-		}
-	}
 }

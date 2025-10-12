@@ -35,6 +35,28 @@ country_event = {
 				long_name = USN_social_democrat_long
 				name = USN_social_democrat
 			}
+			#
+			set_party_name = {
+				ideology = social_liberal
+				long_name = USN_social_liberal_party_long
+				name = USN_social_liberal_party
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = USN_conservative_party_long
+				name = USN_conservative_party
+			}
+			set_party_name = {
+				ideology = market_liberal_party
+				long_name = USN_market_liberal_party_long
+				name = USN_market_liberal_party
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = USN_authoritarian_democrat_party_long
+				name = USN_authoritarian_democrat_party
+			}
+			#
 			custom_effect_tooltip = USN_BGD
 			set_cosmetic_tag = uskira
 			hidden_effect = {
@@ -1233,7 +1255,91 @@ country_event = {
 				value = -0.15
 			}
 			USN_add_influence_A = yes
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.05
+			}
 		}
+	}
+}
+
+country_event = {
+	#解放：虚伪的旗帜
+	id = usnavy.41
+	title = usnavy.41.t
+	desc = usnavy.41.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.41.a
+		USN = {
+			load_oob = USN_Militia
+			add_war_support = 0.05
+			add_stability = 0.1
+		}
+		add_popularity = {
+				ideology = social_liberal
+				popularity = 0.1
+			}
+	}
+}
+
+country_event = {
+	#终结
+	id = usnavy.42
+	title = usnavy.42.t
+	desc = usnavy.42.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.42.a
+		USN = {
+			load_oob = USN_Militia
+			add_political_power = 100
+			add_stability = 0.15
+			set_temp_variable = {
+				var = USN_influence_B_var_temp
+				value = 0.05
+			}
+			USN_add_influence_B = yes
+			set_temp_variable = {
+				var = USN_influence_A_var_temp
+				value = 0.05
+			}
+			USN_add_influence_A = yes
+		}
+	}
+}
+
+country_event = {
+	#严阵以待
+	id = usnavy.43
+	title = usnavy.43.t
+	desc = usnavy.43.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.43.a
+	}
+}
+
+country_event = {
+	#清算
+	id = usnavy.44
+	title = usnavy.44.t
+	desc = usnavy.44.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.44.a
 	}
 }
 

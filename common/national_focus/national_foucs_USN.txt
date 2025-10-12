@@ -202,19 +202,19 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_income_growth_factor = 0.2
+				USN_Economic_reconstruction_income_growth_factor = 0.1
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_personal_value_factor = 0.15
+				USN_Economic_reconstruction_personal_value_factor = 0.05
 			}
 			add_to_variable = {
 				USN_Economic_reconstruction_misc_income = 0.05
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_society_development_monthly = 0.1
+				USN_Economic_reconstruction_society_development_monthly = 0.02
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_farming_development_monthly = 0.1
+				USN_Economic_reconstruction_farming_development_monthly = 0.02
 			}
 		}
 	}
@@ -247,19 +247,19 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_business_value_factor = 0.2
+				USN_Economic_reconstruction_business_value_factor = 0.10
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_tax_business_rate = 0.15
+				USN_Economic_reconstruction_tax_business_rate = 0.05
 			}
 			add_to_variable = {
 				USN_Economic_reconstruction_misc_income = 0.05
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_industrial_development_monthly = 0.1
+				USN_Economic_reconstruction_industrial_development_monthly = 0.02
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_poverty_development_monthly = 0.1
+				USN_Economic_reconstruction_poverty_development_monthly = 0.02
 			}
 		}
 	}
@@ -295,19 +295,25 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_12
+		#重建国民警卫队
+		id = USN_Reconstruct_National_Guard
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 5
 		prerequisite = {
-			focus = USN_mainland_first
+			focus = USN_aid_first
 			focus = USN_mainland_first
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_stability = 0.05
+			add_ideas = high_police
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income_with_inflation = yes
 		}
 	}
 	focus = {
@@ -377,22 +383,48 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_17
+		#扫毒行动
+		id = USN_Drug_Crackdown
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 6
 		prerequisite = {
-			focus = USN_test_12
+			focus = USN_Reconstruct_National_Guard
+		}
+		prerequisite = {
+			focus = USN_test_11
 		}
 		completion_reward = {
-			add_political_power = 50
 			add_stability = 0.1
-			add_war_support = 0.1
+			country_event = {
+				id = usnavy.43
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_Economic_reconstruction_0
+					add_idea = USN_Economic_reconstruction_3
+				}
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_business_value_factor = 0.1
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_income_growth_factor = 0.1
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_personal_expense = -0.05
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_society_development_monthly = 0.02
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_poverty_development_monthly = 0.02
+			}
 		}
 	}
-	focus = {
-		id = USN_test_18
+	focus = {#重启社会劳工保障制度
+		id = USN_Reinstate_social_labor
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 12
@@ -400,46 +432,90 @@ focus_tree = {
 		prerequisite = {
 			focus = USN_test_11
 		}
+		prerequisite = {
+			focus = USN_Reconstruct_National_Guard
+		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_Economic_reconstruction_0
+					add_idea = USN_Economic_reconstruction_5
+				}
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_consumer_goods_factor = -0.1
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_research_speed_factor = 0.15
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_monthly_population = 0.05
+			}
+			add_ideas = higher_welfare
 		}
 	}
 	focus = {
-		id = USN_test_19
+		#重塑最伟大的一代
+		id = USN_Reshape_Greatest_Generation
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 6
 		prerequisite = {
-			focus = USN_test_12
+			focus = USN_Reconstruct_National_Guard
+		}
+		prerequisite = {
+			focus = USN_test_11
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
+			add_political_power = 100
+			add_stability = 0.15
 			add_war_support = 0.1
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_Economic_reconstruction_0
+					add_idea = USN_Economic_reconstruction_4
+				}
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_production_factory_max_efficiency_factor = 0.05
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_production_factory_efficiency_gain_factor = 0.15
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_industrial_capacity_factory = 0.1
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_industrial_capacity_dockyard = 0.1
+			}
+			add_to_variable = {
+				USN_Economic_reconstruction_production_speed_buildings_factor = 0.15
+			}
 		}
 	}
-	focus = {
-		id = USN_test_20
+	focus = {#焕然一新
+		id = USN_completely_transformed
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 7
 		prerequisite = {
-			focus = USN_test_19
+			focus = USN_Reshape_Greatest_Generation
 		}
 		prerequisite = {
-			focus = USN_test_18
+			focus = USN_Reinstate_social_labor
 		}
 		prerequisite = {
-			focus = USN_test_17
+			focus = USN_Drug_Crackdown
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_war_support = 0.05
+			remove_ideas = USN_buxinren_2
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.15
+			}
 		}
 	}
 	focus = {
@@ -452,7 +528,7 @@ focus_tree = {
 			focus = USN_test_22
 		}
 		prerequisite = {
-			focus = USN_test_20
+			focus = USN_completely_transformed
 		}
 		prerequisite = {
 			focus = USN_test_16
@@ -473,7 +549,7 @@ focus_tree = {
 			focus = USN_test_22
 		}
 		prerequisite = {
-			focus = USN_test_20
+			focus = USN_completely_transformed
 		}
 		prerequisite = {
 			focus = USN_test_16
