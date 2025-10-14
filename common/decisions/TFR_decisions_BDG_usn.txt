@@ -1429,6 +1429,54 @@ USN_fire_start = {
 		timeout_effect = {
 			USN_fire_intensity = yes
 			activate_mission = USN_fire_mission
+			USN = {
+				930 = {
+					damage_building = {
+						type = infrastructure
+						damage = 0.1
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.1
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 0.1
+					}
+					damage_building = {
+						type = dockyard
+						damage = 0.1
+					}
+				}
+			}
+		}
+	}
+	USN_fire_end_mission = {
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			NOT = {
+				has_idea = USN_big_fire_idea4
+				has_idea = USN_big_fire_idea3
+				has_idea = USN_big_fire_idea2
+				has_idea = USN_big_fire_idea1
+				has_idea = USN_big_fire_idea
+			}
+		}
+		visible = {
+			has_country_flag = USN_fire_end
+		}
+		#is_good = no
+		#selectable_mission = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			USN_fire_end_intensity = yes
+			activate_mission = USN_fire_end_mission
 		}
 	}
 	USN_state_emergency = {

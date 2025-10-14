@@ -146,6 +146,36 @@ ideas = {
 				political_power_factor = -0.5
 			}
 		}
+		USN_logistic_support = {#后勤保障
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				repair_speed_factor = 0.10
+				org_loss_when_moving = -0.05
+				industry_repair_factor = 0.15
+			}
+		}
+		USN_Public_support = {#群众支持
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_weekly = 0.005
+				consumer_goods_factor = -0.05
+			}
+		}
 		USN_big_fire_idea = {
 			#加州火灾
 			picture = jingshen_zhanwei

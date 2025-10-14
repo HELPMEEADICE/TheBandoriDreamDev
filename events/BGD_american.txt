@@ -115,6 +115,7 @@ country_event = {
 				annex_country = {
 					target = NNN
 				}
+				set_country_flag = Stability_first
 			}
 			#if = {
 			#	limit = {
@@ -1283,9 +1284,9 @@ country_event = {
 			add_stability = 0.1
 		}
 		add_popularity = {
-				ideology = social_liberal
-				popularity = 0.1
-			}
+			ideology = social_liberal
+			popularity = 0.1
+		}
 	}
 }
 

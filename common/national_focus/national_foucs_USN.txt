@@ -165,6 +165,9 @@ focus_tree = {
 		prerequisite = {
 			focus = USN_true_feelings
 		}
+		available = {
+			has_country_flag = Stability_first
+		}
 		completion_reward = {
 			add_political_power = 150
 			add_stability = 0.05
@@ -247,7 +250,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_business_value_factor = 0.10
+				USN_Economic_reconstruction_business_value_factor = 0.1
 			}
 			add_to_variable = {
 				USN_Economic_reconstruction_tax_business_rate = 0.05
@@ -264,22 +267,27 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_10
+		#核准发布总统重大应急声明
+		id = USN_Approve_and_issue
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 5
 		prerequisite = {
 			focus = USN_mainland_first
+			focus = USN_aid_first
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_political_power = 100
+			add_days_mission_timeout = {
+				mission = USN_fire_mission
+				days = 15
+			}
 		}
 	}
 	focus = {
-		id = USN_test_11
+		#重建美国情报共同体
+		id = USN_Rebuild_Intelligence_Community
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
@@ -289,9 +297,13 @@ focus_tree = {
 			focus = USN_mainland_first
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			create_intelligence_agency = {
+				name = "美国情报共同体"
+				icon = GFX_intelligence_agency_logo_usa
+			}
+			upgrade_intelligence_agency = upgrade_processing_and_exploitation
+			upgrade_intelligence_agency = upgrade_geoint
+			upgrade_intelligence_agency = upgrade_masint
 		}
 	}
 	focus = {
@@ -317,69 +329,80 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_13
+		#支援加州林业与消防局
+		id = USN_Support_Cal_Fire
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 2
 		y = 6
 		prerequisite = {
-			focus = USN_test_10
+			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_days_mission_timeout = {
+				mission = USN_fire_mission
+				days = 20
+			}
+			set_temp_variable = {
+				var = income_var_temp
+				value = -50
+			}
+			add_income_with_inflation = yes
 		}
 	}
 	focus = {
-		id = USN_test_14
+		#保障后勤支持
+		id = USN_ensure_logistic_support
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 6
 		prerequisite = {
-			focus = USN_test_10
+			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_ideas = USN_logistic_support
 			add_stability = 0.1
-			add_war_support = 0.1
 		}
 	}
 	focus = {
-		id = USN_test_15
+		#保障信息通畅与公共关系
+		id = USN_Ensure_smooth_information
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 6
 		y = 6
 		prerequisite = {
-			focus = USN_test_10
+			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = USN_Public_support
 		}
 	}
 	focus = {
-		id = USN_test_16
+		#回归常态
+		id = USN_return_to_normal
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 7
 		prerequisite = {
-			focus = USN_test_13
+			focus = USN_Support_Cal_Fire
 		}
 		prerequisite = {
-			focus = USN_test_14
+			focus = USN_ensure_logistic_support
 		}
 		prerequisite = {
-			focus = USN_test_15
+			focus = USN_Ensure_smooth_information
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			set_country_flag = USN_fire_end
+			activate_mission = USN_fire_end_mission
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.15
+			}
 		}
 	}
 	focus = {
@@ -393,7 +416,7 @@ focus_tree = {
 			focus = USN_Reconstruct_National_Guard
 		}
 		prerequisite = {
-			focus = USN_test_11
+			focus = USN_Rebuild_Intelligence_Community
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -423,14 +446,15 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#重启社会劳工保障制度
+	focus = {
+		#重启社会劳工保障制度
 		id = USN_Reinstate_social_labor
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 12
 		y = 6
 		prerequisite = {
-			focus = USN_test_11
+			focus = USN_Rebuild_Intelligence_Community
 		}
 		prerequisite = {
 			focus = USN_Reconstruct_National_Guard
@@ -465,7 +489,7 @@ focus_tree = {
 			focus = USN_Reconstruct_National_Guard
 		}
 		prerequisite = {
-			focus = USN_test_11
+			focus = USN_Rebuild_Intelligence_Community
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -494,7 +518,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#焕然一新
+	focus = {
+		#焕然一新
 		id = USN_completely_transformed
 		icon = GFX_guoce_zhanwei
 		cost = 3
@@ -531,7 +556,7 @@ focus_tree = {
 			focus = USN_completely_transformed
 		}
 		prerequisite = {
-			focus = USN_test_16
+			focus = USN_return_to_normal
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -552,7 +577,7 @@ focus_tree = {
 			focus = USN_completely_transformed
 		}
 		prerequisite = {
-			focus = USN_test_16
+			focus = USN_return_to_normal
 		}
 		completion_reward = {
 			add_political_power = 50
