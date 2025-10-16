@@ -544,13 +544,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_21
+		#疾行于黎明之前
+		id = USN_March_Before_the_Dawn
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 8
 		mutually_exclusive = {
-			focus = USN_test_22
+			focus = USN_Overture_upon_Ruins
 		}
 		prerequisite = {
 			focus = USN_completely_transformed
@@ -559,19 +560,19 @@ focus_tree = {
 			focus = USN_return_to_normal
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = USN_Pursuing_Light
+			unlock_decision_tooltip = USN_Declare_war_country_decision
 		}
 	}
 	focus = {
-		id = USN_test_22
+		#于废墟之上奏响序曲
+		id = USN_Overture_upon_Ruins
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 8
 		mutually_exclusive = {
-			focus = USN_test_22
+			focus = USN_March_Before_the_Dawn
 		}
 		prerequisite = {
 			focus = USN_completely_transformed
@@ -580,103 +581,166 @@ focus_tree = {
 			focus = USN_return_to_normal
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = USN_California_Overture
+			activate_mission = USN_Declare_war_country_Mission
 		}
 	}
 	focus = {
-		id = USN_test_23
+		#黎明补给线
+		id = USN_Dawnlight_Supply_Line
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 9
 		prerequisite = {
-			focus = USN_test_21
+			focus = USN_March_Before_the_Dawn
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			effect_tooltip = {
+				add_ideas = USN_Cordinated_Symphony_1
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = USN_Cordinated_Symphony
+				}
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_production_speed_supply_node_factor = 0.2
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_production_speed_rail_way_factor = 0.2
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_production_speed_infrastructure_factor = 0.2
+			}
 		}
 	}
 	focus = {
-		id = USN_test_24
+		#跨太平洋的和谐音程
+		id = USN_Trans_Pacific_Harmony
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 9
 		prerequisite = {
-			focus = USN_test_22
+			focus = USN_Overture_upon_Ruins
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = BGD_yazi_lingdao_0
+					add_idea = BGD_yazi_lingdao_4
+				}
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_trade_opinion_factor = 0.35
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_opinion_gain_monthly_factor = 0.25
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_improve_relations_maintain_cost_factor = -0.2
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_consumer_goods_factor = -0.03
+			}
 		}
 	}
 	focus = {
-		id = USN_test_25
+		#明日的诗篇
+		id = USN_Verse_for_Tomorrow
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 9
 		prerequisite = {
-			focus = USN_test_22
+			focus = USN_Overture_upon_Ruins
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_stability = 0.05
+			add_research_slot = 1
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
-		id = USN_test_26
+		#蝴蝶之网
+		id = USN_The_Butterfly_Web
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 10
 		prerequisite = {
-			focus = USN_test_25
+			focus = USN_Verse_for_Tomorrow
 		}
 		prerequisite = {
-			focus = USN_test_24
+			focus = USN_Trans_Pacific_Harmony
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			ATW = {
+				add_ideas = USN_Fierce_resistance
+			}
+			USB = {
+				add_ideas = USN_Fierce_resistance
+			}
+			PTF = {
+				add_ideas = USN_Fierce_resistance
+			}
+			USC = {
+				add_ideas = USN_Fierce_resistance
+			}
 		}
 	}
 	focus = {
-		id = USN_test_27
+		#协同交响曲
+		id = USN_Coordinated_Symphony
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 10
 		prerequisite = {
-			focus = USN_test_23
+			focus = USN_Dawnlight_Supply_Line
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = USN_Cordinated_Symphony_0
+					add_idea = USN_Cordinated_Symphony_2
+				}
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_air_cas_efficiency = 0.15
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_army_org_factor = 0.05
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_recon_factor = 0.1
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_planning_speed = 0.1
+			}
 		}
 	}
 	focus = {
-		id = USN_test_28
+		#最后的和平通告
+		id = USN_The_Final_Peace
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
 		y = 11
 		prerequisite = {
-			focus = USN_test_27
-			focus = USN_test_26
+			focus = USN_Coordinated_Symphony
+			focus = USN_The_Butterfly_Web
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			unlock_decision_tooltip = USN_Declare_war_all_decision
 		}
 	}
 }

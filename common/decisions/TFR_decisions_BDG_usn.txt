@@ -35,6 +35,91 @@ USA_second_american_civil_war_category = {
 		remove_effect = {
 		}
 	}
+	USN_Declare_war_country_decision = {
+		#美国一统
+		icon = GFX_KKP_logo
+		fire_only_once = yes
+		cost = 0
+		priority = 1
+		allowed = {
+			original_tag = USN
+		}
+		visible = {
+			has_completed_focus = USN_March_Before_the_Dawn
+		}
+		available = {
+			has_completed_focus = USN_March_Before_the_Dawn
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			country_event = {
+				id = usnavy.4
+			}
+		}
+	}
+	USN_Declare_war_all_decision = {
+		#统一美国
+		icon = GFX_KKP_logo
+		fire_only_once = yes
+		cost = 0
+		priority = 1
+		allowed = {
+			original_tag = USN
+		}
+		visible = {
+			has_completed_focus = USN_The_Final_Peace
+		}
+		available = {
+			has_completed_focus = USN_The_Final_Peace
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			USN = {
+				every_country = {
+					limit = {
+						has_idea = USA_battle_for_america_idea
+						exists = yes
+						NOT = {
+							tag = USN
+						}
+					}
+					USN = {
+						declare_war_on = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	USN_Declare_war_country_Mission = {#被邻国宣战
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = USN_fire_end
+		}
+		days_mission_timeout = 30
+		timeout_effect = {
+			country_event = {
+				id = usnavy.4
+			}
+		}
+	}
 }
 
 ########
