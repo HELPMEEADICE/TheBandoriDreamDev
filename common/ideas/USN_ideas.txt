@@ -259,6 +259,30 @@ ideas = {
 				political_power_factor = 0.15
 			}
 		}
+		USN_yazi_chengyuan = {
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = 0.20
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				personal_value_factor = 0.05
+				business_value_factor = 0.05
+				income_growth_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = USN
+				extra_trade_to_target_factor = 0.3
+			}
+		}
 		USN_Fierce_resistance = {
 			#激烈抵抗
 			picture = jingshen_zhanwei

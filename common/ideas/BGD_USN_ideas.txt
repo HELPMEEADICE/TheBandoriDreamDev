@@ -1,28 +1,34 @@
 ideas = {
 	country = {
-
 		BGD_USN_Ready_for_action = {
 			#行动准备就绪
 			picture = jingshen_zhanwei
-			
 			removal_cost = -1
 			modifier = {
-				army_org_regain = 0.1
-				ground_attack = 0.1
+				army_org_regain = 0.2
+				army_attack_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = APA
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+				attack_bonus_against_cores = 0.75
 			}
 		}
-
 		BGD_USN_Beachhead_offensive = {
 			#滩头攻势
 			picture = jingshen_zhanwei
-			
 			removal_cost = -1
 			modifier = {
-				army_speed_factor = 0.15
-				ground_attack = 0.1
+				army_speed_factor = 0.2
+				army_attack_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = APA
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+				attack_bonus_against_cores = 0.75
 			}
 		}
-
-
 	}
 }

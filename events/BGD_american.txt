@@ -598,9 +598,17 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.11.a
-		add_timed_idea = {
-			idea = BGD_USN_Ready_for_action
-			days = 180
+		USN = {
+			add_timed_idea = {
+				idea = BGD_USN_Ready_for_action
+				days = 180
+			}
+		}
+		BGD = {
+			add_timed_idea = {
+				idea = BGD_USN_Ready_for_action
+				days = 180
+			}
 		}
 	}
 }
@@ -636,13 +644,15 @@ country_event = {
 			}
 			add_timed_idea = {
 				idea = BGD_USN_Beachhead_offensive
-				days = 90
+				days = 180
 			}
 			load_oob = USN_Beach_Landing
 		}
-		add_timed_idea = {
-			idea = BGD_USN_Beachhead_offensive
-			days = 90
+		BGD = {
+			add_timed_idea = {
+				idea = BGD_USN_Beachhead_offensive
+				days = 180
+			}
 		}
 	}
 }
