@@ -1,0 +1,19 @@
+add_namespace = usegg
+country_event = {
+	#特异事件
+	id = usegg.0
+	title = usegg.0.t
+	desc = usegg.0.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usegg.0.a
+	}
+	option = {
+		name = usegg.0.b
+		custom_effect_tooltip = usegg.0.b.tt
+		set_country_flag = USN_Easter_egg_IN
+		activate_mission = USN_Abnormal_incident_mission
+	}
+}

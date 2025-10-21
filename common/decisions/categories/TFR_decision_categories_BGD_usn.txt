@@ -53,3 +53,14 @@ USN_fire_start = {
 	}
 	priority = 97
 }
+
+USN_Easter_egg = {
+	icon = GFX_gui_ppp_party_small
+	allowed = {
+		tag = USN
+	}
+	visible = {
+		has_country_flag = USN_Easter_egg_IN
+	}
+	priority = 99998
+}

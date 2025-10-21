@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+########决议########
+USN_Easter_egg: "分支路线正在启动"
+USN_Abnormal_incident: "慰问火灾中受灾群众"
+USN_Abnormal_incident_mission: "遗迹探索中"
+########事件########
+usegg.0.t: "当地人报告特异事件"
+usegg.0.d: ""
+usegg.0.a: "他们一定是吓坏了"
+usegg.0.b: "§R立即成立调查专案组！§!"
+usegg.0.b.tt: "§R这对内战中的我们及其不利§!"
+#########FLAG#######
+USN_Easter_egg_IN: "进入彩蛋"

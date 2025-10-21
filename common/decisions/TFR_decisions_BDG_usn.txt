@@ -99,7 +99,8 @@ USA_second_american_civil_war_category = {
 		remove_effect = {
 		}
 	}
-	USN_Declare_war_country_Mission = {#被邻国宣战
+	USN_Declare_war_country_Mission = {
+		#被邻国宣战
 		icon = GFX_KKP_logo
 		allowed = {
 			tag = USN
@@ -118,6 +119,29 @@ USA_second_american_civil_war_category = {
 			country_event = {
 				id = usnavy.4
 			}
+		}
+	}
+	USN_Abnormal_incident = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = USN
+		}
+		available = {
+			has_country_flag = USN_fire_end
+		}
+		visible = {
+			has_country_flag = USN_fire_end
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = usegg.0
+		}
+		remove_effect = {
 		}
 	}
 }
@@ -1659,9 +1683,15 @@ USN_fire_start = {
 		}
 		available = {
 			has_country_flag = USN_state_emergency
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1741,10 +1771,16 @@ USN_fire_start = {
 		available = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		visible = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1756,6 +1792,29 @@ USN_fire_start = {
 				mission = USN_fire_mission
 				days = 15
 			}
+		}
+	}
+}
+
+######EGG######
+USN_Easter_egg = {
+	USN_Abnormal_incident_mission = {
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = USN_Easter_egg_IN
+		}
+		days_mission_timeout = 60
+		timeout_effect = {
+			activate_mission = USN_Abnormal_incident_mission
 		}
 	}
 }

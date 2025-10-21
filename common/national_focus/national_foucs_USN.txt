@@ -39,6 +39,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			add_political_power = 50
 			army_experience = 50
 			country_event = {
 				id = usnavy.34
@@ -57,6 +58,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
+			add_political_power = 25
 			add_ideas = USN_keji_jiaoliu
 		}
 	}
@@ -71,6 +73,7 @@ focus_tree = {
 			focus = USN_ganshe_start
 		}
 		completion_reward = {
+			add_political_power = 50
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe_1
 				variant_name = "F-15J"
@@ -96,6 +99,7 @@ focus_tree = {
 			focus = USN_music_first
 		}
 		completion_reward = {
+			add_political_power = 100
 			country_event = {
 				id = usnavy.35
 			}
@@ -113,6 +117,7 @@ focus_tree = {
 			focus = USN_Science_Action
 		}
 		completion_reward = {
+			add_political_power = 50
 			add_tech_bonus = {
 				name = USN_computer
 				bonus = 1.5
@@ -147,6 +152,7 @@ focus_tree = {
 				level = 3
 			}
 			add_war_support = 0.05
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -297,6 +303,7 @@ focus_tree = {
 			focus = USN_mainland_first
 		}
 		completion_reward = {
+			add_political_power = 50
 			create_intelligence_agency = {
 				name = "美国情报共同体"
 				icon = GFX_intelligence_agency_logo_usa
@@ -339,6 +346,7 @@ focus_tree = {
 			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
+			add_political_power = 25
 			add_days_mission_timeout = {
 				mission = USN_fire_mission
 				days = 20
@@ -361,6 +369,7 @@ focus_tree = {
 			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
+			add_political_power = 25
 			add_ideas = USN_logistic_support
 			add_stability = 0.1
 		}
@@ -397,6 +406,7 @@ focus_tree = {
 			focus = USN_Ensure_smooth_information
 		}
 		completion_reward = {
+			add_political_power = 50
 			set_country_flag = USN_fire_end
 			activate_mission = USN_fire_end_mission
 			add_power_balance_value = {
@@ -460,6 +470,7 @@ focus_tree = {
 			focus = USN_Reconstruct_National_Guard
 		}
 		completion_reward = {
+			add_political_power = 25
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = USN_Economic_reconstruction_0
@@ -536,6 +547,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05
+			add_political_power = 25
 			remove_ideas = USN_buxinren_2
 			add_power_balance_value = {
 				id = USN_power_balance
@@ -560,6 +572,7 @@ focus_tree = {
 			focus = USN_return_to_normal
 		}
 		completion_reward = {
+			add_political_power = 25
 			add_ideas = USN_Pursuing_Light
 			unlock_decision_tooltip = USN_Declare_war_country_decision
 		}
@@ -581,6 +594,7 @@ focus_tree = {
 			focus = USN_return_to_normal
 		}
 		completion_reward = {
+			add_political_power = 50
 			add_ideas = USN_California_Overture
 			activate_mission = USN_Declare_war_country_Mission
 		}
