@@ -9,5 +9,30 @@ usegg.0.d: ""
 usegg.0.a: "他们一定是吓坏了"
 usegg.0.b: "§R立即成立调查专案组！§!"
 usegg.0.b.tt: "§R这对内战中的我们及其不利§!"
+
+usegg.1.t: "探索遭遇困难"
+usegg.1.d: ""
+usegg.1.a: "算了退出吧"
+usegg.1.b: "§R加大投入资金！§!"
+usegg.1.b.tt: "§R真倒霉§!"
+
+usegg.2.t: "探索遭遇阻塞"
+usegg.2.d: ""
+usegg.2.a: "我们不能把资源投入在这里"
+usegg.2.b: "§R继续投入资金§!"
+usegg.2.b.tt: "§R预计我们成功的概率很低§!"
+
+usegg.3.t: "探索获得进展"
+usegg.3.d: ""
+usegg.3.a: "我们还要继续坚持吗？"
+usegg.3.b: "§R快要胜利了！§!"
+usegg.3.b.tt: "§R成功的概率有点低，注意前线§!"
+
+usegg.4.t: "探索成功"
+usegg.4.d: ""
+usegg.4.a: "§R我们终于成功了§!"
+usegg.4.a.tt: "§R可是那些资源已经追不回来了§!"
+
 #########FLAG#######
 USN_Easter_egg_IN: "进入彩蛋"
+USN_Easter_egg_Success: "成功进入彩蛋"

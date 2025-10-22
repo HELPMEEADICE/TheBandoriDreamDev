@@ -3162,3 +3162,16 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	#日本正在反对日本
+	id = bgd.2011
+	title = bgd.2011.t
+	desc = bgd.2011.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2011.a
+	}
+}

@@ -1807,14 +1807,42 @@ USN_Easter_egg = {
 			always = no
 		}
 		available = {
-			always = no
+			NOT = {
+				has_country_flag = USN_Easter_egg_IN
+			}
 		}
 		visible = {
 			has_country_flag = USN_Easter_egg_IN
 		}
-		days_mission_timeout = 60
+		days_mission_timeout = 15
 		timeout_effect = {
 			activate_mission = USN_Abnormal_incident_mission
+			random_list = {
+				10 = {
+					add_political_power = -200
+					country_event = {
+						id = usegg.1
+					}
+				}
+				40 = {
+					add_political_power = -100
+					country_event = {
+						id = usegg.2
+					}
+				}
+				40 = {
+					add_political_power = 100
+					country_event = {
+						id = usegg.3
+					}
+				}
+				10 = {
+					add_political_power = 200
+					country_event = {
+						id = usegg.4
+					}
+				}
+			}
 		}
 	}
 }

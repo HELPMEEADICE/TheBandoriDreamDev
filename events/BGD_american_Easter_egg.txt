@@ -17,3 +17,100 @@ country_event = {
 		activate_mission = USN_Abnormal_incident_mission
 	}
 }
+
+country_event = {
+	#探索遭遇困难
+	id = usegg.1
+	title = usegg.1.t
+	desc = usegg.1.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = usegg.1.a
+		clr_country_flag = USN_Easter_egg_IN
+	}
+	option = {
+		name = usegg.1.b
+		custom_effect_tooltip = usegg.1.b.tt
+		set_temp_variable = {
+			var = income_var_temp
+			value = -100
+		}
+		add_income_with_inflation = yes
+		add_days_mission_timeout = {
+			mission = USN_Abnormal_incident_mission
+			days = 15
+		}
+	}
+}
+
+country_event = {
+	#探索遭遇阻塞
+	id = usegg.2
+	title = usegg.2.t
+	desc = usegg.2.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = usegg.2.a
+		clr_country_flag = USN_Easter_egg_IN
+	}
+	option = {
+		name = usegg.2.b
+		custom_effect_tooltip = usegg.2.b.tt
+		set_temp_variable = {
+			var = income_var_temp
+			value = -50
+		}
+		add_income_with_inflation = yes
+		add_days_mission_timeout = {
+			mission = USN_Abnormal_incident_mission
+			days = 10
+		}
+	}
+}
+
+country_event = {
+	#探索获得进展
+	id = usegg.3
+	title = usegg.3.t
+	desc = usegg.3.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = usegg.3.a
+		clr_country_flag = USN_Easter_egg_IN
+	}
+	option = {
+		name = usegg.3.b
+		custom_effect_tooltip = usegg.3.b.tt
+		set_temp_variable = {
+			var = income_var_temp
+			value = -25
+		}
+		add_income_with_inflation = yes
+		add_days_mission_timeout = {
+			mission = USN_Abnormal_incident_mission
+			days = -10
+		}
+	}
+}
+
+country_event = {
+	#探索成功
+	id = usegg.4
+	title = usegg.4.t
+	desc = usegg.4.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usegg.4.a
+		custom_effect_tooltip = usegg.4.b.tt
+		set_country_flag = USN_Easter_egg_Success
+		clr_country_flag = USN_Easter_egg_IN
+	}
+}

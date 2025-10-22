@@ -133,4 +133,36 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 532
+					}
+					OR = {
+						FROM = {
+							tag = JAP
+						}
+						FROM = {
+							tag = BGD
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = JAP
+						}
+						ROOT = {
+							tag = BGD
+						}
+					}
+				}
+				BGD = {
+					country_event = {
+						id = bgd.2011
+					}
+				}
+			}
+		}
+	}
 }
