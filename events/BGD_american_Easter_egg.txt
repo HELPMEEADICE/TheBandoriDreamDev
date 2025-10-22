@@ -40,7 +40,7 @@ country_event = {
 		add_income_with_inflation = yes
 		add_days_mission_timeout = {
 			mission = USN_Abnormal_incident_mission
-			days = 15
+			days = 10
 		}
 	}
 }
@@ -67,7 +67,7 @@ country_event = {
 		add_income_with_inflation = yes
 		add_days_mission_timeout = {
 			mission = USN_Abnormal_incident_mission
-			days = 10
+			days = 5
 		}
 	}
 }
