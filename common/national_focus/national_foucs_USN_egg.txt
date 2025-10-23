@@ -1,0 +1,133 @@
+focus_tree = {
+	id = TFR_tree_EGG
+	country = {
+		base = 0
+	}
+	default = no
+	focus = {
+		#初来乍到
+		id = EGG_Just_arrived
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 0
+		completion_reward = {
+			remove_country_leader_trait = USN_build_leader
+			add_political_power = 100
+			remove_ideas = BGD_Nakamachi_Arale
+			remove_ideas = BGD_Minetsuki_Ritsu
+			remove_ideas = BGD_Sengoku_Yuno
+			remove_ideas = BGD_Fuji_Miyako
+			remove_ideas = BGD_Miyanaga_Nonoka
+			remove_ideas = BGD_Kurata_Mashiro
+		}
+	}
+	focus = {
+		#整理牌桌
+		id = EGG_Clear_the_table
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 6
+		y = 1
+		prerequisite = {
+			focus = EGG_Just_arrived
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#保持镇静
+		id = EGG_Stay_calm
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 8
+		y = 1
+		prerequisite = {
+			focus = EGG_Just_arrived
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#开局
+		id = EGG_Opening_move
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = EGG_Clear_the_table
+		}
+		prerequisite = {
+			focus = EGG_Stay_calm
+		}
+		completion_reward = {
+			country_event = {
+				id = usegg.7
+			}
+		}
+	}
+	focus = {
+		#开局（红）
+		id = EGG_Opening_move_red
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 5
+		y = 3
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = EGG_Opening_move
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#开局（蓝）
+		id = EGG_Opening_move_blue
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 3
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = EGG_Opening_move
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#开局（棕）
+		id = EGG_Opening_move_brown
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 9
+		y = 3
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = EGG_Opening_move
+		}
+		ompletion_reward = {
+		}
+	}
+	focus = {
+		#浮世幻梦
+		id = EGG_Illusory_Dream
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = EGG_Opening_move_red
+			focus = EGG_Opening_move_blue
+			focus = EGG_Opening_move_brown
+		}
+		ompletion_reward = {
+		}
+	}
+}

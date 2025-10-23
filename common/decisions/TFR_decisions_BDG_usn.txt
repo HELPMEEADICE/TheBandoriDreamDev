@@ -16,20 +16,31 @@ USA_second_american_civil_war_category = {
 			#USA_has_militias_secured = yes
 			#USA_has_gangs_secured = yes
 			#USA_has_separatists_secured = yes
-			USN_has_rivals_secured = yes
+			#USN_has_rivals_secured = yes
 		}
 		ai_will_do = {
 			base = 100
 		}
 		complete_effect = {
-			#country_event = {
-			#    id = usnavy.24
-			#}
-			#hidden_effect = {
-			#    
-			#}
 			news_event = {
 				id = usnavy.2001
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = USN_Easter_egg_Success
+					}
+					country_event = {
+						id = usnavy.46
+						days = 7
+					}
+				}
+				else = {
+					country_event = {
+						id = usnavy.45
+						days = 7
+					}
+				}
 			}
 		}
 		remove_effect = {

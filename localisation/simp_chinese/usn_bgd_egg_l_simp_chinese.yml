@@ -33,6 +33,45 @@ usegg.4.d: ""
 usegg.4.a: "§R我们终于成功了§!"
 usegg.4.a.tt: "§R可是那些资源已经追不回来了§!"
 
+usegg.5.t: "真白演唱完毕之后当场昏迷！"
+usegg.5.d: ""
+usegg.5.a: "快送去急救！"
+usegg.5.a.tt: "§R故事在此引来分支§!"
+
+usegg.6.t: "梦境？"
+usegg.6.d: ""
+usegg.6.a: "好的，我试试吧"
+usegg.6.b: "不行！我得回去"
+
+usegg.7.t: "开始选卡"
+usegg.7.d: "“开局了”\n真白发现整理好的牌桌随着那个声音发出了炫目的金光，随后桌面出现了三张风格完全不同的卡牌\n“选择吧，这将决定你之后的走向”\n“唉唉？！”真白不由得疑惑“好吧，那我选择。。。”"
+usegg.7.a: "来自人民"
+usegg.7.b: "战争机器"
+usegg.7.c: "罗马精神"
 #########FLAG#######
 USN_Easter_egg_IN: "进入彩蛋"
 USN_Easter_egg_Success: "成功进入彩蛋"
+#########国策########
+EGG_Just_arrived: "初来乍到"
+EGG_Just_arrived_desc: ""
+
+EGG_Clear_the_table: "整理牌桌"
+EGG_Clear_the_table_desc: ""
+
+EGG_Stay_calm: "保持镇静"
+EGG_Stay_calm_desc: ""
+
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+#选线
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+#
+EGG_Illusory_Dream: "浮世幻梦"
+EGG_Illusory_Dream_desc: ""

@@ -1354,6 +1354,56 @@ country_event = {
 	}
 }
 
+country_event = {
+	#演唱会事件
+	id = usnavy.45
+	title = usnavy.45.t
+	desc = usnavy.45.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.45.a
+		clr_country_flag = USN_Easter_egg_IN
+	}
+}
+
+country_event = {
+	#演唱会事件(彩蛋线进线)
+	id = usnavy.46
+	title = usnavy.46.t
+	desc = usnavy.46.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.46.a
+		clr_country_flag = USN_Easter_egg_IN
+		clr_country_flag = USN_Easter_egg_Success
+	}
+	option = {
+		name = usnavy.46.b
+		country_event = {
+			id = usnavy.45
+		}
+	}
+}
+
+country_event = {
+	#演唱会事件(彩蛋线出线)
+	id = usnavy.47
+	title = usnavy.47.t
+	desc = usnavy.47.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.47.a
+		clr_country_flag = USN_Easter_egg_IN
+		clr_country_flag = USN_Easter_egg_Success
+	}
+}
+
 news_event = {
 	#美利坚再一统
 	id = usnavy.2001
