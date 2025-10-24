@@ -19,7 +19,7 @@ shared_focus = {
 shared_focus = {
 	#珍珠港前进基地
 	id = BGD_PH_Forward_Base
-	icon = GFX_guoce_zhanwei
+	icon = GFX_BGD_PH_Forward_Base
 	cost = 3
 	prerequisite = {
 		focus = BGD_hawaii_negotiations
@@ -38,7 +38,7 @@ shared_focus = {
 shared_focus = {
 	#“自由先锋”维和部队
 	id = BGD_Task_Force_Liberty
-	icon = GFX_guoce_zhanwei
+	icon = GFX_BGD_Task_Force_Liberty
 	cost = 3
 	prerequisite = {
 		focus = BGD_PH_Forward_Base

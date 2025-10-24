@@ -475,4 +475,12 @@ spriteTypes = {
 		name = "GFX_BGD_the_Starlight_Begins"
 		texturefile = "gfx\interface\goals\BGD\BGD_the_Starlight_Begins.png"
 	}
+	SpriteType = {
+		name = "GFX_BGD_PH_Forward_Base"
+		texturefile = "gfx\interface\goals\BGD\BGD_PH_Forward_Base.png"
+	}
+	SpriteType = {
+		name = "GFX_BGD_Task_Force_Liberty"
+		texturefile = "gfx\interface\goals\BGD\BGD_Task_Force_Liberty.png"
+	}
 }
