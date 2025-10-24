@@ -136,3 +136,17 @@ USN_Economic_reconstruction = {
 	war_stability_factor = USN_Economic_reconstruction_war_stability_factor
 	misc_income = USN_Economic_reconstruction_misc_income
 }
+
+USN_Cordinated_Symphony = {
+	icon = GFX_idea_guomin_jingji_jingshen
+	enable = {
+		always = yes
+	}
+	production_speed_supply_node_factor = USN_Cordinated_Symphony_production_speed_supply_node_factor
+	production_speed_rail_way_factor = USN_Cordinated_Symphony_production_speed_rail_way_factor
+	production_speed_infrastructure_factor = USN_Cordinated_Symphony_production_speed_infrastructure_factor
+	air_cas_efficiency = USN_Cordinated_Symphony_air_cas_efficiency
+	army_org_factor = USN_Cordinated_Symphony_army_org_factor
+	recon_factor = USN_Cordinated_Symphony_recon_factor
+	planning_speed = USN_Cordinated_Symphony_planning_speed
+}

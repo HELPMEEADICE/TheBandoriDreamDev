@@ -1,0 +1,77 @@
+﻿l_simp_chinese:
+########决议########
+USN_Easter_egg: "分支路线正在启动"
+USN_Abnormal_incident: "慰问火灾中受灾群众"
+USN_Abnormal_incident_mission: "遗迹探索中"
+########事件########
+usegg.0.t: "当地人报告特异事件"
+usegg.0.d: ""
+usegg.0.a: "他们一定是吓坏了"
+usegg.0.b: "§R立即成立调查专案组！§!"
+usegg.0.b.tt: "§R这对内战中的我们及其不利§!"
+
+usegg.1.t: "探索遭遇困难"
+usegg.1.d: ""
+usegg.1.a: "算了退出吧"
+usegg.1.b: "§R加大投入资金！§!"
+usegg.1.b.tt: "§R真倒霉§!"
+
+usegg.2.t: "探索遭遇阻塞"
+usegg.2.d: ""
+usegg.2.a: "我们不能把资源投入在这里"
+usegg.2.b: "§R继续投入资金§!"
+usegg.2.b.tt: "§R预计我们成功的概率很低§!"
+
+usegg.3.t: "探索获得进展"
+usegg.3.d: ""
+usegg.3.a: "我们还要继续坚持吗？"
+usegg.3.b: "§R快要胜利了！§!"
+usegg.3.b.tt: "§R成功的概率有点低，注意前线§!"
+
+usegg.4.t: "探索成功"
+usegg.4.d: ""
+usegg.4.a: "§R我们终于成功了§!"
+usegg.4.a.tt: "§R可是那些资源已经追不回来了§!"
+
+usegg.5.t: "真白演唱完毕之后当场昏迷！"
+usegg.5.d: ""
+usegg.5.a: "快送去急救！"
+usegg.5.a.tt: "§R故事在此引来分支§!"
+
+usegg.6.t: "梦境？"
+usegg.6.d: ""
+usegg.6.a: "好的，我试试吧"
+usegg.6.b: "不行！我得回去"
+
+usegg.7.t: "开始选卡"
+usegg.7.d: "“开局了”\n真白发现整理好的牌桌随着那个声音发出了炫目的金光，随后桌面出现了三张风格完全不同的卡牌\n“选择吧，这将决定你之后的走向”\n“唉唉？！”真白不由得疑惑“好吧，那我选择。。。”"
+usegg.7.a: "来自人民"
+usegg.7.b: "战争机器"
+usegg.7.c: "罗马精神"
+#########FLAG#######
+USN_Easter_egg_IN: "进入彩蛋"
+USN_Easter_egg_Success: "成功进入彩蛋"
+#########国策########
+EGG_Just_arrived: "初来乍到"
+EGG_Just_arrived_desc: ""
+
+EGG_Clear_the_table: "整理牌桌"
+EGG_Clear_the_table_desc: ""
+
+EGG_Stay_calm: "保持镇静"
+EGG_Stay_calm_desc: ""
+
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+#选线
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+
+EGG_Opening_move: "开局"
+EGG_Opening_move_desc: ""
+#
+EGG_Illusory_Dream: "浮世幻梦"
+EGG_Illusory_Dream_desc: ""

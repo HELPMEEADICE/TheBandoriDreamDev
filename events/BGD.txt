@@ -1251,14 +1251,13 @@ country_event = {
 			limit = {
 				has_global_flag = hell_of_hajimi
 			}
-			BGD ={
+			BGD = {
 				add_timed_idea = {
-		    		idea = BGD_heil_of_hajimi
- 		   		    days = 90
+					idea = BGD_heil_of_hajimi
+					days = 90
 				}
 			}
 		}
-
 	}
 }
 
@@ -2749,6 +2748,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.118.a
+		country_event = {
+			id = bgd.119
+		}
 	}
 }
 
@@ -2762,6 +2764,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.119.a
+		country_event = {
+			id = bgd.120
+		}
 	}
 }
 
@@ -2775,6 +2780,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.120.a
+		country_event = {
+			id = bgd.121
+		}
 	}
 }
 
@@ -2886,3 +2894,284 @@ country_event = {
 	}
 }
 
+country_event = {
+	#开始函馆事件链
+	id = bgd.2003
+	title = bgd.2003.t
+	desc = bgd.2003.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2003.a
+		country_event = {
+			id = bgd.2004
+			days = 1
+		}
+		BGD = {
+			add_political_power = -200
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链
+	id = bgd.2004
+	title = bgd.2004.t
+	desc = bgd.2004.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2004.a
+		country_event = {
+			id = bgd.2005
+			days = 7
+		}
+		BGD = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income_with_inflation = yes
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链（给雷达，防空升级1,海军空军升级2）
+	id = bgd.2005
+	title = bgd.2005.t
+	desc = bgd.2005.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2005.a
+		country_event = {
+			id = bgd.2006
+			days = 7
+		}
+		1333 = {
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = {
+					id = 14710
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链（给雷达，防空升级1,海军空军升级2）
+	id = bgd.2006
+	title = bgd.2006.t
+	desc = bgd.2006.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2006.a
+		country_event = {
+			id = bgd.2007
+			days = 7
+		}
+		1333 = {
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = {
+					id = 14710
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链（给雷达，防空升级1,海军空军升级2）
+	id = bgd.2007
+	title = bgd.2007.t
+	desc = bgd.2007.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2007.a
+		country_event = {
+			id = bgd.2008
+			days = 7
+		}
+		1333 = {
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = {
+					id = 14710
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链（给雷达，防空升级1,海军空军升级2）
+	id = bgd.2008
+	title = bgd.2008.t
+	desc = bgd.2008.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2008.a
+		country_event = {
+			id = bgd.2009
+			days = 7
+		}
+		1333 = {
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = {
+					id = 14710
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链（给雷达，防空升级1,海军空军升级2）
+	id = bgd.2009
+	title = bgd.2009.t
+	desc = bgd.2009.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2009.a
+		country_event = {
+			id = bgd.2010
+			days = 1
+		}
+		1333 = {
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				province = {
+					id = 14710
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#函馆事件链结束
+	id = bgd.2010
+	title = bgd.2010.t
+	desc = bgd.2010.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2010.a
+		1333 = {
+			add_building_construction = {
+				type = dockyard
+				level = 3
+			}
+			add_extra_state_shared_building_slots = 3
+		}
+	}
+}
+
+country_event = {
+	#日本正在反对日本
+	id = bgd.2011
+	title = bgd.2011.t
+	desc = bgd.2011.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2011.a
+	}
+}

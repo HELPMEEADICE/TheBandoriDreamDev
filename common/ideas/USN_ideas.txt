@@ -143,7 +143,160 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.1
-				political_power_factor = -0.5
+				political_power_factor = -0.15
+			}
+		}
+		USN_logistic_support = {
+			#后勤保障
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				repair_speed_factor = 0.1
+				org_loss_when_moving = -0.05
+				industry_repair_factor = 0.15
+			}
+		}
+		USN_Public_support = {
+			#群众支持
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_weekly = 0.005
+				consumer_goods_factor = -0.05
+			}
+		}
+		USN_Pursuing_Light = {
+			#追光远征
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				army_attack_factor = 0.05
+				army_core_defence_factor = -0.1
+				political_power_factor = -0.15
+			}
+		}
+		USN_Cordinated_Symphony_0 = {
+			#战地交响乐团
+			name = USN_Cordinated_Symphony_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		USN_Cordinated_Symphony_1 = {
+			name = USN_Cordinated_Symphony_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_supply_node_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		USN_Cordinated_Symphony_2 = {
+			name = USN_Cordinated_Symphony_dynamic
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_cas_efficiency = 0.15
+				army_org_factor = 0.05
+				recon_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		USN_California_Overture = {
+			#加州序曲
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = -0.15
+				modifier_stability_factor = 0.1
+				modifier_consumer_goods_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+		USN_yazi_chengyuan = {
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = 0.20
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.05
+				personal_value_factor = 0.05
+				business_value_factor = 0.05
+				income_growth_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = USN
+				extra_trade_to_target_factor = 0.3
+			}
+		}
+		USN_Fierce_resistance = {
+			#激烈抵抗
+			picture = jingshen_zhanwei
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = -0.05
+				monthly_population = -0.02
+				resistance_growth = 0.05
 			}
 		}
 		USN_big_fire_idea = {
@@ -438,7 +591,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				business_value_factor = 0.10
+				business_value_factor = 0.1
 				tax_business_rate = 0.05
 				misc_income = 0.05
 				industrial_development_monthly = 0.02
@@ -492,7 +645,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor  = -0.1
+				consumer_goods_factor = -0.1
 				research_speed_factor = 0.15
 				monthly_population = 0.05
 			}

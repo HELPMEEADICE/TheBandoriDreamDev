@@ -471,7 +471,12 @@ focus_tree = {
 			focus = JDF_Assess_the_situation
 		}
 		available = {
-			always = no
+			PRC = {
+				or = {
+					has_war_with = CHI
+					has_completed_focus = EAS_dongya_jueqi
+				}
+			}
 		}
 		cost = 2
 		x = 11
@@ -562,7 +567,12 @@ focus_tree = {
 			focus = JDF_Instigate_Komeito_Party
 		}
 		available = {
-			always = no
+			PRC = {
+				or = {
+					has_war_with = CHI
+					has_completed_focus = EAS_dongya_jueqi
+				}
+			}
 		}
 		cost = 0
 		x = 11

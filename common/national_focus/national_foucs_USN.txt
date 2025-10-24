@@ -39,6 +39,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
+			add_political_power = 50
 			army_experience = 50
 			country_event = {
 				id = usnavy.34
@@ -57,6 +58,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
+			add_political_power = 25
 			add_ideas = USN_keji_jiaoliu
 		}
 	}
@@ -71,6 +73,7 @@ focus_tree = {
 			focus = USN_ganshe_start
 		}
 		completion_reward = {
+			add_political_power = 50
 			add_equipment_to_stockpile = {
 				type = small_plane_airframe_1
 				variant_name = "F-15J"
@@ -96,6 +99,7 @@ focus_tree = {
 			focus = USN_music_first
 		}
 		completion_reward = {
+			add_political_power = 100
 			country_event = {
 				id = usnavy.35
 			}
@@ -113,6 +117,7 @@ focus_tree = {
 			focus = USN_Science_Action
 		}
 		completion_reward = {
+			add_political_power = 50
 			add_tech_bonus = {
 				name = USN_computer
 				bonus = 1.5
@@ -147,6 +152,7 @@ focus_tree = {
 				level = 3
 			}
 			add_war_support = 0.05
+			add_political_power = 25
 		}
 	}
 	focus = {
@@ -164,6 +170,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = USN_true_feelings
+		}
+		available = {
+			has_country_flag = Stability_first
 		}
 		completion_reward = {
 			add_political_power = 150
@@ -234,7 +243,7 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = {
 				var = income_var_temp
-				value = 500
+				value = 200
 			}
 			add_income_with_inflation = yes
 			add_war_support = 0.1
@@ -247,7 +256,7 @@ focus_tree = {
 				}
 			}
 			add_to_variable = {
-				USN_Economic_reconstruction_business_value_factor = 0.10
+				USN_Economic_reconstruction_business_value_factor = 0.1
 			}
 			add_to_variable = {
 				USN_Economic_reconstruction_tax_business_rate = 0.05
@@ -264,22 +273,27 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_10
+		#核准发布总统重大应急声明
+		id = USN_Approve_and_issue
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 5
 		prerequisite = {
 			focus = USN_mainland_first
+			focus = USN_aid_first
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_political_power = 100
+			add_days_mission_timeout = {
+				mission = USN_fire_mission
+				days = 15
+			}
 		}
 	}
 	focus = {
-		id = USN_test_11
+		#重建美国情报共同体
+		id = USN_Rebuild_Intelligence_Community
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
@@ -290,8 +304,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			create_intelligence_agency = {
+				name = "美国情报共同体"
+				icon = GFX_intelligence_agency_logo_usa
+			}
+			upgrade_intelligence_agency = upgrade_processing_and_exploitation
+			upgrade_intelligence_agency = upgrade_geoint
+			upgrade_intelligence_agency = upgrade_masint
 		}
 	}
 	focus = {
@@ -317,69 +336,83 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_13
+		#支援加州林业与消防局
+		id = USN_Support_Cal_Fire
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 2
 		y = 6
 		prerequisite = {
-			focus = USN_test_10
+			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_political_power = 25
+			add_days_mission_timeout = {
+				mission = USN_fire_mission
+				days = 20
+			}
+			set_temp_variable = {
+				var = income_var_temp
+				value = -50
+			}
+			add_income_with_inflation = yes
 		}
 	}
 	focus = {
-		id = USN_test_14
+		#保障后勤支持
+		id = USN_ensure_logistic_support
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 6
 		prerequisite = {
-			focus = USN_test_10
+			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			add_ideas = USN_logistic_support
 			add_stability = 0.1
-			add_war_support = 0.1
 		}
 	}
 	focus = {
-		id = USN_test_15
+		#保障信息通畅与公共关系
+		id = USN_Ensure_smooth_information
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 6
 		y = 6
 		prerequisite = {
-			focus = USN_test_10
+			focus = USN_Approve_and_issue
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = USN_Public_support
 		}
 	}
 	focus = {
-		id = USN_test_16
+		#回归常态
+		id = USN_return_to_normal
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 4
 		y = 7
 		prerequisite = {
-			focus = USN_test_13
+			focus = USN_Support_Cal_Fire
 		}
 		prerequisite = {
-			focus = USN_test_14
+			focus = USN_ensure_logistic_support
 		}
 		prerequisite = {
-			focus = USN_test_15
+			focus = USN_Ensure_smooth_information
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			set_country_flag = USN_fire_end
+			activate_mission = USN_fire_end_mission
+			add_power_balance_value = {
+				id = USN_power_balance
+				value = 0.15
+			}
 		}
 	}
 	focus = {
@@ -393,7 +426,7 @@ focus_tree = {
 			focus = USN_Reconstruct_National_Guard
 		}
 		prerequisite = {
-			focus = USN_test_11
+			focus = USN_Rebuild_Intelligence_Community
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -423,19 +456,21 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#重启社会劳工保障制度
+	focus = {
+		#重启社会劳工保障制度
 		id = USN_Reinstate_social_labor
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 12
 		y = 6
 		prerequisite = {
-			focus = USN_test_11
+			focus = USN_Rebuild_Intelligence_Community
 		}
 		prerequisite = {
 			focus = USN_Reconstruct_National_Guard
 		}
 		completion_reward = {
+			add_political_power = 25
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = USN_Economic_reconstruction_0
@@ -465,7 +500,7 @@ focus_tree = {
 			focus = USN_Reconstruct_National_Guard
 		}
 		prerequisite = {
-			focus = USN_test_11
+			focus = USN_Rebuild_Intelligence_Community
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -494,7 +529,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#焕然一新
+	focus = {
+		#焕然一新
 		id = USN_completely_transformed
 		icon = GFX_guoce_zhanwei
 		cost = 3
@@ -511,6 +547,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05
+			add_political_power = 25
 			remove_ideas = USN_buxinren_2
 			add_power_balance_value = {
 				id = USN_power_balance
@@ -519,139 +556,188 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USN_test_21
+		#疾行于黎明之前
+		id = USN_March_Before_the_Dawn
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 8
 		mutually_exclusive = {
-			focus = USN_test_22
+			focus = USN_Overture_upon_Ruins
 		}
 		prerequisite = {
 			focus = USN_completely_transformed
 		}
 		prerequisite = {
-			focus = USN_test_16
+			focus = USN_return_to_normal
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_political_power = 25
+			add_ideas = USN_Pursuing_Light
+			unlock_decision_tooltip = USN_Declare_war_country_decision
 		}
 	}
 	focus = {
-		id = USN_test_22
+		#于废墟之上奏响序曲
+		id = USN_Overture_upon_Ruins
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 8
 		mutually_exclusive = {
-			focus = USN_test_22
+			focus = USN_March_Before_the_Dawn
 		}
 		prerequisite = {
 			focus = USN_completely_transformed
 		}
 		prerequisite = {
-			focus = USN_test_16
+			focus = USN_return_to_normal
 		}
 		completion_reward = {
 			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = USN_California_Overture
+			activate_mission = USN_Declare_war_country_Mission
 		}
 	}
 	focus = {
-		id = USN_test_23
+		#黎明补给线
+		id = USN_Dawnlight_Supply_Line
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 9
 		prerequisite = {
-			focus = USN_test_21
+			focus = USN_March_Before_the_Dawn
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			effect_tooltip = {
+				add_ideas = USN_Cordinated_Symphony_1
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = USN_Cordinated_Symphony
+				}
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_production_speed_supply_node_factor = 0.2
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_production_speed_rail_way_factor = 0.2
+			}
+			add_to_variable = {
+				USN_Cordinated_Symphony_production_speed_infrastructure_factor = 0.2
+			}
 		}
 	}
 	focus = {
-		id = USN_test_24
+		#跨太平洋的和谐音程
+		id = USN_Trans_Pacific_Harmony
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 8
 		y = 9
 		prerequisite = {
-			focus = USN_test_22
+			focus = USN_Overture_upon_Ruins
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = BGD_yazi_lingdao_0
+					add_idea = BGD_yazi_lingdao_4
+				}
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_trade_opinion_factor = 0.35
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_opinion_gain_monthly_factor = 0.25
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_improve_relations_maintain_cost_factor = -0.2
+			}
+			add_to_variable = {
+				BGD_yazi_lingdao_consumer_goods_factor = -0.03
+			}
 		}
 	}
 	focus = {
-		id = USN_test_25
+		#明日的诗篇
+		id = USN_Verse_for_Tomorrow
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 10
 		y = 9
 		prerequisite = {
-			focus = USN_test_22
+			focus = USN_Overture_upon_Ruins
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_stability = 0.05
+			add_research_slot = 1
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
 		}
 	}
 	focus = {
-		id = USN_test_26
+		#蝴蝶之网
+		id = USN_The_Butterfly_Web
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 9
 		y = 10
 		prerequisite = {
-			focus = USN_test_25
+			focus = USN_Verse_for_Tomorrow
 		}
 		prerequisite = {
-			focus = USN_test_24
+			focus = USN_Trans_Pacific_Harmony
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			ATW = {
+				add_ideas = USN_Fierce_resistance
+			}
+			USB = {
+				add_ideas = USN_Fierce_resistance
+			}
+			PTF = {
+				add_ideas = USN_Fierce_resistance
+			}
+			USC = {
+				add_ideas = USN_Fierce_resistance
+			}
 		}
 	}
 	focus = {
-		id = USN_test_27
+		#协同交响曲
+		id = USN_Coordinated_Symphony
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 5
 		y = 10
 		prerequisite = {
-			focus = USN_test_23
+			focus = USN_Dawnlight_Supply_Line
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			add_ideas = USN_yazi_chengyuan
 		}
 	}
 	focus = {
-		id = USN_test_28
+		#最后的和平通告
+		id = USN_The_Final_Peace
 		icon = GFX_guoce_zhanwei
 		cost = 3
 		x = 7
 		y = 11
 		prerequisite = {
-			focus = USN_test_27
-			focus = USN_test_26
+			focus = USN_Coordinated_Symphony
+			focus = USN_The_Butterfly_Web
 		}
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-			add_war_support = 0.1
+			unlock_decision_tooltip = USN_Declare_war_all_decision
 		}
 	}
 }

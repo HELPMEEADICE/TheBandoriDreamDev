@@ -115,6 +115,7 @@ country_event = {
 				annex_country = {
 					target = NNN
 				}
+				set_country_flag = Stability_first
 			}
 			#if = {
 			#	limit = {
@@ -597,9 +598,17 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.11.a
-		add_timed_idea = {
-			idea = BGD_USN_Ready_for_action
-			days = 180
+		USN = {
+			add_timed_idea = {
+				idea = BGD_USN_Ready_for_action
+				days = 180
+			}
+		}
+		BGD = {
+			add_timed_idea = {
+				idea = BGD_USN_Ready_for_action
+				days = 180
+			}
 		}
 	}
 }
@@ -635,13 +644,15 @@ country_event = {
 			}
 			add_timed_idea = {
 				idea = BGD_USN_Beachhead_offensive
-				days = 90
+				days = 180
 			}
 			load_oob = USN_Beach_Landing
 		}
-		add_timed_idea = {
-			idea = BGD_USN_Beachhead_offensive
-			days = 90
+		BGD = {
+			add_timed_idea = {
+				idea = BGD_USN_Beachhead_offensive
+				days = 180
+			}
 		}
 	}
 }
@@ -1283,9 +1294,9 @@ country_event = {
 			add_stability = 0.1
 		}
 		add_popularity = {
-				ideology = social_liberal
-				popularity = 0.1
-			}
+			ideology = social_liberal
+			popularity = 0.1
+		}
 	}
 }
 
@@ -1340,6 +1351,56 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = usnavy.44.a
+	}
+}
+
+country_event = {
+	#演唱会事件
+	id = usnavy.45
+	title = usnavy.45.t
+	desc = usnavy.45.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.45.a
+		clr_country_flag = USN_Easter_egg_IN
+	}
+}
+
+country_event = {
+	#演唱会事件(彩蛋线进线)
+	id = usnavy.46
+	title = usnavy.46.t
+	desc = usnavy.46.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.46.a
+		clr_country_flag = USN_Easter_egg_IN
+		clr_country_flag = USN_Easter_egg_Success
+	}
+	option = {
+		name = usnavy.46.b
+		country_event = {
+			id = usnavy.45
+		}
+	}
+}
+
+country_event = {
+	#演唱会事件(彩蛋线出线)
+	id = usnavy.47
+	title = usnavy.47.t
+	desc = usnavy.47.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.47.a
+		clr_country_flag = USN_Easter_egg_IN
+		clr_country_flag = USN_Easter_egg_Success
 	}
 }
 

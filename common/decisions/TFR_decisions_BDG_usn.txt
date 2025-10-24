@@ -16,21 +16,141 @@ USA_second_american_civil_war_category = {
 			#USA_has_militias_secured = yes
 			#USA_has_gangs_secured = yes
 			#USA_has_separatists_secured = yes
-			USN_has_rivals_secured = yes
+			#USN_has_rivals_secured = yes
 		}
 		ai_will_do = {
 			base = 100
 		}
 		complete_effect = {
-			#country_event = {
-			#    id = usnavy.24
-			#}
-			#hidden_effect = {
-			#    
-			#}
 			news_event = {
 				id = usnavy.2001
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = USN_Easter_egg_Success
+					}
+					country_event = {
+						id = usnavy.46
+						days = 7
+					}
+				}
+				else = {
+					country_event = {
+						id = usnavy.45
+						days = 7
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	USN_Declare_war_country_decision = {
+		#美国一统
+		icon = GFX_KKP_logo
+		fire_only_once = yes
+		cost = 0
+		priority = 1
+		allowed = {
+			original_tag = USN
+		}
+		visible = {
+			has_completed_focus = USN_March_Before_the_Dawn
+		}
+		available = {
+			has_completed_focus = USN_March_Before_the_Dawn
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			country_event = {
+				id = usnavy.4
+			}
+		}
+	}
+	USN_Declare_war_all_decision = {
+		#统一美国
+		icon = GFX_KKP_logo
+		fire_only_once = yes
+		cost = 0
+		priority = 1
+		allowed = {
+			original_tag = USN
+		}
+		visible = {
+			has_completed_focus = USN_The_Final_Peace
+		}
+		available = {
+			has_completed_focus = USN_The_Final_Peace
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			USN = {
+				every_country = {
+					limit = {
+						has_idea = USA_battle_for_america_idea
+						exists = yes
+						NOT = {
+							tag = USN
+						}
+					}
+					USN = {
+						declare_war_on = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	USN_Declare_war_country_Mission = {
+		#被邻国宣战
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = USN_fire_end
+		}
+		days_mission_timeout = 30
+		timeout_effect = {
+			country_event = {
+				id = usnavy.4
+			}
+		}
+	}
+	USN_Abnormal_incident = {
+		priority = 1
+		icon = GFX_KKP_logo
+		cost = 0
+		fire_only_once = yes
+		allowed = {
+			tag = USN
+		}
+		available = {
+			has_country_flag = USN_fire_end
+		}
+		visible = {
+			has_country_flag = USN_fire_end
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = usegg.0
 		}
 		remove_effect = {
 		}
@@ -1429,6 +1549,54 @@ USN_fire_start = {
 		timeout_effect = {
 			USN_fire_intensity = yes
 			activate_mission = USN_fire_mission
+			USN = {
+				930 = {
+					damage_building = {
+						type = infrastructure
+						damage = 0.1
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 0.1
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 0.1
+					}
+					damage_building = {
+						type = dockyard
+						damage = 0.1
+					}
+				}
+			}
+		}
+	}
+	USN_fire_end_mission = {
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			NOT = {
+				has_idea = USN_big_fire_idea4
+				has_idea = USN_big_fire_idea3
+				has_idea = USN_big_fire_idea2
+				has_idea = USN_big_fire_idea1
+				has_idea = USN_big_fire_idea
+			}
+		}
+		visible = {
+			has_country_flag = USN_fire_end
+		}
+		#is_good = no
+		#selectable_mission = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			USN_fire_end_intensity = yes
+			activate_mission = USN_fire_end_mission
 		}
 	}
 	USN_state_emergency = {
@@ -1526,9 +1694,15 @@ USN_fire_start = {
 		}
 		available = {
 			has_country_flag = USN_state_emergency
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		visible = {
 			has_country_flag = USN_state_emergency
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1608,10 +1782,16 @@ USN_fire_start = {
 		available = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		visible = {
 			has_country_flag = USN_rebuild_1
 			has_country_flag = USN_rebuild_2
+			NOT = {
+				has_country_flag = USN_fire_end
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1622,6 +1802,57 @@ USN_fire_start = {
 			add_days_mission_timeout = {
 				mission = USN_fire_mission
 				days = 15
+			}
+		}
+	}
+}
+
+######EGG######
+USN_Easter_egg = {
+	USN_Abnormal_incident_mission = {
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			NOT = {
+				has_country_flag = USN_Easter_egg_IN
+			}
+		}
+		visible = {
+			has_country_flag = USN_Easter_egg_IN
+		}
+		days_mission_timeout = 15
+		timeout_effect = {
+			activate_mission = USN_Abnormal_incident_mission
+			random_list = {
+				10 = {
+					add_political_power = -200
+					country_event = {
+						id = usegg.1
+					}
+				}
+				40 = {
+					add_political_power = -100
+					country_event = {
+						id = usegg.2
+					}
+				}
+				40 = {
+					add_political_power = 100
+					country_event = {
+						id = usegg.3
+					}
+				}
+				10 = {
+					add_political_power = 200
+					country_event = {
+						id = usegg.4
+					}
+				}
 			}
 		}
 	}

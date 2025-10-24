@@ -108,3 +108,51 @@ USN_fire_intensity = {
 		add_ideas = USN_big_fire_idea4
 	}
 }
+
+USN_fire_end_intensity = {
+	if = {
+		limit = {
+			has_idea = USN_big_fire_idea4
+		}
+		remove_ideas = USN_big_fire_idea4
+	}
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea3
+		}
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea3
+			add_idea = USN_big_fire_idea4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea2
+		}
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea2
+			add_idea = USN_big_fire_idea3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea1
+		}
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea1
+			add_idea = USN_big_fire_idea2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USN_big_fire_idea
+		}
+		swap_ideas = {
+			remove_idea = USN_big_fire_idea
+			add_idea = USN_big_fire_idea1
+		}
+	}
+	else = {
+		remove_ideas = USN_big_fire_idea4
+	}
+}
