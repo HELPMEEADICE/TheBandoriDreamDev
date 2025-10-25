@@ -2466,7 +2466,7 @@ shared_focus = {
 
 shared_focus = {
 	id = USN_Rebuid_Armored_Cavalry_Battalion
-	icon = GFX_guoce_zhanwei
+	icon = GFX_USN_Rebuid_Armored_Cavalry_Battalion
 	prerequisite = {
 		focus = USN_junshi_yantao_2
 	}

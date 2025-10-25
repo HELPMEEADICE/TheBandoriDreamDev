@@ -728,7 +728,7 @@ focus_tree = {
 	focus = {
 		#最后的和平通告
 		id = USN_The_Final_Peace
-		icon = GFX_guoce_zhanwei
+		icon = GFX_USN_The_Final_Peace
 		cost = 3
 		x = 7
 		y = 11

@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_USN_The_Final_Peace"
+		texturefile = "gfx\interface\goals\USN\USN_The_Final_Peace.png"
+	}
+	SpriteType = {
+		name = "GFX_USN_Rebuid_Armored_Cavalry_Battalion"
+		texturefile = "gfx\interface\goals\USN\USN_Rebuid_Armored_Cavalry_Battalion.png"
+	}
+}
