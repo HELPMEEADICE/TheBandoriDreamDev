@@ -68,7 +68,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#开局（红）
+		#来自人民
 		id = EGG_Opening_move_red
 		icon = GFX_guoce_zhanwei
 		cost = 3
@@ -81,6 +81,27 @@ focus_tree = {
 			focus = EGG_Opening_move
 		}
 		completion_reward = {
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = USN_libertarian_socialist_party_long
+				name = USN_libertarian_socialist_party
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.3
+			}
+			set_politics = {
+				ruling_party = libertarian_socialist
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = Mashiro
+				desc = BGD_Mashiro_DESC
+				picture = GFX_Mashiro_Red
+				ideology = kirakira_dokidoki_red
+				traits = {
+				}
+			}
 		}
 	}
 	focus = {
@@ -112,7 +133,7 @@ focus_tree = {
 		prerequisite = {
 			focus = EGG_Opening_move
 		}
-		ompletion_reward = {
+		completion_reward = {
 		}
 	}
 	focus = {
@@ -127,7 +148,293 @@ focus_tree = {
 			focus = EGG_Opening_move_blue
 			focus = EGG_Opening_move_brown
 		}
-		ompletion_reward = {
+		completion_reward = {
+			set_country_flag = kard_game
+			activate_mission = USN_Player_Turn_mission
+		}
+	}
+	####red####
+	focus = {
+		#重返世界舞台
+		id = EGG_Return_world_stage
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 14
+		y = 0
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#专注新大陆事务
+		id = EGG_on_New_World_stage
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 14
+		y = 1
+		prerequisite = {
+			focus = EGG_Return_world_stage
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#向加拿大施加影响
+		id = EGG_influence_Canada
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = EGG_on_New_World_stage
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#调整古巴航向
+		id = EGG_Adjust_Cuba_Course
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 14
+		y = 2
+		prerequisite = {
+			focus = EGG_on_New_World_stage
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#支援哥伦比亚革命
+		id = EGG_Support_Colombian_revolution
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 16
+		y = 2
+		prerequisite = {
+			focus = EGG_on_New_World_stage
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#援助萨帕塔民族解放军
+		id = EGG_help_EZLN
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 12
+		y = 3
+		prerequisite = {
+			focus = EGG_Support_Colombian_revolution
+		}
+		prerequisite = {
+			focus = EGG_Adjust_Cuba_Course
+		}
+		prerequisite = {
+			focus = EGG_influence_Canada
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#解放加勒比群岛
+		id = EGG_Free_Caribbean_Islands
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 14
+		y = 3
+		prerequisite = {
+			focus = EGG_Support_Colombian_revolution
+		}
+		prerequisite = {
+			focus = EGG_Adjust_Cuba_Course
+		}
+		prerequisite = {
+			focus = EGG_influence_Canada
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#赤色圣马丁玻利瓦尔之梦
+		id = EGG_Red_San
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = EGG_Support_Colombian_revolution
+		}
+		prerequisite = {
+			focus = EGG_Adjust_Cuba_Course
+		}
+		prerequisite = {
+			focus = EGG_influence_Canada
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#联合中美洲
+		id = EGG_Unite_Central_America
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 13
+		y = 4
+		prerequisite = {
+			focus = EGG_help_EZLN
+		}
+		prerequisite = {
+			focus = EGG_Free_Caribbean_Islands
+		}
+		prerequisite = {
+			focus = EGG_Red_San
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#红旗漫卷新陆
+		id = EGG_Freely_New_Land
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 14
+		y = 5
+		prerequisite = {
+			focus = EGG_The_Legacy_Amazonas
+		}
+		prerequisite = {
+			focus = EGG_Unite_Central_America
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#阿马佐纳斯的遗产
+		id = EGG_The_Legacy_Amazonas
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 15
+		y = 4
+		prerequisite = {
+			focus = EGG_help_EZLN
+		}
+		prerequisite = {
+			focus = EGG_Free_Caribbean_Islands
+		}
+		prerequisite = {
+			focus = EGG_Red_San
+		}
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		#我们的责任与义务
+		id = EGG_Responsibilities_and_Obligations
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 20
+		y = 0
+		available = {
+			always = no
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#亚自经贸流通
+		id = EGG_Economic_and_Trade
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 18
+		y = 1
+		prerequisite = {
+			focus = EGG_Responsibilities_and_Obligations
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#引进日本科技
+		id = EGG_Introduce_Japanese_Technology
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 20
+		y = 1
+		prerequisite = {
+			focus = EGG_Responsibilities_and_Obligations
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#要平等合作......
+		id = EGG_pursue_equal_cooperation
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 19
+		y = 2
+		prerequisite = {
+			focus = EGG_Economic_and_Trade
+		}
+		prerequisite = {
+			focus = EGG_Introduce_Japanese_Technology
+		}
+		prerequisite = {
+			focus = EGG_Strengthen_Military_Cooperation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#加强军事合作
+		id = EGG_Strengthen_Military_Cooperation
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 22
+		y = 1
+		prerequisite = {
+			focus = EGG_Responsibilities_and_Obligations
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#......而不是依赖
+		id = EGG_rather_than_relying
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 21
+		y = 2
+		prerequisite = {
+			focus = EGG_Economic_and_Trade
+		}
+		prerequisite = {
+			focus = EGG_Introduce_Japanese_Technology
+		}
+		prerequisite = {
+			focus = EGG_Strengthen_Military_Cooperation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		#崭新的亚太关系
+		id = EGG_New_Asia-Pacific_Relationship
+		icon = GFX_guoce_zhanwei
+		cost = 3
+		x = 20
+		y = 3
+		prerequisite = {
+			focus = EGG_EGG_rather_than_relying
+		}
+		prerequisite = {
+			focus = EGG_pursue_equal_cooperation
+		}
+		completion_reward = {
 		}
 	}
 }

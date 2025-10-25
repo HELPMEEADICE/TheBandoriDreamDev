@@ -16,7 +16,7 @@ USA_second_american_civil_war_category = {
 			#USA_has_militias_secured = yes
 			#USA_has_gangs_secured = yes
 			#USA_has_separatists_secured = yes
-			#USN_has_rivals_secured = yes
+			USN_has_rivals_secured = yes
 		}
 		ai_will_do = {
 			base = 100
@@ -1853,6 +1853,43 @@ USN_Easter_egg = {
 						id = usegg.4
 					}
 				}
+			}
+		}
+	}
+}
+
+USN_kards_game = {
+	USN_Player_Turn_mission = {
+		#每回合自然增长点数槽
+		icon = GFX_KKP_logo
+		allowed = {
+			tag = USN
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = kard_game
+		}
+		days_mission_timeout = 30
+		timeout_effect = {
+			activate_mission = USN_Player_Turn_mission
+			add_to_variable = {
+				var = USN_kardsgame_CP
+				value = -USN_kardsgame_CP
+			}
+			USN_kardsgame_CP = yes
+			add_to_variable = {
+				var = USN_kardsgame_CPC
+				value = 1
+			}
+			USN_kardsgame_CPC = yes
+			country_event = {
+				id = usegg.8
+				hours = 1
 			}
 		}
 	}

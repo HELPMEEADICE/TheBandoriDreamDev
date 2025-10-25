@@ -33,7 +33,7 @@ ideologies = {
 			}
 			social_fascism = {
 				can_be_randomly_selected = no
-			}		
+			}
 			neo_stalinism = {
 			}
 			transhumanism = {
@@ -43,7 +43,7 @@ ideologies = {
 					6
 					45
 				}
-			}			
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_COMMUNIST_1"
@@ -71,7 +71,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	communist = {
 		types = {
 			market_socialism = {
@@ -86,7 +85,7 @@ ideologies = {
 			}
 			neo_socialism = {
 				can_be_randomly_selected = no
-			}	
+			}
 			left_baathism = {
 				can_be_randomly_selected = no
 			}
@@ -127,7 +126,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	libertarian_socialist = {
 		types = {
 			left_anarchist = {
@@ -171,6 +169,14 @@ ideologies = {
 					155
 				}
 			}
+			kirakira_dokidoki_red = {
+				can_be_randomly_selected = no
+				color = {
+					189
+					54
+					67
+				}
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_LIBERTARIAN_SOCIALIST_1"
@@ -198,7 +204,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	social_democrat = {
 		types = {
 			left_centrist = {
@@ -242,7 +247,7 @@ ideologies = {
 					56
 					90
 				}
-			}		
+			}
 			social_patriotism = {
 				can_be_randomly_selected = no
 				color = {
@@ -266,7 +271,7 @@ ideologies = {
 					56
 					90
 				}
-			}		
+			}
 			putinism_social_democrat = {
 				can_be_randomly_selected = no
 				color = {
@@ -310,15 +315,14 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	social_liberal = {
 		types = {
 			centrist = {
 				can_be_randomly_selected = no
 				color = {
 					251
-                    157
-                    34
+					157
+					34
 				}
 			}
 			neoliberalism = {
@@ -357,7 +361,7 @@ ideologies = {
 				}
 			}
 			ultra_liberalism = {
-				can_be_randomly_selected = no #schizo_NAFO_EU
+				can_be_randomly_selected = no				#schizo_NAFO_EU
 			}
 		}
 		dynamic_faction_names = {
@@ -386,7 +390,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	market_liberal = {
 		types = {
 			right_libertarianism = {
@@ -433,7 +436,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	conservative = {
 		types = {
 			right_centrist = {
@@ -587,7 +589,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	authoritarian_democrat = {
 		types = {
 			oligarchist = {
@@ -661,7 +662,7 @@ ideologies = {
 					105
 					105
 				}
-			}		
+			}
 			novocommunism = {
 				can_be_randomly_selected = no
 				color = {
@@ -677,7 +678,7 @@ ideologies = {
 					113
 					137
 				}
-			}		
+			}
 			russian_monarchist_conservative = {
 				can_be_randomly_selected = no
 			}
@@ -716,7 +717,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	nationalist = {
 		types = {
 			autocrat = {
@@ -755,7 +755,7 @@ ideologies = {
 					40
 					0
 				}
-			}		
+			}
 			radical_nationalism = {
 				can_be_randomly_selected = no
 				color = {
@@ -826,7 +826,6 @@ ideologies = {
 		modifiers = {
 		}
 	}
-
 	fascist = {
 		types = {
 			falangist = {
@@ -845,7 +844,7 @@ ideologies = {
 			classical_fascism = {
 			}
 			clerical_fascism = {
-			}	
+			}
 			blackhundredism = {
 				can_be_randomly_selected = no
 			}
@@ -866,7 +865,7 @@ ideologies = {
 					110
 					49
 				}
-			}	
+			}
 			vladimir_zhirinovsky_thought_post_war = {
 				can_be_randomly_selected = no
 				color = {
@@ -874,7 +873,7 @@ ideologies = {
 					110
 					49
 				}
-			}	
+			}
 			vladimir_zhirinovsky_thought_militarist = {
 				can_be_randomly_selected = no
 				color = {
@@ -888,7 +887,7 @@ ideologies = {
 			}
 			russian_syncretism = {
 				can_be_randomly_selected = no
-			}	
+			}
 			ultranationalism = {
 				can_be_randomly_selected = no
 				color = {
@@ -927,13 +926,12 @@ ideologies = {
 		modifiers = {
 		}
 	}
-	
 	national_socialist = {
 		types = {
 			esoteric_fascism = {
 			}
 			neonazism = {
-			}	
+			}
 			american_neonazism = {
 				can_be_randomly_selected = no
 				color = {
@@ -983,7 +981,8 @@ ideologies = {
 					43
 				}
 			}
-			strassarite = { #heimbach
+			strassarite = {
+				#heimbach
 				can_be_randomly_selected = no
 				color = {
 					106
@@ -994,7 +993,6 @@ ideologies = {
 			death_cult = {
 				#Soldiers of heaven
 				can_be_randomly_selected = no
-				
 			}
 			greater_russia_system = {
 				#Izzat

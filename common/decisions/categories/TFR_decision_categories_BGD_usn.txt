@@ -64,3 +64,14 @@ USN_Easter_egg = {
 	}
 	priority = 99998
 }
+
+USN_kards_game = {
+	icon = GFX_gui_ppp_party_small
+	allowed = {
+		tag = USN
+	}
+	visible = {
+		has_country_flag = kard_game
+	}
+	priority = 99997
+}

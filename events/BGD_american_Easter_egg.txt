@@ -158,6 +158,8 @@ country_event = {
 	option = {
 		name = usegg.7.a
 		complete_national_focus = EGG_Opening_move_red
+		complete_national_focus = EGG_Return_world_stage
+		complete_national_focus = EGG_Responsibilities_and_Obligations
 	}
 	option = {
 		name = usegg.7.b
@@ -169,3 +171,20 @@ country_event = {
 	}
 }
 
+country_event = {
+	#抽卡
+	id = usegg.8
+	title = usegg.8.t
+	desc = usegg.8.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usegg.8.a
+		add_to_variable = {
+			var = USN_kardsgame_CP
+			value = USN_kardsgame_CPC
+		}
+		USN_kardsgame_CP = yes
+	}
+}
