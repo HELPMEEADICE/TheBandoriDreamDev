@@ -46,6 +46,10 @@ spriteTypes = {
 		texturefile = "gfx\leaders\USN\Mashiro_Left.png"
 	}
 	spriteType = {
+		name = "GFX_Mashiro_Red"
+		texturefile = "gfx\leaders\USN\Mashiro_Red.png"
+	}
+	spriteType = {
 		name = "GFX_portrait_Tsukushi"
 		texturefile = "gfx\leaders\USN\Tsukushi.png"
 	}

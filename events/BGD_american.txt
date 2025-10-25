@@ -1384,7 +1384,7 @@ country_event = {
 	option = {
 		name = usnavy.46.b
 		country_event = {
-			id = usnavy.45
+			id = usegg.5
 		}
 	}
 }

@@ -156,3 +156,4 @@ USN_fire_end_intensity = {
 		remove_ideas = USN_big_fire_idea4
 	}
 }
+

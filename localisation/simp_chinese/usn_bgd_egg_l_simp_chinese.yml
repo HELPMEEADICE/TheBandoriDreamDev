@@ -51,6 +51,7 @@ usegg.7.c: "罗马精神"
 #########FLAG#######
 USN_Easter_egg_IN: "进入彩蛋"
 USN_Easter_egg_Success: "成功进入彩蛋"
+kard_game: "kards启动"
 #########国策########
 EGG_Just_arrived: "初来乍到"
 EGG_Just_arrived_desc: ""
@@ -64,8 +65,8 @@ EGG_Stay_calm_desc: ""
 EGG_Opening_move: "开局"
 EGG_Opening_move_desc: ""
 #选线
-EGG_Opening_move: "开局"
-EGG_Opening_move_desc: ""
+EGG_Opening_move_red: "来自人民"
+EGG_Opening_move_red_desc: ""
 
 EGG_Opening_move: "开局"
 EGG_Opening_move_desc: ""
@@ -75,3 +76,60 @@ EGG_Opening_move_desc: ""
 #
 EGG_Illusory_Dream: "浮世幻梦"
 EGG_Illusory_Dream_desc: ""
+
+EGG_Return_world_stage: "重返世界舞台"
+EGG_Return_world_stage_desc: ""
+
+EGG_on_New_World_stage: "专注新大陆事务"
+EGG_on_New_World_stage_desc: ""
+
+EGG_help_EZLN: "援助萨帕塔民族解放军"
+EGG_help_EZLN_desc: ""
+
+EGG_Unite_Central_America: "联合中美洲"
+EGG_Unite_Central_America_desc: ""
+
+EGG_influence_Canada: "向加拿大施加影响"
+EGG_influence_Canada_desc: ""
+
+EGG_Adjust_Cuba_Course: "调整古巴航向"
+EGG_Adjust_Cuba_Course_desc: ""
+
+EGG_Free_Caribbean_Islands: "解放加勒比群岛"
+EGG_Free_Caribbean_Islands_desc: ""
+
+EGG_Support_Colombian_revolution: "支援哥伦比亚革命"
+EGG_Support_Colombian_revolution_desc: ""
+
+EGG_Red_San: "赤色圣马丁玻利瓦尔"
+EGG_Red_San_desc: ""
+
+EGG_Freely_New_Land: "红旗漫卷新陆"
+EGG_Freely_New_Land_desc: ""
+
+EGG_The_Legacy_Amazonas: "阿马佐纳斯的遗产"
+EGG_The_Legacy_Amazonas_desc: ""
+
+EGG_Responsibilities_and_Obligations: "我们的责任与义务"
+EGG_Responsibilities_and_Obligations_desc: ""
+
+EGG_Economic_and_Trade: "亚自经贸流通"
+EGG_Economic_and_Trade_desc: ""
+
+EGG_Introduce_Japanese_Technology: "引进日本科技"
+EGG_Introduce_Japanese_Technology_desc: ""
+
+EGG_pursue_equal_cooperation: "要平等合作......"
+EGG_pursue_equal_cooperation_desc: ""
+
+EGG_Strengthen_Military_Cooperation: "加强军事合作"
+EGG_Strengthen_Military_Cooperation_desc: ""
+
+EGG_rather_than_relying: "......而不是依赖"
+EGG_rather_than_relying_desc: ""
+
+EGG_New_Asia-Pacific_Relationship: "崭新的亚太关系"
+EGG_New_Asia-Pacific_Relationship_desc: ""
+#########决议#########
+USN_kards_game: "来搓一把K牌吧"
+USN_kards_game_desc: "\n\n\n\n\n\n\n£GFX_JMNDF_2\n\n\n\n\n\n\n\n\n§Y从陆海空的多线交锋到卡牌组合的千变万化，从历史细节的精准还原到创新机制的深度打磨，《KARDS》早已超越了普通卡牌游戏的范畴。在这里，每一次卡组构筑都是战略思想的凝练，每一场对战都是战术智慧的碰撞。如果你既爱卡牌游戏的烧脑博弈，又怀抱着对二战历史的好奇与敬畏，那么这场跨越时空的指挥之旅，定能让你沉醉其中。不妨现在启动一把kards来为你的国家获得增益吧§!\n\n§Y指挥点数：[?USN_kardsgame_CP]§!\n指挥上限：[?USN_kardsgame_CPC]"
