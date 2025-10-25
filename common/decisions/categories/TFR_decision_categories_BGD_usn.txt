@@ -2,9 +2,10 @@ USA_second_american_civil_war_category = {
 	icon = USA_civil_war
 	visible_when_empty = yes
 	allowed = {
-		tag = USN
+		USA_is_civil_war_faction = yes
 	}
 	visible = {
+		has_global_flag = USA_shattered_union_global
 	}
 	priority = 100
 }

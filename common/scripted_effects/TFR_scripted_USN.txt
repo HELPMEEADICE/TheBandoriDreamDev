@@ -157,24 +157,3 @@ USN_fire_end_intensity = {
 	}
 }
 
-#
-USN_kards_game = {
-	set_to_variable = {#指挥点数
-		var = USN_kardsgame_CP
-		value = 0
-	}
-	clamp_variable = {
-		var = USN_kardsgame_CP
-		min = 0
-		max = 24
-	}
-	set_to_variable = {#指挥上限
-		var = USN_kardsgame_CPC
-		value = 0
-	}
-	clamp_variable = {
-		var = USN_kardsgame_CPC
-		min = 0
-		max = 24
-	}
-}

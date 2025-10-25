@@ -11,6 +11,9 @@ country_event = {
 		name = usegg.0.a
 	}
 	option = {
+		ai_will_do = {
+			base = 100
+		}
 		name = usegg.0.b
 		custom_effect_tooltip = usegg.0.b.tt
 		set_country_flag = USN_Easter_egg_IN
@@ -127,6 +130,9 @@ country_event = {
 		name = usegg.5.a
 		custom_effect_tooltip = usegg.5.a.tt
 		clr_country_flag = USN_Easter_egg_Success
+		country_event = {
+			id = usegg.6
+		}
 	}
 }
 
@@ -144,6 +150,9 @@ country_event = {
 	}
 	option = {
 		name = usegg.6.b
+		country_event = {
+			id = usnavy.47
+		}
 	}
 }
 
@@ -177,7 +186,7 @@ country_event = {
 	title = usegg.8.t
 	desc = usegg.8.d
 	picture = GFX_popipa_doublerainbow
-	fire_only_once = yes
+	fire_only_once = no
 	is_triggered_only = yes
 	option = {
 		name = usegg.8.a

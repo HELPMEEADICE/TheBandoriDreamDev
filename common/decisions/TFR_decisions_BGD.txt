@@ -5425,6 +5425,19 @@ BGD_Interference_in_Thailand = {
 		}
 		complete_effect = {
 			set_country_flag = Thai_End_of_interference
+			ETI = {
+				transfer_state = 890
+				transfer_state = 891
+				transfer_state = 724
+				every_owned_state = {
+				limit = {
+					controller = {
+						tag = ETI
+					}
+				}
+				add_core_of = ETI
+			}
+			}
 		}
 	}
 	The_Thai_Civil_War = {
