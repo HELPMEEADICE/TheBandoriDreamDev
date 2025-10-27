@@ -1,0 +1,582 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "UNN_tank_medium_mesh"
+		file = "gfx/models/units/tanks/IRQ_medium_tank_T_55A.mesh"
+
+		animation = { id = "attack"			type = "IRQ_medium_tank_T_55A_attack_animation" }
+		animation = { id = "idle"			type = "IRQ_medium_tank_T_55A_idle_animation" }
+		animation = { id = "move"			type = "IRQ_medium_tank_T_55A_moving_animation" }
+		animation = { id = "training"		type = "IRQ_medium_tank_T_55A_training_animation" }
+	}
+	
+	pdxmesh = {
+		name = "PRC_tank_medium_mesh"
+		file = "gfx/models/units/tanks/CHI_medium_tank_ZTZ_96.mesh"
+		
+		animation = { id = "attack"			type = "CHI_medium_tank_ZTZ_96_attack_animation" }
+		animation = { id = "idle"			type = "CHI_medium_tank_ZTZ_96_idle_animation" }
+		animation = { id = "move"			type = "CHI_medium_tank_ZTZ_96_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "PRC_tank_vt_4_mesh"
+		file = "gfx/models/units/tanks/CHI_medium_tank_VT_4.mesh"
+
+		animation = { id = "attack"			type = "CHI_medium_tank_VT_4_attack_animation" }
+		animation = { id = "idle"			type = "CHI_medium_tank_VT_4_idle_animation" }
+		animation = { id = "move"			type = "CHI_medium_tank_VT_4_moving_animation" }
+
+	}
+	
+	pdxmesh = {
+		name = "PRC_tank_light_mesh"
+		file = "gfx/models/units/tanks/CHI_IFV_ZBL_08.mesh"
+
+		animation = { id = "attack"			type = "CHI_IFV_ZBL_08_attack_animation" }
+		animation = { id = "idle"			type = "CHI_IFV_ZBL_08_idle_animation" }
+		animation = { id = "move"			type = "CHI_IFV_ZBL_08_moving_animation" }
+	}
+
+	pdxmesh = {
+		name = "ENG_tank_light_mesh"
+		file = "gfx/models/units/tanks/ENG_tank_light.mesh"
+		
+		scale = 1
+		
+	}	
+	
+	pdxmesh = {
+		name = "ENG_tank_modern_mesh"
+		file = "gfx/models/units/tanks/ENG/ENG_medium_tank_Challenger_2.mesh"
+		
+		animation = { id = "idle"			type = "ENG_medium_tank_Challenger_2_idle_animation" }
+		animation = { id = "move"			type = "ENG_medium_tank_Challenger_2_moving_animation" }
+		animation = { id = "attack"			type = "ENG_medium_tank_Challenger_2_attack_animation" }	
+		
+		scale = 1
+	}	
+	
+	pdxmesh = {
+		name = "ENG_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/Challenger1.mesh"
+		
+		animation = { id = "idle"			type = "m48a1_idle_animation" }
+		animation = { id = "move"			type = "m48a1_moving_animation" }
+		animation = { id = "attack"			type = "m48a1_attack_animation" }	
+		
+		scale = 0.7
+	}	
+
+	pdxmesh = {
+		name = "FRA_tank_light_mesh"
+		file = "gfx/models/units/tanks/FRA/FRA_light_tank_AML_90.mesh"
+
+		animation = { id = "attack"			type = "FRA_light_tank_AML_90_attack_animation" }
+		animation = { id = "idle"			type = "FRA_light_tank_AML_90_idle_animation" }
+		animation = { id = "move"			type = "FRA_light_tank_AML_90_moving_animation" }
+	}	
+	
+	pdxmesh = {
+		name = "FRA_tank_leclerc_mesh"
+		file = "gfx/models/units/tanks/FRA_medium_tank_AMX_56_Leclerc.mesh"
+
+		animation = { id = "attack"			type = "FRA_medium_tank_AMX_56_Leclerc_attack_animation" }
+		animation = { id = "idle"			type = "FRA_medium_tank_AMX_56_Leclerc_idle_animation" }
+		animation = { id = "move"			type = "FRA_medium_tank_AMX_56_Leclerc_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "FRA_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/FRA_tank_heavy.mesh"
+
+		animation = { id = "attack"			type = "FRA_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "FRA_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "FRA_tank_heavy_moving_animation" }
+		scale = 0.65
+	}
+	
+	pdxmesh = {
+		name = "ITA_tank_light_mesh"
+		file = "gfx/models/units/tanks/generic_tank_light.mesh"
+		
+		scale = 1
+		
+	}
+	
+	pdxmesh = {
+		name = "ITA_tank_medium_mesh"
+		file = "gfx/models/units/tanks/USA_tank_medium.mesh"
+		scale = 0.5
+	}
+	
+	pdxmesh = {
+		name = "generic_tank_light_mesh"
+		file = "gfx/models/units/tanks/ITA/ITA_light_tank_B1_Centauro.mesh"
+
+		animation = { id = "attack"			type = "ITA_light_tank_B1_Centauro_attack_animation" }
+		animation = { id = "idle"			type = "ITA_light_tank_B1_Centauro_idle_animation" }
+		animation = { id = "move"			type = "ITA_light_tank_B1_Centauro_moving_animation" }
+
+	}
+	
+	pdxmesh = {
+		name = "generic_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/generic_tank_heavy.mesh"
+
+		animation = { id = "attack"			type = "generic_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "generic_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "generic_tank_heavy_moving_animation" }
+		scale = 0.65
+	}
+	
+	pdxmesh = {
+		name = "GER_tank_light_mesh"
+		file = "gfx/models/units/tanks/GER_IFV_Puma.mesh"
+		
+		animation = { id = "attack"			type = "GER_IFV_Puma_attack_animation" }
+		animation = { id = "idle"			type = "GER_IFV_Puma_idle_animation" }
+		animation = { id = "move"			type = "GER_IFV_Puma_moving_animation" }		
+
+	}	
+	
+	pdxmesh = {
+		name = "GER_tank_medium_mesh"
+		file = "gfx/models/units/tanks/GER_tank_medium.mesh"
+		
+		animation = { id = "attack"			type = "SOV_tank_medium_attack_animation" }
+		animation = { id = "idle"			type = "SOV_tank_medium_idle_animation" }
+		animation = { id = "move"			type = "SOV_tank_medium_moving_animation" }
+		scale = 0.5
+	}	
+	
+	pdxmesh = {
+		name = "GER_kf51_mesh"
+		file = "gfx/models/units/tanks/GER_medium_tank_Panther_KF_51.mesh"
+		
+		animation = { id = "attack"			type = "GER_medium_tank_Panther_KF_51_attack_animation" }
+		animation = { id = "idle"			type = "GER_medium_tank_Panther_KF_51_idle_animation" }
+		animation = { id = "move"			type = "GER_medium_tank_Panther_KF_51_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "GER_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/GER_tank_heavy.mesh"
+
+		animation = { id = "attack"			type = "GER_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "GER_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "GER_tank_heavy_moving_animation" }
+		animation = { id = "death"			type = "GER_tank_heavy_death_animation" }
+		scale = 0.65
+	}	
+	
+	pdxmesh = {
+		name = "SOV_terminator_mesh"
+		file = "gfx/models/units/tanks/Terminator.mesh"
+
+		animation = { id = "idle"			type = "m48a1_idle_animation" }
+		animation = { id = "move"			type = "m48a1_moving_animation" }
+		animation = { id = "attack"			type = "m48a1_attack_animation" }
+		scale = 0.8
+
+		meshsettings = {
+            texture_normal = "T72_normal.dds"
+            texture_specular = "T72_spec.dds"
+        }		
+	}
+	
+	## light tank
+	pdxmesh = {
+		name = "SOV_amphibious_armor_mesh"
+		file = "gfx/models/units/tanks/SOV/SOV_light_tank_Sprut_SD.mesh"
+
+		animation = { id = "attack"			type = "SOV_light_tank_Sprut_SD_attack_animation" }
+		animation = { id = "idle"			type = "SOV_light_tank_Sprut_SD_idle_animation" }
+		animation = { id = "move"			type = "SOV_light_tank_Sprut_SD_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOV_T_80U_mesh"
+		file = "gfx/models/units/tanks/SOV/SOV_medium_tank_T_80UD.mesh"
+
+		animation = { id = "attack"			type = "SOV_medium_tank_T_80UD_attack_animation" }
+		animation = { id = "idle"			type = "SOV_medium_tank_T_80UD_idle_animation" }
+		animation = { id = "move"			type = "SOV_medium_tank_T_80UD_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOV_tank_light_mesh"
+		file = "gfx/models/units/tanks/SOV_IFV_BMP_3.mesh"
+		
+		animation = { id = "attack"			type = "SOV_IFV_BMP_3_attack_animation" }
+		animation = { id = "idle"			type = "SOV_IFV_BMP_3_idle_animation" }
+		animation = { id = "move"			type = "SOV_IFV_BMP_3_moving_animation" }
+
+	}
+	
+	pdxmesh = {
+		name = "SOV_navalny_bmp3_mesh"
+		file = "gfx/models/units/tanks/SOV_IFV_BMP_3.mesh"
+		
+		animation = { id = "attack"			type = "SOV_IFV_BMP_3_attack_animation" }
+		animation = { id = "idle"			type = "SOV_IFV_BMP_3_idle_animation" }
+		animation = { id = "move"			type = "SOV_IFV_BMP_3_moving_animation" }
+
+		meshsettings = {
+			texture_diffuse = "SOV_navalny_bmp3.dds"
+		}
+		
+	}
+	
+	pdxmesh = {
+		name = "SOV_medvedev_bmp3_mesh"
+		file = "gfx/models/units/tanks/SOV_IFV_BMP_3.mesh"
+		
+		animation = { id = "attack"			type = "SOV_IFV_BMP_3_attack_animation" }
+		animation = { id = "idle"			type = "SOV_IFV_BMP_3_idle_animation" }
+		animation = { id = "move"			type = "SOV_IFV_BMP_3_moving_animation" }
+
+		meshsettings = {
+			texture_diffuse = "SOV_medvedev_bmp.dds"
+		}
+		
+	}
+	
+	pdxmesh = {
+		name = "SOV_2s19_mesh"
+		file = "gfx/models/units/tanks/SOV/SOV_SPG_MSTA_2S19.mesh"
+
+		animation = { id = "attack"			type = "SOV_SPG_MSTA_2S19_attack_animation" }
+		animation = { id = "idle"			type = "SOV_SPG_MSTA_2S19_idle_animation" }
+		animation = { id = "move"			type = "SOV_SPG_MSTA_2S19_moving_animation" }
+		animation = { id = "support_attack"	type = "SOV_SPG_MSTA_2S19_support_attack_animation" }
+	}
+
+	pdxmesh = {
+		name = "SOV_tank_medium_mesh"
+		file = "gfx/models/units/tanks/T-90.mesh"
+
+		animation = { id = "attack"			type = "T-90_attack_animation" }
+		animation = { id = "idle"			type = "T-90_idle_animation" }
+		animation = { id = "move"			type = "T-90_moving_animation" }
+		scale = 0.90 
+	}		
+	
+	pdxmesh = {
+		name = "SOV_tank_modern_mesh"
+		file = "gfx/models/units/tanks/TFR_T14.mesh"
+
+		animation = { id = "attack"			type = "TFR_T14_attack_animation" }
+		animation = { id = "idle"			type = "TFR_T14_idle_animation" }
+		animation = { id = "move"			type = "TFR_T14_move_animation" }
+		meshsettings = {
+            shader="PdxMeshAdvanced"
+            texture_diffuse = "RU-T14.dds"
+            texture_normal = "RU-T14_NORMAL.dds"
+            texture_specular = "RU-T14_SPECULAR.dds"
+        }
+		scale = 0.65
+	}
+	
+	pdxmesh = {
+		name = "SOV_rsfsr_tank_modern_mesh"
+		file = "gfx/models/units/tanks/TFR_T14.mesh"
+
+		animation = { id = "attack"			type = "TFR_T14_attack_animation" }
+		animation = { id = "idle"			type = "TFR_T14_idle_animation" }
+		animation = { id = "move"			type = "TFR_T14_move_animation" }
+		meshsettings = {
+            shader="PdxMeshAdvanced"
+            texture_diffuse = "SOV_rsfsr_t14.dds"
+            texture_normal = "RU-T14_NORMAL.dds"
+            texture_specular = "RU-T14_SPECULAR.dds"
+        }
+		scale = 0.65
+	}
+	
+	pdxmesh = {
+		name = "GER_tank_modern_mesh"
+		file = "gfx/models/units/tanks/GER/GER_medium_tank_Leopard_2A7.mesh"
+
+		animation = { id = "attack"			type = "GER_medium_tank_Leopard_2A7_attack_animation" }
+		animation = { id = "idle"			type = "GER_medium_tank_Leopard_2A7_idle_animation" }
+		animation = { id = "move"			type = "GER_medium_tank_Leopard_2A7_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "GER_nva_tank_modern_mesh"
+		file = "gfx/models/units/tanks/GER/GER_medium_tank_Leopard_2A7.mesh"
+
+		animation = { id = "attack"			type = "GER_medium_tank_Leopard_2A7_attack_animation" }
+		animation = { id = "idle"			type = "GER_medium_tank_Leopard_2A7_idle_animation" }
+		animation = { id = "move"			type = "GER_medium_tank_Leopard_2A7_moving_animation" }
+		
+		meshsettings = {
+            texture_diffuse = "DDR_leopard.dds"
+        }
+	}
+	
+	pdxmesh = {
+		name = "SOV_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/SOV_tank_heavy.mesh"
+
+		animation = { id = "attack"			type = "SOV_tank_heavy_attack_animation" }
+		animation = { id = "idle"			type = "SOV_tank_heavy_idle_animation" }
+		animation = { id = "move"			type = "SOV_tank_heavy_moving_animation" }
+		scale = 0.65
+	}
+
+	pdxmesh = {
+		name = "SYR_mahima_mesh"
+		file = "gfx/models/units/tanks/T72A_syrian.mesh"
+
+		animation = { id = "idle"			type = "m48a1_idle_animation" }
+		animation = { id = "move"			type = "m48a1_moving_animation" }
+		animation = { id = "attack"			type = "m48a1_attack_animation" }
+		scale = 0.8
+
+		meshsettings = {
+			texture_diffuse = "T72A_desert.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "USA_tank_light_mesh"
+		file = "gfx/models/units/tanks/USA/USA_APC_Stryker.mesh"
+		
+		animation = { id = "idle"			type = "USA_APC_Stryker_idle_animation" }
+		animation = { id = "move"			type = "USA_APC_Stryker_moving_animation" }
+		animation = { id = "attack"			type = "USA_APC_Stryker_attack_animation" }	
+		scale = 1.5
+	}	
+	
+	pdxmesh = {
+		name = "USA_M109_mesh"
+		file = "gfx/models/units/tanks/USA/USA_SPG_M109.mesh"
+
+		animation = { id = "attack"			type = "USA_SPG_M109_attack_animation" }
+		animation = { id = "idle"			type = "USA_SPG_M109_idle_animation" }
+		animation = { id = "move"			type = "USA_SPG_M109_moving_animation" }
+		animation = { id = "support_attack"	type = "USA_SPG_M109_support_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "ISR_M109_mesh"
+		file = "gfx/models/units/tanks/USA/USA_SPG_M109.mesh"
+
+		animation = { id = "attack"			type = "USA_SPG_M109_attack_animation" }
+		animation = { id = "idle"			type = "USA_SPG_M109_idle_animation" }
+		animation = { id = "move"			type = "USA_SPG_M109_moving_animation" }
+		animation = { id = "support_attack"	type = "USA_SPG_M109_support_attack_animation" }
+		
+		meshsettings = {
+			texture_diffuse = "USA_SPG_M109_desert.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "USA_tank_medium_mesh"
+		file = "gfx/models/units/tanks/USA_medium_tank_Abrams_M1A1.mesh"
+
+		animation = { id = "attack"			type = "USA_medium_tank_Abrams_M1A1_attack_animation" }
+		animation = { id = "idle"			type = "USA_medium_tank_Abrams_M1A1_idle_animation" }
+		animation = { id = "move"			type = "USA_medium_tank_Abrams_M1A1_moving_animation" }	
+	}
+	
+	pdxmesh = {
+		name = "ATW_tank_modern_mesh"
+		file = "gfx/models/units/tanks/USA_medium_tank_Abrams_M1A1.mesh"
+
+		animation = { id = "attack"			type = "USA_medium_tank_Abrams_M1A1_attack_animation" }
+		animation = { id = "idle"			type = "USA_medium_tank_Abrams_M1A1_idle_animation" }
+		animation = { id = "move"			type = "USA_medium_tank_Abrams_M1A1_moving_animation" }	
+		
+		meshsettings = {
+			texture_diffuse = "ATW_modern_armor.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "PTF_tank_modern_mesh"
+		file = "gfx/models/units/tanks/USA_medium_tank_Abrams_M1A1.mesh"
+
+		animation = { id = "attack"			type = "USA_medium_tank_Abrams_M1A1_attack_animation" }
+		animation = { id = "idle"			type = "USA_medium_tank_Abrams_M1A1_idle_animation" }
+		animation = { id = "move"			type = "USA_medium_tank_Abrams_M1A1_moving_animation" }	
+		
+		meshsettings = {
+			texture_diffuse = "PTF_modern_armor.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "USB_tank_medium_mesh"
+		file = "gfx/models/units/tanks/USA/USA_medium_tank_Abrams_M1A2.mesh"
+		scale = 0.8
+		
+		animation = { id = "attack"			type = "USA_medium_tank_Abrams_M1A2_attack_animation" }
+		animation = { id = "idle"			type = "USA_medium_tank_Abrams_M1A2_idle_animation" }
+		animation = { id = "move"			type = "USA_medium_tank_Abrams_M1A2_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "USA_tank_heavy_m551_mesh"
+		file = "gfx/models/units/tanks/USA_tank_heavy_m551.mesh"
+		scale = 0.5
+	}	
+	
+	pdxmesh = {
+		name = "USA_tank_heavy_mesh"
+		file = "gfx/models/units/tanks/USA_tank_heavy_m551.mesh"
+		scale = 0.65
+	}
+
+	pdxmesh = {
+		name = "UKR_heavy_tank_mesh"
+		file = "gfx/models/units/tanks/is4.mesh"
+
+		animation = { id = "attack"			type = "SOV_heavy_armor_1_attack_animation" }
+		animation = { id = "idle"			type = "SOV_heavy_armor_1_idle_animation" }
+		animation = { id = "move"			type = "SOV_heavy_armor_1_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "CHI_modern_armor_mesh"
+		file = "gfx/models/units/tanks/m60.mesh"
+
+		animation = { id = "idle"			type = "m60_idle_animation" }
+		animation = { id = "move"			type = "m60_moving_animation" }
+		animation = { id = "attack"			type = "m60_attack_animation" }	
+		
+		meshsettings = {
+			texture_diffuse = "m60CHI.dds"
+		}
+		
+		scale = 0.035
+		
+	}
+	
+	pdxmesh = {
+		name = "RAJ_modern_armor_mesh"
+		file = "gfx/models/units/tanks/T-90.mesh"
+
+		animation = { id = "attack"			type = "T-90_attack_animation" }
+		animation = { id = "idle"			type = "T-90_idle_animation" }
+		animation = { id = "move"			type = "T-90_moving_animation" }
+		scale = 0.90 
+
+		meshsettings = {
+			texture_diffuse = "RAJ_T-90_diffuse.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "JPR_modern_armor_mesh"
+		file = "gfx/models/units/tanks/JAP/JAP_medium_tank_Type_90.mesh"
+
+		animation = { id = "attack"			type = "JAP_medium_tank_Type_90_attack_animation" }
+		animation = { id = "idle"			type = "JAP_medium_tank_Type_90_idle_animation" }
+		animation = { id = "move"			type = "JAP_medium_tank_Type_90_moving_animation" }
+		
+		meshsettings = {
+			texture_diffuse = "JAP_modern_armor_communist.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "BGD_modern_armor_mesh"
+		file = "gfx/models/units/tanks/JAP/JAP_medium_tank_Type_90.mesh"
+
+		animation = { id = "attack"			type = "JAP_medium_tank_Type_90_attack_animation" }
+		animation = { id = "idle"			type = "JAP_medium_tank_Type_90_idle_animation" }
+		animation = { id = "move"			type = "JAP_medium_tank_Type_90_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOV_2S1_Gvozdika_mesh"
+		file = "gfx/models/units/tanks/SOV_SPG_2S1_Gvozdika.mesh"
+
+		animation = { id = "attack"			type = "SOV_SPG_2S1_Gvozdika_attack_animation" }
+		animation = { id = "idle"			type = "SOV_SPG_2S1_Gvozdika_idle_animation" }
+		animation = { id = "move"			type = "SOV_SPG_2S1_Gvozdika_moving_animation" }
+		animation = { id = "support_attack"	type = "SOV_SPG_2S1_Gvozdika_support_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "HRL_2S1_Gvozdika_mesh"
+		file = "gfx/models/units/tanks/SOV_SPG_2S1_Gvozdika.mesh"
+
+		animation = { id = "attack"			type = "SOV_SPG_2S1_Gvozdika_attack_animation" }
+		animation = { id = "idle"			type = "SOV_SPG_2S1_Gvozdika_idle_animation" }
+		animation = { id = "move"			type = "SOV_SPG_2S1_Gvozdika_moving_animation" }
+		animation = { id = "support_attack"	type = "SOV_SPG_2S1_Gvozdika_support_attack_animation" }
+		
+		meshsettings = {
+			texture_diffuse = "HRL_2s1_Gvozdika.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "AST_tank_modern_mesh"
+		file = "gfx/models/units/tanks/USA_medium_tank_Abrams_M1A1.mesh"
+
+		animation = { id = "attack"			type = "USA_medium_tank_Abrams_M1A1_attack_animation" }
+		animation = { id = "idle"			type = "USA_medium_tank_Abrams_M1A1_idle_animation" }
+		animation = { id = "move"			type = "USA_medium_tank_Abrams_M1A1_moving_animation" }	
+		
+		meshsettings = {
+			texture_diffuse = "AST_abrams.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "KOR_modern_armor_mesh"
+		file = "gfx/models/units/tanks/KOR/KOR_medium_tank_K2_Black_Panther.mesh"
+
+		animation = { id = "attack"			type = "KOR_medium_tank_K2_Black_Panther_attack_animation" }
+		animation = { id = "idle"			type = "KOR_medium_tank_K2_Black_Panther_idle_animation" }
+		animation = { id = "move"			type = "KOR_medium_tank_K2_Black_Panther_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "PRC_modern_sp_artillery_mesh"
+		file = "gfx/models/units/tanks/CHI/CHI_SPG_PLZ_05.mesh"
+
+		animation = { id = "attack"			type = "CHI_SPG_PLZ_05_attack_animation" }
+		animation = { id = "idle"			type = "CHI_SPG_PLZ_05_idle_animation" }
+		animation = { id = "move"			type = "CHI_SPG_PLZ_05_moving_animation" }
+		animation = { id = "support_attack"	type = "CHI_SPG_PLZ_05_support_attack_animation" }
+	}
+	
+	## IFV
+	pdxmesh = {
+		name = "INS_light_armor_mesh"
+		file = "gfx/models/units/tanks/ENG/ENG_IFV_FV_101_Scorpion.mesh"
+
+		animation = { id = "attack"			type = "ENG_IFV_FV_101_Scorpion_attack_animation" }
+		animation = { id = "idle"			type = "ENG_IFV_FV_101_Scorpion_idle_animation" }
+		animation = { id = "move"			type = "ENG_IFV_FV_101_Scorpion_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "abrams_x_mesh"
+		file = "gfx/models/units/tanks/usa/M1A3.mesh"
+
+		animation = { id = "idle"			type = "generictank_idle_animation" }
+		animation = { id = "move"			type = "generictank_moving_animation" }
+		animation = { id = "attack"			type = "generictank_attack_animation" }
+
+		scale = 0.85
+	}
+	
+	pdxmesh = {
+		name = "t62m_mesh"
+		file = "gfx/models/units/tanks/T62/t62.mesh"
+		
+		animation = { id = "idle"			type = "t62_idle_animation" }
+		animation = { id = "move"			type = "t62_move_animation" }
+		animation = { id = "attack"			type = "t62_attack_animation" }
+		
+		scale = 1.3
+	}
+}

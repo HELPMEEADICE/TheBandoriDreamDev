@@ -1,0 +1,223 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "US_motorized_mesh"
+		file = "gfx/models/units/vehicles/US_motorized_01.mesh"
+		
+		animation = { id = "idle"			type = "US_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "US_motorized_01_move_animation" }
+	}
+	
+	pdxmesh = {
+		name = "motorized_frame_mesh"
+		file = "gfx/models/units/vehicles/motorized_frame.mesh"
+		
+		animation = { id = "idle"			type = "motorized_frame_idle_animation" }
+		animation = { id = "move"			type = "motorized_frame_move_animation" }
+		animation = { id = "attack"			type = "motorized_frame_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOV_motorized_mesh"
+		file = "gfx/models/units/vehicles/SOV_motorized_01.mesh"
+		
+		animation = { id = "idle"			type = "SOV_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "SOV_motorized_01_move_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOV_medvedev_motorized_mesh"
+		file = "gfx/models/units/vehicles/SOV_motorized_01.mesh"
+		
+		animation = { id = "idle"			type = "SOV_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "SOV_motorized_01_move_animation" }
+		
+		meshsettings = {
+			texture_diffuse = "SOV_medvedev_motorized.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "bicycle_frame_mesh"
+		file = "gfx/models/units/vehicles/bicycle_frame.mesh"
+		
+		animation = { id = "idle"			type = "bicycle_frame_idle_animation" }
+		animation = { id = "move"			type = "bicycle_frame_move_animation" }
+		animation = { id = "attack"			type = "bicycle_frame_attack_animation" }
+	}
+	
+	pdxmesh = {
+		name = "bicycle_vehicle_mesh"
+		file = "gfx/models/units/vehicles/bicycle_vehicle.mesh"
+		
+		animation = { id = "idle"			type = "bicycle_vehicle_idle_animation" }
+		animation = { id = "idle_2"			type = "bicycle_vehicle_idle_2_animation" }
+		animation = { id = "move"			type = "bicycle_vehicle_move_animation" }
+		animation = { id = "move_2"			type = "bicycle_vehicle_move_2_animation" }
+		animation = { id = "retreat"		type = "bicycle_vehicle_retreat_animation" }
+		animation = { id = "retreat_2"		type = "bicycle_vehicle_retreat_2_animation" }
+		
+		animation = { id = "still"			type = "bicycle_vehicle_still_animation" }
+	}
+	
+	pdxmesh = {
+		name = "ISI_motorized_mesh"
+		file = "gfx/models/units/vehicles/ISI_motorized.mesh"
+	}
+	
+	pdxmesh = {
+		name = "NOV_BMP_2_mesh"
+		file = "gfx/models/units/vehicles/ISI_IFV_BMP_2.mesh"
+
+		animation = { id = "attack"			type = "SOV_IFV_BMP_2_attack_animation" }
+		animation = { id = "idle"			type = "SOV_IFV_BMP_2_idle_animation" }
+		animation = { id = "move"			type = "SOV_IFV_BMP_2_moving_animation" }
+	}
+
+	pdxmesh = {
+		name = "SOV_bmp1_malyutka_mesh"
+		file = "gfx/models/units/vehicles/CZE_light_tank_01_BVP1.mesh"
+
+		animation = { id = "retreat"		type = "CZE_light_tank_01_BVP1_retreat_animation" }
+		animation = { id = "smoke"			type = "CZE_light_tank_01_BVP1_defend_animation" }
+		animation = { id = "attack"			type = "CZE_light_tank_01_BVP1_attack_animation" }
+		animation = { id = "move"			type = "CZE_light_tank_01_BVP1_move_animation" }
+		animation = { id = "idle"			type = "CZE_light_tank_01_BVP1_idle_animation" }
+	}	
+	
+	pdxmesh = {
+		name = "SOV_motorized_kraz_mesh"
+		file = "gfx/models/units/vehicles/kraz255.mesh"
+		
+		animation = { id = "idle"			type = "US_motorized_01_idle_animation" }
+		animation = { id = "move"			type = "US_motorized_01_move_animation" }
+
+		scale = 0.28
+	}
+	
+	pdxmesh = {
+		name = "SOV_mechanized_t15_mesh"
+		file = "gfx/models/units/tanks/SOV_IFV_T_15_Armata.mesh"
+
+		animation = { id = "attack"			type = "SOV_IFV_T_15_Armata_attack_animation" }
+		animation = { id = "idle"			type = "SOV_IFV_T_15_Armata_idle_animation" }
+		animation = { id = "move"			type = "SOV_IFV_T_15_Armata_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "mi8_mesh"
+		file = "gfx/models/units/planes/mi8.mesh"
+		animation = { id = "idle" type = "mi8_idle_animation" }		
+		animation = { id = "attack" type = "mi8_attack_animation" }
+		animation = { id = "move" type = "mi8_move_animation" }	
+
+		scale = 0.015		
+	}
+
+	pdxmesh = {
+		name = "mi4_mesh"
+		file = "gfx/models/units/planes/mi4.mesh"
+		animation = { id = "idle" type = "mi4_idle_animation" }		
+		animation = { id = "attack" type = "mi4_attack_animation" }
+		animation = { id = "move" type = "mi4_move_animation" }	
+
+		scale = 0.015		
+	}
+	
+	pdxmesh = {
+		name = "PRC_motorized_mesh"
+		file = "gfx/models/units/vehicles/CHI_motorized_01.mesh"
+		
+	}
+	
+	pdxmesh = {
+		name = "PRC_mechanized_vn_17_mesh"
+		file = "gfx/models/units/tanks/CHI_IFV_VN_17.mesh"
+
+		animation = { id = "attack"			type = "CHI_IFV_VN_17_attack_animation" }
+		animation = { id = "idle"			type = "CHI_IFV_VN_17_idle_animation" }
+		animation = { id = "move"			type = "CHI_IFV_VN_17_moving_animation" }
+
+	}
+	
+	pdxmesh = {
+		name = "GER_light_mechanized_mesh"
+		file = "gfx/models/units/vehicles/GER_APC_Fuchs.mesh"
+
+		animation = { id = "attack"			type = "GER_APC_Fuchs_attack_animation" }
+		animation = { id = "idle"			type = "GER_APC_Fuchs_idle_animation" }
+		animation = { id = "move"			type = "GER_APC_Fuchs_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "SOV_gaz_mesh"
+		file = "gfx/models/units/vehicles/gaz_51_sov.mesh"
+		
+		animation = { id = "idle"			type = "gaz51_idle_animation" }
+		animation = { id = "move"			type = "gaz51_move_animation" }
+		animation = { id = "attack"			type = "gaz51_attack_animation" }
+		
+		meshsettings = {
+			texture_normal = "basic_normal.dds"
+		}
+
+		scale = 0.022
+	} 
+
+	pdxmesh = {
+		name = "BGD_mechanized_mesh"
+		file = "gfx/models/units/tanks/JAP/JAP_IFV_Type_89.mesh"
+
+		animation = { id = "attack"			type = "JAP_IFV_Type_89_attack_animation" }
+		animation = { id = "idle"			type = "JAP_IFV_Type_89_idle_animation" }
+		animation = { id = "move"			type = "JAP_IFV_Type_89_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "PRC_ZBD_03_mesh"
+		file = "gfx/models/units/vehicles/CHI_IFV_ZBD_03.mesh"
+
+		animation = { id = "attack"			type = "CHI_IFV_ZBD_03_attack_animation" }
+		animation = { id = "idle"			type = "CHI_IFV_ZBD_03_idle_animation" }
+		animation = { id = "move"			type = "CHI_IFV_ZBD_03_moving_animation" }
+
+	}
+	
+	pdxmesh = {
+		name = "KOR_mechanized_mesh"
+		file = "gfx/models/units/tanks/KOR/KOR_IFV_K21.mesh"
+
+		animation = { id = "attack"			type = "KOR_IFV_K21_attack_animation" }
+		animation = { id = "idle"			type = "KOR_IFV_K21_idle_animation" }
+		animation = { id = "move"			type = "KOR_IFV_K21_moving_animation" }
+	}
+
+	pdxmesh = {
+		name = "KOR_light_mechanized_mesh"
+		file = "gfx/models/units/tanks/KOR/KOR_APC_K200.mesh"
+
+		animation = { id = "attack"			type = "KOR_APC_K200_attack_animation" }
+		animation = { id = "idle"			type = "KOR_APC_K200_idle_animation" }
+		animation = { id = "move"			type = "KOR_APC_K200_moving_animation" }
+	}
+	
+	pdxmesh = {
+		name = "INS_motorized_mesh"
+		file = "gfx/models/units/vehicles/m35.mesh"
+
+		animation = { id = "idle"			type = "m35_idle_animation" }
+		animation = { id = "move"			type = "m35_move_animation" }
+		animation = { id = "attack"			type = "m35_attack_animation" }
+
+		scale = 0.022
+	}
+	
+	pdxmesh = {
+		name = "bradley_sand_mesh"
+		file = "gfx/models/units/vehicles/USA_IFV_Bradley_M2.mesh"
+
+		animation = { id = "attack"			type = "USA_IFV_Bradley_M2_attack_animation" }
+		animation = { id = "idle"			type = "USA_IFV_Bradley_M2_idle_animation" }
+		animation = { id = "move"			type = "USA_IFV_Bradley_M2_moving_animation" }
+	}
+}
