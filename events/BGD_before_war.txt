@@ -146,3 +146,24 @@ country_event = {
 		name = bangjap.2006.a
 	}
 }
+
+country_event = {
+	id = bangjap.2007	#司法线，启动！
+	title = bangjap.2007.t
+	desc = bangjap.2007.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		date = 2024.1.1
+		tag = BGD
+	}
+	option = {
+		name = bangjap.2007.a
+		activate_mission = BGD_Judicature_focus_mission
+		add_days_mission_timeout = {
+				mission = BGD_Judicature_focus_mission
+				days = -20
+			}
+	}
+}

@@ -275,6 +275,12 @@ focus_tree = {
 			add_to_variable = {
 				BGD_kira_doki_consumer_goods_factor = 0.05
 			}
+			hidden_effect = {
+				country_event = {
+					id = bgd.2012
+					days = 3
+				}
+			}
 		}
 	}
 	focus = {
