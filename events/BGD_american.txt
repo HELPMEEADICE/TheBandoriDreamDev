@@ -1404,6 +1404,19 @@ country_event = {
 	}
 }
 
+country_event = {
+	#重建的决心
+	id = usnavy.48
+	title = usnavy.48.t
+	desc = usnavy.48.d
+	picture = GFX_usnavy_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = usnavy.48.a
+	}
+}
+
 news_event = {
 	#美利坚再一统
 	id = usnavy.2001

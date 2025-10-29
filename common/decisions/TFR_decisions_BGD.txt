@@ -457,6 +457,9 @@ BGD_guojia_gaige = {
 		icon = GFX_Banned_Moderates
 		fire_only_once = yes
 		cost = 0
+		activation = {
+			has_country_flag = BGD_Judicature_focus
+		}
 		allowed = {
 			tag = BGD
 		}

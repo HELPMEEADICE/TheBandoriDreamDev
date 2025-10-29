@@ -567,12 +567,6 @@ focus_tree = {
 			focus = JDF_Instigate_Komeito_Party
 		}
 		available = {
-			PRC = {
-				or = {
-					has_war_with = CHI
-					has_completed_focus = EAS_dongya_jueqi
-				}
-			}
 		}
 		cost = 0
 		x = 11
@@ -581,6 +575,9 @@ focus_tree = {
 			add_political_power = 30
 			add_stability = 0.05
 			add_war_support = -0.05
+			country_event = {
+				id = bangjap.2008
+			}
 		}
 	}
 	focus = {

@@ -438,6 +438,10 @@ decisions_BGD_usn = {
 				country_event = {
 					id = usnavy.41
 				}
+				country_event = {
+					id = usnavy.48
+					days = 3
+				}
 			}
 		}
 		days_mission_timeout = 100
