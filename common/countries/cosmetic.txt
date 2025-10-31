@@ -2005,3 +2005,11 @@ UA_North_African_Federation = {
 	color = rgb { 38 46 121 }
 	color_ui = rgb { 38 46 121 }
 }
+UA_Central_African_Federation = {
+	color = rgb { 38 46 121 }
+	color_ui = rgb { 38 46 121 }
+}
+UA_South_African_Federation = {
+	color = rgb { 38 46 121 }
+	color_ui = rgb { 38 46 121 }
+}
