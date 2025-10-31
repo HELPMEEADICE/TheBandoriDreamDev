@@ -38,4 +38,34 @@ ideas = {
 			}
 		}
 	}
+	female_laws = {
+		law = yes
+		use_list_view = yes
+		BGD_gender_equality = {
+			removal_cost = -1
+			cost = 100
+			level = 6
+			picture = laws_gender_equality3
+			default = yes
+			allowed = {
+			    tag = BGD
+		    }
+		    available = {
+			    has_country_flag = BGD_qiyong_zhuanshu_pingquan
+		    }
+	        visible = {
+			    has_country_flag = BGD_qiyong_zhuanshu_pingquan
+		    }
+		    allowed_to_remove = {
+			    always = no
+		    }
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				society_development_monthly = 0.01
+			}
+		}
+	}
 }
