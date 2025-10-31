@@ -8,7 +8,7 @@ BGD_economic_actions = {
 		economic_actions_array = token:print_money_economic_action
 	}
 	add_to_array = {
-		economic_actions_array = token:quantitative_tightening_economic_action 
+		economic_actions_array = token:quantitative_tightening_economic_action
 	}
 	add_to_array = {
 		economic_actions_array = token:war_taxes_economic_action
@@ -41,4 +41,317 @@ ASIA_MIL_GOV_EFF = {
 		elections_allowed = no
 	}
 	set_country_flag = UNE_member
+}
+
+BGD_Judicature_Start_work_on_Focus = {
+	if = {
+		limit = {
+			NOT = {
+				has_completed_focus = BGD_dq_far_right_parliamentarians
+			}
+		}
+		activate_shine_on_focus = BGD_dq_far_right_parliamentarians
+		set_country_flag = {
+			flag = BGD_dq_far_right_parliamentarians_in_progress_flag
+			days = 57
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_dq_far_right_parliamentarians
+			NOT = {
+				has_completed_focus = BGD_judicial_independence_reform
+			}
+		}
+		activate_shine_on_focus = BGD_judicial_independence_reform
+		set_country_flag = {
+			flag = BGD_judicial_independence_reform_in_progress_flag
+			days = 57
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_judicial_independence_reform
+			NOT = {
+				has_completed_focus = BGD_citizen_rights_protection_act
+			}
+		}
+		activate_shine_on_focus = BGD_citizen_rights_protection_act
+		set_country_flag = {
+			flag = BGD_citizen_rights_protection_act_in_progress_flag
+			days = 57
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_dq_far_right_parliamentarians
+			NOT = {
+				has_completed_focus = BGD_citizen_rights_protection_act
+			}
+		}
+		activate_shine_on_focus = BGD_citizen_rights_protection_act
+		set_country_flag = {
+			flag = BGD_citizen_rights_protection_act_in_progress_flag
+			days = 57
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_citizen_rights_protection_act
+			NOT = {
+				has_completed_focus = BGD_purge_old_era_crimes
+			}
+		}
+		activate_shine_on_focus = BGD_purge_old_era_crimes
+		set_country_flag = {
+			flag = BGD_purge_old_era_crimes_in_progress_flag
+			days = 57
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_purge_old_era_crimes
+			NOT = {
+				has_completed_focus = BGD_combat_organized_crime
+			}
+		}
+		activate_shine_on_focus = BGD_combat_organized_crime
+		set_country_flag = {
+			flag = BGD_combat_organized_crime_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_combat_organized_crime
+			NOT = {
+				has_completed_focus = BGD_workers_rights_bill
+			}
+		}
+		activate_shine_on_focus = BGD_workers_rights_bill
+		set_country_flag = {
+			flag = BGD_workers_rights_bill_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_workers_rights_bill
+			NOT = {
+				has_completed_focus = BGD_social_equality_legislation
+			}
+		}
+		activate_shine_on_focus = BGD_social_equality_legislation
+		set_country_flag = {
+			flag = BGD_social_equality_legislation_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_combat_organized_crime
+			NOT = {
+				has_completed_focus = BGD_police_reform_act
+			}
+		}
+		activate_shine_on_focus = BGD_police_reform_act
+		set_country_flag = {
+			flag = BGD_police_reform_act_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_police_reform_act
+			NOT = {
+				has_completed_focus = BGD_international_legal_cooperation
+			}
+		}
+		activate_shine_on_focus = BGD_international_legal_cooperation
+		set_country_flag = {
+			flag = BGD_international_legal_cooperation_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_combat_organized_crime
+			NOT = {
+				has_completed_focus = BGD_truth_and_reconciliation_commission
+			}
+		}
+		activate_shine_on_focus = BGD_truth_and_reconciliation_commission
+		set_country_flag = {
+			flag = BGD_truth_and_reconciliation_commission_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_truth_and_reconciliation_commission
+			NOT = {
+				has_completed_focus = BGD_digital_rights_protection
+			}
+		}
+		activate_shine_on_focus = BGD_digital_rights_protection
+		set_country_flag = {
+			flag = BGD_digital_rights_protection_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = BGD_digital_rights_protection
+			NOT = {
+				has_completed_focus = BGD_justice_for_all
+			}
+		}
+		activate_shine_on_focus = BGD_justice_for_all
+		set_country_flag = {
+			flag = BGD_justice_for_all_in_progress_flag
+			days = 50
+			value = 1
+		}
+	}
+}
+
+BGD_Judicature_Finish_work_on_Focus = {
+	if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_dq_far_right_parliamentarians
+		}
+		complete_national_focus = {
+			focus = BGD_dq_far_right_parliamentarians
+		}
+		clr_country_flag = BGD_dq_far_right_parliamentarians_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_judicial_independence_reform
+		}
+		complete_national_focus = {
+			focus = BGD_judicial_independence_reform
+		}
+		clr_country_flag = BGD_judicial_independence_reform_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_citizen_rights_protection_act
+		}
+		complete_national_focus = {
+			focus = BGD_citizen_rights_protection_act
+		}
+		clr_country_flag = BGD_citizen_rights_protection_act_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_citizen_rights_protection_act
+		}
+		complete_national_focus = {
+			focus = BGD_citizen_rights_protection_act
+		}
+		clr_country_flag = BGD_citizen_rights_protection_act_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_purge_old_era_crimes
+		}
+		complete_national_focus = {
+			focus = BGD_purge_old_era_crimes
+		}
+		clr_country_flag = BGD_purge_old_era_crimes_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_combat_organized_crime
+		}
+		complete_national_focus = {
+			focus = BGD_combat_organized_crime
+		}
+		clr_country_flag = BGD_combat_organized_crime_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_workers_rights_bill
+		}
+		complete_national_focus = {
+			focus = BGD_workers_rights_bill
+		}
+		clr_country_flag = BGD_workers_rights_bill_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_social_equality_legislation
+		}
+		complete_national_focus = {
+			focus = BGD_social_equality_legislation
+		}
+		clr_country_flag = BGD_social_equality_legislation_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_police_reform_act
+		}
+		complete_national_focus = {
+			focus = BGD_police_reform_act
+		}
+		clr_country_flag = BGD_police_reform_act_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_international_legal_cooperation
+		}
+		complete_national_focus = {
+			focus = BGD_international_legal_cooperation
+		}
+		clr_country_flag = BGD_international_legal_cooperation_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_truth_and_reconciliation_commission
+		}
+		complete_national_focus = {
+			focus = BGD_truth_and_reconciliation_commission
+		}
+		clr_country_flag = BGD_truth_and_reconciliation_commission_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_truth_and_reconciliation_commission
+		}
+		complete_national_focus = {
+			focus = BGD_truth_and_reconciliation_commission
+		}
+		clr_country_flag = BGD_truth_and_reconciliation_commission_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_digital_rights_protection
+		}
+		complete_national_focus = {
+			focus = BGD_digital_rights_protection
+		}
+		clr_country_flag = BGD_digital_rights_protection_in_progress_flag
+	}
+	else_if = {
+		limit = {
+			has_shine_effect_on_focus = BGD_justice_for_all
+		}
+		complete_national_focus = {
+			focus = BGD_justice_for_all
+		}
+		clr_country_flag = BGD_justice_for_all_in_progress_flag
+	}
 }

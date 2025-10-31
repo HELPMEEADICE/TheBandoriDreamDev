@@ -6,7 +6,7 @@ shared_focus = {
 	x = 1
 	y = 9
 	available = {
-		#has_country_flag = reconstruction_completed
+		always = no
 	}
 	completion_reward = {
 		country_event = { id = bgd.97 days = 3 }
@@ -21,6 +21,9 @@ shared_focus = {
 	cost = 5
 	x = -1
 	y = 10
+	available = {
+		always = no
+	}
 	prerequisite = { focus = BGD_dq_far_right_parliamentarians }
 	completion_reward = {
 		add_timed_idea = {
@@ -35,6 +38,9 @@ shared_focus = {
 	cost = 5
 	x = 3
 	y = 10
+	available = {
+		always = no
+	}
 	completion_reward = {
 		add_stability = 0.05
 	}
@@ -47,6 +53,9 @@ shared_focus = {
 	cost = 4
 	x = -3
 	y = 11
+	available = {
+		always = no
+	}
 	prerequisite = { focus = BGD_judicial_independence_reform }
 	available = {
 		has_country_flag = APFNO_member
@@ -61,6 +70,9 @@ shared_focus = {
 	cost = 4
 	x = 0
 	y = 11
+	available = {
+		always = no
+	}
 	completion_reward = {
 		add_stability = 0.05
 		country_event = {
@@ -77,6 +89,9 @@ shared_focus = {
 	cost = 6
 	x = 2
 	y = 11
+	available = {
+		always = no
+	}
 	completion_reward = {
 		add_stability = 0.05
 	}
@@ -88,6 +103,9 @@ shared_focus = {
 	cost = 6
 	x = 5
 	y = 11
+	available = {
+		always = no
+	}
 	completion_reward = {
 		add_stability = 0.05
 	}
@@ -100,6 +118,9 @@ shared_focus = {
 	cost = 7
 	x = 0
 	y = 12
+	available = {
+		always = no
+	}
 	completion_reward = {
 		add_stability = 0.05
 		country_event = {
@@ -117,6 +138,9 @@ shared_focus = {
 	x = 2
 	y = 12
 	available = {
+		always = no
+	}
+	available = {
 		has_country_flag = APFNO_member
 	}
 	completion_reward = {
@@ -131,6 +155,9 @@ shared_focus = {
 	cost = 6
 	x = -3
 	y = 12
+	available = {
+		always = no
+	}
 	prerequisite = { focus = BGD_purge_old_era_crimes }
 	completion_reward = {
 		country_event = { id = bgd.102 days = 3 }
@@ -143,6 +170,9 @@ shared_focus = {
 	cost = 6
 	x = 5
 	y = 12
+	available = {
+		always = no
+	}
 	prerequisite = { focus = BGD_social_equality_legislation }
 	completion_reward = {
 		add_stability = 0.05
@@ -155,6 +185,9 @@ shared_focus = {
 	cost = 10
 	x = 1
 	y = 13
+	available = {
+		always = no
+	}
 	prerequisite = {
 		focus = BGD_truth_and_reconciliation_commission
 	}
@@ -169,6 +202,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		country_event = { id = bgd.104 days = 3 }
+		set_country_flag = BGD_Judicature_over
 	}
 	# Using relative_position_id to place it centrally below the branches
 	# relative_position_id = BGD_police_reform_act # Example, adjust as needed

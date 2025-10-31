@@ -132,7 +132,6 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = bangjap.2006	#旧时代的崩塌
 	title = bangjap.2006.t
@@ -148,15 +147,37 @@ country_event = {
 }
 
 country_event = {
-	id = bangjap.2007	#落日余晖
+	id = bangjap.2007	#司法线，启动！
 	title = bangjap.2007.t
 	desc = bangjap.2007.d
 	picture = GFX_bangdream_victory
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
+		date = 2024.1.1
+		tag = BGD
 	}
 	option = {
 		name = bangjap.2007.a
+		set_country_flag = BGD_Judicature_focus
+		activate_mission = BGD_Judicature_focus_mission
+		add_days_mission_timeout = {
+			mission = BGD_Judicature_focus_mission
+			days = -20
+		}
+	}
+}
+
+country_event = {
+	id = bangjap.2008	#不尽人意事件
+	title = bangjap.2008.t
+	desc = bangjap.2008.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bangjap.2008.a
 	}
 }

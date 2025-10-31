@@ -638,6 +638,10 @@ country_event = {
 			id = bgd.39
 			hours = 72
 		}
+		country_event = {
+			id = bgd.2013
+			days = 4
+		}
 		news_event = {
 			id = news.1215
 			hours = 24
@@ -3173,5 +3177,31 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bgd.2011.a
+	}
+}
+
+country_event = {
+	#亚子磷子糖
+	id = bgd.2012
+	title = bgd.2012.t
+	desc = bgd.2012.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2012.a
+	}
+}
+
+country_event = {
+	#黑化通话
+	id = bgd.2013
+	title = bgd.2013.t
+	desc = bgd.2013.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bgd.2013.a
 	}
 }
