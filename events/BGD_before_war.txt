@@ -146,3 +146,17 @@ country_event = {
 		name = bangjap.2006.a
 	}
 }
+
+country_event = {
+	id = bangjap.2007	#落日余晖
+	title = bangjap.2007.t
+	desc = bangjap.2007.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = bangjap.2007.a
+	}
+}
