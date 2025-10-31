@@ -1,0 +1,700 @@
+#focus_tree = {
+#    id = BGD_earthquake_response
+#    country = {
+#        factor = 0
+#        modifier = {
+#            add = 10
+#            tag = BGD
+#        }
+#    }
+#    
+#    default = no
+#    continuous_focus_position = { x = 50 y = 1000 }
+    
+    ##########################################
+    ### 起始国策
+    ##########################################
+    
+    shared_focus = {
+        id = BGD_darkest_day
+        icon = GFX_guoce_zhanwei
+        x = 55
+        y = 0
+        cost = 1
+        
+        #available = {
+        #    has_country_flag = nankai_megathrust_earthquake
+        #}
+
+		allow_branch = {
+			has_country_flag = nankai_megathrust_earthquake
+		}
+        
+        completion_reward = {
+            country_event = { id = bgd_earthquake.1 days = 1 }
+            add_political_power = -100
+            add_stability = -0.20
+            custom_effect_tooltip = BGD_earthquake_response_unlocked
+        }
+        
+        ai_will_do = {
+            factor = 100
+        }
+    }
+    
+    ##########################################
+    ### 第一阶段：紧急响应与危机控制
+    ##########################################
+    
+    # 政治与指挥分支
+    shared_focus = {
+        id = BGD_emergency_cabinet
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_darkest_day }
+        x = 50
+        y = 1
+        cost = 7
+        
+        completion_reward = {
+            add_political_power = 50
+            add_stability = 0.03
+            custom_effect_tooltip = BGD_arisa_leads_response
+            hidden_effect = {
+                country_event = { id = bgd_earthquake.2 }
+            }
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_crisis_government
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_emergency_cabinet }
+        x = 0
+        y = 1
+        relative_position_id = BGD_emergency_cabinet
+        cost = 7
+        
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.05
+            swap_ideas = {
+                remove_idea = BGD_normal_government
+                add_idea = BGD_crisis_government
+            }
+            custom_effect_tooltip = BGD_kaoru_crisis_government
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    # 军事与情报分支
+    shared_focus = {
+        id = BGD_activate_ndf
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_darkest_day }
+        x = 53
+        y = 1
+        cost = 7
+        
+        completion_reward = {
+            army_experience = 10
+            add_manpower = 5000
+            custom_effect_tooltip = BGD_lisa_mobilizes_military
+            hidden_effect = {
+                load_oob = BGD_earthquake_rescue_divisions
+            }
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_air_lifeline
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_activate_ndf }
+        x = -1
+        y = 1
+        relative_position_id = BGD_activate_ndf
+        cost = 7
+        
+        completion_reward = {
+            air_experience = 15
+            add_equipment_to_stockpile = {
+                type = transport_plane_equipment
+                amount = 50
+                producer = BGD
+            }
+            custom_effect_tooltip = BGD_sayo_air_operations
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_emergency_comms
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_activate_ndf }
+        x = 1
+        y = 1
+        relative_position_id = BGD_activate_ndf
+        cost = 7
+        
+        completion_reward = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = electronics
+            }
+            custom_effect_tooltip = BGD_saki_satellite_network
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    # 灾害控制分支
+    shared_focus = {
+        id = BGD_mobilize_rescue
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_darkest_day }
+        x = 57
+        y = 1
+        cost = 7
+        
+        completion_reward = {
+            add_stability = 0.05
+            add_manpower = 3000
+            custom_effect_tooltip = BGD_taki_rescue_operations
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_nuclear_containment
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_darkest_day }
+        x = 59
+        y = 1
+        cost = 10
+        
+        available = {
+            has_tech = nuclear_reactor
+        }
+        
+        completion_reward = {
+            add_stability = 0.08
+            add_political_power = 50
+            custom_effect_tooltip = BGD_layer_stops_meltdown
+            hidden_effect = {
+                set_country_flag = BGD_nuclear_crisis_contained
+            }
+        }
+        
+        ai_will_do = {
+            factor = 100
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_supernatural_fusion
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_darkest_day }
+        x = 61
+        y = 1
+        cost = 10
+        
+        available = {
+            has_country_leader = {
+                name = "Kasumi Toyama"
+                ruling_only = yes
+            }
+        }
+        
+        completion_reward = {
+            add_stability = 0.10
+            add_war_support = 0.05
+            add_tech_bonus = {
+                bonus = 1.0
+                uses = 1
+                category = magical_technology
+            }
+            custom_effect_tooltip = BGD_maya_uses_science_and_magic
+        }
+        
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    
+    ##########################################
+    ### 第二阶段：人道救援与社会稳定
+    ##########################################
+    
+    # 后勤与民生分支
+    shared_focus = {
+        id = BGD_repair_transport
+        icon = GFX_guoce_zhanwei
+        prerequisite = { 
+            focus = BGD_crisis_government
+            focus = BGD_air_lifeline
+            focus = BGD_emergency_comms
+            focus = BGD_mobilize_rescue
+            focus = BGD_nuclear_containment
+            focus = BGD_supernatural_fusion
+        }
+        x = 49
+        y = 4
+        cost = 10
+        
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { has_state_flag = earthquake_damaged }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = BGD_marina_repairs_infrastructure
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_emergency_energy
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_repair_transport }
+        x = 0
+        y = 1
+        relative_position_id = BGD_repair_transport
+        cost = 10
+        
+        completion_reward = {
+            add_resource = {
+                type = oil
+                amount = 20
+                state = 282  # Tokyo
+            }
+            add_ideas = BGD_emergency_energy_measures
+            custom_effect_tooltip = BGD_misaki_energy_crisis_management
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_distribute_supplies
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_emergency_energy }
+        x = 0
+        y = 1
+        relative_position_id = BGD_emergency_energy
+        cost = 7
+        
+        completion_reward = {
+            add_stability = 0.05
+            add_war_support = 0.03
+            add_political_power = 30
+            custom_effect_tooltip = BGD_hagumi_food_distribution
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    # 社会秩序与医疗分支
+    shared_focus = {
+        id = BGD_counter_misinformation
+        icon = GFX_guoce_zhanwei
+        prerequisite = { 
+            focus = BGD_crisis_government
+            focus = BGD_air_lifeline
+            focus = BGD_emergency_comms
+            focus = BGD_mobilize_rescue
+            focus = BGD_nuclear_containment
+            focus = BGD_supernatural_fusion
+        }
+        x = 55
+        y = 4
+        cost = 7
+        
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 50
+            custom_effect_tooltip = BGD_rimi_stops_panic
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_crackdown_crime
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_counter_misinformation }
+        x = -2
+        y = 1
+        relative_position_id = BGD_counter_misinformation
+        cost = 7
+        
+        completion_reward = {
+            add_stability = 0.08
+            add_political_power = 25
+            custom_effect_tooltip = BGD_ran_law_and_order
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_temporary_shelters
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_counter_misinformation }
+        x = 0
+        y = 1
+        relative_position_id = BGD_counter_misinformation
+        cost = 10
+        
+        completion_reward = {
+            add_stability = 0.05
+            random_owned_controlled_state = {
+                limit = { has_state_flag = earthquake_damaged }
+                add_extra_state_shared_building_slots = 2
+            }
+            custom_effect_tooltip = BGD_rimi_shelters
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_special_medical
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_counter_misinformation }
+        x = 2
+        y = 1
+        relative_position_id = BGD_counter_misinformation
+        cost = 10
+        
+        completion_reward = {
+            add_stability = 0.03
+            add_war_support = 0.02
+            add_political_power = 30
+            custom_effect_tooltip = BGD_chisato_medical_response
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    ##########################################
+    ### 第三阶段：重建与未来规划
+    ##########################################
+    
+    # 经济与金融分支
+    shared_focus = {
+        id = BGD_damage_assessment
+        icon = GFX_guoce_zhanwei
+        prerequisite = { 
+            focus = BGD_distribute_supplies
+            focus = BGD_crackdown_crime
+            focus = BGD_temporary_shelters
+            focus = BGD_special_medical
+        }
+        x = 50
+        y = 7
+        cost = 10
+        
+        completion_reward = {
+            add_political_power = 100
+            custom_effect_tooltip = BGD_asuka_assessment_report
+            hidden_effect = {
+                country_event = { id = bgd_earthquake.10 }
+            }
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_reconstruction_bonds
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_damage_assessment }
+        x = 0
+        y = 1
+        relative_position_id = BGD_damage_assessment
+        cost = 10
+        
+        completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 3
+            }
+            add_political_power = -50
+            custom_effect_tooltip = BGD_soyo_bonds_issued
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_emergency_budget
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_reconstruction_bonds }
+        x = 0
+        y = 1
+        relative_position_id = BGD_reconstruction_bonds
+        cost = 7
+        
+        completion_reward = {
+            add_political_power = 150
+            add_stability = 0.03
+            custom_effect_tooltip = BGD_saaya_budget_passed
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_economic_stimulus
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_emergency_budget }
+        x = 0
+        y = 1
+        relative_position_id = BGD_emergency_budget
+        cost = 10
+        
+        completion_reward = {
+            add_ideas = BGD_reconstruction_stimulus
+            add_stability = 0.05
+            random_owned_controlled_state = {
+                limit = { has_state_flag = earthquake_damaged }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = BGD_kokoro_stimulus_package
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    # 重建与改革分支
+    shared_focus = {
+        id = BGD_industrial_recovery
+        icon = GFX_guoce_zhanwei
+        prerequisite = { 
+            focus = BGD_distribute_supplies
+            focus = BGD_crackdown_crime
+            focus = BGD_temporary_shelters
+            focus = BGD_special_medical
+        }
+        x = 52
+        y = 7
+        cost = 10
+        
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { has_state_flag = earthquake_damaged }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            custom_effect_tooltip = BGD_misaki_industry_restored
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_land_remediation_urban_planning
+        icon = GFX_guoce_zhanwei
+        prerequisite = { 
+            focus = BGD_distribute_supplies
+            focus = BGD_crackdown_crime
+            focus = BGD_temporary_shelters
+            focus = BGD_special_medical
+        }
+        x = 58
+        y = 7
+        cost = 10
+        
+        completion_reward = {
+            random_owned_controlled_state = {
+                limit = { has_state_flag = earthquake_damaged }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 3
+                    instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+            }
+            custom_effect_tooltip = BGD_aya_marina_new_cities
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_comprehensive_review
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_land_remediation_urban_planning }
+        x = 0
+        y = 1
+        relative_position_id = BGD_land_remediation_urban_planning
+        cost = 10
+        
+        completion_reward = {
+            add_political_power = 100
+            add_research_slot = 1
+            custom_effect_tooltip = BGD_arisa_lessons_learned
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    ##########################################
+    ### 最终分支
+    ##########################################
+    
+    shared_focus = {
+        id = BGD_resilience_infrastructure
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_economic_stimulus }
+        x = 50
+        y = 11
+        cost = 10
+        
+        completion_reward = {
+            every_owned_state = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_ideas = BGD_earthquake_resistant_infrastructure
+            custom_effect_tooltip = BGD_tomori_hardened_infrastructure
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_prevention_mechanisms
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_industrial_recovery }
+        prerequisite = { focus = BGD_comprehensive_review }
+        x = 55
+        y = 12
+        cost = 10
+        
+        completion_reward = {
+            add_ideas = BGD_disaster_prevention_system
+            add_stability = 0.05
+            custom_effect_tooltip = BGD_taki_early_warning
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    shared_focus = {
+        id = BGD_omnibus_disaster_act
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_comprehensive_review }
+        x = 58
+        y = 9
+        cost = 10
+        
+        completion_reward = {
+            add_political_power = 200
+            add_stability = 0.10
+            swap_ideas = {
+                remove_idea = BGD_crisis_government
+                add_idea = BGD_reformed_government
+            }
+            custom_effect_tooltip = BGD_tsukushi_legal_reforms
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+    ##########################################
+    ### 最终收束国策
+    ##########################################
+    
+    shared_focus = {
+        id = BGD_united_as_one
+        icon = GFX_guoce_zhanwei
+        prerequisite = { focus = BGD_resilience_infrastructure }
+        prerequisite = { focus = BGD_prevention_mechanisms }
+        prerequisite = { focus = BGD_omnibus_disaster_act }
+        x = 55
+        y = 13
+        cost = 10
+        
+        completion_reward = {
+            add_political_power = 300
+            add_stability = 0.25
+            add_war_support = 0.15
+            remove_ideas = BGD_earthquake_devastation
+            add_ideas = BGD_phoenix_reborn
+            country_event = { id = bgd_earthquake.100 }
+            custom_effect_tooltip = BGD_kasumi_reborn_from_ashes
+        }
+        
+        ai_will_do = {
+            factor = 100
+        }
+    }
+#}
