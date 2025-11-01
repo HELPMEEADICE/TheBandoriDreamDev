@@ -2620,38 +2620,45 @@ country_event = {
 					puppet = UA4
 				}
 
-				remove_state_core = 550
-				remove_state_core = 867
-				remove_state_core = 268
-				remove_state_core = 1140
-				remove_state_core = 271
-				remove_state_core = 1141
-				remove_state_core = 1297
-				remove_state_core = 674
-				remove_state_core = 866
-				remove_state_core = 955
-				remove_state_core = 559
-				remove_state_core = 807
-				remove_state_core = 269
-				remove_state_core = 762
-				remove_state_core = 1351
-				remove_state_core = 1344
-				remove_state_core = 1445
-				remove_state_core = 1348
-				remove_state_core = 548
-				remove_state_core = 1353
-				remove_state_core = 1352
-				remove_state_core = 547
-				remove_state_core = 1354
-				remove_state_core = 781
-				remove_state_core = 780
-				remove_state_core = 546
-				remove_state_core = 544
-				remove_state_core = 820
-				remove_state_core = 543
-				remove_state_core = 1345
+				remove_state_core = 763
+                remove_state_core = 1294
+                remove_state_core = 551
+                remove_state_core = 1350
+                remove_state_core = 1344
+                remove_state_core = 1351
+                remove_state_core = 1345
+                remove_state_core = 1348
+                remove_state_core = 1351
+                remove_state_core = 1349
+                remove_state_core = 549
+                remove_state_core = 1347
+                remove_state_core = 1346
+                remove_state_core = 1445
+                remove_state_core = 761
+                remove_state_core = 762
+                remove_state_core = 550
+                remove_state_core = 867
+                remove_state_core = 1140
+                remove_state_core = 1297
+                remove_state_core = 271
+                remove_state_core = 1141
+                remove_state_core = 761
+                remove_state_core = 866
+                remove_state_core = 674
+                remove_state_core = 268
+                remove_state_core = 269
+                remove_state_core = 807
+                remove_state_core = 559
+                remove_state_core = 955
+                remove_state_core = 1352
+                remove_state_core = 1353
+                remove_state_core = 1354
+                remove_state_core = 547
+                remove_state_core = 548
+                remove_state_core = 781
+                remove_state_core = 780
+                remove_state_core = 546
 				remove_state_core = 1295
-				remove_state_core = 708
 			}
 			UA4 = {
 				drop_cosmetic_tag = yes
@@ -2685,71 +2692,85 @@ country_event = {
 				add_ideas = BGD_pan_african_kiraism
 				add_ideas = BGD_Afrika_Equatoriale_Spatium_Group
 				set_capital = { state = 547 }
+				transfer_state = 763
+				transfer_state = 1294
+				transfer_state = 551
+				transfer_state = 1350
+				transfer_state = 1344
+				transfer_state = 1351
+				transfer_state = 1345
+				transfer_state = 1348
+				transfer_state = 1351
+				transfer_state = 1349
+				transfer_state = 549
+				transfer_state = 1347
+				transfer_state = 1346
+				transfer_state = 1445
+				transfer_state = 761
+				transfer_state = 762
 				transfer_state = 550
 				transfer_state = 867
-				transfer_state = 268
 				transfer_state = 1140
+				transfer_state = 1297
 				transfer_state = 271
 				transfer_state = 1141
-				transfer_state = 1297
-				transfer_state = 674
+				transfer_state = 761
 				transfer_state = 866
-				transfer_state = 955
-				transfer_state = 559
-				transfer_state = 807
+				transfer_state = 674
+				transfer_state = 268
 				transfer_state = 269
-				transfer_state = 762
-				transfer_state = 1351
-				transfer_state = 1344
-				transfer_state = 1445
-				transfer_state = 1348
-				transfer_state = 548
-				transfer_state = 1353
+				transfer_state = 807
+				transfer_state = 559
+				transfer_state = 955
 				transfer_state = 1352
-				transfer_state = 547
+				transfer_state = 1353
 				transfer_state = 1354
+				transfer_state = 547
+				transfer_state = 548
 				transfer_state = 781
 				transfer_state = 780
 				transfer_state = 546
-				transfer_state = 544
-				transfer_state = 820
-				transfer_state = 543
-				transfer_state = 1345
 				transfer_state = 1295
-				transfer_state = 708
 
-				add_state_core = 550
-				add_state_core = 867
-				add_state_core = 268
-				add_state_core = 1140
-				add_state_core = 271
-				add_state_core = 1141
-				add_state_core = 1297
-				add_state_core = 674
-				add_state_core = 866
-				add_state_core = 955
-				add_state_core = 559
-				add_state_core = 807
-				add_state_core = 269
-				add_state_core = 762
-				add_state_core = 1351
-				add_state_core = 1344
-				add_state_core = 1445
-				add_state_core = 1348
-				add_state_core = 548
-				add_state_core = 1353
-				add_state_core = 1352
-				add_state_core = 547
-				add_state_core = 1354
-				add_state_core = 781
-				add_state_core = 780
-				add_state_core = 546
-				add_state_core = 544
-				add_state_core = 820
-				add_state_core = 543
-				add_state_core = 1345
-				add_state_core = 1295
-				add_state_core = 708
+				add_state_core = 763
+                add_state_core = 1294
+                add_state_core = 551
+                add_state_core = 1350
+                add_state_core = 1344
+                add_state_core = 1351
+                add_state_core = 1345
+                add_state_core = 1348
+                add_state_core = 1351
+                add_state_core = 1349
+                add_state_core = 549
+                add_state_core = 1347
+                add_state_core = 1346
+                add_state_core = 1445
+                add_state_core = 761
+                add_state_core = 762
+                add_state_core = 550
+                add_state_core = 867
+                add_state_core = 1140
+                add_state_core = 1297
+                add_state_core = 271
+                add_state_core = 1141
+                add_state_core = 761
+                add_state_core = 866
+                add_state_core = 674
+                add_state_core = 268
+                add_state_core = 269
+                add_state_core = 807
+                add_state_core = 559
+                add_state_core = 955
+                add_state_core = 1352
+                add_state_core = 1353
+                add_state_core = 1354
+                add_state_core = 547
+                add_state_core = 548
+                add_state_core = 781
+                add_state_core = 780
+                add_state_core = 546
+                add_state_core = 1295
 			}
 		}
 	}
@@ -2890,6 +2911,33 @@ country_event = {
 			annex_country = {
 				target = BIA
 			}
+			annex_country = {
+				target = VOL
+			}
+			annex_country = {
+				target = NGR
+			}
+			annex_country = {
+				target = CHA
+			}
+			annex_country = {
+				target = MLI
+			}
+			annex_country = {
+				target = MRT
+			}
+			transfer_state = 699
+			transfer_state = 882
+			transfer_state = 754
+			transfer_state = 755
+			transfer_state = 1361
+			
+			add_state_core = 699
+            add_state_core = 882
+            add_state_core = 754
+            add_state_core = 755
+            add_state_core = 1361
+
 			set_cosmetic_tag = UA_West_African_Federation
 			set_party_name = {
 				ideology = social_democrat
@@ -2917,6 +2965,339 @@ country_event = {
 					is_controlled_by = NGA
 				}
 				THIS = { add_core_of = NGA }
+			}
+			add_ideas = {
+				higher_safety
+				higher_welfare
+				lower_interest_rates
+				lower_taxes
+				higher_trade
+				mass_consumerism
+				lower_conscription
+				higher_education
+				medium_poverty
+				medium_military
+				higher_immigration
+				higher_society
+			}
+			clear_variable = debt_var
+			clear_variable = debt_million_var
+			clear_variable = debt_billion_var
+			clear_variable = debt_trillion_var
+			add_GDP = yes
+			remove_ideas = ZZZ_capitalist_economy
+			add_ideas = BGD_RBE_economy
+		}
+	}
+}
+country_event = {
+	#北非联邦
+	id = unasia.2008
+	title = unasia.2008.t
+	desc = unasia.2008.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2008.a
+		BGD = {
+			set_autonomy = {
+				target = EGY
+				autonomy_state = bgd_allied_countries_state
+			}
+		}
+		EGY = {
+			annex_country = {
+				target = HRL
+			}
+			annex_country = {
+				target = LBA
+			}
+			annex_country = {
+				target = TUN
+			}
+			annex_country = {
+				target = ALG
+			}
+			annex_country = {
+				target = MOR
+			}
+			set_cosmetic_tag = UA_North_African_Federation
+			set_party_name = {
+				ideology = social_democrat
+				long_name = NorthAfrica_social_democrat_long
+				name = NorthAfrica_social_democrat
+			}
+			create_country_leader = {
+				name = "BGD_hina_char"
+				desc = "BGD_HINA_DESC"
+				picture = GFX_portrait_Hina
+				ideology = kirakira_dokidoki
+				traits = {
+					Hina_Genius
+					Hina_Run_tte
+				}
+			}
+			add_ideas = BGD_pan_african_kiraism
+			add_ideas = BGD_Glio_Tech
+			clr_global_flag = sahara_disaster
+			set_capital = {
+				state = 446
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = EGY
+				}
+				THIS = { add_core_of = EGY }
+			}
+			add_ideas = {
+				higher_safety
+				higher_welfare
+				lower_interest_rates
+				lower_taxes
+				higher_trade
+				mass_consumerism
+				lower_conscription
+				higher_education
+				medium_poverty
+				medium_military
+				higher_immigration
+				higher_society
+			}
+			clear_variable = debt_var
+			clear_variable = debt_million_var
+			clear_variable = debt_billion_var
+			clear_variable = debt_trillion_var
+			add_GDP = yes
+			remove_ideas = ZZZ_capitalist_economy
+			add_ideas = BGD_RBE_economy
+		}
+		UA3 = {
+			transfer_state = 813
+			transfer_state = 453
+			
+            add_state_core = 813
+            add_state_core = 453
+		}
+	}
+}
+country_event = {
+	#中非联邦
+	id = unasia.2009
+	title = unasia.2009.t
+	desc = unasia.2009.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2009.a
+		BGD = {
+			set_autonomy = {
+				target = COG
+				autonomy_state = bgd_allied_countries_state
+			}
+		}
+		COG = {
+			transfer_state = 779
+			transfer_state = 778
+			transfer_state = 660
+			transfer_state = 756
+			transfer_state = 757
+			transfer_state = 758
+			transfer_state = 539
+			transfer_state = 297
+			transfer_state = 705
+			transfer_state = 758
+			transfer_state = 760
+			transfer_state = 759
+			transfer_state = 842
+			transfer_state = 538
+			transfer_state = 718
+			transfer_state = 1357
+			transfer_state = 1356
+			transfer_state = 862
+			transfer_state = 863
+			transfer_state = 864
+			transfer_state = 865
+			transfer_state = 1360
+			transfer_state = 1358
+			transfer_state = 1359
+			transfer_state = 295
+			transfer_state = 1363
+			transfer_state = 1362
+			
+			add_state_core = 779
+            add_state_core = 778
+            add_state_core = 660
+            add_state_core = 756
+            add_state_core = 757
+            add_state_core = 758
+            add_state_core = 539
+            add_state_core = 297
+            add_state_core = 705
+            add_state_core = 758
+            add_state_core = 760
+            add_state_core = 759
+            add_state_core = 842
+            add_state_core = 538
+            add_state_core = 718
+            add_state_core = 1357
+            add_state_core = 1356
+            add_state_core = 862
+            add_state_core = 863
+            add_state_core = 864
+            add_state_core = 865
+            add_state_core = 1360
+            add_state_core = 1358
+            add_state_core = 1359
+            add_state_core = 295
+            add_state_core = 1363
+            add_state_core = 1362
+			
+			set_cosmetic_tag = UA_Central_African_Federation
+			set_party_name = {
+				ideology = social_democrat
+				long_name = CentralAfrica_social_democrat_long
+				name = CentralAfrica_social_democrat
+			}
+			create_country_leader = {
+				name = "BGD_hina_char" #和奏瑞依
+				desc = "BGD_HINA_DESC"
+				picture = GFX_portrait_Hina
+				ideology = kirakira_dokidoki
+				traits = {
+					Hina_Genius
+					Hina_Run_tte
+				}
+			}
+			add_ideas = BGD_pan_african_kiraism
+			add_ideas = BGD_Glio_Tech
+			clr_global_flag = sahara_disaster
+			set_capital = {
+				state = 1363
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = COG
+				}
+				THIS = { add_core_of = COG }
+			}
+			add_ideas = {
+				higher_safety
+				higher_welfare
+				lower_interest_rates
+				lower_taxes
+				higher_trade
+				mass_consumerism
+				lower_conscription
+				higher_education
+				medium_poverty
+				medium_military
+				higher_immigration
+				higher_society
+			}
+			clear_variable = debt_var
+			clear_variable = debt_million_var
+			clear_variable = debt_billion_var
+			clear_variable = debt_trillion_var
+			add_GDP = yes
+			remove_ideas = ZZZ_capitalist_economy
+			add_ideas = BGD_RBE_economy
+		}
+	}
+}
+country_event = {
+	#南非联邦
+	id = unasia.2010
+	title = unasia.2010.t
+	desc = unasia.2010.d
+	picture = GFX_popipa_doublerainbow
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = unasia.2010.a
+		BGD = {
+			set_autonomy = {
+				target = SAF
+				autonomy_state = bgd_allied_countries_state
+			}
+		}
+		SAF = {
+			transfer_state = 540
+			transfer_state = 845
+			transfer_state = 846
+			transfer_state = 843
+			transfer_state = 844
+			transfer_state = 545
+			transfer_state = 820
+			transfer_state = 544
+			transfer_state = 782
+			transfer_state = 541
+			transfer_state = 542
+			transfer_state = 1376
+			transfer_state = 1342
+			transfer_state = 1343
+			transfer_state = 275
+			transfer_state = 819
+			transfer_state = 1318
+			transfer_state = 1303
+			transfer_state = 719
+			transfer_state = 818
+			transfer_state = 1317
+			transfer_state = 1304
+			transfer_state = 681
+			
+            add_state_core = 540
+            add_state_core = 845
+            add_state_core = 846
+            add_state_core = 843
+            add_state_core = 844
+            add_state_core = 545
+            add_state_core = 820
+            add_state_core = 544
+            add_state_core = 782
+            add_state_core = 541
+            add_state_core = 542
+            add_state_core = 1376
+            add_state_core = 1342
+            add_state_core = 1343
+            add_state_core = 275
+            add_state_core = 819
+            add_state_core = 1318
+            add_state_core = 1303
+            add_state_core = 719
+            add_state_core = 818
+            add_state_core = 1317
+            add_state_core = 1304
+            add_state_core = 681
+			
+			set_cosmetic_tag = UA_South_African_Federation
+			set_party_name = {
+				ideology = social_democrat
+				long_name = SouthAfrica_social_democrat_long
+				name = SouthAfrica_social_democrat
+			}
+			create_country_leader = {
+				name = "BGD_hina_char" #没想好
+				desc = "BGD_HINA_DESC"
+				picture = GFX_portrait_Hina
+				ideology = kirakira_dokidoki
+				traits = {
+					Hina_Genius
+					Hina_Run_tte
+				}
+			}
+			add_ideas = BGD_pan_african_kiraism
+			add_ideas = BGD_Glio_Tech
+			clr_global_flag = sahara_disaster
+			set_capital = {
+				state = 681
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = SAF
+				}
+				THIS = { add_core_of = SAF }
 			}
 			add_ideas = {
 				higher_safety

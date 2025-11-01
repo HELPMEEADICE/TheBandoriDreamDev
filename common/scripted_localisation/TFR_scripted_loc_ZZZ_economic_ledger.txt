@@ -612,6 +612,33 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = EGY
+			NGA = {
+				has_cosmetic_tag = UA_North_African_Federation
+			}
+		}
+		localization_key = "北非"
+	}
+	text = {
+		trigger = {
+			original_tag = COG
+			NGA = {
+				has_cosmetic_tag = UA_Central_African_Federation
+			}
+		}
+		localization_key = "中非"
+	}
+	text = {
+		trigger = {
+			original_tag = SAF
+			NGA = {
+				has_cosmetic_tag = UA_South_African_Federation
+			}
+		}
+		localization_key = "南非"
+	}
+	text = {
+		trigger = {
 			original_tag = AST
 		}
 		localization_key = propertag_AST
