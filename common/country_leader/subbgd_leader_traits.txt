@@ -100,6 +100,28 @@ leader_traits = {
 			factor = 1
 		}
 	}
+		Maya_Equipment = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.2
+		ideology_drift_defence = 0.5
+		recruitable_population_factor = -0.2
+		industrial_capacity_factory = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Layer_mercenary_soldier = {
+		random = no
+		stability_factor = -0.05
+		war_support_factor = -0.2
+		ideology_drift_defence = 0.5
+		recruitable_population_factor = -0.2
+		industrial_capacity_factory = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	USN_build_leader = {
 		random = no
 		political_power_gain = 0.4
