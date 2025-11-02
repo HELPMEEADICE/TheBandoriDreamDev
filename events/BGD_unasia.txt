@@ -3029,13 +3029,12 @@ country_event = {
 				name = NorthAfrica_social_democrat
 			}
 			create_country_leader = {
-				name = "BGD_hina_char"
-				desc = "BGD_HINA_DESC"
-				picture = GFX_portrait_Hina
+				name = "BGD_Maya_char" #大和麻弥
+				desc = "BGD_MAYA_DESC"
+				picture = GFX_portrait_Maya
 				ideology = kirakira_dokidoki
 				traits = {
-					Hina_Genius
-					Hina_Run_tte
+					Maya_Genius
 				}
 			}
 			add_ideas = BGD_pan_african_kiraism
@@ -3161,17 +3160,16 @@ country_event = {
 				name = CentralAfrica_social_democrat
 			}
 			create_country_leader = {
-				name = "BGD_hina_char" #和奏瑞依
-				desc = "BGD_HINA_DESC"
-				picture = GFX_portrait_Hina
+				name = "BGD_Layer_char" #和奏瑞依
+				desc = "BGD_LAYER_DESC"
+				picture = GFX_portrait_Layer
 				ideology = kirakira_dokidoki
 				traits = {
-					Hina_Genius
-					Hina_Run_tte
+					Layer_Genius
+					Layer_Run_tte
 				}
 			}
 			add_ideas = BGD_pan_african_kiraism
-			add_ideas = BGD_Glio_Tech
 			clr_global_flag = sahara_disaster
 			set_capital = {
 				state = 1363
@@ -3278,17 +3276,12 @@ country_event = {
 				name = SouthAfrica_social_democrat
 			}
 			create_country_leader = {
-				name = "BGD_hina_char" #没想好
-				desc = "BGD_HINA_DESC"
-				picture = GFX_portrait_Hina
+				name = "BGD_APFNO_LEADER" #没想好
+				desc = "BGD_APFNO_LEADER_DESC"
+				picture = GFX_portrait_AU_MIL
 				ideology = kirakira_dokidoki
-				traits = {
-					Hina_Genius
-					Hina_Run_tte
-				}
 			}
 			add_ideas = BGD_pan_african_kiraism
-			add_ideas = BGD_Glio_Tech
 			clr_global_flag = sahara_disaster
 			set_capital = {
 				state = 681
