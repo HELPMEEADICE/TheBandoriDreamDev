@@ -963,7 +963,11 @@ defined_text = {
 				tag = UA1
 				tag = UA2
 				tag = UA3
-				tag = UA4
+				tag = UF1
+				tag = UF2
+				tag = UF3
+				tag = UF4
+				tag = UF5
 				has_country_flag = BGD_EPS
 			}
 		}
