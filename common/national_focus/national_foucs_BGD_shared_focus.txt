@@ -669,11 +669,9 @@ shared_focus = {
 		country_event = {
 			id = bgd.118
 		}
-		hidden_effect = {
-			country_event = {
-				id = bgd.2003
-				days = 180
-			}
+		country_event = {
+			id = bgd.2003
+			days = 180
 		}
 	}
 }
