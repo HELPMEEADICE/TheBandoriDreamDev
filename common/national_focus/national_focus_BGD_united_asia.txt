@@ -860,13 +860,111 @@ focus_tree = {
 		x = 15
 		y = 5
 		available = {
+			UF1 = {
+				controls_state = 446
+				has_cosmetic_tag = UA_Military_Gov
+			}
 		}
 		prerequisite = {
 			focus = UNITED_ASIA_FUCKING_NORTH_AFRICANS_DICTATOR
 		}
 		completion_reward = {
 			country_event = {
-				id = unasia.2006
+				id = unasia.2008
+			}
+		}
+	}
+	focus = {
+		id = UNITED_ASIA_CONTINUE_TO_ATTACK
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 15
+		y = 6
+		prerequisite = {
+			focus = UNITED_ASIA_RANA_EAST_AFRICANS_DICTATOR
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_Nile_River
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_EAST_AFRICANS_FEDERATION
+		}
+	}
+		focus = {
+		id = UNITED_ASIA_FUCKING_CENTRAL
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 13
+		y = 7
+		prerequisite = {
+			focus = UNITED_ASIA_CONTINUE_TO_ATTACK
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2011
+			}
+		}
+	}
+		focus = {
+		id = UNITED_ASIA_FUCKING_SOUTH
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 17
+		y = 7
+		available = {
+			UF4 = {
+				controls_state = 1363
+				has_cosmetic_tag = UA_Military_Gov
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_CONTINUE_TO_ATTACK
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2012
+			}
+		}
+	}
+		focus = {
+		id = UNITED_ASIA_HEARY_OF_AFRICA
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 13
+		y = 8
+		available = {
+			UF4 = {
+				controls_state = 1363
+				has_cosmetic_tag = UA_Military_Gov
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_CENTRAL
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2009
+			}
+		}
+	}
+		focus = {
+		id = UNITED_ASIA_SOUTH_AFRICA
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 17
+		y = 8
+		available = {
+			UF5 = {
+				controls_state = 681
+				has_cosmetic_tag = UA_Military_Gov
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_SOUTH
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2010
 			}
 		}
 	}
