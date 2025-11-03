@@ -2870,11 +2870,11 @@ country_event = {
 		name = unasia.2007.a
 		BGD = {
 			set_autonomy = {
-				target = NGA
+				target = UF2
 				autonomy_state = bgd_allied_countries_state
 			}
 		}
-		NGA = {
+		UF2 = {
 			annex_country = {
 				target = DAH
 			}
@@ -2926,6 +2926,9 @@ country_event = {
 			annex_country = {
 				target = MRT
 			}
+			annex_country = {
+				target = NGA
+			}
 			transfer_state = 699
 			transfer_state = 882
 			transfer_state = 754
@@ -2962,9 +2965,9 @@ country_event = {
 			}
 			every_state = {
 				limit = {
-					is_controlled_by = NGA
+					is_controlled_by = UF2
 				}
-				THIS = { add_core_of = NGA }
+				THIS = { add_core_of = UF2 }
 			}
 			add_ideas = {
 				higher_safety
@@ -3002,11 +3005,11 @@ country_event = {
 		name = unasia.2008.a
 		BGD = {
 			set_autonomy = {
-				target = EGY
+				target = UF1
 				autonomy_state = bgd_allied_countries_state
 			}
 		}
-		EGY = {
+		UF1 = {
 			annex_country = {
 				target = HRL
 			}
@@ -3021,6 +3024,9 @@ country_event = {
 			}
 			annex_country = {
 				target = MOR
+			}
+			annex_country = {
+				target = EGY
 			}
 			set_cosmetic_tag = UA_North_African_Federation
 			set_party_name = {
@@ -3045,9 +3051,9 @@ country_event = {
 			}
 			every_state = {
 				limit = {
-					is_controlled_by = EGY
+					is_controlled_by = UF1
 				}
-				THIS = { add_core_of = EGY }
+				THIS = { add_core_of = UF1 }
 			}
 			add_ideas = {
 				higher_safety
@@ -3092,11 +3098,11 @@ country_event = {
 		name = unasia.2009.a
 		BGD = {
 			set_autonomy = {
-				target = COG
+				target = UF4
 				autonomy_state = bgd_allied_countries_state
 			}
 		}
-		COG = {
+		UF4 = {
 			transfer_state = 779
 			transfer_state = 778
 			transfer_state = 660
@@ -3176,9 +3182,9 @@ country_event = {
 			}
 			every_state = {
 				limit = {
-					is_controlled_by = COG
+					is_controlled_by = UF4
 				}
-				THIS = { add_core_of = COG }
+				THIS = { add_core_of = UF4 }
 			}
 			add_ideas = {
 				higher_safety
@@ -3216,11 +3222,11 @@ country_event = {
 		name = unasia.2010.a
 		BGD = {
 			set_autonomy = {
-				target = SAF
+				target = UF5
 				autonomy_state = bgd_allied_countries_state
 			}
 		}
-		SAF = {
+		UF5 = {
 			transfer_state = 540
 			transfer_state = 845
 			transfer_state = 846
@@ -3288,9 +3294,9 @@ country_event = {
 			}
 			every_state = {
 				limit = {
-					is_controlled_by = SAF
+					is_controlled_by = UF5
 				}
-				THIS = { add_core_of = SAF }
+				THIS = { add_core_of = UF5 }
 			}
 			add_ideas = {
 				higher_safety
@@ -3314,5 +3320,127 @@ country_event = {
 			remove_ideas = ZZZ_capitalist_economy
 			add_ideas = BGD_RBE_economy
 		}
+	}
+}
+country_event = {
+	#非洲之心
+	id = unasia.2011
+	title = unasia.2011.t
+	desc = unasia.2011.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TUR = {
+				leave_faction = yes
+			}
+		}
+	}
+	option = {
+		name = unasia.2011.a
+		every_country = {
+        	limit = {
+        	    OR = {
+            controls_state = 779
+            controls_state = 778
+            controls_state = 660
+            controls_state = 756
+            controls_state = 757
+            controls_state = 758
+            controls_state = 539
+            controls_state = 297
+            controls_state = 705
+            controls_state = 758
+            controls_state = 760
+            controls_state = 759
+            controls_state = 842
+            controls_state = 538
+            controls_state = 718
+            controls_state = 1357
+            controls_state = 1356
+            controls_state = 862
+            controls_state = 863
+            controls_state = 864
+            controls_state = 865
+            controls_state = 1360
+            controls_state = 1358
+            controls_state = 1359
+            controls_state = 295
+            controls_state = 1363
+            controls_state = 1362
+        	}
+        		NOT = { tag = BGD }  # 排除自己
+        		is_subject = no      # 可选：排除附属国
+        	}
+			THIS = {
+				leave_faction = yes	
+			}
+        	BGD = {
+        	    create_wargoal = {
+        	        type = liberate_wargoal
+        	        target = PREV
+        	    }
+        	}
+        }
+	}
+}
+country_event = {
+	#南部非洲
+	id = unasia.2012
+	title = unasia.2012.t
+	desc = unasia.2012.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TUR = {
+				leave_faction = yes
+			}
+		}
+	}
+	option = {
+		name = unasia.2012.a
+		every_country = {
+        	limit = {
+        	    OR = {
+            controls_state = 540
+            controls_state = 845
+            controls_state = 846
+            controls_state = 843
+            controls_state = 844
+            controls_state = 545
+            controls_state = 820
+            controls_state = 544
+            controls_state = 782
+            controls_state = 541
+            controls_state = 542
+            controls_state = 1376
+            controls_state = 1342
+            controls_state = 1343
+            controls_state = 275
+            controls_state = 819
+            controls_state = 1318
+            controls_state = 1303
+            controls_state = 719
+            controls_state = 818
+            controls_state = 1317
+            controls_state = 1304
+            controls_state = 681
+        	}
+        		NOT = { tag = BGD }  # 排除自己
+        		is_subject = no      # 可选：排除附属国
+        	}
+			THIS = {
+				leave_faction = yes	
+			}
+        	BGD = {
+        	    create_wargoal = {
+        	        type = liberate_wargoal
+        	        target = PREV
+        	    }
+        	}
+        }
 	}
 }
