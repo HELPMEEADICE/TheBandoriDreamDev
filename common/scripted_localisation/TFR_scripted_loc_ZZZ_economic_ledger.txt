@@ -597,7 +597,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = NGA
+			original_tag = UF2
 			NGA = {
 				has_cosmetic_tag = UA_West_African_Federation
 			}
@@ -612,7 +612,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = EGY
+			original_tag = UF1
 			NGA = {
 				has_cosmetic_tag = UA_North_African_Federation
 			}
@@ -621,7 +621,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = COG
+			original_tag = UF4
 			NGA = {
 				has_cosmetic_tag = UA_Central_African_Federation
 			}
@@ -630,7 +630,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = SAF
+			original_tag = UF5
 			NGA = {
 				has_cosmetic_tag = UA_South_African_Federation
 			}
