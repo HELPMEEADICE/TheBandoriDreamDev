@@ -407,7 +407,6 @@ focus_tree = {
 			unlock_decision_tooltip = BGD_qvxiao_fuqi_tongxing
 			swap_ideas = {
 				remove_idea = low_female
-				set_country_flag = BGD_qiyong_zhuanshu_pingquan
 				add_idea = BGD_gender_equality
 			}
 			effect_tooltip = {
@@ -417,6 +416,7 @@ focus_tree = {
 				}
 			}
 			set_country_flag = BGD_qiyong_zhuanshu_jingcha
+			set_country_flag = BGD_qiyong_zhuanshu_pingquan
 			add_ideas = BGD_baozhang_ziyou
 			add_to_variable = {
 				BGD_kira_doki_war_support_factor_dynamic_var = 0.1
