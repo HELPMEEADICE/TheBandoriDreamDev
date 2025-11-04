@@ -630,6 +630,33 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			original_tag = UJ1
+			UJ1 = {
+				has_cosmetic_tag = UA_Caribbean_Federation
+			}
+		}
+		localization_key = "加勒比"
+	}
+	text = {
+		trigger = {
+			original_tag = UCA
+			UCA = {
+				has_cosmetic_tag = UA_Central_America_Federation
+			}
+		}
+		localization_key = "中美"
+	}
+	text = {
+		trigger = {
+			original_tag = UA5
+			UA5 = {
+				has_cosmetic_tag = UA_South_America_Federation
+			}
+		}
+		localization_key = "南美"
+	}
+	text = {
+		trigger = {
 			original_tag = UF5
 			UF5 = {
 				has_cosmetic_tag = UA_South_African_Federation
