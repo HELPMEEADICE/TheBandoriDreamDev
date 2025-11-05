@@ -629,6 +629,9 @@ focus_tree = {
 		prerequisite = {
 			focus = UNITED_ASIA_New_Chapter_for_West_Asia
 		}
+		prerequisite = {
+			focus = UNITED_Europe
+		}
 		x = 8
 		y = 12
 		completion_reward = {
@@ -668,8 +671,20 @@ focus_tree = {
 		cost = 2
 		x = 23
 		y = 3
+		bypass = {
+			NOT = {
+				USN = {
+					controls_state = 276
+				}
+			}
+		}
 		prerequisite = {
 			focus = UNITED_ASIA_FUCKING_DICTATOR
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2020
+			}
 		}
 	}
 	focus = {
@@ -1125,4 +1140,67 @@ focus_tree = {
 			}
 		}
 	}
+		focus = {
+		id = UNITED_Africa
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 15
+		y = 9
+		prerequisite = {
+			focus = UNITED_ASIA_HEARY_OF_AFRICA
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_SOUTH_AFRICA
+		}
+	}
+		focus = {
+		id = UNITED_America
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 23
+		y = 9
+		prerequisite = {
+			focus = UNITED_ASIA_South_America
+		}
+	}
+		focus = {
+		id = UNITED_ASIA_FUCKING_Europe
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 19
+		y = 10
+		prerequisite = {
+			focus = UNITED_Africa
+		}
+		prerequisite = {
+			focus = UNITED_America
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2018
+			}
+		}
+	}
+		focus = {
+		id = UNITED_Europe
+		icon = GFX_guoce_zhanwei
+		cost = 2
+		x = 19
+		y = 11
+		available = {
+			BGD = {
+                controls_state = 1378
+                controls_state = 1422
+                controls_state = 110
+			}
+		}
+		prerequisite = {
+			focus = UNITED_ASIA_FUCKING_Europe
+		}
+		completion_reward = {
+			country_event = {
+				id = unasia.2019
+			}
+		}
+	}	
 }
