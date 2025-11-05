@@ -591,7 +591,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = UA4
+			original_tag = UF3
 		}
 		localization_key = "东非"
 	}
@@ -603,12 +603,6 @@ defined_text = {
 			}
 		}
 		localization_key = "西非"
-	}
-	text = {
-		trigger = {
-			original_tag = ENG
-		}
-		localization_key = propertag_ENG
 	}
 	text = {
 		trigger = {
@@ -627,6 +621,15 @@ defined_text = {
 			}
 		}
 		localization_key = "中非"
+	}
+	text = {
+		trigger = {
+			original_tag = UF5
+			UF5 = {
+				has_cosmetic_tag = UA_South_African_Federation
+			}
+		}
+		localization_key = "南非"
 	}
 	text = {
 		trigger = {
@@ -657,12 +660,18 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = UF5
-			UF5 = {
-				has_cosmetic_tag = UA_South_African_Federation
+			original_tag = UE1
+			UE1 = {
+				has_cosmetic_tag = UA_Europe_Federation
 			}
 		}
-		localization_key = "南非"
+		localization_key = "欧洲"
+	}
+	text = {
+		trigger = {
+			original_tag = ENG
+		}
+		localization_key = propertag_ENG
 	}
 	text = {
 		trigger = {
