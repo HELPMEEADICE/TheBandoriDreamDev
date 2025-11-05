@@ -1,0 +1,605 @@
+	capital = 126
+	
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_oob = "ENG_2020"
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_oob = "ENG_2020_nsb"
+	}
+	
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "ENG_2000_naval_mtg"
+		else = {
+			set_naval_oob = "ENG_2000_naval_legacy"
+		}
+	}
+	
+	if = {
+		limit = { has_dlc = "Together for Victory" }
+
+		add_to_tech_sharing_group = nato_research
+	}
+
+	set_research_slots = 4
+	set_convoys = 1000
+	set_stability = 0.75
+	set_war_support = 0
+
+	set_country_flag = developed_country
+	set_country_flag = global_ass_lol
+	set_country_flag = head_of_gov_ui_enabled
+	
+	set_variable = { var = ENG_nato_leadership_var value = 0.20 }
+	
+	set_variable = { Russian_Influence = 0.05 }
+	set_variable = { Chinese_Influence = 0.05 }
+	set_variable = { American_Influence = 0.10 }
+	set_variable = { European_Influence = 0.15 }
+	set_variable = { PDO_Influence = 0.00 }
+	set_variable = { Sovereign_Influence = 0.65 }
+
+	set_technology = {
+		## Infantry ##
+		
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		motorised_infantry = 1
+		infantry_rifle_upgrade = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		night_vision = 1
+		body_armor = 1
+		camouflage = 1
+		marines = 1
+		tech_mountaineers = 1
+		tech_rangers = 1
+		paratroopers = 1
+		basic_train = 1
+		
+		## Support Companies ##
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_military_police = 1
+		tech_signal_company = 1
+		tech_maintenance_company = 1
+		
+		## Armor ##
+		light_mechanized_infantry1 = 1
+		mechanised_infantry1 = 1
+		mechanised_infantry2 = 1
+		
+		## Artillery ##
+		gw_artillery = 1
+		interwar_antitank = 1
+		interwar_antiair = 1
+		rocket_artillery = 1
+		interwar_artillery = 1
+		sp_artillery1 = 1
+
+		self_propelled_aa1 = 1
+		
+		## Air ##
+		attack_helicopter_1 = 1
+		utility_helicopter_1 = 1
+		
+		## Engineering ##
+		electronic_mechanical_engineering = 1
+		radio = 1
+		power_plants = 1
+		nuclear_reactors = 1
+		#nukes = 1
+		
+		## Industry ##
+		basic_machine_tools = 1
+		fuel_silos = 1
+		fuel_refining = 1
+		
+		## Doctrines ##
+		fleet_in_being = 1
+		air_superiority = 1
+	}
+	
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "ENG_2020_air_bba"
+			set_technology = {
+				aa_lmg = 1
+				aa_cannon_1 = 1
+				aa_hmg = 1
+				engines_1 = 1
+				engines_2 = 1
+				early_bombs = 1
+				guided_bombs = 1
+				aircraft_construction = 1
+				survivability_studies = 1
+				iw_small_airframe = 1
+				basic_small_airframe = 1
+				iw_medium_airframe = 1
+				basic_medium_airframe = 1
+				iw_large_airframe = 1
+			}
+		else = {
+			set_air_oob = "ENG_2020_air_legacy"
+			set_technology = {
+				CAS1 = 1
+				CAS2 = 1
+				cv_CAS1 = 1
+				cv_CAS2 = 1
+				fighter1 = 1
+				fighter2 = 1
+				fighter3 = 1
+				cv_fighter1 = 1
+				cv_fighter2 = 1
+				cv_fighter3 = 1
+				naval_bomber1 = 1
+				naval_bomber2 = 1
+				naval_bomber3 = 1
+				cv_naval_bomber1 = 1
+				cv_naval_bomber2 = 1
+				cv_naval_bomber3 = 1
+				strategic_bomber1 = 1
+				strategic_bomber2 = 1
+				tactical_bomber1 = 1
+				scout_plane1 = 1
+				transport_plane2 = 1
+			}
+		}
+	}
+
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			early_destroyer = 1
+			basic_destroyer = 1
+			improved_destroyer = 1
+			early_light_cruiser = 1
+			basic_light_cruiser = 1
+			improved_light_cruiser = 1
+			early_heavy_cruiser = 1
+			basic_heavy_cruiser = 1
+			early_battleship = 1
+			basic_battleship = 1
+			early_carrier = 1
+			basic_carrier = 1
+			early_submarine = 1
+			basic_submarine = 1
+			transport = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			early_ship_hull_light = 1
+			basic_ship_hull_light = 1
+			improved_ship_hull_light = 1
+			early_ship_hull_cruiser = 1
+			basic_ship_hull_cruiser = 1
+			improved_ship_hull_cruiser = 1
+			early_ship_hull_heavy = 1
+			basic_ship_hull_heavy = 1
+			escort_ship_hull_carrier = 1
+			early_ship_hull_carrier = 1
+			basic_ship_hull_carrier = 1
+			early_ship_hull_submarine = 1
+			basic_ship_hull_submarine = 1
+			smoke_generator = 1
+			sonar = 1
+			basic_depth_charges = 1
+			improved_airplane_launcher = 1
+			basic_cruiser_armor_scheme = 1
+			basic_heavy_armor_scheme = 1
+			basic_torpedo = 1
+			basic_battery = 1
+			basic_light_battery = 1
+			basic_medium_battery = 1
+			basic_heavy_battery = 1
+			#basic_secondary_battery = 1
+			mtg_transport = 1
+			basic_naval_mines = 1
+			submarine_mine_laying = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = { has_dlc = "No Step Back" }
+		}
+		set_technology = {
+			main_battle_tank1 = 1
+			main_battle_tank2 = 1
+			main_battle_tank3 = 1
+			light_tank1 = 1
+			light_tank2 = 1
+			amphibious_tank1 = 1
+			amphibious_mechanized_infantry1 = 1
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			improved_light_tank_chassis = 1
+			improved_medium_tank_chassis = 1
+			engine_tech_1 = 1
+			legacy_armor_designs = 1
+		}
+	}
+	
+	add_ideas = {
+		ENG_gdp_fix
+		ENG_commonwealth_of_nations_leader
+		ENG_nato_eu_leader_idea
+		ENG_eu_gambit_idea
+		ENG_sun_sets_idea
+		ENG_struggling_health_sector_idea
+		
+		
+		#Ministers
+		ENG_boris_johnson_hog
+		ENG_dominic_raab_for
+		ENG_savid_javid_eco
+		ENG_priti_patel_sec
+		ENG_alex_younger_int
+		#Laws
+		civilian_mobilization
+		higher_poverty
+		high_trade
+
+		higher_female_service
+		medium_supervision
+		low_welfare
+		high_training
+		higher_racial_integration
+		general_exemptions
+
+		high_immigration
+		high_education
+		high_race
+		high_female
+		high_prison
+        low_police
+
+
+		#Development
+		high_society
+		higher_academic
+		high_farming
+		medium_poverty
+		high_industry
+		high_military
+
+	}
+
+	#Events
+
+	
+
+	country_event = {
+		id = uk.2
+		days = 1080
+	}
+
+	country_event = {
+		id = canada.4
+		days = 572
+	}
+	country_event = {
+		id = NZL.4
+		days = 659
+	}
+	country_event = {
+		id = Australia.10
+		days = 1709
+	}
+
+	country_event = {
+		id = uk.3
+		days = 463
+	}
+
+	recruit_character = ENG_elizabeth_ii_char
+	recruit_character = ENG_charles_iii_char
+	recruit_character = ENG_nicholas_carter_char
+	recruit_character = ENG_colin_weir_char
+	recruit_character = ENG_paul_nanson_char
+	recruit_character = ENG_ralph_wooddisse_char
+	recruit_character = ENG_patrick_sanders_char
+	recruit_character = ENG_charlie_herbert_char
+	recruit_character = ENG_robert_bruce_char
+	
+	set_politics = {
+		ruling_party = conservative
+		elections_allowed = yes
+		election_frequency = 60
+		last_election = "2019.12.12"
+	}
+	
+	set_popularities = {
+		totalitarian_socialist = 0
+		communist = 0
+		libertarian_socialist = 23
+		social_democrat = 11
+		social_liberal = 13
+		market_liberal = 7
+		conservative = 38
+		authoritarian_democrat = 8
+		nationalist = 0
+		fascist = 0
+		national_socialist = 0	
+	}
+	
+	#give_guarantee = CYP
+
+	add_opinion_modifier = {
+		target = AST
+		modifier = five_eyes_agreement
+	}
+
+	add_opinion_modifier = {
+		target = CAN
+		modifier = five_eyes_agreement
+	}
+
+	add_opinion_modifier = {
+		target = FRA
+		modifier = entente_cordiale
+	}
+
+	add_opinion_modifier = {
+		target = NZL
+		modifier = five_eyes_agreement
+	}
+
+	add_opinion_modifier = {
+		target = USA
+		modifier = five_eyes_agreement
+	}
+
+	### VARIANTS ###
+	# 2000 Start #
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		## Corvettes ##
+		create_equipment_variant = { #Corvette 1
+			name = "Hunt class"
+			type = ship_hull_light_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+			obsolete = no
+		}
+		create_equipment_variant = { #Corvette 2
+			name = "Sandown class"
+			type = ship_hull_light_2
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+			obsolete = no
+		}
+		## Frigates ##
+		create_equipment_variant = { #Frigate 2
+			name = "Type 23 Frigate"
+			type = ship_hull_cruiser_2
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_light_battery_2
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = empty
+			}
+			obsolete = no
+		}
+		## Destroyers ##
+		create_equipment_variant = { #Destroyer 1
+			name = "Type 42 Destroyer"
+			type = ship_hull_cruiser_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_medium_battery_1
+			}
+			obsolete = no
+		}
+		## Carriers ##
+		create_equipment_variant = { #Carrier 2
+			name = "Invincible class"
+			type = ship_hull_carrier_1
+			parent_version = 0
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = empty
+				front_1_custom_slot = ship_deck_space
+				
+			}
+			obsolete = no
+		}
+		## Submarines ##
+		create_equipment_variant = { #Diesel Sub 1A
+			name = "Trafalgar class"
+			type = ship_hull_submarine_1
+			parent_version = 0
+			modules = {
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = { #Nuclear Sub 2A
+			name = "Trident Ballistic Missile Submarine"
+			type = ship_hull_submarine_2
+			parent_version = 0
+			modules = {
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				fixed_ship_engine_slot = sub_ship_engine_2
+				rear_1_custom_slot = ship_torpedo_sub_2
+			}
+			obsolete = no
+		}
+	}
+	
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "FV4034 Challenger 2"
+			type = modern_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_petrol_electric_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = wet_ammo_storage
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 6
+				tank_nsb_armor_upgrade = 3
+			}
+			icon = "gfx/interface/technologies/armor/MBT_2006_M1A2_Abrams.dds"
+		}
+		create_equipment_variant = {
+			name = "FV101 Scorpion"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = extra_ammo_storage
+				special_type_slot_3 = smoke_launchers
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 3
+				tank_nsb_armor_upgrade = 2
+			}
+			icon = "gfx/interface/technologies/armor/LT_2000_M1128_Stryker.dds"
+		}
+	}
+	
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+
+		create_equipment_variant = {
+			name = "Eurofighter Typhoon"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = hmg_defense_turret
+			}
+			icon = "GFX_GER_fighter3_medium"
+		}
+		create_equipment_variant = {
+			name = "Tornado GR.4"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = small_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = hmg_defense_turret
+				special_type_slot_2 = hmg_defense_turret
+			}
+			icon = "GFX_GER_fighter1_medium"
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = WLS
+		}
+		add_dynamic_modifier = {
+			modifier = ENG_wales
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = SCO
+		}
+		add_dynamic_modifier = {
+			modifier = ENG_scotland
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = IRE
+			is_owned_by = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = ENG_northern_ireland
+		}
+	}
+	126 = {
+		add_dynamic_modifier = {
+			modifier = ENG_city_of_london
+		}
+	}

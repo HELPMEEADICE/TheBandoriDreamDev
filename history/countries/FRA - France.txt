@@ -1,0 +1,1154 @@
+﻿capital = 16
+set_research_slots = 3
+set_convoys = 400
+set_stability = 0.45
+set_war_support = 0
+
+set_variable = { 
+	var = Diplomats_Var 
+	value = 1 
+}
+set_variable = { 
+	var = happy_generals
+	value = 5
+}
+set_variable = { 
+	var = neutral_generals
+	value = 14
+}
+set_variable = { 
+	var = angered_generals
+	value = 3
+}
+set_variable = { 
+	var = retired_generals
+	value = 1
+}
+set_variable = { 
+	var = total_generals
+	value = 23
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "FRA_2020"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "FRA_2020_nsb"
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "FRA_2020_naval_mtg"
+	else = {
+		set_naval_oob = "FRA_2020_naval_legacy"
+		add_war_support = 0.05
+	}
+}
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = nato_research
+}
+
+recruit_character = FRA_emmanuel_macron_char
+recruit_character = FRA_Jean_Luc_Melenchon_char
+recruit_character = FRA_Olivier_Faure_char
+recruit_character = FRA_Georges_Gastaud_char
+recruit_character = FRA_Philippe_Poutou_char
+recruit_character = FRA_Francois_Ruffin_char
+recruit_character = FRA_stephane_mille_char
+recruit_character = FRA_philippe_lavigne_char
+recruit_character = FRA_thierry_burkhard_char
+recruit_character = FRA_Valerie_Pecresse_char
+recruit_character = FRA_eric_zemmour_char
+recruit_character = FRA_marie_le_pen_char
+recruit_character = FRA_Yvan_Benedetti
+recruit_character = FRA_Pierre_de_Villiers
+recruit_character = FRA_Jean_Pierre_Bosser
+recruit_character = FRA_Francois_Lecointre
+recruit_character = FRA_Pierre_Chavancy
+recruit_character = FRA_Bertrand_Ract_Madoux
+recruit_character = FRA_Francois_Labuze
+recruit_character = FRA_Franck_Boudet
+recruit_character = FRA_Pascal_Ianni
+recruit_character = FRA_Patrick_Brethous_char
+recruit_character = FRA_Jordan_Bardella_char
+recruit_character = FRA_Pierre_Schill_char
+recruit_character = FRA_Francois_Xavier_Le_Pelletier_De_Woillemont_char
+recruit_character = FRA_Etienne_du_Peyroux
+recruit_character = FRA_Jean_Jacques_Fatinet
+recruit_character = FRA_Guillaume_de_Sercey
+recruit_character = FRA_Guillaume_Venard
+recruit_character = FRA_Nicolas_Casanova
+recruit_character = FRA_Christophe_Prazuck
+recruit_character = FRA_Marc_de_Briancon
+recruit_character = FRA_Alain_Bouquin
+recruit_character = FRA_Bruno_le_Rey
+recruit_character = FRA_Denis_Beraud
+recruit_character = FRA_Bruno_Thouvenin
+recruit_character = FRA_Louis_Michel_Guillaume
+recruit_character = FRA_Charles_Henri_du_Che
+recruit_character = FRA_Pascal_Ausseur
+recruit_character = FRA_Emmanuel_de_Oliveira
+recruit_character = FRA_Jean_Baptiste_Dupuis
+recruit_character = FRA_Fabien_Roussel_char
+recruit_character = FRA_Eric_Coquerel_char
+recruit_character = FRA_Yannick_Jadot_char
+recruit_character = FRA_Anne_Cecile_Ortemann
+recruit_character = FRA_Stephane_Sejourne_char
+recruit_character = FRA_Nicolas_Hulot_char
+recruit_character = FRA_Christine_Lambart_char
+recruit_character = FRA_European_Commission_char
+recruit_character = FRA_Francois_Bayrou_char
+recruit_character = FRA_Henri_de_Castries
+recruit_character = FRA_Lafayette_dummy_char
+
+set_variable = { var = FRA_nato_leadership_var value = 0.15 }
+
+set_country_flag = developed_country
+set_country_flag = global_ass_lol
+
+set_technology = {
+	
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	infantry_weapons3 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	infantry_rifle_upgrade2 = 1
+	infantry_rifle_upgrade3 = 1
+	upgraded_infantry_weapons1 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	night_vision = 1
+	night_vision2 = 1
+	night_vision3 = 1
+	body_armor = 1
+	body_armor2 = 1
+	body_armor3 = 1
+	camouflage = 1
+	camouflage2 = 1
+	camouflage3 = 1
+	tech_mountaineers = 1
+	tech_rangers = 1
+	paratroopers = 1
+	marines = 1
+	basic_train = 1
+	
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	
+	## Armor ##
+	mechanised_infantry1 = 1
+	mechanised_infantry2 = 1
+	mechanised_infantry3 = 1
+	light_mechanized_infantry1 = 1
+	light_mechanized_infantry2 = 1
+	light_mechanized_infantry3 = 1
+	self_propelled_aa1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	rocket_artillery = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
+	self_propelled_aa1 = 1
+	artillery1 = 1
+	antitank1 = 1
+	antitank2 = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	
+	## Air ##
+	attack_helicopter_1 = 1
+	utility_helicopter_1 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	radio = 1
+	power_plants = 1
+	nuclear_reactors = 1
+	energy_farms = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	
+	## Doctrines ##
+	fleet_in_being = 1
+	formation_flying = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		main_battle_tank1 = 1
+		main_battle_tank2 = 1
+		main_battle_tank3 = 1
+		light_tank1 = 1
+		amphibious_tank1 = 1
+		amphibious_mechanized_infantry1 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		improved_medium_tank_chassis = 1
+		engine_tech_1 = 1
+		amphibious_tank_chassis = 1
+		amphibious_mechanized_infantry1 = 1
+		apds_tech = 1
+		turret_mounted_mg_tech = 1
+		heat_tech = 1
+		turret_mounted_atgm_tech = 1
+		apfsds_tech = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+		auto_loader_tech = 1
+		legacy_armor_designs = 1
+		auto_cannon_tech = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "FRA_2020_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			aa_hmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			guided_bombs = 1
+			aircraft_construction = 1
+			survivability_studies = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+	else = {
+		set_air_oob = "FRA_2020_air_legacy"
+		set_technology = {
+			CAS1 = 1
+			CAS2 = 1
+			cv_CAS1 = 1
+			cv_CAS2 = 1
+			fighter1 = 1
+			fighter2 = 1
+			fighter3 = 1
+			fighter4 = 1
+			cv_fighter1 = 1
+			cv_fighter2 = 1
+			naval_bomber1 = 1
+			cv_naval_bomber1 = 1
+			cv_naval_bomber2 = 1
+			strategic_bomber1 = 1
+			strategic_bomber2 = 1
+			tactical_bomber1 = 1
+			scout_plane1 = 1
+			transport_plane2 = 1
+		}
+	}
+}
+	
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+		early_submarine = 1
+		basic_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		#basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+}
+
+#Military
+set_variable = {
+	var = FRA_military_political_power_gain_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_war_support_factor_dynamic_var
+	value = -0.1
+}
+set_variable = {
+	var = FRA_military_war_support_weekly_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_weekly_manpower_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_weekly_casualties_war_support_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_weekly_convoys_war_support_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_weekly_bombing_war_support_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_experience_gain_army_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_experience_gain_army_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_experience_loss_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_max_command_power_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_command_power_gain_mult_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_org_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_org_regain_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_org_loss_when_moving_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_strength_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_coordination_bonus_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_land_reinforce_rate_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_max_planning_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_planning_speed_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_max_dig_in_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_dig_in_speed_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_morale_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_attack_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_defence_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_breakthrough_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_speed_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_core_attack_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_army_core_defence_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_modifier_army_sub_unit_militia_attack_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_modifier_army_sub_unit_militia_defence_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_equipment_capture_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_out_of_supply_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_supply_consumption_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_conscription_factor_dynamic_var
+	value = -0.4
+}
+set_variable = {
+	var = FRA_military_mobilization_speed_dynamic_var
+	value = -0.4
+}
+set_variable = {
+	var = FRA_military_training_time_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_resistance_decay_on_our_occupied_states_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_resistance_growth_on_our_occupied_states_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_terrain_penalty_reduction_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_acclimatization_hot_climate_gain_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_acclimatization_cold_climate_gain_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_pocket_penalty_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_land_doctrine_cost_factor_dynamic_var
+	value = 0.1
+}
+set_variable = {
+	var = FRA_military_battalion_upkeep_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_development_monthly_dynamic_var
+	value = 0
+}
+
+#Air
+set_variable = {
+	var = FRA_air_experience_gain_air_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_experience_gain_air_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_attack_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_defence_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_agility_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_accidents_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_wing_xp_loss_when_killed_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_untrained_pilots_penalty_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_mission_efficiency_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_superiority_efficiency_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_weather_penalty_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_army_bonus_air_superiority_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_ground_attack_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_production_speed_anti_air_building_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_production_speed_air_base_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_air_ground_attack_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_aircraft_upkeep_factor_dynamic_var
+	value = 0
+}
+set_variable = {
+	var = FRA_military_air_doctrine_cost_factor_dynamic_var
+	value = 0.1
+}
+
+#Navy
+set_variable = {
+	var = FRA_naval_naval_doctrine_cost_factor_dynamic_var
+	value = 0.1
+}
+set_variable = {
+	var = FRA_naval_ship_upkeep_factor_dynamic_var
+	value = 0
+}
+
+create_equipment_variant = { 
+	name = "Mirage 2000N" 
+	type = strat_bomber_equipment_2 
+	upgrades = { 
+		plane_engine_upgrade = 5 
+	} 
+}
+
+add_ideas = {
+	#National Spirits
+	FRA_french_spirit_idea
+	FRA_mass_migration_idea
+	FRA_yellow_vests_idea
+	FRA_Generation_of_Slackers_idea
+	FRA_CFA_Franc
+	FRA_ENA_idea
+	#Laws
+	higher_farming
+	high_industry
+	higher_military
+	high_society
+	high_academic
+	high_poverty
+
+	high_prison
+	high_race
+	high_female
+	high_immigration
+	high_education
+	medium_police
+
+
+	higher_trade
+	mass_consumerism
+	high_taxes
+	low_interest_rates
+	high_welfare
+	high_safety
+
+	lower_conscription
+	higher_female_service
+	high_supervision
+	higher_training
+	FRA_foreign_legion_integration
+	general_exemptions
+
+	#Diplomatic
+	EU_euro_idea
+
+	#Macron Cabinet
+	FRA_Edouard_philippe_HM
+	FRA_jean_yves_le_drian_FM
+	FRA_Bruno_le_Maire_EM
+	FRA_christophe_castaner_IM
+	FRA_Florence_Parly_IntelM
+	FRA_Bernard_Emie
+}
+
+add_opinion_modifier = {
+	target = ENG
+	modifier = entente_cordiale
+}
+
+add_opinion_modifier = {
+	target = GER
+	modifier = franco_german_friendship
+}
+
+give_guarantee = DJI
+#give_guarantee = IVO
+#give_guarantee = SEN
+#give_guarantee = GAB
+
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2017.4.23"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalitarian_socialist = 0.5
+	national_socialist = 0
+	fascist = 0 
+	nationalist = 4
+	authoritarian_democrat = 6
+	conservative = 27
+	market_liberal = 5
+	social_liberal = 31
+	social_democrat = 5
+	libertarian_socialist = 20
+	communist = 1.5
+}
+
+# EVENTS #
+
+country_event = {
+	id = france.15
+	days = 40
+}
+
+country_event = {
+	id = france.16
+	days = 15
+}
+
+country_event = {
+	id = france.17
+	days = 82
+}
+
+country_event = {
+	id = france.5
+	days = 488
+}
+
+country_event = {
+	id = france.3
+	days = 843
+}
+
+country_event = {
+	id = france.47
+	days = 790
+}
+
+1447 = {
+	add_dynamic_modifier = {
+		modifier = micro_andorra
+	}
+}
+
+### VARIANTS ###
+# 2000 Start #
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	## Corvettes ##
+	create_equipment_variant = { #Corvette 1
+		name = "D'Estienne d'Orves class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
+		}
+		obsolete = yes
+		icon = "GFX_FRA_destienne_dorves_class"
+	}
+	create_equipment_variant = { #Corvette 1
+		name = "Éridan class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_sweeper_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+		icon = "GFX_FRA_eridan_class"
+	}
+	## Frigates ##
+	create_equipment_variant = { #Frigate 1
+		name = "Georges Leygues class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+		icon = "GFX_FRA_georges_leygues_class"
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "Floréal class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = empty #originally fitted for missiles, but are removed in all models ship_secondaries_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+		icon = "GFX_FRA_floreal_class"
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "Amiral Ronarc'h class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_1
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+		obsolete = no
+		icon = "GFX_FRA_amiral_ronarch_class"
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "Aquitaine class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+		obsolete = no
+		icon = "GFX_FRA_aquitaine_class"
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "Horizon class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+			front_1_custom_slot = ship_light_medium_battery_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+		icon = "GFX_FRA_horizon_class"
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "La Fayette class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+		icon = "GFX_FRA_la_fayette_class"
+	}
+	## Destroyers ##
+	create_equipment_variant = { #Destroyer 2
+		name = "Cassard class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_2
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+		icon = "GFX_FRA_cassard_class"
+	}
+	create_equipment_variant = { #Destroyer 2
+		name = "Confiance class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+		icon = "GFX_FRA_confiance_class"
+	}
+	create_equipment_variant = { #Patrol
+		name = "L'Audacieuse class"
+		type = ship_hull_light_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+		}
+		obsolete = yes
+		icon = "GFX_FRA_l_audacieuse_class"
+	}
+	## Missile Cruisers ##
+	create_equipment_variant = { #Missile Cruiser 1
+		name = "Colbert Class"
+		type = ship_hull_heavy_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+		obsolete = yes
+		icon = "GFX_FRA_colbert_class"
+	}
+	## Carriers ##
+	create_equipment_variant = { #Carrier 1 #Not needed for variant, just use type
+		name = "Clemenceau class"
+		type = ship_hull_carrier_conversion_bb
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			
+		}
+		obsolete = yes
+		icon = "GFX_FRA_clemenceau_class"
+	}
+	create_equipment_variant = { #Carrier 2
+		name = "Charles de Gaulle class"
+		type = ship_hull_carrier_1
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
+			
+		}
+		obsolete = no
+		icon = "GFX_FRA_de_gaulle_class"
+	}
+	create_equipment_variant = { #Helicopter Carrier
+		name = "Mistral class"
+		type = ship_hull_carrier_1
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = empty
+			
+		}
+		obsolete = no
+		icon = "GFX_FRA_mistral_class"
+	}
+	## Submarines ##
+	create_equipment_variant = { #Nuclear Sub 2
+		name = "Suffren class"
+		type = ship_hull_submarine_2
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+		obsolete = no
+		icon = "GFX_FRA_suffren_class"
+	}
+	create_equipment_variant = { #Diesel Sub 1A
+		name = "Rubis class"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+		icon = "GFX_FRA_rubis_class"
+	}
+	create_equipment_variant = { #Nuclear Ballistic Missile Sub 2
+		name = "Triomphant class"
+		type = ship_hull_submarine_1
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_n1
+			rear_1_custom_slot = ship_mrbms_sub
+		}
+		obsolete = no
+		icon = "GFX_FRA_triomphant_class"
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Leclerc S2"
+		type = modern_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_3_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = smoke_launchers
+			special_type_slot_3 = wet_ammo_storage
+			special_type_slot_4 = auto_loader
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 9
+			tank_nsb_armor_upgrade = 4
+		}
+		icon = "gfx/interface/technologies/armor/FRA_modern_tank3.png"
+	}
+	create_equipment_variant = {
+		name = "AMX-10 RC"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = extra_ammo_storage
+			special_type_slot_3 = smoke_launchers
+			special_type_slot_4 = empty
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/armor/FRA_light_tank3.png"
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Mirage 2000-5"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+		}
+		icon = "GFX_FRA_fighter1_medium"
+	}
+	
+	create_equipment_variant = {
+		name = "Rafale 4"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+		}
+		icon = "GFX_FRA_fighter3_medium"
+	}
+	create_equipment_variant = {
+		name = "Mirage 2000C"
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = hmg_defense_turret
+		}
+		icon = "GFX_FRA_fighter1_medium"
+	}
+}
