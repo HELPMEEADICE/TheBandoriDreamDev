@@ -673,7 +673,7 @@ focus_tree = {
 		y = 3
 		bypass = {
 			NOT = {
-				USN = {
+				CAN = {
 					controls_state = 276
 				}
 			}
