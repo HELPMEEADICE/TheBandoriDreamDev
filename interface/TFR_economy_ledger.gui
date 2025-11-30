@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "TFR_economy_ledger_title_container"
-		position = { x = 547 y = 0 }
+		position = { x = 618 y = 0 }
 		size = { width=137 height=74 }
 		moveable = no
 		clipping = no
@@ -89,7 +89,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "TFR_economy_ledger_scoreboard_container"
-		position = { x = 549 y = 70 }
+		position = { x = 620 y = 70 }
 		size = { width=154 height=369 }
 		#moveable = no
 		#clipping = no
@@ -223,7 +223,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "TFR_economy_ledger_scoreboard_union_container"
-		position = { x = 549 y = 70 }
+		position = { x = 620 y = 70 }
 		size = { width=154 height=369 }
 		#moveable = no
 		#clipping = no
@@ -403,7 +403,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "TFR_economy_ledger_scoreboard_faction_container"
-		position = { x = 549 y = 70 }
+		position = { x = 620 y = 70 }
 		size = { width=154 height=369 }
 		#moveable = no
 		#clipping = no

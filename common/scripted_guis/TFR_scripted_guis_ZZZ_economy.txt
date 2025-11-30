@@ -50,6 +50,7 @@ scripted_gui = {
 					has_idea = ZZZ_collective_capitalism
 					has_idea = ZZZ_collective_capitalism2
 					has_idea = ZZZ_oligopolistic_capitalism
+					has_idea = ZZZ_collective_capitalism_defeat
 					has_idea = ZZZ_welfare_capitalism
 					has_idea = ZZZ_corporatism
 					has_idea = ZZZ_managed_economy
@@ -70,11 +71,15 @@ scripted_gui = {
 					has_idea = ZZZ_left_corporatism
 					has_idea = ZZZ_liberal_corporatism
 					has_idea = ZZZ_kaiser_economy
+					has_idea = ZZZ_inclusive_capitalism
 					has_idea = BGD_RBE_economy
 				}
 			}
 			TFR_capitalism_type_icon_visible = {
 				has_idea = ZZZ_capitalist_economy
+			}		
+			TFR_inclusive_capitalism_type_icon_visible = {
+				has_idea = ZZZ_inclusive_capitalism
 			}		
 			TFR_american_capitalism_type_icon_visible = {
 				has_idea = ZZZ_american_capitalism
@@ -83,6 +88,7 @@ scripted_gui = {
 				OR = {
 					has_idea = ZZZ_collective_capitalism
 					has_idea = ZZZ_collective_capitalism2
+					has_idea = ZZZ_collective_capitalism_defeat
 				}
 			}		
 			TFR_oligopolistic_capitalism_type_icon_visible = {

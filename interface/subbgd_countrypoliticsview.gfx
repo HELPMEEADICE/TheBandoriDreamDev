@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BGD_RBE_large" 
+		texturefile = "gfx/interface/other/BGD_RBE_large.png" 
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_committee_state_icon"
+		textureFile = "gfx/interface/autonomy/committee_state.png"
+	}
+	spriteType = {
+		name = "GFX_bgd_allied_countries_state_icon"
+		textureFile = "gfx/interface/autonomy/bgd_allied_countries.png"
+	}
+	spriteType = {
+		name = "GFX_bgd_government_of_occupied_territories_icon"
+		textureFile = "gfx/interface/autonomy/bgd_government_of_occupied_territories.png"
+	}
+}
