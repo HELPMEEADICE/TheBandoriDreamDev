@@ -1,0 +1,213 @@
+add_namespace = pla
+
+country_event = {
+	#南方紧急政府
+	id = pla.1
+	title = pla.1.t
+	desc = pla.1.d
+	#picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = pla.1.a
+		hidden_effect = {
+			PLA = {
+				transfer_state = 1159
+				transfer_state = 600
+				transfer_state = 1214
+				transfer_state = 1207
+				transfer_state = 1213
+				transfer_state = 1221
+				transfer_state = 1222
+				transfer_state = 1227
+				transfer_state = 1220
+				transfer_state = 592
+				transfer_state = 1430
+				transfer_state = 1216
+				transfer_state = 1217
+				transfer_state = 613
+				transfer_state = 591
+				transfer_state = 595
+				transfer_state = 1219
+				transfer_state = 1215
+				transfer_state = 1395
+				transfer_state = 596
+				transfer_state = 1206
+				transfer_state = 1218
+				transfer_state = 326
+				transfer_state = 729
+				transfer_state = 1451
+				transfer_state = 524
+				transfer_state = 1150
+				transfer_state = 1149
+				transfer_state = 1148
+				transfer_state = 876
+				transfer_state = 728
+				transfer_state = 1431
+				transfer_state = 648
+				
+				add_state_core = 1159
+				add_state_core = 600
+				add_state_core = 1214
+				add_state_core = 1207
+				add_state_core = 1213
+				add_state_core = 1221
+				add_state_core = 1222
+				add_state_core = 1227
+				add_state_core = 1220
+				add_state_core = 592
+				add_state_core = 1430
+				add_state_core = 1216
+				add_state_core = 1217
+				add_state_core = 613
+				add_state_core = 591
+				add_state_core = 595
+				add_state_core = 1219
+				add_state_core = 1215
+				add_state_core = 1395
+				add_state_core = 596
+				add_state_core = 1206
+				add_state_core = 1218
+				add_state_core = 326
+				add_state_core = 729
+				add_state_core = 1451
+				add_state_core = 524
+				add_state_core = 1150
+				add_state_core = 1149
+				add_state_core = 1148
+				add_state_core = 876
+				add_state_core = 728
+				add_state_core = 1431
+				add_state_core = 648
+
+				set_capital = {
+					state = 1222
+				}
+
+				inherit_technology = PRC
+				oob = "generic_2000"
+				load_oob = PLA_south
+
+				set_party_name = {
+					ideology = nationalist
+					long_name = CNT_nationalist_long
+					name = CNT_nationalist_short
+				}
+
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = CNT_totalitarian_socialist_long
+					name = CNT_totalitarian_socialist_short
+				}
+
+				create_country_leader = {
+					name = PRC_Liu_Zhenli
+					picture = "gfx/leaders/PRC/generals/Liu Zhenli.png"
+					ideology = military_junta
+				}
+
+				set_politics = {	
+					ruling_party = nationalist
+					elections_allowed = no
+				}
+
+				set_popularities = {
+				    totalitarian_socialist = 35
+				    nationalist = 65
+				}
+				set_technology = {
+					## Infantry ##
+					infantry_weapons1 = 1
+					infantry_weapons2 = 1
+					motorised_infantry = 1
+					infantry_rifle_upgrade = 1
+					support_weapons = 1
+					support_weapons2 = 1
+					night_vision = 1
+					body_armor = 1
+					camouflage = 1
+					marines = 1
+					tech_mountaineers = 1
+					paratroopers = 1
+
+					## Support Companies ##
+					tech_support = 1
+					tech_engineers = 1
+					tech_recon = 1
+					tech_military_police = 1
+					tech_maintenance_company = 1
+					tech_field_hospital = 1
+					tech_logistics_company = 1
+					tech_signal_company = 1
+
+					## Armor ##
+					main_battle_tank1 = 1
+					main_battle_tank2 = 1
+					main_battle_tank3 = 1
+					light_tank1 = 1
+					light_tank2 = 1
+					mechanised_infantry1 = 1
+					mechanised_infantry2 = 1
+					light_mechanized_infantry1 = 1
+					light_mechanized_infantry2 = 1
+
+					## Artillery ##
+					gw_artillery = 1
+					interwar_antitank = 1
+					interwar_antiair = 1
+					tank_destroyer1 = 1
+					self_propelled_aa1 = 1
+
+					## Engineering ##
+					electronic_mechanical_engineering = 1
+
+					## Industry ##
+					basic_machine_tools = 1
+
+					## Doctrines ##
+
+				}
+
+				if = {
+					limit = { has_dlc = "By Blood Alone" }
+						set_technology = {
+							aa_lmg = 1
+							aa_cannon_1 = 1
+							aa_hmg = 1
+							engines_1 = 1
+							engines_2 = 1
+							early_bombs = 1
+							guided_bombs = 1
+							aircraft_construction = 1
+							survivability_studies = 1
+							iw_small_airframe = 1
+							basic_small_airframe = 1
+							iw_medium_airframe = 1
+							basic_medium_airframe = 1
+							iw_large_airframe = 1
+						}
+					else = {
+						set_technology = {
+							CAS1 = 1
+							CAS2 = 1
+							fighter1 = 1
+							fighter2 = 1
+							fighter3 = 1
+							naval_bomber1 = 1
+							naval_bomber2 = 1
+							naval_bomber3 = 1
+							strategic_bomber1 = 1
+							strategic_bomber2 = 1
+							tactical_bomber1 = 1
+						}
+					}
+				}
+
+				add_ideas = {
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,177 @@
+﻿division_template = {
+	name = "Zhōng Xing He Cheng Lü"
+	
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanizedd = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 3 }
+		modern_armor = { x = 1 y = 0 }		
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+	}
+	
+	support = {
+		spaa_company = { x = 0 y = 0 }
+		signal_company = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+	
+	priority = 1
+}
+
+division_template = {
+	name = "Jidong Bubing Shi"
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 3 y = 0 }
+	}
+	
+	support = {
+		spaa_company = { x = 0 y = 0 }	
+		apc_company = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }	
+	}
+	
+}
+
+division_template = {
+	name = "He Cheng Shi"
+	
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		modern_sp_artillery_brigade = { x = 2 y = 1 }
+		modern_sp_artillery_brigade = { x = 2 y = 2 }
+		modern_sp_artillery_brigade = { x = 2 y = 3 }
+		modern_sp_artillery_brigade = { x = 2 y = 4 }
+		spaa_brigade = { x = 3 y = 0 }
+	}
+	
+	support = {
+		signal_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }	
+	}
+	
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "1. Zhōng Xing He Cheng Lü"
+		location = 11913
+		division_template = "Zhōng Xing He Cheng Lü"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2. Zhōng Xing He Cheng Lü"
+		location = 11913
+		division_template = "Zhōng Xing He Cheng Lü"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3. Zhōng Xing He Cheng Lü"
+		location = 11913
+		division_template = "Zhōng Xing He Cheng Lü"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4. Zhōng Xing He Cheng Lü"
+		location = 11982
+		division_template = "Zhōng Xing He Cheng Lü"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5. Zhōng Xing He Cheng Lü"
+		location = 11982
+		division_template = "Zhōng Xing He Cheng Lü"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1. Jidong Bubing Shi"
+		location = 1099
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2. Jidong Bubing Shi"
+		location = 1099
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "3. Jidong Bubing Shi"
+		location = 1099
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "4. Jidong Bubing Shi"
+		location = 1099
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "5. Jidong Bubing Shi"
+		location = 1125
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "6. Jidong Bubing Shi"
+		location = 1125
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "7. Jidong Bubing Shi"
+		location = 10044
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "8. Jidong Bubing Shi"
+		location = 10044
+		division_template = "Jidong Bubing Shi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "1. He Cheng Shi"
+		location = 7191
+		division_template = "He Cheng Shi"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "2. He Cheng Shi"
+		location = 7191
+		division_template = "He Cheng Shi"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "3. He Cheng Shi"
+		location = 7191
+		division_template = "He Cheng Shi"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "4. He Cheng Shi"
+		location = 7191
+		division_template = "He Cheng Shi"
+		start_experience_factor = 0.4
+	}
+}

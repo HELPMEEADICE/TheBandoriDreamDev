@@ -31,3 +31,7 @@ TFR_BGD_MoI_TT1: "情报调查相"
 TFR_BGD_MoI_TT: "--------------\n\n\n\n\n\n\n\n\n£GFX_BGD_nanami_texticon\n\n\n\n\n\n\n\n§W          广町七深§!"
 TFR_BGD_MoD_TT1: "防卫相"
 TFR_BGD_MoD_TT: "--------------\n\n\n\n\n\n\n\n\n£GFX_BGD_lisa_texticon\n\n\n\n\n\n\n\n§W          今井莉莎§!"
+
+PLA: "中华人民共和国紧急政府"
+PLA_DEF: "中华人民共和国"
+PLA_ADJ: "中国"

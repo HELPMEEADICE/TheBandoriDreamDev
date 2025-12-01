@@ -217,11 +217,12 @@ country_event = {
 				puppet = BGD
 			}
 			BGD = {
-				transfer_state = 1332
+				transfer_state = 1332 
 				add_state_core = 1332
 				set_capital = {
 					state = 1332
 				}
+				inherit_technology = JAP
 				set_politics = {
 					ruling_party = nationalist
 					elections_allowed = no
@@ -232,6 +233,10 @@ country_event = {
 					conservative = 5
 				}
 				inherit_technology = JAP
+				country_event = {
+					id = bangjap.4
+					hours = 12
+				}
 			}
 			country_event = {
 				id = bgd.54
@@ -1132,6 +1137,9 @@ country_event = {
 			}
 			remove_dynamic_modifier = {
 				modifier = PRC_chinese_enviroment_dynamic
+			}
+			annex_country = {
+				target = CHI
 			}
 		}
 	}

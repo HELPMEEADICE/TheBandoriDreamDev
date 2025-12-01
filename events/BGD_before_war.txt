@@ -48,6 +48,18 @@ country_event = {
 }
 
 country_event = {
+	id = bangjap.4	#LDP坠机
+	title = bangjap.4.t
+	desc = bangjap.4.d
+	picture = GFX_bangdream_victory
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = bangjap.4.a
+	}
+}
+
+country_event = {
 	id = bangjap.2000	#不尽人意
 	title = bangjap.2000.t
 	desc = bangjap.2000.d
