@@ -13,6 +13,7 @@ country_event = {
 	option = {
 		name = pla.1.a
 		hidden_effect = {
+			PLA_de_DMZ = yes
 			PLA = {
 				transfer_state = 1159
 				transfer_state = 600
@@ -81,7 +82,7 @@ country_event = {
 				add_state_core = 728
 				add_state_core = 1431
 				add_state_core = 648
-
+				
 				set_capital = {
 					state = 1222
 				}

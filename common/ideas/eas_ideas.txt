@@ -823,5 +823,27 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
+
+		EAS_PRC_cw = {
+		   picture = jingshen_zhanwei
+			traits = {
+			        ZZZ_blank_idea_trait
+			    }
+			
+			allowed = {
+				exists = PLA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PLA
+				attack_bonus_against = 99.99
+			}
+		}
 	}
 }

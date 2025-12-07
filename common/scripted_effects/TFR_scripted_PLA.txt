@@ -1,0 +1,414 @@
+PLA_DMZ = {
+	1159 = {
+		set_demilitarized_zone = yes
+	}
+	600 = {
+		set_demilitarized_zone = yes
+	}
+	1214 = {
+		set_demilitarized_zone = yes
+	}
+	1207 = {
+		set_demilitarized_zone = yes
+	}
+	1213 = {
+		set_demilitarized_zone = yes
+	}
+	1221 = {
+		set_demilitarized_zone = yes
+	}
+	1222 = {
+		set_demilitarized_zone = yes
+	}
+	1227 = {
+		set_demilitarized_zone = yes
+	}
+	1220 = {
+		set_demilitarized_zone = yes
+	}
+	592 = {
+		set_demilitarized_zone = yes
+	}
+	1430 = {
+		set_demilitarized_zone = yes
+	}
+	1216 = {
+		set_demilitarized_zone = yes
+	}
+	1217 = {
+		set_demilitarized_zone = yes
+	}
+	613 = {
+		set_demilitarized_zone = yes
+	}
+	591 = {
+		set_demilitarized_zone = yes
+	}
+	595 = {
+		set_demilitarized_zone = yes
+	}
+	1219 = {
+		set_demilitarized_zone = yes
+	}
+	1215 = {
+		set_demilitarized_zone = yes
+	}
+	1395 = {
+		set_demilitarized_zone = yes
+	}
+	596 = {
+		set_demilitarized_zone = yes
+	}
+	1206 = {
+		set_demilitarized_zone = yes
+	}
+	1218 = {
+		set_demilitarized_zone = yes
+	}
+	326 = {
+		set_demilitarized_zone = yes
+	}
+	729 = {
+		set_demilitarized_zone = yes
+	}
+	1451 = {
+		set_demilitarized_zone = yes
+	}
+	524 = {
+		set_demilitarized_zone = yes
+	}
+	1150 = {
+		set_demilitarized_zone = yes
+	}
+	1149 = {
+		set_demilitarized_zone = yes
+	}
+	1148 = {
+		set_demilitarized_zone = yes
+	}
+	876 = {
+		set_demilitarized_zone = yes
+	}
+	728 = {
+		set_demilitarized_zone = yes
+	}
+	1431 = {
+		set_demilitarized_zone = yes
+	}
+	648 = {
+		set_demilitarized_zone = yes
+	}
+	1159 = {
+		set_demilitarized_zone = yes
+	}
+	600 = {
+		set_demilitarized_zone = yes
+	}
+	1214 = {
+		set_demilitarized_zone = yes
+	}
+	1207 = {
+		set_demilitarized_zone = yes
+	}
+	1213 = {
+		set_demilitarized_zone = yes
+	}
+	1221 = {
+		set_demilitarized_zone = yes
+	}
+	1222 = {
+		set_demilitarized_zone = yes
+	}
+	1227 = {
+		set_demilitarized_zone = yes
+	}
+	1220 = {
+		set_demilitarized_zone = yes
+	}
+	592 = {
+		set_demilitarized_zone = yes
+	}
+	1430 = {
+		set_demilitarized_zone = yes
+	}
+	1216 = {
+		set_demilitarized_zone = yes
+	}
+	1217 = {
+		set_demilitarized_zone = yes
+	}
+	613 = {
+		set_demilitarized_zone = yes
+	}
+	591 = {
+		set_demilitarized_zone = yes
+	}
+	595 = {
+		set_demilitarized_zone = yes
+	}
+	1219 = {
+		set_demilitarized_zone = yes
+	}
+	1215 = {
+		set_demilitarized_zone = yes
+	}
+	1395 = {
+		set_demilitarized_zone = yes
+	}
+	596 = {
+		set_demilitarized_zone = yes
+	}
+	1206 = {
+		set_demilitarized_zone = yes
+	}
+	1218 = {
+		set_demilitarized_zone = yes
+	}
+	326 = {
+		set_demilitarized_zone = yes
+	}
+	729 = {
+		set_demilitarized_zone = yes
+	}
+	1451 = {
+		set_demilitarized_zone = yes
+	}
+	524 = {
+		set_demilitarized_zone = yes
+	}
+	1150 = {
+		set_demilitarized_zone = yes
+	}
+	1149 = {
+		set_demilitarized_zone = yes
+	}
+	1148 = {
+		set_demilitarized_zone = yes
+	}
+	876 = {
+		set_demilitarized_zone = yes
+	}
+	728 = {
+		set_demilitarized_zone = yes
+	}
+	1431 = {
+		set_demilitarized_zone = yes
+	}
+	648 = {
+		set_demilitarized_zone = yes
+	}
+}
+
+PLA_de_DMZ = {
+	1159 = {
+		set_demilitarized_zone = no
+	}
+	600 = {
+		set_demilitarized_zone = no
+	}
+	1214 = {
+		set_demilitarized_zone = no
+	}
+	1207 = {
+		set_demilitarized_zone = no
+	}
+	1213 = {
+		set_demilitarized_zone = no
+	}
+	1221 = {
+		set_demilitarized_zone = no
+	}
+	1222 = {
+		set_demilitarized_zone = no
+	}
+	1227 = {
+		set_demilitarized_zone = no
+	}
+	1220 = {
+		set_demilitarized_zone = no
+	}
+	592 = {
+		set_demilitarized_zone = no
+	}
+	1430 = {
+		set_demilitarized_zone = no
+	}
+	1216 = {
+		set_demilitarized_zone = no
+	}
+	1217 = {
+		set_demilitarized_zone = no
+	}
+	613 = {
+		set_demilitarized_zone = no
+	}
+	591 = {
+		set_demilitarized_zone = no
+	}
+	595 = {
+		set_demilitarized_zone = no
+	}
+	1219 = {
+		set_demilitarized_zone = no
+	}
+	1215 = {
+		set_demilitarized_zone = no
+	}
+	1395 = {
+		set_demilitarized_zone = no
+	}
+	596 = {
+		set_demilitarized_zone = no
+	}
+	1206 = {
+		set_demilitarized_zone = no
+	}
+	1218 = {
+		set_demilitarized_zone = no
+	}
+	326 = {
+		set_demilitarized_zone = no
+	}
+	729 = {
+		set_demilitarized_zone = no
+	}
+	1451 = {
+		set_demilitarized_zone = no
+	}
+	524 = {
+		set_demilitarized_zone = no
+	}
+	1150 = {
+		set_demilitarized_zone = no
+	}
+	1149 = {
+		set_demilitarized_zone = no
+	}
+	1148 = {
+		set_demilitarized_zone = no
+	}
+	876 = {
+		set_demilitarized_zone = no
+	}
+	728 = {
+		set_demilitarized_zone = no
+	}
+	1431 = {
+		set_demilitarized_zone = no
+	}
+	648 = {
+		set_demilitarized_zone = no
+	}
+	1159 = {
+		set_demilitarized_zone = no
+	}
+	600 = {
+		set_demilitarized_zone = no
+	}
+	1214 = {
+		set_demilitarized_zone = no
+	}
+	1207 = {
+		set_demilitarized_zone = no
+	}
+	1213 = {
+		set_demilitarized_zone = no
+	}
+	1221 = {
+		set_demilitarized_zone = no
+	}
+	1222 = {
+		set_demilitarized_zone = no
+	}
+	1227 = {
+		set_demilitarized_zone = no
+	}
+	1220 = {
+		set_demilitarized_zone = no
+	}
+	592 = {
+		set_demilitarized_zone = no
+	}
+	1430 = {
+		set_demilitarized_zone = no
+	}
+	1216 = {
+		set_demilitarized_zone = no
+	}
+	1217 = {
+		set_demilitarized_zone = no
+	}
+	613 = {
+		set_demilitarized_zone = no
+	}
+	591 = {
+		set_demilitarized_zone = no
+	}
+	595 = {
+		set_demilitarized_zone = no
+	}
+	1219 = {
+		set_demilitarized_zone = no
+	}
+	1215 = {
+		set_demilitarized_zone = no
+	}
+	1395 = {
+		set_demilitarized_zone = no
+	}
+	596 = {
+		set_demilitarized_zone = no
+	}
+	1206 = {
+		set_demilitarized_zone = no
+	}
+	1218 = {
+		set_demilitarized_zone = no
+	}
+	326 = {
+		set_demilitarized_zone = no
+	}
+	729 = {
+		set_demilitarized_zone = no
+	}
+	1451 = {
+		set_demilitarized_zone = no
+	}
+	524 = {
+		set_demilitarized_zone = no
+	}
+	1150 = {
+		set_demilitarized_zone = no
+	}
+	1149 = {
+		set_demilitarized_zone = no
+	}
+	1148 = {
+		set_demilitarized_zone = no
+	}
+	876 = {
+		set_demilitarized_zone = no
+	}
+	728 = {
+		set_demilitarized_zone = no
+	}
+	1431 = {
+		set_demilitarized_zone = no
+	}
+	648 = {
+		set_demilitarized_zone = no
+	}
+}
+
+PLA_EAS_CW = {
+	PRC = {
+		declare_war_on = {
+			target = PLA
+			type = civil_war
+		}
+		add_timed_idea = {
+			idea = EAS_PRC_cw
+			days = 365
+		}
+	}
+}

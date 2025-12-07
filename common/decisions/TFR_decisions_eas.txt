@@ -576,4 +576,72 @@ eas_dongya_waijiao = {
 			remove_ideas = PRC_party_commands_the_guns
 		}
 	}
+
+	eas_cw_win = {
+
+		priority = 1
+
+		icon = GFX_JAP_election_daysili_lanka
+
+		cost = 0
+		days_remove = 1
+
+		fire_only_once = yes
+		
+		allowed = {
+			tag = PRC
+		}
+
+		available = {
+			always = no
+		}
+
+		visible = {
+			
+        }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		modifier = {
+			
+		}
+			
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			BHU = {
+				set_cosmetic_tag = BHU_gaoyuan_xiaqv
+				set_politics = {
+					ruling_party = totalitarian_socialist
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalitarian_socialist = 65
+					communist = 5
+					libertarian_socialist = 5
+					social_democrat = 10
+					social_liberal = 5
+					market_liberal = 5
+					conservative = 5
+				}
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = EAS_dongya_guojiadang_long
+					name = EAS_dongya_guojiadang
+				}
+				create_country_leader = {
+					name = "BGD_shounao_char"
+					desc = "BGD_SHOUNAO_DESC"
+					picture = GFX_portrait_shounao
+					ideology = transhumanism
+					traits = {}
+				}
+				remove_ideas_with_trait = ZZZ_blank_idea_trait
+			}
+		}
+	}
 }

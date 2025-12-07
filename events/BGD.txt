@@ -596,8 +596,26 @@ country_event = {
 		add_state_core = 1333
 		add_state_core = 1336
 		add_state_core = 1335
+		add_state_claim = 555
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = JAP
+					is_claimed_by = JAP
+				}
+			}
+			JAP = {
+				remove_state_core = PREV
+				remove_state_claim = PREV
+			}
+			DFJ = {
+				remove_state_core = PREV
+				remove_state_claim = PREV
+			}
+		}
 		annex_country = {
 			target = DFJ
+			transfer_troops = yes
 		}
 	}
 }
@@ -1109,6 +1127,14 @@ country_event = {
 				}
 			}
 			dismantle_faction = yes
+			every_state = {
+				limit = {
+					has_dynamic_modifier = PRC_non_combat_area
+				}
+				remove_dynamic_modifier = {
+					modifier = PRC_non_combat_area
+				}
+			}
 			set_politics = {
 				ruling_party = totalitarian_socialist
 				elections_allowed = no
@@ -1156,6 +1182,11 @@ country_event = {
 			}
 		}
 		load_focus_tree = TFR_tree_eas
+		#PLA_DMZ = yes
+		#country_event = {
+		#	id = pla.1
+		#	days = 5
+		#}
 	}
 }
 
