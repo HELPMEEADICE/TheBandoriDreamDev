@@ -58,7 +58,7 @@ BGD_junshi_gaige = {
 		tag = BGD
 	}
 	visible = {
-		has_completed_focus = BGD_quanmian_gaige
+		has_completed_focus = BGD_Defense_Buildup_Plan
 	}
 	priority = 98
 }

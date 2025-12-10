@@ -17,7 +17,7 @@ eas_dongya_waijiao = {
 		available = {
 			BGD = {
                 has_completed_focus = BGD_benxiang_mingri
-                has_completed_focus = BGD_dingdian_zhijun
+                has_completed_focus = BGD_Aegis_of_the_AsiaPacific
                 has_completed_focus = BGD_jingji_qiji
                 has_completed_focus = BGD_tuanjie_shijie
             }

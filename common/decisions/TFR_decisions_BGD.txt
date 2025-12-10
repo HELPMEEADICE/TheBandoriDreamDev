@@ -1669,10 +1669,10 @@ BGD_junshi_gaige = {
 		}
 		available = {
 			has_tech = body_armor6
-			has_completed_focus = BGD_weilai_zhanzheng
+			has_completed_focus = BGD_Digitized_Infantry_Combat_System
 		}
 		visible = {
-			has_completed_focus = BGD_weilai_zhanzheng
+			has_completed_focus = BGD_Digitized_Infantry_Combat_System
 		}
 		ai_will_do = {
 			factor = 1
@@ -1701,10 +1701,10 @@ BGD_junshi_gaige = {
 		}
 		available = {
 			has_tech = support_weapons6
-			has_completed_focus = BGD_weilai_zhanzheng
+			has_completed_focus = BGD_Digitized_Infantry_Combat_System
 		}
 		visible = {
-			has_completed_focus = BGD_weilai_zhanzheng
+			has_completed_focus = BGD_Digitized_Infantry_Combat_System
 		}
 		ai_will_do = {
 			factor = 1
@@ -1732,10 +1732,10 @@ BGD_junshi_gaige = {
 			tag = BGD
 		}
 		available = {
-			has_completed_focus = BGD_dingdian_zhijun
+			has_completed_focus = BGD_Aegis_of_the_AsiaPacific
 		}
 		visible = {
-			has_completed_focus = BGD_dingdian_zhijun
+			has_completed_focus = BGD_Aegis_of_the_AsiaPacific
 		}
 		ai_will_do = {
 			factor = 1

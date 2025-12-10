@@ -481,10 +481,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_dingdian_jundui_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_dingdian_jundui.png"
+		texturefile = "gfx\interface\goals\BGD\BGD_Aegis_of_the_AsiaPacific.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_dingdian_jundui.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Aegis_of_the_AsiaPacific.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -497,7 +497,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_dingdian_jundui.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Aegis_of_the_AsiaPacific.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -833,10 +833,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_zhikong_youxian_1_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_zhikong_youxian_1.png"
+		texturefile = "gfx\interface\goals\BGD\BGD_Revive_Project_FX_1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_zhikong_youxian_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Revive_Project_FX_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -849,7 +849,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_zhikong_youxian_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Revive_Project_FX_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -929,10 +929,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_huoli_zhishang_1_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_huoli_zhishang_1.png"
+		texturefile = "gfx\interface\goals\BGD\BGD_Reorganize_the_GCC_1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_huoli_zhishang_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Reorganize_the_GCC_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -945,7 +945,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_huoli_zhishang_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Reorganize_the_GCC_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -993,10 +993,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_houqin_gaishan_1_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_houqin_gaishan_1.png"
+		texturefile = "gfx\interface\goals\BGD\BGD_Frenzied_Mobile_Defense_1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_houqin_gaishan_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Frenzied_Mobile_Defense_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1009,7 +1009,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_houqin_gaishan_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Frenzied_Mobile_Defense_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1089,10 +1089,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_weilai_zhanzheng_1_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_weilai_zhanzheng_1.png"
+		texturefile = "gfx\interface\goals\BGD\BGD_Digitized_Infantry_Combat_System_1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_weilai_zhanzheng_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Digitized_Infantry_Combat_System_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1105,7 +1105,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_weilai_zhanzheng_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Digitized_Infantry_Combat_System_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1185,10 +1185,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_heping_shiyan_1_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_heping_shiyan_1.png"
+		texturefile = "gfx\interface\goals\BGD\BGD_Oath_of_Peace_1.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_heping_shiyan_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Oath_of_Peace_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1201,7 +1201,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_heping_shiyan_1.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Oath_of_Peace_1.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -1792,11 +1792,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_BGD_wolfpack_tactics_shine"
-		texturefile = "gfx\interface\goals\BGD\BGD_wolfpack_tactics.png"
+		name = "GFX_BGD_Hypersonic_Glide_Vehicle_Deployment_shine"
+		texturefile = "gfx\interface\goals\BGD\BGD_Hypersonic_Glide_Vehicle_Deployment.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_wolfpack_tactics.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Hypersonic_Glide_Vehicle_Deployment.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1809,7 +1809,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx\interface\goals\BGD\BGD_wolfpack_tactics.png"
+			animationmaskfile = "gfx\interface\goals\BGD\BGD_Hypersonic_Glide_Vehicle_Deployment.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

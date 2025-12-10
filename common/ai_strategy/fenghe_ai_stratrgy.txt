@@ -7,7 +7,7 @@ eas_prepare_for_war = {
 		}
 		BGD = {
                 has_completed_focus = BGD_benxiang_mingri
-                has_completed_focus = BGD_dingdian_zhijun
+                has_completed_focus = BGD_Aegis_of_the_AsiaPacific
             }
 	}
 	abort_when_not_enabled = yes

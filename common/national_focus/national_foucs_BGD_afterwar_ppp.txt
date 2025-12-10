@@ -4,7 +4,7 @@ focus_tree = {
 		base = 0
 	}
 	default = no
-	shared_focus = BGD_jianli_guofangjun
+	shared_focus = BGD_Reconstruct_the_MoD
 	shared_focus = BGD_jingji_jianshe
 	shared_focus = BGD_yazi_zuzhi
 	shared_focus = BGD_zuizhong_zhizhan

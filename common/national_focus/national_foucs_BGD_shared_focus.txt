@@ -1,5 +1,5 @@
 shared_focus = {
-	id = BGD_jianli_guofangjun
+	id = BGD_Reconstruct_the_MoD
 	icon = GFX_jianli_fangweijun
 	cost = 4
 	x = -4
@@ -29,10 +29,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_yvsuan_qvshe
+	id = BGD_Special_Defense_Accounting_Act
 	icon = GFX_budget_trade_offs
 	prerequisite = {
-		focus = BGD_jianli_guofangjun
+		focus = BGD_Reconstruct_the_MoD
 	}
 	cost = 4
 	x = -7
@@ -45,10 +45,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_guanbing_pingdeng
+	id = BGD_Charter_of_the_Democratic_Army
 	icon = GFX_BGD_equality_between_officers_and_soldiers
 	prerequisite = {
-		focus = BGD_jianli_guofangjun
+		focus = BGD_Reconstruct_the_MoD
 	}
 	cost = 4
 	x = -1
@@ -73,10 +73,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_lixiang_jianjun
+	id = BGD_Meritocratic_Command_Chain
 	icon = GFX_BGD_ideal_army
 	prerequisite = {
-		focus = BGD_jianli_guofangjun
+		focus = BGD_Reconstruct_the_MoD
 	}
 	cost = 4
 	x = -4
@@ -106,16 +106,16 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_quanmian_gaige
+	id = BGD_Defense_Buildup_Plan
 	icon = GFX_initiate_comprehensive_military_reform
 	prerequisite = {
-		focus = BGD_lixiang_jianjun
+		focus = BGD_Meritocratic_Command_Chain
 	}
 	prerequisite = {
-		focus = BGD_yvsuan_qvshe
+		focus = BGD_Special_Defense_Accounting_Act
 	}
 	prerequisite = {
-		focus = BGD_guanbing_pingdeng
+		focus = BGD_Charter_of_the_Democratic_Army
 	}
 	cost = 4
 	x = -4
@@ -153,10 +153,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_huoli_zhishang
+	id = BGD_Reorganize_the_GCC
 	icon = GFX_huoli_zhishang_1
 	prerequisite = {
-		focus = BGD_quanmian_gaige
+		focus = BGD_Defense_Buildup_Plan
 	}
 	cost = 4
 	x = -4
@@ -189,10 +189,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_zhuangjia_zuozhan
+	id = BGD_Type_10_Mass_Production
 	icon = GFX_qianghua_zhuangjia_1
 	prerequisite = {
-		focus = BGD_huoli_zhishang
+		focus = BGD_Reorganize_the_GCC
 	}
 	cost = 4
 	x = -4
@@ -234,10 +234,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_houqin_gaishan
+	id = BGD_Frenzied_Mobile_Defense
 	icon = GFX_houqin_gaishan_1
 	prerequisite = {
-		focus = BGD_zhuangjia_zuozhan
+		focus = BGD_Type_10_Mass_Production
 	}
 	cost = 4
 	x = -4
@@ -266,10 +266,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_weilai_zhanzheng
+	id = BGD_Digitized_Infantry_Combat_System
 	icon = GFX_weilai_zhanzheng_1
 	prerequisite = {
-		focus = BGD_houqin_gaishan
+		focus = BGD_Frenzied_Mobile_Defense
 	}
 	cost = 4
 	x = -4
@@ -335,10 +335,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_zhikong_youxian
+	id = BGD_Revive_Project_FX
 	icon = GFX_zhikong_youxian_1
 	prerequisite = {
-		focus = BGD_quanmian_gaige
+		focus = BGD_Defense_Buildup_Plan
 	}
 	cost = 4
 	x = -7
@@ -379,10 +379,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_wuren_zhanji
+	id = BGD_Loyal_Wingman
 	icon = GFX_fazhan_wurenji
 	prerequisite = {
-		focus = BGD_zhikong_youxian
+		focus = BGD_Revive_Project_FX
 	}
 	cost = 4
 	x = -7
@@ -414,10 +414,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_sanwei_zuozhan
+	id = BGD_Uinted_High_Altitude_Interception
 	icon = GFX_xietiao_zuozhan_1
 	prerequisite = {
-		focus = BGD_wuren_zhanji
+		focus = BGD_Loyal_Wingman
 	}
 	cost = 4
 	x = -7
@@ -455,10 +455,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_kuoda_shengchan
+	id = BGD_Absolute_Pitch_of_the_Skies
 	icon = GFX_BGD_expanding_fighter_production
 	prerequisite = {
-		focus = BGD_sanwei_zuozhan
+		focus = BGD_Uinted_High_Altitude_Interception
 	}
 	cost = 4
 	x = -7
@@ -489,10 +489,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_chuanduo_shizhong
+	id = BGD_Mogami_class_Frigate_Expansion
 	icon = GFX_BGD_many_ships_many_forces
 	prerequisite = {
-		focus = BGD_quanmian_gaige
+		focus = BGD_Defense_Buildup_Plan
 	}
 	cost = 4
 	x = -1
@@ -520,10 +520,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_xiandai_haizhan
+	id = BGD_Finalize_Izumo_Conversion
 	icon = GFX_BGD_morden_warfare
 	prerequisite = {
-		focus = BGD_chuanduo_shizhong
+		focus = BGD_Mogami_class_Frigate_Expansion
 	}
 	cost = 4
 	x = -1
@@ -573,10 +573,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_langqun_zhanshu
-	icon = GFX_BGD_wolfpack_tactics
+	id = BGD_Hypersonic_Glide_Vehicle_Deployment
+	icon = GFX_BGD_Hypersonic_Glide_Vehicle_Deployment
 	prerequisite = {
-		focus = BGD_xiandai_haizhan
+		focus = BGD_Finalize_Izumo_Conversion
 	}
 	cost = 4
 	x = -1
@@ -617,10 +617,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_yingdui_dongya
+	id = BGD_Pulse_of_the_Azure
 	icon = GFX_yingdui_dihaijun
 	prerequisite = {
-		focus = BGD_langqun_zhanshu
+		focus = BGD_Hypersonic_Glide_Vehicle_Deployment
 	}
 	cost = 4
 	x = -1
@@ -677,10 +677,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_luli_tongxin
+	id = BGD_Joint_Operational_Command
 	icon = GFX_BGD_Working_together
 	prerequisite = {
-		focus = BGD_heping_shiyan
+		focus = BGD_Oath_of_Peace
 	}
 	cost = 4
 	x = -6
@@ -714,10 +714,10 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_mengxiang_zhijun
+	id = BGD_Army_of_Dreams
 	icon = GFX_BGD_Promote_the_Dream_Army
 	prerequisite = {
-		focus = BGD_heping_shiyan
+		focus = BGD_Oath_of_Peace
 	}
 	cost = 4
 	x = -2
@@ -740,16 +740,16 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_heping_shiyan
+	id = BGD_Oath_of_Peace
 	icon = GFX_heping_shiyan_1
 	prerequisite = {
-		focus = BGD_yingdui_dongya
+		focus = BGD_Pulse_of_the_Azure
 	}
 	prerequisite = {
-		focus = BGD_weilai_zhanzheng
+		focus = BGD_Digitized_Infantry_Combat_System
 	}
 	prerequisite = {
-		focus = BGD_kuoda_shengchan
+		focus = BGD_Absolute_Pitch_of_the_Skies
 	}
 	cost = 4
 	x = -4
@@ -787,13 +787,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BGD_dingdian_zhijun
+	id = BGD_Aegis_of_the_AsiaPacific
 	icon = GFX_dingdian_jundui
 	prerequisite = {
-		focus = BGD_mengxiang_zhijun
+		focus = BGD_Army_of_Dreams
 	}
 	prerequisite = {
-		focus = BGD_luli_tongxin
+		focus = BGD_Joint_Operational_Command
 	}
 	cost = 4
 	x = -4
