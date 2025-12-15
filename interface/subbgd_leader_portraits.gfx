@@ -78,6 +78,10 @@ spriteTypes = {
 		name = "GFX_portrait_Layer"
 		texturefile = "gfx\leaders\BGD\ras\BGD_Layer.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_Lock"
+		texturefile = "gfx\leaders\BGD\ras\BGD_Lock.png"
+	}
 
 	spriteType = {
 		name = "GFX_portrait_zheng"
