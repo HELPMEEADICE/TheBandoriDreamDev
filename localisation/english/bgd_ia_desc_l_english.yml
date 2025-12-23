@@ -1,0 +1,66 @@
+﻿l_english:
+BGD_ia_kasumi: "§DToyama Kasumi§!"
+BGD_ia_arisa: "§EIchigaya Arisa§!"
+BGD_ia_jop: "§MPresident of the Republic§!"
+BGD_ia_pms: "§NPrime Minister of the Republic§!"
+BGD_ia_saaya: "§FYamabuki Saaya§!"
+BGD_ia_MoE: "Minister of Finance"
+BGD_ia_tae: "§JHanazono Tae§!"
+BGD_ia_MoF: "Minister of Foreign Affairs"
+BGD_ia_rimi: "§KUshigome Rimi§!"
+BGD_ia_MoG: "Minister of General Affairs"
+BGD_ia_ykn: "§0Minato Yukina§!"
+BGD_ia_CoS: "Chief of Staff, Joint Staff"
+BGD_ia_nnm: "§OHiromachi Nanami§!"
+BGD_ia_IM: "Minister of Intelligence and Research"
+
+TFR_BGD_IA_TT: "National Diet"
+TFR_BGD_IA_TT_LONG: "The Diet is not always idle; overall, all Japanese people and foreigners trust in the development of democracy within the Republic. However, sometimes gradual change is not enough. Through certain resolutions, our statutory law may undergo significant changes, determining the course of future development."
+
+BGD_ia_senate: "§MHouse of Councillors§!"
+BGD_ia_house: "§NHouse of Representatives§!"
+house_chief: "480"
+
+parliament_decision_none: "National Diet\n\n§YNo resolutions at this time§!"
+
+gov_decision_none: "Coalition Government\n\n§YNo resolutions at this time§!"
+
+add_relationships_tt:0 "§GImprove§! our relationship with [GetPoliticalPartyName] for [BGD_PoliticalPartyDays]"
+damage_relationships_tt:0 "§RDamage§! our relationship with [GetPoliticalPartyName] for [BGD_PoliticalPartyDays]"
+
+relationships_days_tt:0 "\n\n\nRequires §Y[?party_interaction_time]§! more days for party interaction"
+relationships_tt:0 "\n\n\nThis will cost £pol_power_icon 250\nand party interaction will be unavailable for the next §Y150§! days"
+
+green_political_relationships:0 "§G[?bgd_political_relationships_array^i]§!"
+yellow_political_relationships:0 "§Y[?bgd_political_relationships_array^i]§!"
+red_political_relationships:0 "§R[?bgd_political_relationships_array^i]§!"
+
+parliament_gui_title:0 "Grid Parliament"
+semicircle_parliament_gui_title:0 "Semicircle Parliament"
+parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
+parliament_seat_text:0 "Seat [?temp_seat|Y0]"
+parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
+parliament_modify_button_tt:0 "Use §GCtrl+Click§! to add §Y5§! seats to [GetParliamentPartyName] \nUse §GShift+Click§! to remove §Y5§! seats from [GetParliamentPartyName] "
+
+cdp_desc:0 "Ideology: Centre to Centre-Left\n\nPolitical Spectrum:\nSocial Liberalism\nJapanese Liberalism\nEnvironmental Protectionism\nConstitutionalism\nGrassroots Democracy"
+sdp_desc:0 "Ideology: Centre-Left to Left-Wing\n\nPolitical Spectrum:\nSocial Democracy\nDemocratic Socialism\nAnti-Neo-Liberalism\nMulticulturalism\nPacifism\nEnvironmentalism\nGreen Politics\nEgalitarianism\nSolidarity Economy\nProgressivism"
+ssg_desc:0 "Ideology: Left-Wing\n\nPolitical Spectrum:\nLeft-Wing Populism\nLeft-Libertarianism\nProgressivism\nEnvironmental Protectionism\nEconomic Interventionism\nAnimal Rights\nAnti-Globalization\nAnti-Establishment"
+jcp_desc:0 "Ideology: Left-Wing to Far-Left\n\nPolitical Spectrum:\nCommunism\nScientific Socialism\nDemocratic Socialism\nLiberal Democracy\nRepublicanism\nPopular Sovereignty\nPacifism\nProgressivism\nAnti-Nuclear"
+kkm_desc:0 "Ideology: Centre to Centre-Right\n\nPolitical Spectrum:\nModerate Conservatism\nLiberal Conservatism\nPopular Sovereignty"
+jip_desc:0 "Ideology: Right-Wing\n\nPolitical Spectrum:\nRight-Wing Populism\nRight-Libertarianism\nNational Conservatism\nJapanese Nationalism\nEconomic Liberalism\nNeo-Liberalism\nConservatism\nConstitutional Amendment\nAdministrative Reform\nSmall Government\nDecentralization"
+ldp_desc:0 "Ideology: Right-Wing\n\nPolitical Spectrum:\nConservatism\nJapanese Nationalism\nLiberalism\nBig Tent\nNationalism\nConstitutional Amendment\nSmall to Big Government\nEconomic Liberalism\nAnti-Communism"
+bgd_all_party_desc: "[GetPoliticalPartyName]\n[GetPoliticalPartySpectrum]"
+
+party_1_text:0 "£GFX_JCP_logo Japanese Communist Party"
+party_2_text:0 "£GFX_SDP_logo Social Democratic Party"
+party_3_text:0 "£GFX_KKP_logo Kira Kira Party of Japan"
+party_4_text:0 "£GFX_REI_logo Rei Shinsengumi Party"
+party_5_text:0 "£GFX_CDP_logo Constitutional Democratic Party"
+party_6_text:0 "£GFX_DPP_logo Democratic Party for the People"
+party_7_text:0 "£GFX_LDP_logo Liberal Democratic Party"
+party_8_text:0 "£GFX_INO_logo Japan Innovation Party"
+party_9_text:0 "Independents"
+
+BGD_LDP_seats: "§RDisbanded§!"
+
+house_chief_tt:0 "Ruling Party:\n£GFX_KKP_logo Kira Kira Party of Japan: [?parliament_seat_array^2]\n\nOpposition Parties:\n£GFX_JCP_logo Japanese Communist Party: [?parliament_seat_array^0]\n£GFX_SDP_logo Social Democratic Party: [?parliament_seat_array^1]\n£GFX_REI_logo Rei Shinsengumi Party: [?parliament_seat_array^3]\n£GFX_CDP_logo Constitutional Democratic Party: [?parliament_seat_array^4]\n£GFX_DPP_logo Democratic Party for the People: [?parliament_seat_array^5]\n£GFX_LDP_logo Liberal Democratic Party: [BGD_LDP_house_seats]\n£GFX_INO_logo Japan Innovation Party: [?parliament_seat_array^7]\n\nIndependents: [?parliament_seat_array^8]"

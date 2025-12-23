@@ -1,0 +1,35 @@
+﻿l_english:
+
+
+BGD_decisions_trade_war_1: "So great, Hayek. Work In Progress. Currently non-functional." # Assuming "哈耶克" is the economist, kept as is.
+decisions_BGD_trade_war: "Japan-European Union Trade War"
+trade_war_end: "Trade War Ended"
+BDG_eu_mission: "§B European Union §! is taking action"
+BDG_eu_mission1: "§B European Commission §! is taking action"
+BDG_end_mission: "Corporation Selected"
+trade_poker_game_on: "Trade Poker"
+eu_m_desc: "Europe, what do they have? A suffocating bureaucracy, or an increasingly burdensome past? Let's not forget, they also have the most seasoned politicians, the craftiest diplomatic maneuvers, and a whole set of institutional machinery tempered in wind and rain—now, §B Europe §! is taking action."
+trade_war_schedules: "Progress"
+trade_war_schedules_eu: "[?trade_war_schedules_eu|Y]"
+trade_war_schedules_jp: "[?trade_war_schedules_jp|Y]"
+trade_war_pointer: "trade_war_pointer"
+
+BGD_NVIDIA: "NVIDIA"
+BGD_NVIDIA_desc: "NVIDIA, founded in January 1993, is a fabless semiconductor company primarily designing and selling graphics processing units. NVIDIA also designs graphics processors for game consoles, such as the first-generation Xbox, PlayStation 3, Nintendo Switch, and Nintendo Switch 2."
+
+JETW.0.t: "Japan-European Union Trade War"
+JETW.0.d: "As the United States of America plunged completely into the quagmire of war, numerous high-tech companies within its borders began transferring capital and core technologies overseas, seeking sanctuary amidst international turmoil. The European Union and the Japanese Free Republic swiftly launched lobbying efforts, offering tax incentives, legislative protection, and national security guarantees as enticements to seize control of these golden assets.\nInitially, the Japanese Free Republic won the favor of many companies with its stable social order and high-tech infrastructure. However,不甘示弱不甘示弱 (not to be outdone), the EU announced punitive tariffs on Japanese electronic products and new energy equipment, accusing the Tokyo government of 'manipulating the market through state intervention手段手段 (means).' In response, Japan immediately retaliated by restricting rare earth exports to Europe and warning the EU against interfering with free market mechanisms."
+JETW.0.o: "The show begins"
+JETW.1.t: "Graphics War"
+JETW.1.d: "As the flames of war spread in California, Silicon Valley's fate became precarious. The global graphics processing unit giant—NVIDIA—announced the relocation of its headquarters and key R&D assets overseas to ensure technological security and corporate survival. This move shocked the world and officially placed this global GPU霸主霸主 (hegemon) at the core of the storm of international politics and technological competition.\nThe EU quickly extended an olive branch to NVIDIA, promising a new 'Green Silicon Valley' campus in France, backed by massive subsidies and political asylum guarantees. The Japanese Free Republic also responded swiftly, with President TOYAMA KASUMI personally writing to the NVIDIA board, promising comprehensive intellectual property protection, targeted talent recruitment, and access to the Asia-Pacific Freedom Nations Alliance market.\nNVIDIA has now clearly stated it will make a decision within days, and this 'tech grab' will not only shape the graphics computing landscape for the next decade but could also become a key watershed in the global battle for AI dominance."
+JETW.1.o: "Get involved personally. We cannot lose."
+JETW.3.t: "We Won NVIDIA"
+JETW.3.d: "Under global scrutiny, NVIDIA officially announced the relocation of its global headquarters, key R&D centers, and core data facilities to the Tokyo Bay AI Special Zone in the Japanese Free Republic. On the day of the announcement, President TOYAMA KASUMI personally delivered a speech at Victory Plaza, calling this move 'a symbol of the alliance between freedom and technology, the precursor of technological strength in the new world order.'\nNVIDIA will engage in deep cooperation with Japanese domestic research institutions, universities, and tech companies within the Asia-Pacific Freedom Nations Alliance to build the 'Frontier Plan,' driving national industry, defense, and digital infrastructure with AI. This strategy not only significantly enhances national technological autonomy but has also triggered连锁震动连锁震动 (chain reactions) internationally.\nThe EU expressed 'serious concern' over this and accused Japan of manipulating market competition using state power. Voices opposing Japanese technological expansion surged within the European Parliament, and the shadow of a global tech cold war began to loom."
+JETW.2.t: "We Lost NVIDIA"
+JETW.2.d: "After weeks of intense negotiation and diplomatic gamesmanship, NVIDIA最终宣布最终宣布 (finally announced) its acceptance of the EU's offer of sanctuary and aid, relocating its headquarters to the 'Normandy Industrial Special Zone.' Rumor has it the French government offered an astronomical tech incentive package and promised autonomous legal exemptions and military-grade AI trial support.\nThe Japanese Free Republic's delegation returned empty-handed from the final round of谈判谈判 (negotiations). President TOYAMA KASUMI expressed deep regret over this failure, stating 'we have lost a key piece in the free world,' and convened an emergency cabinet meeting to discuss countermeasures.\nAlthough public opinion within the country experienced brief turmoil, the Glitter Party leadership stated they would accelerate替代项目替代项目 (alternative projects) for the domestic 'Frontier Plan' to achieve true technological independence, rather than forever being an appendage to another's will."
+JETW_win: "This is fantastic"
+JETW_lost: "Oh no"
+
+BGD_japan_trade_war_1: "Dispatch Diplomatic Mission"
+BGD_japan_trade_war_2: "Set Up Server Room / Data Center" # "机房" can be server room or data center
+BGD_japan_trade_war_3: "Transfer Verilog Design Files"

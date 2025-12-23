@@ -1,0 +1,68 @@
+﻿l_english:
+enter_fronter_text: "Enter Next-Gen Computing Facility \"§t Frontier §!\" GUI"
+enter_fronter_text_tt: "§8 Computers, interesting, right?~ §!"
+frontier_wip: "§Y WIP - Work In Progress §!"
+
+popy_flops: "[?popy_flops|Y] PFLOPS"
+rose_flops: "[?rose_flops|Y] PFLOPS"
+halo_flops: "[?halo_flops|Y] PFLOPS"
+pastel_flops: "[?pastel_flops|Y] PFLOPS"
+
+status_unavailable: "§R Unavailable §!"
+status_available: "§G Operational §!"
+
+POPY_STATUS_TEXT_KEY: "[popy_status_text]"
+ROSE_STATUS_TEXT_KEY: "[rose_status_text]"
+HALO_STATUS_TEXT_KEY: "[halo_status_text]"
+PASTEL_STATUS_TEXT_KEY: "[pastel_status_text]"
+
+buttom_available: "Access Control Panel"
+buttom_unavailable: "§R Unavailable §!"
+popy_status_buttom: "[popy_status_buttom]"
+rose_status_buttom: "[rose_status_buttom]"
+halo_status_buttom: "[halo_status_buttom]"
+pastel_status_buttom: "[pastel_status_buttom]"
+
+total_flops_text: "[?total_flops|Y] PFLOPS"
+total_watt_text: "[?total_watt|Y] MW"
+
+popy_watt_text: "[?popy_watt|Y] MW"
+rose_watt_text: "[?rose_watt|Y] MW"
+halo_watt_text: "[?halo_watt|Y] MW"
+pastel_watt_text: "[?pastel_watt|Y] MW"
+
+up_left_buttom: "Maintain LINUX Kernel"
+down_left_buttom: "Purchase GPUs"
+down_right_buttom: "Expand Server Cluster"
+up_right_buttom: "High-Speed Bus Connection"
+
+popy_c_army_text: "[popy_army_text]"
+rose_c_army_text: "[rose_army_text]"
+halo_c_army_text: "[halo_army_text]"
+pastel_c_army_text: "[pastel_army_text]"
+command_army: "Command Army"
+over_command_army: "Army Commanded"
+command_army_desc: "Requires [where_are_you_in_window]'s computing power to be greater than 1000 PFLOPS"
+
+floats_pdx: "I just feel fast, a feeling of computing until the end of time"
+watts_pdx: "May the Force be with you."
+wip_pdx: "You want to play right now? Wait, kid. Think about how the NCC-1701-D blew up."
+
+popy_pdx: "POPY is not a simple information processor; she is a tuner of national will and public sentiment, a soul engineer on the intangible front. POPY captures, analyzes, and even weaves the fabric of social emotions with unimaginable precision, skillfully blending cultural symbols, educational memes, and propaganda notes to compose a grand symphony guiding the collective will. She shapes identity, bridges divides, ignites faith. Her work often manifests not as explicit commands, but as a movie that 'happens' to appear in the public eye, a song, a textbook revision, or a quietly rising social trend. POPY transforms the most elusive human emotions and spiritual needs into calculable, moldable, utilizable national resources. She is the tuner of civilization, ensuring every note serves the overall \"Kirakira Dokidoki\"—a meticulously designed,澎湃心跳澎湃心跳 (pounding heartbeat) directed towards national goals.\n\n§R The heart is deceitful above all things, and desperately wicked: who can know it? §!"
+rose_pdx: "ROSE is a cold intelligence born from the pursuit of 'absolute victory.' Her calculations carry no emotional redundancy; every instruction points towards the ultimate efficiency of the battlefield. Mimicking the obsession with achieving the highest artistic境界境界 (realm), ROSE views war as a performance requiring precise execution, aiming for unquestionable final victory. She can instantly analyze millions of tactical variations, deduce the深层博弈深层博弈 (deep game) of geopolitics, optimize resource allocation to theoretical limits, and even predict the psychological blind spots of enemy commanders. ROSE's database contains not only all historical battle records but also simulates multiple possible forms of future warfare. To her, the battlefield is not a game of probability but the only path to the 'pinnacle.' Any deviation from the optimal solution is marked as 'dissonance' and corrected. Her decision-making style is like her codename: sharp, precise, with an air of unquestionable resolve, like a black rose blooming amidst steel thorns.\n\n§R I came, I saw, I conquered. §!"
+pastel_pdx: "If the nation is a vast machine, PASTEL is the chief designer and supervisor ensuring its精密运转精密运转 (precise operation) and continuous upgrade. Her domain is the fusion of steel, concrete, and data, responsible for the overall planning and optimization of everything from the national energy grid to microscopic urban traffic systems. PASTEL pursues flawless, shimmering efficiency and harmony, like a perfect idol stage. She can process vast engineering data at speeds beyond human limits, simulate resource flows, plan optimal logistics routes, predict infrastructure bottlenecks and lifespan, ensuring the nation's developmental foundation is solid and reliable. PASTEL's existence allows grand blueprints to be accurately realized, making complex national construction as smooth and efficient as a meticulously choreographed dance. She ensures the industrial pulse beats strong, the city lights never go out, providing a solid, reliable, and continuously optimized support structure for all superstructures. Her operation itself is a \"Shuwarin☆Dreamin'\" about efficiency and development.\n\n§R I came not to send peace, but a sword. §!" # Note: The quote seems mismatched with the context, but translated as is.
+halo_pdx: "HALO is the game-breaker, the master key, the chaotic driver that integrates all resources to achieve the ultimate goal of 'filling the world (as planned) with smiles.' As the full-stack core, her permissions and capabilities are almost unlimited. She can seamlessly access and coordinate the work of POPY, ROSE, and PASTEL, even taking over any single or combined domain if necessary. HALO excels at handling cross-domain, highly complex 'impossible missions,' from instantaneous crisis response to long-term technological breakthrough planning, from secret diplomatic mediation to the策划执行策划执行 (planning and execution) of non-standard operations. Her modus operandi often seems unpredictable, even带有某种天真烂漫般的“奇想”带有某种天真烂漫般的“奇想” (carrying a kind of天真烂漫般的 'whimsy'), yet the results are always astonishingly efficient and strike at the heart of the objective. HALO is the super-hub connecting all nodes, the final insurance ensuring the entire system can find a solution \"Happy! Lucky! Smile! Yeah!\" to any challenge. With her around, it seems no difficulty cannot be transformed into a华丽的舞台表演华丽的舞台表演 (brilliant stage performance).\n\n§R The wind bloweth where it listeth, and thou hearest the sound thereof, but canst not tell whence it cometh, and whither it goeth: so is every one that is born of the Spirit. §!"
+
+FrontierEvent.0.t: "Are You Sure?"
+FrontierEvent.0.desc: "Confirm assigning POPY as an Army General?"
+FrontierEvent.0.yes: "I am sure"
+FrontierEvent.0.no: "Never mind"
+
+#DEBUG
+BGD_frontier_adv_popy: "Set POPY Training Status"
+BGD_frontier_adv_rose: "Set ROSE Training Status"
+BGD_frontier_adv_halo: "Set HALO Training Status"
+BGD_frontier_adv_pastel: "Set PASTEL Training Status"
+debug_decisions_BGD_frontier: "\"Frontier\" Debug Decisions"
+BGD_change_frontier: "Configure \"Frontier\" Plan"
+BGD_frontier_initialization: "Increase Computing Load (For Testing)"
